@@ -16,6 +16,7 @@ Two output forms share the same byte-level encoding:
 from __future__ import annotations
 
 import struct
+import unicodedata
 from collections.abc import Sequence
 from pathlib import Path
 
@@ -27,11 +28,42 @@ _MIN_BUCKET_ID = 1
 _MAX_BUCKET_ID = 7
 _MIN_PRINTABLE_BYTE = 0x20
 
+_NON_DECOMPOSABLE_REPLACEMENTS = {
+    "—": "-",
+    "–": "-",
+    "…": "...",
+    "“": '"',
+    "”": '"',
+    "‘": "'",
+    "’": "'",
+    "«": '"',
+    "»": '"',
+    "¿": "",
+    "¡": "",
+}
+
+
+def _to_ascii(s: str) -> str:
+    """Transliterate UTF-8 to ASCII so the on-device bitmap font can render it.
+
+    Flipper's stock FontSecondary/FontPrimary are ASCII-only (no Latin-1
+    supplement). Spanish accents and `ñ` would render as garbage bytes.
+    NFKD decomposes accented characters into base + combining mark; the
+    ascii-encode then drops the combining marks. Punctuation that does not
+    decompose (em dash, curly quotes, inverted ?/!) is mapped explicitly.
+    """
+    for src, dst in _NON_DECOMPOSABLE_REPLACEMENTS.items():
+        s = s.replace(src, dst)
+    decomposed = unicodedata.normalize("NFKD", s)
+    return decomposed.encode("ascii", errors="ignore").decode("ascii")
+
 
 def _sanitize(field: str) -> str:
-    """Replace tabs and newlines with single spaces — the runtime parser cannot
-    handle them in fields, so the pipeline must scrub them defensively."""
-    return field.replace("\t", " ").replace("\n", " ").replace("\r", " ")
+    """Make a field safe for the on-device parser and renderer:
+    transliterate to ASCII (font constraint) and strip the field separators
+    `\\t` / `\\n` / `\\r` defensively."""
+    ascii_only = _to_ascii(field)
+    return ascii_only.replace("\t", " ").replace("\n", " ").replace("\r", " ")
 
 
 def _validate_buckets(questions: Sequence[BilingualQuestion]) -> None:

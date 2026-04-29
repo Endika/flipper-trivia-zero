@@ -135,25 +135,54 @@ def test_write_embedded_pack_emits_two_c_files(tmp_path: Path) -> None:
     es = (tmp_path / "embedded_pack_es.c").read_text(encoding="utf-8")
     en = (tmp_path / "embedded_pack_en.c").read_text(encoding="utf-8")
 
-    # Both files declare the four expected symbols
     for src in (es, en):
         assert "embedded_pack.h" in src
         assert "_idx[" in src and "_idx_len" in src
         assert "_tsv[]" in src and "_tsv_len" in src
 
-    # Magic must be the four bytes T,R,V,I as the first idx entries
     assert "0x54, 0x52, 0x56, 0x49" in es
 
-    # Field separators preserved as escape sequences inside C string literals
-    assert "\\t1\\t" in es  # id<TAB>category_id<TAB>...
-    assert "\\n" in es  # line terminator
+    assert "\\t1\\t" in es
+    assert "\\n" in es
 
-    # Embedded double-quote inside a question must be C-escaped
     assert 'Quote \\"test\\"' in es
 
-    # UTF-8 multi-byte content survives as UTF-8 in the source (no transcoding)
-    assert "España" not in es  # we never wrote that string
-    assert "Capital" in es
+
+def test_special_chars_transliterated_to_ascii(tmp_path: Path) -> None:
+    """Spanish accents and inverted punctuation are stripped/normalized so
+    they render on Flipper's ASCII-only bitmap font."""
+    qs = [
+        BilingualQuestion(
+            bucket_id=1,
+            question_es="¿Capital de España?",
+            answer_es="Madrid",
+            question_en="Capital of Spain?",
+            answer_en="Madrid",
+        ),
+        BilingualQuestion(
+            bucket_id=3,
+            question_es="¿Quién pintó La Mona Lisa?",
+            answer_es="Da Vinci",
+            question_en="Who painted the Mona Lisa?",
+            answer_en="Da Vinci",
+        ),
+    ]
+    write_pack(qs, out_dir=tmp_path)
+    es = (tmp_path / "trivia_es.tsv").read_text(encoding="utf-8")
+
+    assert "Capital de Espana?" in es
+    assert "Quien pinto La Mona Lisa?" in es
+    assert "España" not in es
+    assert "ñ" not in es
+    assert "¿" not in es
+    assert "ó" not in es
+
+
+def test_only_ascii_bytes_emitted(tmp_path: Path) -> None:
+    qs = [BilingualQuestion(1, "¡Hola, ñoño!", "Sí", "Hi!", "Yes")]
+    write_pack(qs, out_dir=tmp_path)
+    raw = (tmp_path / "trivia_es.tsv").read_bytes()
+    assert all(b < 0x80 for b in raw), f"non-ASCII bytes found: {raw!r}"
 
 
 def test_write_embedded_pack_validates_bucket_id(tmp_path: Path) -> None:

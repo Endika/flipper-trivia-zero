@@ -4,22 +4,34 @@ static Lang g_locale = LangEn;
 
 static const char *const k_en[TzStrCount] = {
     [TzStrMenuChangeLang] = "Change language",
+    [TzStrMenuCredits] = "Credits",
     [TzStrMenuExit] = "Exit",
     [TzStrFooterReveal] = "OK: reveal",
     [TzStrFooterNext] = ">: next",
     [TzStrLangPickHeader] = "Language",
     [TzStrLangSpanish] = "Spanish",
     [TzStrLangEnglish] = "English",
+    [TzStrCreditsBody] = "Trivia Zero\n"
+                         "Author: Endika\n"
+                         "v",
+    [TzStrCreditsRepoLine1] = "https://github.com/Endika/",
+    [TzStrCreditsRepoLine2] = "flipper-trivia-zero",
 };
 
 static const char *const k_es[TzStrCount] = {
     [TzStrMenuChangeLang] = "Cambiar idioma",
+    [TzStrMenuCredits] = "Creditos",
     [TzStrMenuExit] = "Salir",
     [TzStrFooterReveal] = "OK: revelar",
     [TzStrFooterNext] = ">: siguiente",
     [TzStrLangPickHeader] = "Idioma",
-    [TzStrLangSpanish] = "Español",
-    [TzStrLangEnglish] = "Inglés",
+    [TzStrLangSpanish] = "Espanol",
+    [TzStrLangEnglish] = "Ingles",
+    [TzStrCreditsBody] = "Trivia Zero\n"
+                         "Autor: Endika\n"
+                         "v",
+    [TzStrCreditsRepoLine1] = "https://github.com/Endika/",
+    [TzStrCreditsRepoLine2] = "flipper-trivia-zero",
 };
 
 Lang tz_locale_get(void) {

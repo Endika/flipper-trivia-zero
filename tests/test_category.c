@@ -4,7 +4,7 @@
 
 int main(void) {
     /* Spanish names */
-    assert(strcmp(category_name(1, LangEs), "Geografía") == 0);
+    assert(strcmp(category_name(1, LangEs), "Geografia") == 0);
     assert(strcmp(category_name(2, LangEs), "Entretenimiento") == 0);
     assert(strcmp(category_name(3, LangEs), "Historia") == 0);
     assert(strcmp(category_name(4, LangEs), "Arte y Literatura") == 0);

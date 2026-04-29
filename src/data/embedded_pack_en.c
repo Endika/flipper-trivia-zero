@@ -5,12 +5,12 @@
 
 const uint8_t trivia_en_idx[22] = {
     0x54, 0x52, 0x56, 0x49, 0x01, 0x00, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1D, 0x00,
-    0x00, 0x00, 0x52, 0x00, 0x00, 0x00,
+    0x00, 0x00, 0x4E, 0x00, 0x00, 0x00,
 };
 const size_t trivia_en_idx_len = 22u;
 
 const char trivia_en_tsv[] =
     "0\t1\tCapital of Spain?\tMadrid\n"
-    "1\t3\t[en] ¿Quién pintó La Mona Lisa?\t[en] Da Vinci\n"
+    "1\t3\t[en] Quien pinto La Mona Lisa?\t[en] Da Vinci\n"
     "2\t6\tFirst World Cup year?\t1930\n";
 const size_t trivia_en_tsv_len = sizeof(trivia_en_tsv) - 1u;

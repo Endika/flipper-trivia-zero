@@ -2,7 +2,7 @@
 
 static const char *const k_es[8] = {
     "?",
-    "Geografía",
+    "Geografia",
     "Entretenimiento",
     "Historia",
     "Arte y Literatura",
