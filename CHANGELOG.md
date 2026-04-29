@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.4...v0.1.5) (2026-04-29)
+
+
+### Bug Fixes
+
+* **pack:** update pack_writer ([4407f0f](https://github.com/Endika/flipper-trivia-zero/commit/4407f0fec9a5d7d931c3deea0cb7c61a1f221696))
+
 ## [0.1.4](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.3...v0.1.4) (2026-04-29)
 
 
