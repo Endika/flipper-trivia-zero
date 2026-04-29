@@ -1,4 +1,8 @@
-"""CLI entry point: builds data/trivia_{es,en}.{tsv,idx} from Open Trivia DB.
+"""CLI entry point: builds the bilingual question pack from Open Trivia DB.
+
+Outputs:
+- data/trivia_{es,en}.{tsv,idx}        — binary pack for review/debug.
+- src/data/embedded_pack_{es,en}.c     — C source compiled into the FAP.
 
 Usage:
     python build_pack.py
@@ -17,6 +21,7 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 _DATA_DIR = _REPO_ROOT / "data"
 _CACHE_DIR = _DATA_DIR / "_cache"
 _BLACKLIST = _DATA_DIR / "blacklist.txt"
+_C_OUT_DIR = _REPO_ROOT / "src" / "data"
 
 
 def main() -> int:
@@ -32,8 +37,10 @@ def main() -> int:
         translator=translator,
         blacklist_path=_BLACKLIST,
         out_dir=_DATA_DIR,
+        c_out_dir=_C_OUT_DIR,
     )
     print("ok: pack written to data/trivia_{es,en}.{tsv,idx}")
+    print("ok: embedded pack written to src/data/embedded_pack_{es,en}.c")
     return 0
 
 

@@ -79,10 +79,12 @@ static void app_show_random(App *app) {
 }
 
 static void app_open_pack_for_current_lang(App *app) {
-    if (!pack_open(app->settings.lang)) {
-        app->exit_requested = true;
-        view_dispatcher_stop(app->vd);
-    }
+    /* The pack is embedded in the FAP binary as `const` arrays, so opening
+     * is essentially free and cannot fail under normal operation. If it
+     * does fail (corrupt/missing magic — would mean a build error), we let
+     * the UI come up anyway with an empty pool rather than killing the app
+     * silently. The user sees no questions instead of a sudden close. */
+    (void)pack_open(app->settings.lang);
 }
 
 static void app_rebuild_back_menu(App *app) {
@@ -164,31 +166,28 @@ int32_t trivia_zero_app_run(void) {
         return -1;
     *app = (App){0};
 
-    /* Settings + domain state */
     app->settings = settings_default();
     const bool settings_ok = settings_load(&app->settings);
     tz_locale_set(app->settings.lang);
     anti_repeat_init(&app->seen);
     history_buffer_init(&app->history);
 
-    /* GUI plumbing */
     app->gui = furi_record_open(RECORD_GUI);
     app->vd = view_dispatcher_alloc();
     view_dispatcher_attach_to_gui(app->vd, app->gui, ViewDispatcherTypeFullscreen);
     view_dispatcher_set_event_callback_context(app->vd, app);
     view_dispatcher_set_navigation_event_callback(app->vd, app_nav);
 
-    /* Lang submenu — callback attached per-item by app_rebuild_lang_menu */
+    /* Submenu callbacks are attached per-item by app_rebuild_*_menu — there
+     * is no submenu-wide context setter on this Furi version. */
     app->lang_menu = submenu_alloc();
     app_rebuild_lang_menu(app);
     view_dispatcher_add_view(app->vd, AppViewLangSelect, submenu_get_view(app->lang_menu));
 
-    /* Question view */
     app->qview = question_view_alloc();
     question_view_set_callback(app->qview, app, on_qview_action);
     view_dispatcher_add_view(app->vd, AppViewQuestion, question_view_get_view(app->qview));
 
-    /* Back menu — callback attached per-item by app_rebuild_back_menu */
     app->back_menu = submenu_alloc();
     app_rebuild_back_menu(app);
     view_dispatcher_add_view(app->vd, AppViewMenu, submenu_get_view(app->back_menu));
@@ -208,11 +207,9 @@ int32_t trivia_zero_app_run(void) {
 
     view_dispatcher_run(app->vd);
 
-    /* Persist on exit */
     settings_save(&app->settings);
     pack_close();
 
-    /* Teardown */
     view_dispatcher_remove_view(app->vd, AppViewLangSelect);
     view_dispatcher_remove_view(app->vd, AppViewQuestion);
     view_dispatcher_remove_view(app->vd, AppViewMenu);

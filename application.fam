@@ -14,6 +14,8 @@ App(
         "src/infrastructure/pack_reader.c",
         "src/platform/random_port.c",
         "src/ui/question_view.c",
+        "src/data/embedded_pack_es.c",
+        "src/data/embedded_pack_en.c",
     ],
     entry_point="trivia_zero_app",
     stack_size=4 * 1024,
