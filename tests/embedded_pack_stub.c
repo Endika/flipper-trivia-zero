@@ -8,7 +8,7 @@
 #include "include/data/embedded_pack.h"
 
 const uint8_t trivia_es_idx[] = {
-    'T', 'R', 'V', 'I',     /* magic */
+    'T',  'R',  'V',  'I',  /* magic */
     0x01, 0x00,             /* version 1 LE */
     0x00, 0x00, 0x00, 0x00, /* count = 0 */
 };
@@ -17,9 +17,7 @@ const char trivia_es_tsv[] = "";
 const size_t trivia_es_tsv_len = 0u;
 
 const uint8_t trivia_en_idx[] = {
-    'T', 'R', 'V', 'I',
-    0x01, 0x00,
-    0x00, 0x00, 0x00, 0x00,
+    'T', 'R', 'V', 'I', 0x01, 0x00, 0x00, 0x00, 0x00, 0x00,
 };
 const size_t trivia_en_idx_len = sizeof(trivia_en_idx);
 const char trivia_en_tsv[] = "";
