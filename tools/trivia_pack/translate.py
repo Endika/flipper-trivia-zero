@@ -17,6 +17,8 @@ import os
 from pathlib import Path
 from typing import Protocol
 
+import anthropic
+
 from trivia_pack.models import Lang
 
 
@@ -95,8 +97,6 @@ class AnthropicTranslator(_CachedTranslator):
 
     def __init__(self, cache_path: Path) -> None:
         super().__init__(cache_path=cache_path)
-        import anthropic  # local import: SDK is optional for stub-only use
-
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             raise RuntimeError("ANTHROPIC_API_KEY is required for AnthropicTranslator.")

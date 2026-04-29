@@ -1,3 +1,5 @@
+import pytest
+
 from trivia_pack.category_map import (
     CATEGORY_MAP,
     BucketId,
@@ -58,8 +60,6 @@ def test_mythology_and_art_map_to_arte_y_literatura() -> None:
 
 
 def test_unknown_opentdb_category_raises() -> None:
-    import pytest
-
     with pytest.raises(KeyError):
         map_opentdb_to_bucket("Some Future Category")
 
