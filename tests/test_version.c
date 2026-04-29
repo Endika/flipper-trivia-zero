@@ -3,7 +3,13 @@
 #include <string.h>
 
 int main(void) {
-    /* APP_VERSION must be defined and equal "0.1.0" at scaffolding time. */
-    assert(strcmp(APP_VERSION, "0.1.0") == 0);
+    /* Smoke test: APP_VERSION must be defined, non-empty, and look like
+     * "X.Y.Z" — but the exact value is owned by release-please, so the test
+     * is intentionally version-agnostic. Do not hardcode a specific version
+     * here, or every release-please bump will break the build. */
+    const char *v = APP_VERSION;
+    assert(v[0] != '\0');
+    assert(strlen(v) >= 5u);
+    assert(strchr(v, '.') != NULL);
     return 0;
 }
