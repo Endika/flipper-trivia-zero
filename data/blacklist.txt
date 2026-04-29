@@ -1,0 +1,22 @@
+# Trivia Zero blacklist — keywords that drop a question on either side.
+# Lines starting with '#' are comments. Empty lines are ignored.
+# Match is case-insensitive and whole-word.
+# Multi-word entries are matched as exact phrases.
+
+# US sports
+NFL
+NBA
+MLB
+Super Bowl
+World Series
+
+# UK / British-specific
+Premier League
+royal
+Tudor
+House of Commons
+
+# Hollywood / very-anglo pop culture
+Hollywood
+Oscars
+Grammys
