@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.1...v0.1.2) (2026-04-29)
+
+
+### Bug Fixes
+
+* **tests:** make version smoke test version-agnostic ([efca03e](https://github.com/Endika/flipper-trivia-zero/commit/efca03e7daca1223bebab8ef1be548f0b6235b5c))
+
 ## [0.1.1](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.0...v0.1.1) (2026-04-29)
 
 
