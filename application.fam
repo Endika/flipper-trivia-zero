@@ -17,7 +17,7 @@ App(
     ],
     entry_point="trivia_zero_app",
     stack_size=4 * 1024,
-    fap_version="0.1.1",  # x-release-please-version
+    fap_version="0.1.2",  # x-release-please-version
     fap_icon="icons/icon.icon",
     fap_category="Games",
     fap_author="Endika",
