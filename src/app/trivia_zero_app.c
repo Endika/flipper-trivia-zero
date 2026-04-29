@@ -8,7 +8,7 @@
 #include "include/infrastructure/settings_storage.h"
 #include "include/platform/random_port.h"
 #include "include/ui/question_view.h"
-#include "version.h"
+#include "include/version.h"
 
 #include <stdio.h>
 
