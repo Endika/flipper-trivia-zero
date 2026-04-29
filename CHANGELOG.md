@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.2...v0.1.3) (2026-04-29)
+
+
+### Features
+
+* **icon:** add Trivia Zero icon ([82ce9d3](https://github.com/Endika/flipper-trivia-zero/commit/82ce9d3971538afab2dda1285f0e914f76632a99))
+* **pack:** embed question pack in FAP binary; no SD copy needed ([acd3a41](https://github.com/Endika/flipper-trivia-zero/commit/acd3a41a1fdbad3a2276b4fec98b27ce0406a6ec))
+
 ## [0.1.2](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.1...v0.1.2) (2026-04-29)
 
 
