@@ -42,8 +42,9 @@ linter:
 		--suppress=missingIncludeSystem \
 		--suppress=unusedFunction:main.c \
 		--suppress=unusedFunction:src/platform/random_port.c \
+		--suppress=unusedFunction:src/infrastructure/pack_reader.c \
 		src/app/trivia_zero_app.c src/domain/category.c src/domain/anti_repeat.c src/domain/history_buffer.c src/domain/question_pool.c src/i18n/strings.c src/infrastructure/settings_storage.c src/infrastructure/pack_reader.c src/platform/random_port.c src/ui/question_view.c main.c \
-		tests/test_version.c tests/test_category.c tests/test_anti_repeat.c tests/test_history_buffer.c tests/test_question_pool.c tests/test_strings.c tests/test_settings_storage.c tests/test_pack_reader.c tests/test_pack_integration.c tests/test_question_view_layout.c
+		tests/test_version.c tests/test_category.c tests/test_anti_repeat.c tests/test_history_buffer.c tests/test_question_pool.c tests/test_strings.c tests/test_settings_storage.c tests/test_pack_reader.c tests/test_pack_integration.c tests/test_question_view_layout.c tests/embedded_pack_stub.c
 
 test: test_version test_category test_anti_repeat test_history_buffer test_question_pool test_strings test_settings_storage test_pack_reader test_pack_integration test_question_view_layout
 
@@ -114,18 +115,21 @@ settings_storage.o: src/infrastructure/settings_storage.c include/infrastructure
 tests/test_settings_storage.o: tests/test_settings_storage.c include/infrastructure/settings_storage.h include/domain/category.h
 	$(CC) $(CFLAGS) -c tests/test_settings_storage.c -o tests/test_settings_storage.o
 
-test_pack_reader: pack_reader.o tests/test_pack_reader.o
-	$(CC) $(CFLAGS) -o test_pack_reader pack_reader.o tests/test_pack_reader.o
+test_pack_reader: pack_reader.o tests/embedded_pack_stub.o tests/test_pack_reader.o
+	$(CC) $(CFLAGS) -o test_pack_reader pack_reader.o tests/embedded_pack_stub.o tests/test_pack_reader.o
 	./test_pack_reader
 
-pack_reader.o: src/infrastructure/pack_reader.c include/infrastructure/pack_reader.h include/domain/category.h
+pack_reader.o: src/infrastructure/pack_reader.c include/infrastructure/pack_reader.h include/domain/category.h include/data/embedded_pack.h
 	$(CC) $(CFLAGS) -c src/infrastructure/pack_reader.c -o pack_reader.o
+
+tests/embedded_pack_stub.o: tests/embedded_pack_stub.c include/data/embedded_pack.h
+	$(CC) $(CFLAGS) -c tests/embedded_pack_stub.c -o tests/embedded_pack_stub.o
 
 tests/test_pack_reader.o: tests/test_pack_reader.c include/infrastructure/pack_reader.h include/domain/category.h
 	$(CC) $(CFLAGS) -c tests/test_pack_reader.c -o tests/test_pack_reader.o
 
-test_pack_integration: pack_reader.o tests/test_pack_integration.o
-	$(CC) $(CFLAGS) -o test_pack_integration pack_reader.o tests/test_pack_integration.o
+test_pack_integration: pack_reader.o tests/embedded_pack_stub.o tests/test_pack_integration.o
+	$(CC) $(CFLAGS) -o test_pack_integration pack_reader.o tests/embedded_pack_stub.o tests/test_pack_integration.o
 	./test_pack_integration
 
 tests/test_pack_integration.o: tests/test_pack_integration.c include/infrastructure/pack_reader.h
@@ -155,7 +159,7 @@ clean_firmware:
 		rm -rf $(FLIPPER_FIRMWARE_PATH)/build; \
 	fi
 
-fap: prepare clean_firmware clean
+fap: pack prepare clean_firmware clean
 	@if [ -d "$(FLIPPER_FIRMWARE_PATH)" ]; then \
 		cd $(FLIPPER_FIRMWARE_PATH) && ./fbt fap_$(FAP_APPID); \
 	fi

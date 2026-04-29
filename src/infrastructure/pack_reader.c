@@ -1,14 +1,7 @@
 #include "include/infrastructure/pack_reader.h"
+#include "include/data/embedded_pack.h"
 #include <stdlib.h>
 #include <string.h>
-
-#ifdef __has_include
-#if __has_include(<furi.h>)
-#include <furi.h>
-#include <storage/storage.h>
-#define TZ_HAVE_FURI 1
-#endif
-#endif
 
 #define IDX_HEADER_SIZE 10u /* 4 magic + 2 version + 4 count */
 
@@ -24,7 +17,6 @@ bool pack_parse_tsv_line(const char *line, size_t len, Question *out) {
     if (!line || !out || len == 0u) {
         return false;
     }
-    /* Strip a trailing newline from the effective length. */
     while (len > 0u && (line[len - 1u] == '\n' || line[len - 1u] == '\r')) {
         len--;
     }
@@ -32,7 +24,6 @@ bool pack_parse_tsv_line(const char *line, size_t len, Question *out) {
         return false;
     }
 
-    /* Find the three tab positions. */
     size_t tabs[3];
     size_t found = 0u;
     for (size_t i = 0u; i < len && found < 3u; ++i) {
@@ -44,7 +35,6 @@ bool pack_parse_tsv_line(const char *line, size_t len, Question *out) {
         return false;
     }
 
-    /* id */
     char idbuf[16];
     if (tabs[0] >= sizeof(idbuf))
         return false;
@@ -55,7 +45,6 @@ bool pack_parse_tsv_line(const char *line, size_t len, Question *out) {
     if (end == idbuf || *end != '\0')
         return false;
 
-    /* category_id */
     const size_t cat_start = tabs[0] + 1u;
     const size_t cat_len = tabs[1] - cat_start;
     char catbuf[8];
@@ -67,13 +56,11 @@ bool pack_parse_tsv_line(const char *line, size_t len, Question *out) {
     if (end == catbuf || *end != '\0' || cat < 1u || cat > 7u)
         return false;
 
-    /* question */
     const size_t q_start = tabs[1] + 1u;
     const size_t q_len = tabs[2] - q_start;
     if (q_len >= QUESTION_MAX)
         return false;
 
-    /* answer */
     const size_t a_start = tabs[2] + 1u;
     const size_t a_len = len - a_start;
     if (a_len >= ANSWER_MAX)
@@ -110,42 +97,29 @@ bool pack_idx_offset_at(const uint8_t *blob, size_t len, uint32_t count, uint32_
     return true;
 }
 
-#ifdef TZ_HAVE_FURI
+/* ---- Embedded-pack runtime ---- */
 
-static Storage *s_storage = NULL;
-static File *s_tsv = NULL;
-static File *s_idx = NULL;
+static const uint8_t *s_idx = NULL;
+static size_t s_idx_len = 0u;
+static const char *s_tsv = NULL;
+static size_t s_tsv_len = 0u;
 static uint32_t s_count = 0u;
-
-static const char *path_tsv(Lang lang) {
-    return (lang == LangEs) ? "/ext/apps_data/flipper_trivia_zero/trivia_es.tsv"
-                            : "/ext/apps_data/flipper_trivia_zero/trivia_en.tsv";
-}
-
-static const char *path_idx(Lang lang) {
-    return (lang == LangEs) ? "/ext/apps_data/flipper_trivia_zero/trivia_es.idx"
-                            : "/ext/apps_data/flipper_trivia_zero/trivia_en.idx";
-}
 
 bool pack_open(Lang lang) {
     pack_close();
-    s_storage = furi_record_open(RECORD_STORAGE);
-    s_tsv = storage_file_alloc(s_storage);
-    s_idx = storage_file_alloc(s_storage);
-
-    if (!storage_file_open(s_tsv, path_tsv(lang), FSAM_READ, FSOM_OPEN_EXISTING) ||
-        !storage_file_open(s_idx, path_idx(lang), FSAM_READ, FSOM_OPEN_EXISTING)) {
-        pack_close();
-        return false;
-    }
-
-    uint8_t header[IDX_HEADER_SIZE];
-    if (storage_file_read(s_idx, header, sizeof(header)) != sizeof(header)) {
-        pack_close();
-        return false;
+    if (lang == LangEs) {
+        s_idx = trivia_es_idx;
+        s_idx_len = trivia_es_idx_len;
+        s_tsv = trivia_es_tsv;
+        s_tsv_len = trivia_es_tsv_len;
+    } else {
+        s_idx = trivia_en_idx;
+        s_idx_len = trivia_en_idx_len;
+        s_tsv = trivia_en_tsv;
+        s_tsv_len = trivia_en_tsv_len;
     }
     PackIdxHeader h;
-    if (!pack_idx_header_decode(header, sizeof(header), &h) || h.version != 1u) {
+    if (!pack_idx_header_decode(s_idx, s_idx_len, &h) || h.version != 1u) {
         pack_close();
         return false;
     }
@@ -154,20 +128,10 @@ bool pack_open(Lang lang) {
 }
 
 void pack_close(void) {
-    if (s_tsv) {
-        storage_file_close(s_tsv);
-        storage_file_free(s_tsv);
-        s_tsv = NULL;
-    }
-    if (s_idx) {
-        storage_file_close(s_idx);
-        storage_file_free(s_idx);
-        s_idx = NULL;
-    }
-    if (s_storage) {
-        furi_record_close(RECORD_STORAGE);
-        s_storage = NULL;
-    }
+    s_idx = NULL;
+    s_idx_len = 0u;
+    s_tsv = NULL;
+    s_tsv_len = 0u;
     s_count = 0u;
 }
 
@@ -179,31 +143,16 @@ bool pack_get_by_id(uint32_t id, Question *out) {
     if (!out || !s_idx || !s_tsv || id >= s_count)
         return false;
 
-    /* Read offset[id] from idx */
-    const uint64_t idx_pos = (uint64_t)IDX_HEADER_SIZE + (uint64_t)id * 4u;
-    if (!storage_file_seek(s_idx, idx_pos, true))
+    uint32_t offset;
+    if (!pack_idx_offset_at(s_idx, s_idx_len, s_count, id, &offset))
         return false;
-    uint8_t off_bytes[4];
-    if (storage_file_read(s_idx, off_bytes, 4) != 4)
-        return false;
-    const uint32_t offset = (uint32_t)off_bytes[0] | ((uint32_t)off_bytes[1] << 8) |
-                            ((uint32_t)off_bytes[2] << 16) | ((uint32_t)off_bytes[3] << 24);
-
-    if (!storage_file_seek(s_tsv, offset, true))
+    if ((size_t)offset >= s_tsv_len)
         return false;
 
-    /* Read line until '\n' or buffer full */
-    char line[QUESTION_MAX + ANSWER_MAX + 32u];
-    size_t pos = 0u;
-    char ch;
-    while (pos < sizeof(line) - 1u && storage_file_read(s_tsv, &ch, 1) == 1) {
-        if (ch == '\n')
-            break;
-        line[pos++] = ch;
-    }
-    line[pos] = '\0';
+    const char *line_start = s_tsv + offset;
+    const size_t remaining = s_tsv_len - (size_t)offset;
+    const char *line_end = memchr(line_start, '\n', remaining);
+    const size_t line_len = line_end ? (size_t)(line_end - line_start) : remaining;
 
-    return pack_parse_tsv_line(line, pos, out);
+    return pack_parse_tsv_line(line_start, line_len, out);
 }
-
-#endif /* TZ_HAVE_FURI */

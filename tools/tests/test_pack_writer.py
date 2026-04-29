@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 from trivia_pack.models import BilingualQuestion
-from trivia_pack.pack_writer import write_pack
+from trivia_pack.pack_writer import write_embedded_pack, write_pack
 
 
 def _read_idx_header(blob: bytes) -> tuple[int, int]:
@@ -58,7 +58,6 @@ def test_tsv_has_dense_ids_and_correct_fields(tmp_path: Path) -> None:
     for i, line in enumerate(es):
         parts = line.split("\t")
         assert parts[0] == str(i)
-        # category preserved
         assert parts[1] == str(qs[i].bucket_id)
         assert parts[2] == qs[i].question_es
         assert parts[3] == qs[i].answer_es
@@ -123,4 +122,43 @@ def test_invalid_bucket_id_raises(tmp_path: Path) -> None:
         write_pack(
             [BilingualQuestion(0, "q", "a", "q", "a")],
             out_dir=tmp_path,
+        )
+
+
+def test_write_embedded_pack_emits_two_c_files(tmp_path: Path) -> None:
+    qs = [
+        BilingualQuestion(1, "¿Capital?", "Madrid", "Capital?", "Madrid"),
+        BilingualQuestion(7, 'Quote "test"', "OK", 'Quote "test"', "OK"),
+    ]
+    write_embedded_pack(qs, c_out_dir=tmp_path)
+
+    es = (tmp_path / "embedded_pack_es.c").read_text(encoding="utf-8")
+    en = (tmp_path / "embedded_pack_en.c").read_text(encoding="utf-8")
+
+    # Both files declare the four expected symbols
+    for src in (es, en):
+        assert "embedded_pack.h" in src
+        assert "_idx[" in src and "_idx_len" in src
+        assert "_tsv[]" in src and "_tsv_len" in src
+
+    # Magic must be the four bytes T,R,V,I as the first idx entries
+    assert "0x54, 0x52, 0x56, 0x49" in es
+
+    # Field separators preserved as escape sequences inside C string literals
+    assert "\\t1\\t" in es  # id<TAB>category_id<TAB>...
+    assert "\\n" in es  # line terminator
+
+    # Embedded double-quote inside a question must be C-escaped
+    assert 'Quote \\"test\\"' in es
+
+    # UTF-8 multi-byte content survives as UTF-8 in the source (no transcoding)
+    assert "España" not in es  # we never wrote that string
+    assert "Capital" in es
+
+
+def test_write_embedded_pack_validates_bucket_id(tmp_path: Path) -> None:
+    with pytest.raises(ValueError):
+        write_embedded_pack(
+            [BilingualQuestion(8, "q", "a", "q", "a")],
+            c_out_dir=tmp_path,
         )

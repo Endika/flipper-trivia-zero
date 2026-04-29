@@ -10,7 +10,7 @@ from typing import Protocol
 from trivia_pack.blacklist import Blacklist
 from trivia_pack.category_map import map_opentdb_to_bucket
 from trivia_pack.models import BilingualQuestion, Lang, MappedQuestion, RawQuestion
-from trivia_pack.pack_writer import write_pack
+from trivia_pack.pack_writer import write_embedded_pack, write_pack
 from trivia_pack.translate import Translator
 
 
@@ -100,7 +100,15 @@ def run_pipeline(
     translator: Translator,
     blacklist_path: Path,
     out_dir: Path,
+    c_out_dir: Path | None = None,
 ) -> None:
+    """Runs the full pipeline.
+
+    Always emits the binary pack to `out_dir` (data/trivia_*.{tsv,idx}) for
+    review and debugging. If `c_out_dir` is provided, also emits the
+    embedded C source files (src/data/embedded_pack_*.c) which the FAP
+    compiles into its binary.
+    """
     blacklist = Blacklist.from_file(blacklist_path)
     raw_en = list(opentdb.iter_all(Lang.EN))
     raw_es = list(opentdb.iter_all(Lang.ES))
@@ -108,4 +116,6 @@ def run_pipeline(
     bilingual = _build_bilingual(mapped, translator)
     bilingual.sort(key=lambda q: (q.bucket_id, q.question_en))
     write_pack(bilingual, out_dir=out_dir)
+    if c_out_dir is not None:
+        write_embedded_pack(bilingual, c_out_dir=c_out_dir)
     translator.flush()
