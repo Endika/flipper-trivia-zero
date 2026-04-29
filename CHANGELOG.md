@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.3...v0.1.4) (2026-04-29)
+
+
+### Features
+
+* **pack:** embed question pack in FAP binary ([3cb7638](https://github.com/Endika/flipper-trivia-zero/commit/3cb7638cd8e7c8e15832bd419539584484b1dde2))
+* **pack:** update pack_writer ([17fbdb3](https://github.com/Endika/flipper-trivia-zero/commit/17fbdb351a8a696761173917b8c4c74c534d01c5))
+
 ## [0.1.3](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.2...v0.1.3) (2026-04-29)
 
 
