@@ -22,7 +22,6 @@ int main(void) {
     assert(history_buffer_peek_back(&h, 2u, &out) == true && out == 10u);
     assert(history_buffer_peek_back(&h, 3u, &out) == false);
 
-    /* Fill and overflow */
     history_buffer_push(&h, 40u);
     history_buffer_push(&h, 50u);
     history_buffer_push(&h, 60u); /* drops 10 */

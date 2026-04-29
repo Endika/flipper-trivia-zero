@@ -21,7 +21,6 @@ int main(void) {
     assert(anti_repeat_is_marked(&ar, ANTI_REPEAT_MAX - 1u) == true);
     assert(anti_repeat_count(&ar) == 3u);
 
-    /* Out-of-range mark is a no-op; out-of-range query returns false. */
     anti_repeat_mark(&ar, ANTI_REPEAT_MAX);
     anti_repeat_mark(&ar, ANTI_REPEAT_MAX + 50u);
     assert(anti_repeat_is_marked(&ar, ANTI_REPEAT_MAX) == false);
