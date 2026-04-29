@@ -30,13 +30,11 @@ int main(void) {
     bool reset_happened;
     bool ok;
 
-    /* First pick: 0, not seen → returned. */
     ok = question_pool_next(4u, &seen, stub_rng, NULL, &id, &reset_happened);
     assert(ok == true);
     assert(id == 0u && reset_happened == false);
     anti_repeat_mark(&seen, id);
 
-    /* Next: 1, 2, 3 — not seen → returned in order. */
     ok = question_pool_next(4u, &seen, stub_rng, NULL, &id, &reset_happened);
     assert(ok && id == 1u && !reset_happened);
     anti_repeat_mark(&seen, id);
@@ -49,13 +47,12 @@ int main(void) {
     assert(ok && id == 3u && !reset_happened);
     anti_repeat_mark(&seen, id);
 
-    /* All 4 are now seen → next call must reset and return a fresh id. */
+    /* Pool exhausted → next call resets the seen set and picks afresh. */
     ok = question_pool_next(4u, &seen, stub_rng, NULL, &id, &reset_happened);
     assert(ok == true);
     assert(reset_happened == true);
     assert(id < 4u);
 
-    /* count == 0 → returns false. */
     AntiRepeat empty;
     anti_repeat_init(&empty);
     ok = question_pool_next(0u, &empty, stub_rng, NULL, &id, &reset_happened);

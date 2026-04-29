@@ -31,13 +31,13 @@ void qview_wrap(const char *text, uint8_t max_cols, char *buf, size_t buf_size, 
 
     size_t i = 0u;
     while (i < tlen && out->count < QVIEW_MAX_LINES) {
-        /* Skip leading spaces between lines. */
         while (i < tlen && text[i] == ' ')
             i++;
         if (i >= tlen)
             break;
 
-        /* Find the longest prefix <= max_cols ending at a space (or EOS). */
+        /* Greedy wrap: find the longest prefix <= max_cols ending on a space
+         * boundary, falling through to a hard break if no space fits. */
         size_t end = i;
         size_t last_space = 0u;
         while (end < tlen && (end - i) < max_cols) {
@@ -103,7 +103,7 @@ static void qview_draw(Canvas *canvas, void *model) {
     const QViewModel *m = model;
     canvas_clear(canvas);
 
-    /* Inverted header bar: filled rectangle, white text */
+    /* Inverted header bar with the category in the active locale. */
     canvas_set_color(canvas, ColorBlack);
     canvas_draw_box(canvas, 0, 0, 128, 10);
     canvas_set_color(canvas, ColorWhite);
@@ -111,7 +111,6 @@ static void qview_draw(Canvas *canvas, void *model) {
     const char *cat = category_name(m->q.category_id, tz_locale_get());
     canvas_draw_str_aligned(canvas, 64, 1, AlignCenter, AlignTop, cat);
 
-    /* Body */
     canvas_set_color(canvas, ColorBlack);
     canvas_set_font(canvas, FontSecondary);
     const uint8_t y0 = 13u;
@@ -122,12 +121,10 @@ static void qview_draw(Canvas *canvas, void *model) {
         canvas_draw_str(canvas, 0, (int)(y0 + i * 8u + 7u), m->slices.lines[idx]);
     }
 
-    /* Scroll-down indicator */
     if (m->scroll + BODY_VISIBLE_LINES < m->slices.count) {
         canvas_draw_str(canvas, 120, 54, "v");
     }
 
-    /* Footer */
     const char *footer =
         (m->mode == QViewModeQuestion) ? tz_str(TzStrFooterReveal) : tz_str(TzStrFooterNext);
     canvas_draw_str_aligned(canvas, 64, 56, AlignCenter, AlignTop, footer);

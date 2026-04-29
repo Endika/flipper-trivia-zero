@@ -39,7 +39,6 @@ bool settings_split_line(const char *line, char *key, size_t key_size, char *val
         return false;
     }
 
-    /* Make a working copy and strip a trailing newline */
     char buf[160];
     strncpy(buf, line, sizeof(buf) - 1u);
     buf[sizeof(buf) - 1u] = '\0';
