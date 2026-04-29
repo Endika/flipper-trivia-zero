@@ -10,7 +10,17 @@ import pytest
 from trivia_pack.models import Lang, RawQuestion
 from trivia_pack.opentdb import OpenTdbClient
 
-API = "https://opentdb.com/api.php"
+
+def _mock_response(payload: object, status_code: int = 200) -> MagicMock:
+    resp = MagicMock(spec=httpx.Response)
+    resp.status_code = status_code
+    resp.json.return_value = payload
+    resp.raise_for_status.return_value = None
+    return resp
+
+
+def _token_response() -> MagicMock:
+    return _mock_response({"response_code": 0, "token": "TESTTOKEN"})
 
 
 @pytest.fixture
@@ -18,7 +28,7 @@ def cache_dir(tmp_path: Path) -> Path:
     return tmp_path / "cache"
 
 
-def test_fetch_pages_until_response_code_nonzero(cache_dir: Path) -> None:
+def test_fetch_pages_until_token_empty(cache_dir: Path) -> None:
     page1 = {
         "response_code": 0,
         "results": [
@@ -31,18 +41,14 @@ def test_fetch_pages_until_response_code_nonzero(cache_dir: Path) -> None:
             }
         ],
     }
-    page2 = {"response_code": 1, "results": []}
-
-    response1 = MagicMock(spec=httpx.Response)
-    response1.json.return_value = page1
-    response1.raise_for_status.return_value = None
-
-    response2 = MagicMock(spec=httpx.Response)
-    response2.json.return_value = page2
-    response2.raise_for_status.return_value = None
+    token_empty = {"response_code": 4, "results": []}
 
     mock_client = MagicMock()
-    mock_client.get.side_effect = [response1, response2]
+    mock_client.get.side_effect = [
+        _token_response(),
+        _mock_response(page1),
+        _mock_response(token_empty),
+    ]
 
     with patch("httpx.Client") as mock_client_class:
         mock_client_class.return_value.__enter__.return_value = mock_client
@@ -70,18 +76,14 @@ def test_html_entities_are_decoded(cache_dir: Path) -> None:
             }
         ],
     }
-    end = {"response_code": 1, "results": []}
-
-    response1 = MagicMock(spec=httpx.Response)
-    response1.json.return_value = page
-    response1.raise_for_status.return_value = None
-
-    response2 = MagicMock(spec=httpx.Response)
-    response2.json.return_value = end
-    response2.raise_for_status.return_value = None
+    token_empty = {"response_code": 4, "results": []}
 
     mock_client = MagicMock()
-    mock_client.get.side_effect = [response1, response2]
+    mock_client.get.side_effect = [
+        _token_response(),
+        _mock_response(page),
+        _mock_response(token_empty),
+    ]
 
     with patch("httpx.Client") as mock_client_class:
         mock_client_class.return_value.__enter__.return_value = mock_client
@@ -105,18 +107,14 @@ def test_cached_responses_are_replayed_without_network(cache_dir: Path) -> None:
             }
         ],
     }
-    end = {"response_code": 1, "results": []}
-
-    response1 = MagicMock(spec=httpx.Response)
-    response1.json.return_value = page
-    response1.raise_for_status.return_value = None
-
-    response2 = MagicMock(spec=httpx.Response)
-    response2.json.return_value = end
-    response2.raise_for_status.return_value = None
+    token_empty = {"response_code": 4, "results": []}
 
     mock_client = MagicMock()
-    mock_client.get.side_effect = [response1, response2]
+    mock_client.get.side_effect = [
+        _token_response(),
+        _mock_response(page),
+        _mock_response(token_empty),
+    ]
 
     with patch("httpx.Client") as mock_client_class:
         mock_client_class.return_value.__enter__.return_value = mock_client
@@ -126,7 +124,6 @@ def test_cached_responses_are_replayed_without_network(cache_dir: Path) -> None:
         assert len(first) == 1
         network_calls_after_first = mock_client.get.call_count
 
-        # Second pass: cache populated → no extra HTTP calls
         second = list(client.iter_all(Lang.EN))
         assert second == first
         assert mock_client.get.call_count == network_calls_after_first

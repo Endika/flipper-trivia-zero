@@ -55,13 +55,24 @@ def _filter_and_map(
     return out
 
 
+_FLUSH_EVERY = 20
+
+
 def _build_bilingual(
     mapped: list[MappedQuestion],
     translator: Translator,
+    *,
+    limit: int | None = None,
 ) -> list[BilingualQuestion]:
     seen: set[_DedupeKey] = set()
     out: list[BilingualQuestion] = []
-    for q in mapped:
+    total = len(mapped)
+    cap_msg = f", capping at {limit}" if limit is not None else ""
+    print(f"translate: starting, {total} mapped questions to process{cap_msg}", flush=True)
+    for idx, q in enumerate(mapped, start=1):
+        if limit is not None and len(out) >= limit:
+            print(f"translate: cap reached at {len(out)}, stopping early", flush=True)
+            break
         key = _DedupeKey(
             bucket_id=q.bucket_id,
             source_lang=q.source_lang,
@@ -91,6 +102,15 @@ def _build_bilingual(
                 answer_en=answer_en,
             ),
         )
+
+        if idx % _FLUSH_EVERY == 0 or idx == total:
+            translator.flush()
+            print(
+                f"translate: {idx}/{total} "
+                f"(unique={len(out)}, cache hits={translator.cache_hits}, "
+                f"LLM calls={translator.cache_misses})",
+                flush=True,
+            )
     return out
 
 
@@ -101,8 +121,14 @@ def run_pipeline(
     blacklist_path: Path,
     out_dir: Path,
     c_out_dir: Path | None = None,
+    limit: int | None = None,
 ) -> None:
     """Runs the full pipeline.
+
+    English is the canonical source. Each EN question (up to `limit`) is
+    translated to Spanish via the configured translator, producing a
+    symmetric bilingual pack where EN is native and ES is derived. The
+    Spanish OpenTDB corpus is intentionally not fetched in this mode.
 
     Always emits the binary pack to `out_dir` (data/trivia_*.{tsv,idx}) for
     review and debugging. If `c_out_dir` is provided, also emits the
@@ -111,9 +137,8 @@ def run_pipeline(
     """
     blacklist = Blacklist.from_file(blacklist_path)
     raw_en = list(opentdb.iter_all(Lang.EN))
-    raw_es = list(opentdb.iter_all(Lang.ES))
-    mapped = _filter_and_map([*raw_en, *raw_es], blacklist)
-    bilingual = _build_bilingual(mapped, translator)
+    mapped = _filter_and_map(raw_en, blacklist)
+    bilingual = _build_bilingual(mapped, translator, limit=limit)
     bilingual.sort(key=lambda q: (q.bucket_id, q.question_en))
     write_pack(bilingual, out_dir=out_dir)
     if c_out_dir is not None:

@@ -4,12 +4,16 @@
 
 typedef enum {
     TzStrMenuChangeLang = 0,
+    TzStrMenuCredits,
     TzStrMenuExit,
     TzStrFooterReveal,
     TzStrFooterNext,
     TzStrLangPickHeader,
     TzStrLangSpanish,
     TzStrLangEnglish,
+    TzStrCreditsBody,
+    TzStrCreditsRepoLine1,
+    TzStrCreditsRepoLine2,
     TzStrCount, /* keep last */
 } TzStrId;
 

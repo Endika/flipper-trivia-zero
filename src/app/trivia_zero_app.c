@@ -8,12 +8,16 @@
 #include "include/infrastructure/settings_storage.h"
 #include "include/platform/random_port.h"
 #include "include/ui/question_view.h"
+#include "version.h"
+
+#include <stdio.h>
 
 #ifdef __has_include
 #if __has_include(<furi.h>)
 #include <furi.h>
 #include <gui/gui.h>
 #include <gui/modules/submenu.h>
+#include <gui/modules/widget.h>
 #include <gui/view_dispatcher.h>
 #include <stdlib.h>
 #define TZ_HAVE_FURI 1
@@ -26,6 +30,7 @@ typedef enum {
     AppViewLangSelect = 0,
     AppViewQuestion,
     AppViewMenu,
+    AppViewCredits,
 } AppView;
 
 typedef enum {
@@ -35,8 +40,11 @@ typedef enum {
 
 typedef enum {
     MenuIdChangeLang = 0,
-    MenuIdExit = 1,
+    MenuIdCredits = 1,
+    MenuIdExit = 2,
 } MenuId;
+
+#define CREDITS_BUF_SIZE 128u
 
 typedef struct {
     Gui *gui;
@@ -44,12 +52,15 @@ typedef struct {
 
     Submenu *lang_menu;
     Submenu *back_menu;
+    Widget *credits;
     QuestionView *qview;
 
     Question current;
     AntiRepeat seen;
     HistoryBuffer history;
     Settings settings;
+    AppView current_view;
+    char credits_buf[CREDITS_BUF_SIZE];
     bool exit_requested;
 } App;
 
@@ -57,6 +68,7 @@ static void on_lang_pick(void *ctx, uint32_t selected);
 static void on_menu_pick(void *ctx, uint32_t selected);
 
 static void app_switch(App *app, AppView v) {
+    app->current_view = v;
     view_dispatcher_switch_to_view(app->vd, (uint32_t)v);
 }
 
@@ -91,6 +103,7 @@ static void app_rebuild_back_menu(App *app) {
     submenu_reset(app->back_menu);
     submenu_add_item(app->back_menu, tz_str(TzStrMenuChangeLang), MenuIdChangeLang, on_menu_pick,
                      app);
+    submenu_add_item(app->back_menu, tz_str(TzStrMenuCredits), MenuIdCredits, on_menu_pick, app);
     submenu_add_item(app->back_menu, tz_str(TzStrMenuExit), MenuIdExit, on_menu_pick, app);
 }
 
@@ -99,6 +112,17 @@ static void app_rebuild_lang_menu(App *app) {
     submenu_set_header(app->lang_menu, tz_str(TzStrLangPickHeader));
     submenu_add_item(app->lang_menu, tz_str(TzStrLangSpanish), LangSelectIdEs, on_lang_pick, app);
     submenu_add_item(app->lang_menu, tz_str(TzStrLangEnglish), LangSelectIdEn, on_lang_pick, app);
+}
+
+static void app_rebuild_credits(App *app) {
+    widget_reset(app->credits);
+    snprintf(app->credits_buf, sizeof(app->credits_buf), "%s%s", tz_str(TzStrCreditsBody),
+             APP_VERSION);
+    widget_add_text_scroll_element(app->credits, 0, 0, 128, 46, app->credits_buf);
+    widget_add_string_element(app->credits, 64, 48, AlignCenter, AlignTop, FontSecondary,
+                              tz_str(TzStrCreditsRepoLine1));
+    widget_add_string_element(app->credits, 64, 56, AlignCenter, AlignTop, FontSecondary,
+                              tz_str(TzStrCreditsRepoLine2));
 }
 
 static void on_qview_action(void *ctx, QViewAction action) {
@@ -146,18 +170,41 @@ static void on_lang_pick(void *ctx, uint32_t selected) {
 
 static void on_menu_pick(void *ctx, uint32_t selected) {
     App *app = ctx;
-    if (selected == MenuIdChangeLang) {
-        app_rebuild_lang_menu(app);
-        app_switch(app, AppViewLangSelect);
-    } else {
-        app->exit_requested = true;
-        view_dispatcher_stop(app->vd);
+    switch (selected) {
+        case MenuIdChangeLang:
+            app_rebuild_lang_menu(app);
+            app_switch(app, AppViewLangSelect);
+            break;
+        case MenuIdCredits:
+            app_rebuild_credits(app);
+            app_switch(app, AppViewCredits);
+            break;
+        default:
+            app->exit_requested = true;
+            view_dispatcher_stop(app->vd);
+            break;
     }
 }
 
 static bool app_nav(void *context) {
-    (void)context;
-    return false;
+    App *app = context;
+    switch (app->current_view) {
+        case AppViewMenu:
+            app_switch(app, AppViewQuestion);
+            return true;
+        case AppViewCredits:
+            app_rebuild_back_menu(app);
+            app_switch(app, AppViewMenu);
+            return true;
+        case AppViewLangSelect:
+            if (app->settings.last_id_valid) {
+                app_switch(app, AppViewQuestion);
+                return true;
+            }
+            return false;
+        default:
+            return false;
+    }
 }
 
 int32_t trivia_zero_app_run(void) {
@@ -192,6 +239,9 @@ int32_t trivia_zero_app_run(void) {
     app_rebuild_back_menu(app);
     view_dispatcher_add_view(app->vd, AppViewMenu, submenu_get_view(app->back_menu));
 
+    app->credits = widget_alloc();
+    view_dispatcher_add_view(app->vd, AppViewCredits, widget_get_view(app->credits));
+
     if (!settings_ok) {
         /* First run (settings file missing/corrupt) → show language picker. */
         app_switch(app, AppViewLangSelect);
@@ -213,8 +263,10 @@ int32_t trivia_zero_app_run(void) {
     view_dispatcher_remove_view(app->vd, AppViewLangSelect);
     view_dispatcher_remove_view(app->vd, AppViewQuestion);
     view_dispatcher_remove_view(app->vd, AppViewMenu);
+    view_dispatcher_remove_view(app->vd, AppViewCredits);
     submenu_free(app->lang_menu);
     submenu_free(app->back_menu);
+    widget_free(app->credits);
     question_view_free(app->qview);
     view_dispatcher_free(app->vd);
     furi_record_close(RECORD_GUI);
