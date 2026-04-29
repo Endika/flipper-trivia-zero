@@ -1,0 +1,236 @@
+#include "include/app/trivia_zero_app.h"
+#include "include/domain/anti_repeat.h"
+#include "include/domain/category.h"
+#include "include/domain/history_buffer.h"
+#include "include/domain/question_pool.h"
+#include "include/i18n/strings.h"
+#include "include/infrastructure/pack_reader.h"
+#include "include/infrastructure/settings_storage.h"
+#include "include/platform/random_port.h"
+#include "include/ui/question_view.h"
+
+#ifdef __has_include
+#if __has_include(<furi.h>)
+#include <furi.h>
+#include <gui/gui.h>
+#include <gui/modules/submenu.h>
+#include <gui/view_dispatcher.h>
+#include <stdlib.h>
+#define TZ_HAVE_FURI 1
+#endif
+#endif
+
+#ifdef TZ_HAVE_FURI
+
+typedef enum {
+    AppViewLangSelect = 0,
+    AppViewQuestion,
+    AppViewMenu,
+} AppView;
+
+typedef enum {
+    LangSelectIdEs = 0,
+    LangSelectIdEn = 1,
+} LangSelectId;
+
+typedef enum {
+    MenuIdChangeLang = 0,
+    MenuIdExit = 1,
+} MenuId;
+
+typedef struct {
+    Gui *gui;
+    ViewDispatcher *vd;
+
+    Submenu *lang_menu;
+    Submenu *back_menu;
+    QuestionView *qview;
+
+    Question current;
+    AntiRepeat seen;
+    HistoryBuffer history;
+    Settings settings;
+    bool exit_requested;
+} App;
+
+static void on_lang_pick(void *ctx, uint32_t selected);
+static void on_menu_pick(void *ctx, uint32_t selected);
+
+static void app_switch(App *app, AppView v) {
+    view_dispatcher_switch_to_view(app->vd, (uint32_t)v);
+}
+
+static void app_show_question_for_id(App *app, uint32_t id) {
+    if (pack_get_by_id(id, &app->current)) {
+        anti_repeat_mark(&app->seen, id);
+        history_buffer_push(&app->history, id);
+        question_view_set_question(app->qview, &app->current);
+        app->settings.last_id = id;
+        app->settings.last_id_valid = true;
+    }
+}
+
+static void app_show_random(App *app) {
+    uint32_t id;
+    bool reset_happened;
+    if (question_pool_next(pack_count(), &app->seen, tz_rng_u32, NULL, &id, &reset_happened)) {
+        app_show_question_for_id(app, id);
+    }
+}
+
+static void app_open_pack_for_current_lang(App *app) {
+    if (!pack_open(app->settings.lang)) {
+        app->exit_requested = true;
+        view_dispatcher_stop(app->vd);
+    }
+}
+
+static void app_rebuild_back_menu(App *app) {
+    submenu_reset(app->back_menu);
+    submenu_add_item(app->back_menu, tz_str(TzStrMenuChangeLang), MenuIdChangeLang, on_menu_pick,
+                     app);
+    submenu_add_item(app->back_menu, tz_str(TzStrMenuExit), MenuIdExit, on_menu_pick, app);
+}
+
+static void app_rebuild_lang_menu(App *app) {
+    submenu_reset(app->lang_menu);
+    submenu_set_header(app->lang_menu, tz_str(TzStrLangPickHeader));
+    submenu_add_item(app->lang_menu, tz_str(TzStrLangSpanish), LangSelectIdEs, on_lang_pick, app);
+    submenu_add_item(app->lang_menu, tz_str(TzStrLangEnglish), LangSelectIdEn, on_lang_pick, app);
+}
+
+static void on_qview_action(void *ctx, QViewAction action) {
+    App *app = ctx;
+    switch (action) {
+        case QViewActionReveal:
+            question_view_set_mode(app->qview, QViewModeAnswer);
+            break;
+        case QViewActionNext:
+            app_show_random(app);
+            question_view_set_mode(app->qview, QViewModeQuestion);
+            break;
+        case QViewActionPrev: {
+            uint32_t prev_id;
+            if (history_buffer_peek_back(&app->history, 1u, &prev_id)) {
+                if (pack_get_by_id(prev_id, &app->current)) {
+                    question_view_set_question(app->qview, &app->current);
+                }
+            }
+            break;
+        }
+        case QViewActionScrollUp:
+        case QViewActionScrollDown:
+            /* Scroll is currently view-local state; expansion deferred. */
+            break;
+        case QViewActionMenu:
+            app_rebuild_back_menu(app);
+            app_switch(app, AppViewMenu);
+            break;
+    }
+}
+
+static void on_lang_pick(void *ctx, uint32_t selected) {
+    App *app = ctx;
+    app->settings.lang = (selected == LangSelectIdEs) ? LangEs : LangEn;
+    tz_locale_set(app->settings.lang);
+    settings_save(&app->settings);
+    pack_close();
+    app_open_pack_for_current_lang(app);
+    anti_repeat_reset(&app->seen);
+    history_buffer_clear(&app->history);
+    app_show_random(app);
+    app_switch(app, AppViewQuestion);
+}
+
+static void on_menu_pick(void *ctx, uint32_t selected) {
+    App *app = ctx;
+    if (selected == MenuIdChangeLang) {
+        app_rebuild_lang_menu(app);
+        app_switch(app, AppViewLangSelect);
+    } else {
+        app->exit_requested = true;
+        view_dispatcher_stop(app->vd);
+    }
+}
+
+static bool app_nav(void *context) {
+    (void)context;
+    return false;
+}
+
+int32_t trivia_zero_app_run(void) {
+    App *app = malloc(sizeof(App));
+    if (!app)
+        return -1;
+    *app = (App){0};
+
+    /* Settings + domain state */
+    app->settings = settings_default();
+    const bool settings_ok = settings_load(&app->settings);
+    tz_locale_set(app->settings.lang);
+    anti_repeat_init(&app->seen);
+    history_buffer_init(&app->history);
+
+    /* GUI plumbing */
+    app->gui = furi_record_open(RECORD_GUI);
+    app->vd = view_dispatcher_alloc();
+    view_dispatcher_attach_to_gui(app->vd, app->gui, ViewDispatcherTypeFullscreen);
+    view_dispatcher_set_event_callback_context(app->vd, app);
+    view_dispatcher_set_navigation_event_callback(app->vd, app_nav);
+
+    /* Lang submenu — callback attached per-item by app_rebuild_lang_menu */
+    app->lang_menu = submenu_alloc();
+    app_rebuild_lang_menu(app);
+    view_dispatcher_add_view(app->vd, AppViewLangSelect, submenu_get_view(app->lang_menu));
+
+    /* Question view */
+    app->qview = question_view_alloc();
+    question_view_set_callback(app->qview, app, on_qview_action);
+    view_dispatcher_add_view(app->vd, AppViewQuestion, question_view_get_view(app->qview));
+
+    /* Back menu — callback attached per-item by app_rebuild_back_menu */
+    app->back_menu = submenu_alloc();
+    app_rebuild_back_menu(app);
+    view_dispatcher_add_view(app->vd, AppViewMenu, submenu_get_view(app->back_menu));
+
+    if (!settings_ok) {
+        /* First run (settings file missing/corrupt) → show language picker. */
+        app_switch(app, AppViewLangSelect);
+    } else {
+        app_open_pack_for_current_lang(app);
+        if (app->settings.last_id_valid && app->settings.last_id < pack_count()) {
+            app_show_question_for_id(app, app->settings.last_id);
+        } else {
+            app_show_random(app);
+        }
+        app_switch(app, AppViewQuestion);
+    }
+
+    view_dispatcher_run(app->vd);
+
+    /* Persist on exit */
+    settings_save(&app->settings);
+    pack_close();
+
+    /* Teardown */
+    view_dispatcher_remove_view(app->vd, AppViewLangSelect);
+    view_dispatcher_remove_view(app->vd, AppViewQuestion);
+    view_dispatcher_remove_view(app->vd, AppViewMenu);
+    submenu_free(app->lang_menu);
+    submenu_free(app->back_menu);
+    question_view_free(app->qview);
+    view_dispatcher_free(app->vd);
+    furi_record_close(RECORD_GUI);
+    free(app);
+    return 0;
+}
+
+#else /* !TZ_HAVE_FURI — host build */
+
+int32_t trivia_zero_app_run(void) {
+    /* Host build: composition root cannot run without Furi. Returning 0 keeps
+     * the symbol resolvable for cppcheck; real execution happens on device. */
+    return 0;
+}
+
+#endif
