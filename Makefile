@@ -52,7 +52,7 @@ test_version: tests/test_version.o
 	$(CC) $(CFLAGS) -o test_version tests/test_version.o
 	./test_version
 
-tests/test_version.o: tests/test_version.c version.h
+tests/test_version.o: tests/test_version.c include/version.h
 	$(CC) $(CFLAGS) -c tests/test_version.c -o tests/test_version.o
 
 test_category: category.o tests/test_category.o
