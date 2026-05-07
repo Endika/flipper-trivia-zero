@@ -1,927 +1,551 @@
 0	1	Que ciudad de Texas tiene el apodo de "La Rosa Amarilla de Texas"?	Amarillo
-1	1	Africa es un pais.	Falso
-2	1	Alaska es el estado mas grande de los Estados Unidos.	Verdadero
-3	1	La Antartida es el desierto mas grande del mundo.	Verdadero
-4	1	Donde se encuentra el Paso de Colchester, tambien conocido como "Puente del Hombre Conejero"?	Condado de Fairfax, Virginia
-5	1	Colombia recibe su nombre de Cristobal Colon.	Verdadero
-6	1	Frankenmuth, una ciudad estadounidense apodada "Pequena Baviera", se encuentra en que estado?	Michigan
-7	1	Groenlandia es casi tan grande como Africa.	Falso
-8	1	Cuantos paises hay dentro del Reino Unido?	Cuatro
-9	1	Cuantos paises son mas grandes que Australia?	5
-10	1	Cuantos paises bordean Kirguistan?	Cuatro
-11	1	Cuantos paises comparten frontera terrestre con Espana?	5
-12	1	Con cuantos paises comparte Estados Unidos una frontera terrestre?	dos
-13	1	Cuantos estados federales tiene Alemania?	16
-14	1	Cuantos paises independientes hay dentro del continente de America del Sur?	Doce
-15	1	Cuantas islas tiene Kuwait?	nueve
-16	1	Cuantos rios hay en Arabia Saudita?	0
-17	1	Cuantas zonas horarias tiene Rusia?	once
-18	1	En Washington, D.C. que significa la "C"?	Columbia
-19	1	En que pais se encuentra el municipio de Arteijo?	Espana
-20	1	En que oceano se encuentra la isla de Reunion?	Oceano Indico
-21	1	Japon tiene el trafico por el lado izquierdo.	Verdadero
-22	1	Liechtenstein no tiene un aeropuerto.	Verdadero
-23	1	Miami es la ciudad mas grande de Florida.	Falso
-24	1	En que provincia canadiense se encuentra Montreal?	Quebec
-25	1	New Haven es la capital del estado de Connecticut en los Estados Unidos.	Falso
-26	1	En que continente se encuentra la cordillera de los Andes?	America del Sur
-27	1	Ouagadougou es la capital de que pais africano?	Burkina Faso
-28	1	El territorio moderno de Portugal fue una vez parte del Imperio Romano.	Verdadero
-29	1	Rusia comparte una frontera terrestre con Corea del Norte.	Verdadero
-30	1	Santorini es una isla que pertenece a que pais europeo?	Grecia
-31	1	San Luis es la capital del estado estadounidense de Misuri.	Falso
-32	1	El Principado de Sealand es una micronacion no reconocida frente a la costa de que pais?	El Reino Unido
-33	1	Las montanas de los Pirineos estan ubicadas en la frontera de que dos paises?	Francia y Espana
-34	1	El desierto de Sonora se encuentra en el este de Africa.	Falso
-35	1	En que pais se encuentran los Acantilados Blancos de Dover?	Reino Unido
-36	1	La sede de la Organizacion Mundial de la Salud se encuentra en que pais europeo?	Suiza
-37	1	La capital de Brasil es Rio de Janeiro.	Falso
-38	1	La capital de Indonesia es Bali.	Falso
-39	1	La capital del estado estadounidense de Ohio es la ciudad de Chillicothe.	Falso
-40	1	La ciudad de Konigsberg, antiguamente de Prusia Oriental, es conocida hoy como cual ciudad rusa?	Kaliningrado
-41	1	En que pais de Africa Occidental se encuentra la ciudad historica de Tombuctu?	Mali
-42	1	El montanoso paso de Jiber conecta cual de los dos siguientes paises?	Afganistan y Pakistan
-43	1	No hay desiertos en Europa.	Verdadero
-44	1	Existe una isla llamada "Java".	Verdadero
-45	1	Hay 47 prefecturas en Japon.	Verdadero
-46	1	Tokio es la capital de Japon.	Verdadero
-47	1	Hasta 1939, Laos se llamaba Siam.	Falso
-48	1	La Ciudad del Vaticano es un pais.	Verdadero
-49	1	Que atraccion turistica norteamericana es servida por la compania de tours "Maid of the Mist"?	Cataratas del Niagara
-50	1	Cuales son los cuatro estados esquineros de EE.UU.?	Utah, Colorado, Arizona, Nuevo Mexico
-51	1	Que ciudad es conocida como la Capital de las Rosas del Mundo?	Tyler, Texas
-52	1	En que ciudad se encuentra el Ejercito de Terracota?	Xi'an
-53	1	Que pais no es parte de Escandinavia?	Finlandia
-54	1	Que evento llevo a Liechtenstein a anadir una corona a su bandera?	Los Juegos Olimpicos de 1936
-55	1	Cual es la isla mas grande de Canada?	Isla de Baffin
-56	1	Que es Laos?	Pais
-57	1	Cual es la 15a letra del alfabeto griego?	Omicron ()
-58	1	Cual es la capital de los Estados Unidos?	Washington, D.C.
-59	1	Cual es la palabra finlandesa para "Finlandia"?	Finlandia
-60	1	Cual es el area de la Ciudad del Vaticano?	0,44km2
-61	1	Cual es la capital de Bermudas?	Hamilton
-62	1	Cual es la capital de Eslovenia?	Liubliana
-63	1	Cual es la capital de Australia?	Canberra
-64	1	Cual es la capital de Bangladesh?	Daca
-65	1	Cual es la capital de Bielorrusia?	Minsk
-66	1	Cual es la capital de Brasil?	Brasilia
-67	1	Cual es la capital de Chile?	Santiago
-68	1	Cual es la capital de Chipre?	Nicosia
-69	1	Cual es la capital de Dinamarca?	Copenhague
-70	1	Cual es la capital de India?	Nueva Delhi
-71	1	Cual es la capital de Lituania?	Vilna
-72	1	Cual es la capital de Peru?	Lima
-73	1	Cual es la capital de Rumania?	Bucarest
-74	1	Cual es la capital de Escocia?	Edimburgo
-75	1	Cual es la capital de Seychelles?	Victoria
-76	1	Cual es la capital de Eslovaquia?	Bratislava
-77	1	Cual es la capital de Espana?	Madrid
-78	1	Cual es la capital de Surinam?	Paramaribo
-79	1	Cual es la capital del estado estadounidense de Arizona?	Fenix
-80	1	Cual es el pais musulman mas grande del mundo?	Indonesia
-81	1	Cual es el pais mas grande del mundo?	Federacion Rusa
-82	1	Cual es el pais mas grande del mundo?	Rusia
-83	1	Cual es el rio mas largo de Europa?	Volga
-84	1	Cual es el nombre de la region rocosa que abarca la mayor parte del este de Canada?	Escudo Canadiense
-85	1	Cual es el nombre del oceano en el que se encuentra Hawai?	Pacifico
-86	1	Cual es el nombre de la peninsula que contiene a Espana y Portugal?	Peninsula Iberica
-87	1	Cual es el apodo del estado estadounidense de Delaware?	El Primer Estado
-88	1	Cual es el idioma oficial en Liechtenstein?	Aleman
-89	1	Cual es el idioma oficial de Costa Rica?	Espanol
-90	1	Cual es el unico estado de los Estados Unidos que no tiene una bandera en forma con 4 bordes?	Ohio
-91	1	Como se llama la region que une Pakistan, India y China con un liderazgo desconocido?	Cachemira
-92	1	Cual es la forma correcta de escribir la capital de Hungria?	Budapest
-93	1	Cual es el pais mas pequeno del mundo?	Ciudad del Vaticano
-94	1	Cual es la montana mas alta de Canada?	Monte Logan
-95	1	Que nombre se uso historicamente para la ciudad turca actualmente conocida como Estambul?	Constantinopla
-96	1	Cual era el nombre anterior de la nacion africana de Zimbabue?	Rodesia
-97	1	Donde se encuentran las Lineas de Nazca?	Peru
-98	1	Donde esta ubicado Fort Marlborough?	Bengkulu
-99	1	Donde esta ubicada la Muralla de Adriano?	Carlisle, Inglaterra
-100	1	Donde esta el rio Volga?	Rusia
-101	1	Donde se encuentra la ciudad antigua de Petra?	Jordania
-102	1	Donde esta ubicada la ciudad de Haarlem?	Paises Bajos
-103	1	Cual es el barrio mas al norte de la Ciudad de Nueva York?	Bronx
-104	1	Que provincia canadiense tiene a Charlottetown como su capital?	Isla del Principe Eduardo
-105	1	En que condado ingles encontraras la Universidad de East Anglia?	Norfolk
-106	1	Que ciudad europea tiene el mayor kilometraje de canales del mundo?	Birmingham
-107	1	Que nacion oceaniana es conocida en maori como Aotearoa?	Nueva Zelanda
-108	1	Que pais del Reino Unido presenta un dragon en su bandera?	Gales
-109	1	Cual es el estado de EE.UU. tambien conocido como el "Estado de la Estrella Solitaria"?	Texas
-110	1	Cual es la capital de Michigan?	Lansing
-111	1	Que pais reclama la propiedad del estado disputado de Kosovo?	Serbia
-112	1	Que pais no limita con Austria?	Francia
-113	1	Que pais tiene la abreviatura "CH"?	Suiza
-114	1	Que pais tiene tres capitales?	Sudafrica
-115	1	Que pais dentro del Reino Unido NO aparece en su bandera, la Bandera de la Union?	Gales
-116	1	En que pais se encuentra el rio Taedong?	Corea del Norte
-117	1	Cual es el pais con la poblacion japonesa mas grande fuera de Japon?	Brasil
-118	1	Cual es la ciudad mas grande de Marruecos?	Casablanca
-119	1	Cual es el lago de agua dulce mas grande del mundo?	Lago Superior
-120	1	Cual es la mas grande de estas 4 islas?	Borneo
-121	1	Cual es el unico estado estadounidense ubicado completamente en la region de Apalaches?	Virginia Occidental
-122	1	Cual es el pais mas pequeno del mundo?	Ciudad del Vaticano
-123	1	Cual es el rio mas largo del mundo?	Nilo
-124	1	Cual de los siguientes paises arabes NO tiene una bandera que contenga solo colores panarabes?	Qatar
-125	1	Cual de los siguientes idiomas europeos esta clasificado como una "lengua aislada"?	Vasco
-126	1	Cual de las siguientes islas japonesas es la mas grande?	Honshu
-127	1	Cual de los siguientes paises es una isla?	Chipre
-128	1	Cual de los siguientes es el rio mas largo de Europa?	Volga
-129	1	Cual de los siguientes idiomas NO utiliza el alfabeto latino?	Georgiano
-130	1	Cual de estas regiones africanas no limita directamente con la Republica Democratica del Congo?	Sudan
-131	1	Cual de estas islas japonesas es la mas grande por area?	Shikoku
-132	1	Cual de estas ciudades tiene una longitud de 4 Este?	Amsterdam
-133	1	Cual de estos paises no es miembro de las Naciones Unidas?	Niue
-134	1	Cual de las capitales de estos paises comienza con la letra B?	Libano
-135	1	Cual de estos NO es una isla que forma parte de Filipinas?	Java
-136	1	Cual de estos paises insulares se encuentra ubicado en el Caribe?	Barbados
-137	1	Cual de estos lugares es una ubicacion en Cornualles?	Barcelona
-138	1	Cual de estos paises limita con Polonia?	Lituania
-139	1	Cual es el estado mas pequeno de los Estados Unidos?	Rhode Island
-140	1	Que estrecho de agua conecta el oceano Atlantico con el mar Mediterraneo?	Estrecho de Gibraltar
-141	2	"Cube", "Cube 2: Hipercubo" y "Cube Zero" fueron dirigidas por la misma persona.	Falso
-142	2	"Make You Feel My Love" fue escrito y interpretado originalmente por cual cantautor?	Bob Dylan
-143	2	La primera regla es: no hables de ello", es una referencia a que pelicula?	El club de la lucha
-144	2	'74-'75 es un sencillo de 1993 del album Ring de que banda estadounidense?	Los Connells
-145	2	Segun la tradicion de Star Wars, cual es el planeta natal de Han Solo?	Corellia
-146	2	Despues de India, que pais produce la segunda mayor cantidad de peliculas por ano?	Nigeria
-147	2	Que villano iconico de Batman de la serie de television de los anos 60 interpreto Cesar Romero?	El Payaso
-148	2	La famosa revelacion de Darth Vader a Luke es iconica. Pero cual de estos es la correcta?	No. Soy tu padre.
-149	2	El sello discografico EDM Monstercat firma pistas en lugar de artistas.	Verdadero
-150	2	Ed Koch, el alcalde de Nueva York en 1984, se interpreto a si mismo en que pelicula de los Muppets?	Los Muppets conquistan Manhattan
-151	2	Bajo que nombre han colaborado y lanzado temas los artistas electronicos Boys Noize y Skrillex?	Sangre de Perro
-152	2	Eurobeat es principalmente un genero musical italiano.	Verdadero
-153	2	Cuantos miembros tiene la banda Nirvana?	Tres
-154	2	En "Jurassic World", cual es el nombre del dinosaurio que es un hibrido genetico?	Indominus Rex
-155	2	En "Jurassic World", que empresa compra InGen y crea Jurassic World?	Corporacion Masrani Global
-156	2	En "Rick and Morty", quien disparo a "Sr. Poopybutthole" en el episodio "Total Rickall"?	Beth
-157	2	Que banda lanzo en 2006 su album debut "A Fever You Can't Sweat Out"?	Panic! At the Disco
-158	2	En Buscando a Nemo, cual era el nombre de la mama de Nemo?	Coral
-159	2	En Two and a Half Men, cual es el nombre del hijo de Alan Harper?	Jake
-160	2	Con que se pago a la mayoria de los extras de Mad Max (1979) para reducir costos?	Cerveza
-161	2	En la pelicula de 1976 'Taxi Driver', cuantas armas compro Travis al vendedor?	Cuatro
-162	2	En la pelicula de 2014 "Birdman", cual es el instrumento principal de la banda sonora?	Tambores
-163	2	En la serie Viernes 13, en que ano se ahogo Jason?	1957
-164	2	En El Senor de los Anillos: Las Dos Torres, adonde lleva la partida de orcos a los hobbits?	Isengard
-165	2	En que ano Clint Eastwood actuo como el Inspector Harry Callahan en la pelicula "Dirty Harry"?	1971
-166	2	En que ano se estreno la primera pelicula de Transformers?	1986
-167	2	En que estado de America nacio y se crio el Principe del Rap?	Pensilvania
-168	2	En que ano se lanzo el album de Megadeth "Peace Sells... but Who's Buying?"?	1986
-169	2	En que pelicula hizo Johnny Depp su debut en la pantalla grande?	A Nightmare on Elm Street
-170	2	En que ciudad italiana se encuentra la opera La Fenice?	Venecia
-171	2	El cantante principal Rivers Cuomo de la banda de rock estadounidense Weezer asistio a Harvard.	Verdadero
-172	2	Que grupo de musica electronica fundo Liam Howlett en 1990?	The Prodigy
-173	2	Como su personaje en "Parks and Recreation", Aziz Ansari nacio en South Carolina.	Verdadero
-174	2	Metallica colaboro con Mr Bean de Rowan Atkinson en un sencillo de alivio comico de 1992.	Falso
-175	2	Michael Jackson escribio la cancion de Los Simpson "Do the Bartman".	Falso
-176	2	Nick Mason es el unico miembro en aparecer en todos los albumes de Pink Floyd.	Verdadero
-177	2	En el episodio "Total Rickall" de la serie "Rick and Morty", quien era un parasito?	Lapicestre
-178	2	El album de debut de Pink Guy fue "Pink Season".	Falso
-179	2	El nombre real del rapero Snoop Dogg es 'Cordozar Calvin Broadus, Jr.'.	Verdadero
-180	2	El productor escoces Calvin Harris es de la ciudad de Dumfries, Escocia.	Verdadero
-181	2	La cancion de Queen "A Kind Of Magic" aparece en cual pelicula de 1986?	Highlander
-182	2	De que album es la cancion "Give It Away" de Red Hot Chili Peppers?	Blood Sugar Sex Magik
-183	2	En cual de sus canciones aparece la linea homonima de The Who, "Teenage Wasteland"?	Baba O' Riley
-184	2	El autor detras de la aclamada novela "Leaving Las Vegas" tambien escribio un episodio de Rugrats.	Verdadero
-185	2	El color de las pastillas en Matrix eran Azul y Amarillo.	Falso
-186	2	La pelicula ficticia 'Rochelle, Rochelle' aparece en que sitcom?	Seinfeld
-187	2	La pelicula "2001: Una odisea del espacio" se estreno el 31 de diciembre de 2000.	Falso
-188	2	La pelicula Mad Max: Fury Road presenta el Dies Irae del requiem de que compositor?	Verdi
-189	2	De cual ciudad inglesa es la banda de heavy metal Black Sabbath?	Birmingham
-190	2	La cantante Billie Holiday tambien era conocida como "Lady Day".	Verdadero
-191	2	La cancion "Mystery Train" fue lanzada por el artista "Little Junior's Blue Flames" en 1953.	Verdadero
-192	2	La tuba es parte de que familia musical?	Laton
-193	2	El arma que Clint Eastwood usa en "Dirty Harry" fue una .44 Automag.	Falso
-194	2	Que programa de television trata sobre un abuelo que arrastra a su nieto en aventuras?	Rick y Morty
-195	2	En que album se encuentra la cancion 'New Slang' de The Shins?	Oh, Mundo Invertido
-196	2	Que raza de perro era Marley en la pelicula "Marley & Me" (2008)?	Labrador Retriever
-197	2	Que mostraba la primera pelicula en movimiento?	Un caballo galopando
-198	2	Que significa TIE en referencia al Caza TIE en "Star Wars"?	Motor de Ion Gemelo
-199	2	Que genero de musica tocaba la banda Type O Negative?	Metal Gotico
-200	2	Como se llama la guitarra de Brian May?	Guitarra Roja Especial
-201	2	Cual no es un instrumento de viento?	Viola
-202	2	Cual es el album mas vendido de todos los tiempos entre 1976 y 2018?	Suspenso
-203	2	Cual es el nombre de nacimiento de Michael Caine?	Maurice Micklewhite
-204	2	Cual es la primera cancion del album 808s & Heartbreak de Kanye West?	Dilo que haras
-205	2	Cual es el nombre del personaje de James Dean en la pelicula de 1955 "Rebelde sin causa"?	Jim Stark
-206	2	Cual es el nombre del sistema de Inteligencia Artificial en la pelicula "WarGames" de 1983?	Plan de Respuesta de Operacion de Guerra
-207	2	Cual es el nombre de la primera pelicula de "Star Wars" por orden de lanzamiento?	Una nueva esperanza
-208	2	Cual es el nombre de los antagonistas principales en Battlestar Galactica?	Los Cylones
-209	2	Cual es el nombre del caballo de carreras al que Tony Soprano se encarina?	Pie-O-Mi
-210	2	Cual es la pelicula de Disney mas antigua?	Blancanieves y los Siete Enanitos
-211	2	Cual es la cancion de apertura en Pure Heroine de Lorde?	Cancha de Tenis
-212	2	Cual es la especie del "Depredador" en la pelicula "Depredador" de 1987?	Yautja
-213	2	Que cancion del album Black Face LP de ScHoolboy Q conto con la participacion de Kanye West?	Esa Parte
-214	2	Cual era el nombre de pila del personaje de Marilyn Monroe en la pelicula "Con faldas y a lo loco"?	Azucar
-215	2	Como se llamaba el quinto album de Taylor Swift?	1989
-216	2	Cual fue el album mas vendido de 2015?	Adele, 25
-217	2	Cual fue el primer videoclip transmitido en MTV?	El video mato a la estrella de la radio
-218	2	Cual era el nombre del planeta en "Aliens"?	LV-426
-219	2	Cual es el nombre de pila del Dr. Dofenshmirtz?	Heinz
-220	2	Cual es la metrica mas comun para las canciones de rock?	4/4
-221	2	Cuando se transmitio por primera vez la serie de television Rick and Morty en Adult Swim?	2013
-222	2	Que banda de los 80 esta liderada por el cantante/guitarrista Robert Smith?	The Cure
-223	2	Cual villano de Batman es Mark Hamill conocido por haber doblado?	El Payaso
-224	2	Cual Beatle lidero el camino cruzando el paso de cebra en la portada del album Abbey Road?	Juan
-225	2	Cual album de The Beatles NO presenta a ningun miembro de la banda en su portada?	Los Beatles (Album Blanco)
-226	2	De cual album de Daft Punk es la cancion "Harder, Better, Faster, Stronger"?	Descubrimiento
-227	2	Cual actor audiciono para el papel de Luke Skywalker?	Kurt Russell
-228	2	Que actor de The Young Ones tambien interpreto a Lord Flashheart en un episodio de Blackadder II?	Rik Mayall
-229	2	Que actriz interpreto a la Dra. Grace Augustine en la pelicula "Avatar" de James Cameron?	Sigourney Weaver
-230	2	Cual fue la primera pelicula animada en presentar a una celebridad como actor de voz?	Aladin
-231	2	Que banda tuvo exitos en 1975 con las canciones 'One Of These Nights' y 'Lyin Eyes'?	Las Aguilas
-232	2	Que famoso rapero aparece en el sencillo "Febreze" de 2015 de Jack U (Skrillex y Diplo)?	2 Chainz
-233	2	Que exmiembro de una banda de chicos lanzo el exitoso sencillo en solitario "Angels" en 1997?	Robbie Williams
-234	2	Que miembro de "The Beatles" narro episodios de "Thomas the Tank Engine"?	Ringo Starr
-235	2	Cual de estas peliculas NO conto con la participacion del difunto actor John Candy?	Cazafantasmas
-236	2	Cual de los albumes de Michael Jackson fue el que mas copias vendio?	Suspenso
-237	2	Cual de los miembros de la banda Beatles esta descalzo en la portada del album 'Abbey Road'?	Paul McCartney
-238	2	Cual de las siguientes bandas no es parte de Tom DeLonge?	+44
-239	2	Cual de los siguientes guitarristas grabo un album como miembro de los Red Hot Chili Peppers?	Dave Navarro
-240	2	Cual de los siguientes NO es una cancion real de la banda Thousand Foot Krutch?	Furia Sin Limites
-241	2	Cual de los siguientes no es un album de estudio de la banda Pink Floyd?	Peliculas en movimiento
-242	2	Cual de estos personajes de BoJack Horseman es un humano?	Todd Chavez
-243	2	Cual de estos clasicos de Disney fue lanzado en 1970?	Los Aristogatos
-244	2	Cual de estas peliculas NO fue lanzada en 1996?	Gladiador
-245	2	Cual de estos programas de juegos de Nickelodeon se transmitio primero?	Doble Atrevimiento
-246	2	Cual de estos actores NO ha interpretado a Spiderman en las peliculas?	Michael Cera
-247	2	Cual de estos NO es el nombre de un album lanzado por el productor de Miami DJ Khaled?	Nunca te Juegues a ti Mismo
-248	2	Cual de estas peliculas NO se considera parte del Universo Cinematografico de Marvel?	Los Cuatro Fantasticos (2015)
-249	2	Cual de estas canciones fue una version de Jimi Hendrix?	Todas estas canciones
-250	2	Cual de estas canciones NO fue lanzada en los 90s?	"I Want It All" de Queen
-251	2	Cual de estas canciones fue lanzada en 1996?	The Smashing Pumpkins - "1979"
-252	2	Cual de estas peliculas dirigio David Lynch pero no escribio?	La historia recta
-253	2	Cual de estas canciones NO hizo el grupo "Men At Work"?	La Danza de la Seguridad
-254	2	Que cantante fue presentada en la cancion "Where Are U Now" de Jack U (Skrillex & Diplo) de 2015?	Justin Bieber
-255	2	Cual cancion NO es de Tom Jones?	Never Gonna Give You Up
-256	2	Cual es el pueblo donde transcurre la pelicula de Disney Herbie, loco de amor (1968)?	San Francisco
-257	2	Cual fue la primera pelicula de Alfred Hitchcock filmada en color?	Cuerda
-258	2	En que ano se lanzo el primer YouTube Rewind oficial?	2010
-259	2	Quien dirigio la pelicula de 1973 "American Graffiti"?	George Lucas
-260	2	Quien tuvo un exito numero 1 en EE.UU. y Reino Unido en 1962 con el instrumental 'Telstar'?	Los Tornados
-261	2	Quien es el director de la pelicula de 1991 "El silencio de los corderos"?	Jonathan Demme
-262	2	Quien es el vocalista y lider de la banda de rock "Guns N' Roses"?	Axl Rose
-263	2	Quien interpreto a Thanos en Avengers: Infinity War y Avengers: End Game?	Josh Brolin
-264	2	Quien interpreto a la Camarera en el sketch de Spam de "Monty Python's Flying Circus"?	Terry Jones
-265	2	Quien interpreto a Han Solo en la serie de peliculas principales de Star Wars?	Harrison Ford
-266	2	Quien canto la cancion del tema de apertura de la pelicula de James Bond de 1995 'Goldeneye'?	Tina Turner
-267	2	Quien fue el primer ganador de Big Brother US en ganar con un juego perfecto?	Dan Gheesling
-268	2	Quien era el miembro mas antiguo de The Beatles?	Ringo Starr
-269	2	Quien fue el ganador de "Big Brother" Temporada 10?	Dan Gheesling
-270	2	Quien escribio la composicion musical "Rhapsody in Blue"?	George Gershwin
-271	2	Quien escribio la cancion "You Know You Like It"?	AlunaGeorge
-272	3	"Si, America Puede!" fue el eslogan de campana de facto de este politico estadounidense en 2004.	George W. Bush
-273	3	Adolf Hitler fue aceptado en la Academia de Bellas Artes de Viena.	Falso
-274	3	Adolf Hitler fue juzgado en los juicios de Nuremberg.	Falso
-275	3	Despues de su derrota en la Batalla de Waterloo, a que isla fue exiliado Napoleon Bonaparte?	Santa Elena
-276	3	Durante las invasiones mongolas de Japon, que detuvo principalmente los barcos mongoles?	Tifones
-277	3	George W. Bush perdio el voto popular en la eleccion presidencial de Estados Unidos de 2004.	Falso
-278	3	De que pais era Hong Kong una parte del territorio antes de que Gran Bretana lo recuperara en 1945?	Japon
-279	3	Como llamaban los vikingos a su colonia de corta duracion en el Canada actual?	Tierra de Vinedos
-280	3	Cuanto tiempo duro la Segunda Guerra Mundial?	6 anos
-281	3	Cuanto tiempo duro el Levantamiento de Varsovia durante la Segunda Guerra Mundial?	63 Dias
-282	3	Cuantas sonatas escribio Ludwig van Beethoven?	treinta y dos
-283	3	Cuantos anos tenia Adolf Hitler cuando murio?	cincuenta y seis
-284	3	En 1547 quien se convirtio en el primer Zar de Rusia	Ivan el Terrible
-285	3	En 1845, una serie de guerras nombradas segun que pueblo indigena comenzo en Nueva Zelanda?	Maori
-286	3	En la Segunda Guerra Mundial, los Hawker Typhoon sirvieron en el teatro del Pacifico.	Falso
-287	3	En relacion con la Ocupacion Britanica en Irlanda, que significa IRA?	Ejercito Republicano Irlandes
-288	3	En que dialogo Socrates se defendio ante la corte de Atenas?	La Apologia
-289	3	En que ano ocurrio el Crash de Videojuegos de America del Norte?	1983
-290	3	En que pais se construyo la Estatua de la Libertad y se exporto a los Estados Unidos de America?	Francia
-291	3	En cual de estas ciudades ocurrio la Gran Peste de 1858?	Londres
-292	3	En que guerra ocurrieron los bombardeos atomicos de Hiroshima y Nagasaki?	Segunda Guerra Mundial
-293	3	En que ano fue liberado Nelson Mandela de la prision?	1990
-294	3	Japon fue parte de las Potencias Aliadas durante la Primera Guerra Mundial.	Verdadero
-295	3	En que dia invadio Alemania a Polonia?	1 de septiembre de 1939
-296	3	En que dia ARPANET sufrio una caida de red de 4 horas?	27 de octubre de 1980
-297	3	Pianista Frederic Chopin fue compositor de que era musical?	Romantico
-298	3	Rusia aprobo una ley en 2013 que prohibe decirles a los ninos que los homosexuales existen.	Verdadero
-299	3	Taiwan se llama oficialmente "la Republica de China".	Verdadero
-300	3	La Batalla del Somme en la Primera Guerra Mundial tuvo lugar en que pais?	Francia
-301	3	La Guerra Fria termino con la muerte de Jose Stalin.	Falso
-302	3	La Casa Fallingwater, ubicada en Pensilvania, fue disenada por que arquitecto?	Frank Lloyd Wright
-303	3	La Cuarta Cruzada duro de 1095-1099 d.C.	Falso
-304	3	Que emperador del Imperio Bizantino encargo la construccion de la Hagia Sophia?	Justiniano I
-305	3	La Pequena Entente fue una alianza formada contra que nacion?	Hungria
-306	3	Bajo la administracion de que presidente estadounidense se termino el Canal de Panama?	Woodrow Wilson
-307	3	La S en Harry S. Truman significa "Solomon".	Falso
-308	3	El Spitfire L.F. Mk IX tenia que motor?	Merlin 66
-309	3	Las protestas de la Plaza de Tiananmen de 1989 se llevaron a cabo en Hong Kong.	Falso
-310	3	Estados Unidos fue miembro de la Liga de las Naciones.	Falso
-311	3	De que nacionalidad era el creador de la Cifra y Maquina Enigma?	Aleman
-312	3	Para que proposito se construyo originalmente la corona del edificio Empire State?	Muelle de Dirigibles
-313	3	La mayoria de las personas que vivieron bajo el Imperio Bizantino se llamaban a si mismas romanos.	Verdadero
-314	3	El hombre que disparo a Alexander Hamilton se llamaba Aaron Burr.	Verdadero
-315	3	La ametralladora rotatoria fue disenada en 1960 por que fabricante?	General Electric
-316	3	Theresa May fue la primera ministra del Reino Unido.	Falso
-317	3	Estos dos paises mantuvieron una mancomunidad del siglo XVI al XVIII.	Polonia y Lituania
-318	3	A que partido politico pertenecia Abraham Lincoln cuando fue elegido presidente?	Republicano
-319	3	Los vikingos fueron los primeros europeos en descubrir America del Norte.	Verdadero
-320	3	Que pais del sudeste asiatico era conocido anteriormente como 'Lan Xang'?	Laos
-321	3	A que edad murio el Rey Enrique V?	treinta y cinco
-322	3	Cual fue la batalla mas larga de la Primera Guerra Mundial, durando aproximadamente 303 dias?	Batalla de Verdun
-323	3	Que candidato gano la Eleccion Presidencial de los EE.UU. de 2012?	Barack Obama
-324	3	Que dia comenzo la Batalla de Gettysburg?	1 de julio de 1863
-325	3	Que dispensaban las primeras maquinas expendedoras a principios de los anos 1880?	Tarjetas postales
-326	3	Que evento marco el inicio de la Segunda Guerra Mundial?	Invasion de Polonia (1939)
-327	3	A que evento historico hacia referencia la Obertura 1812 de Tchaikovsky?	Las Guerras Napoleonicas
-328	3	Cual es el nombre completo del ex presidente de Estados Unidos Bill Clinton?	William Jefferson Clinton
-329	3	Cual es el evento mas sangriento en la historia de Estados Unidos, en terminos de bajas?	Batalla de Antietam
-330	3	Cual es el nombre historico de Sri Lanka?	Ceilan
-331	3	Cual es el nombre del famoso lider apache que murio en 1909 a los 70 anos de edad?	Jeronimo
-332	3	Cual es la civilizacion mas antigua conocida por la humanidad, segun la opinion generalizada?	Sumeria
-333	3	Que numero representa el numeral romano "D"?	quinientos
-334	3	Cual era el nombre real de Gengis Khan?	Temujin
-335	3	Cual era el nombre de Napoleon Bonaparte antes de cambiarlo?	Napoleon Bonaparte
-336	3	Que fue encontrado en 1946 por dos jovenes pastores cerca de una cueva?	Manuscritos del Mar Muerto
-337	3	Cual fue el nombre en clave de la invasion aliada del sur de Francia el 15 de agosto de 1944?	Operacion Dragon
-338	3	Cual fue la ultima colonia que el Reino Unido cedio marcando el fin del Imperio Britanico?	Hong Kong
-339	3	Cual fue el nombre del quimico que fue lanzado en Vietnam durante la guerra de Vietnam?	Agente Naranja
-340	3	Cual fue el nombre del primer asentamiento ingles permanente en America?	Jamestown
-341	3	Cual era el nombre de la invasion planeada de Japon hacia el final de la Segunda Guerra Mundial?	Operacion Downfall
-342	3	Cual fue la moneda oficial alemana hasta 2002?	Marcos
-343	3	Cual era el nombre original de la Ciudad de Nueva York?	Nueva Amsterdam
-344	3	Cual era la longitud total del Titanic?	882 ft | 268,8 m
-345	3	En que ano se instituyeron las Reformas Marianas en la Republica Romana?	107 AEC
-346	3	Cuando Cristobal Colon navego hacia America, cual fue la primera region en la que llego?	El Archipielago de las Bahamas
-347	3	Cuando Canada se separo de la confederacion para convertirse en su propia nacion?	1 de julio de 1867
-348	3	Cuando recibio Jamaica su independencia de Inglaterra?	1962
-349	3	Cuando finalizo la construccion del Canal de Suez?	1869
-350	3	Cuando termino la Batalla de las Ardenas?	25 de enero de 1945
-351	3	Cuando comenzo la Batalla del Somme?	1 de julio de 1916
-352	3	Cuando fue el ano 100 de independencia de Finlandia?	2017
-353	3	Cuando fue levantado el "Sitio de Leningrado" durante la Segunda Guerra Mundial?	Enero de 1944
-354	3	Cuando concluyo la Gran Guerra Patriotica en la URSS?	9 de mayo de 1945
-355	3	Cuando se adopto por primera vez el calendario gregoriano?	mil quinientos ochenta y dos
-356	3	Donde y cuando se fabrico la primera caja de carton para uso industrial?	Inglaterra, 1817
-357	3	Donde estaba Abraham Lincoln cuando fue asesinado por John Wilkes Booth en 1865?	En el teatro
-358	3	Donde nacio Napoleon Bonaparte?	Corcega
-359	3	Cual fue la ultima mision Apolo del programa Apolo de la NASA?	Apolo 17
-360	3	Que primer ministro australiano desaparecio en 1967 y nunca fue encontrado?	Harold Holt
-361	3	Cual casino de Las Vegas fue construido y operado originalmente por el ganster Bugsy Siegel?	El Flamenco
-362	3	Cual nacion NO tuvo una colonia en la America del Norte moderna?	Portugal
-363	3	Que general nazi era conocido como el "Zorro del Desierto"?	Erwin Rommel
-364	3	Que pais sudamericano lucho contra Gran Bretana por las Islas Malvinas en 1982?	Argentina
-365	3	Que presidente de EE.UU. fue famosamente "atacado" por un conejo nadador?	Jimmy Carter
-366	3	Cual presidente de EE.UU. se dice que tenia la barba mas larga?	Rutherford B. Hayes
-367	3	Cual fue el primer estado estadounidense que permitio a las mujeres votar en 1869?	Wyoming
-368	3	Que as de tanques de la Segunda Guerra Mundial es acreditado por haber destruido mas tanques?	Kurt Knispel
-369	3	Que edificio fue incendiado el 24 de agosto de 1812?	La Casa Blanca
-370	3	Que pais regalo la Estatua de la Libertad a los Estados Unidos de America?	Francia
-371	3	Que pais tuvo una "Revolucion Naranja" entre 2004 y 2005?	Ucrania
-372	3	Que dia comenzo la Primera Guerra Mundial?	28 de julio
-373	3	Cual dictador mato a mas personas?	Mao Zedong
-374	3	Que juego fue el Juego del Ano en 2018?	Dios de la Guerra
-375	3	Cual de los siguientes paises africanos tuvo mas exito en resistir la colonizacion?	Etiopia
-376	3	Cual de los siguientes presidentes argentinos fue elegido en 2015?	Mauricio Macri
-377	3	Cual de los siguientes paises islenos del Pacifico es gobernado por una monarquia constitucional?	Tonga
-378	3	Cual de los siguientes NO esta clasificado como una lengua semita?	Sumerio
-379	3	Cual de las siguientes no esta en la familia de lenguas indoeuropeas?	Finlandes
-380	3	De cual de los siguientes fue Brasil una antigua colonia?	Portugal
-381	3	Cual de estos paises se mantuvo neutral durante la Segunda Guerra Mundial?	Suiza
-382	3	Cual de estas instalaciones no estaba presente en el Titanic?	Sala de desmayos
-383	3	Cual de estos fisicos teoricos predijo primero la existencia de la antimateria?	Paul Dirac
-384	3	Cual de estos fue un candidato oficial en las elecciones generales britanicas de 2017?	Lord Buckethead
-385	3	Cual de estos no fue un sitio de desembarco en playas en la Invasion de Normandia?	Plata
-386	3	Que presidente elimino la deuda nacional de Estados Unidos?	Andrew Jackson
-387	3	Quien asesino al presidente James A. Garfield?	Carlos Guiteau
-388	3	Quien corono a Carlomagno como Emperador del Sacro Imperio Romano el dia de Navidad en 800?	Papa Leon III
-389	3	Se cree que quien fue el primer europeo en "descubrir" la tierra de Nueva Zelanda?	Abel Tasman
-390	3	Quien es el creador del refresco Dr. Pepper?	Carlos Alderton
-391	3	Quien lidero Francia durante el "Reinado del Terror"?	Maximilien Robespierre
-392	3	Quien fue uno de los muertos en la tragedia del vuelo que se estrello en Smolensk, Rusia en 2010?	El Presidente Polaco
-393	3	Quien fue el 45o Presidente de los Estados Unidos?	Donald Trump
-394	3	Quien fue el Presidente de los Estados Unidos durante la firma de la Compra de Gadsden?	Franklin Pierce
-395	3	Quien era el Primer Ministro de Japon cuando Japon declaro la guerra a Estados Unidos?	Hideki Tojo
-396	3	Quien fue el primer Canciller de una Alemania unida en 1871?	Otto von Bismarck
-397	3	Quien fue el primer hombre en viajar al espacio exterior?	Yuri Gagarin
-398	3	Quien fue el primer presidente de Kenia?	Jomo Kenyatta
-399	3	Quien fue el primer ministro de Canada?	John Macdonald
-400	3	Quien fue el primer gobernante de Haiti despues de que el pais obtuvo su independencia?	Jean-Jacques Dessalines
-401	3	Quien fue la primera esposa del Rey Enrique VIII?	Catalina de Aragon
-402	3	Quien fue el lider de Suecia en la Gran Guerra del Norte?	Carlos XII
-403	3	Con cual filosofo griego asociarias la frase "Se que no se nada"?	Socrates
-404	4	Que color se produce al mezclar negro y blanco?	Gris
-405	4	Segun la novela de Bram Stoker, en que pueblo costero britanico desembarco Dracula?	Whitby
-406	4	Segun la mitologia griega, Atlas era un dios olimpico.	Falso
-407	4	Segun la mitologia griega, Zeus puede controlar los rayos.	Verdadero
-408	4	Segun la mitologia nordica, Loki es una madre.	Verdadero
-409	4	El lugar de nacimiento y muerte de Albrecht Durer fueron en...	Nuremberg
-410	4	El Anj es el jeroglifico egipcio para que?	Vida
-411	4	Los escultores antiguos griegos y romanos a menudo coloreaban sus estatuas.	Verdadero
-412	4	Por que nombre era mejor conocido el autor Eric Blair?	George Orwell
-413	4	Por que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?	El Astuto Evasivo
-414	4	Dracula es destruido por el contacto con la luz solar	Falso
-415	4	Hel era la hija de que figura de la mitologia nordica?	Loki
-416	4	Hera es la diosa de...	Matrimonio
-417	4	Cuantos libros de Harry Potter hay?	siete
-418	4	Cuantos libros hay en la serie Las Cronicas de Narnia?	siete
-419	4	En la mitologia africana, Anansi es un embaucador y narrador que toma la forma de cual animal?	Arana
-420	4	En la mitologia griega, quien mato a Aquiles?	Paris
-421	4	En la mitologia griega, quien era la hija del rey Minos?	Ariadna
-422	4	En la mitologia griega, Hera es la diosa de la cosecha.	Falso
-423	4	En la mitologia griega, quien es el dios del vino?	Dioniso
-424	4	En "El cuento de la criada" de Margaret Atwood, cual se implica que es el nombre real de Offred?	Junio
-425	4	En la mitologia nordica, Thor una vez se vistio como una mujer.	Verdadero
-426	4	En Romance of the Three Kingdoms, quien no fue miembro del Juramento del Jardin de Duraznos?	Zhao Yun
-427	4	En la mayoria de las tradiciones, quien fue la esposa de Zeus?	Hera
-428	4	En la serie de "Harry Potter", cual es el nombre completo del Director Dumbledore?	Albus Percival Wulfric Brian Dumbledore
-429	4	En la mitologia griega, la Gorgona puede convertir en piedra a quienes la miran.	Verdadero
-430	4	En el universo de Harry Potter, cual es el segundo nombre de Cornelius Fudge?	Oswaldo
-431	4	En el universo de Harry Potter, con quien termina casandose Draco Malfoy?	Astoria Greengrass
-432	4	En el universo de Magic: The Gathering, en que continente tiene lugar la expansion Fallen Empires?	Sarpadia
-433	4	En el universo de Magic: The Gathering, en que plano tiene lugar la expansion Homelands?	Ulgrotha
-434	4	De donde es originalmente el Oso Paddington en la serie de libros infantiles?	Peru
-435	4	Jano fue el dios romano de las puertas y los pasos.	Verdadero
-436	4	Leonardo da Vinci no fue el creador de la Mona Lisa.	Falso
-437	4	El Mona Lisa de Leonardo da Vinci no tiene cejas.	Verdadero
-438	4	Cual es la historia de horror clasica que escribio Mary Shelley?	Frankenstein
-439	4	El nombre griego de Neptuno fue...	Poseidon
-440	4	De que mitologia es Nidhogg una criatura mitologica?	Nordico
-441	4	De los siguientes, cual novela de Stephen King fue publicada primero?	Cujo
-442	4	Originalmente, el personaje Charlie de Charlie y la fabrica de chocolate iba a ser negro.	Verdadero
-443	4	Pintor Piet Mondrian (1872 - 1944) fue parte de que movimiento?	Neoplasticismo
-444	4	A que pais se mudo Paul Gauguin en 1895?	Tahiti
-445	4	Skai es la diosa nordica del esqui, las montanas, el invierno y la caza con arco.	Verdadero
-446	4	Stephen Chbosky escribio el libro "Las ventajas de ser un marginado".	Verdadero
-447	4	Talos, el hombre de bronce gigante mitologico, fue el protector de que isla?	Creta
-448	4	El dios japones Izanagi logro traer a su esposa Izanami de regreso del Inframundo.	Falso
-449	4	El dios romano "Jupiter" era conocido primero como "Zeus" por los griegos.	Verdadero
-450	4	El nombre oficial de la Estatua de la Libertad es "La Libertad Iluminando al Mundo".	Verdadero
-451	4	El libro "El Principito" fue escrito por...	Antoine de Saint-Exupery
-452	4	Que autor escribio la novela "Jane Eyre"?	Charlotte Bronte
-453	4	Quien escribio la novela "De ratones y hombres"?	John Steinbeck
-454	4	El cuadro "La Noche Estrellada" de Vincent van Gogh fue parte de que movimiento artistico?	Postimpresionismo
-455	4	Vincent van Gogh se corto una de sus orejas.	Verdadero
-456	4	Que escultor frances diseno la Estatua de la Libertad?	Frederic Auguste Bartholdi
-457	4	Con que animal durmio la Reina Pasifae antes de dar a luz al Minotauro en la mitologia griega?	Toro
-458	4	Que serie de libros publicada por Jim Butcher sigue a un mago en Chicago en la actualidad?	Los Archivos de Dresden
-459	4	Que estructura inmensa se menciona en la mitologia nordica como Yggdrasil?	Arbol
-460	4	Cual es el segundo nombre de Ron Weasley?	Bilio
-461	4	Cual es un elemento fundamental del estilo arquitectonico gotico?	arco apuntado
-462	4	Cual es el cuarto libro del Antiguo Testamento?	Numeros
-463	4	Cual es la marca y modelo de los vehiculos de tour en "Jurassic Park" (1990)?	Toyota Land Cruiser 1989
-464	4	Cual es el nombre del hermano de Sherlock Holmes?	Mycroft Holmes
-465	4	Cual es el nombre del dios griego de los herreros?	Hefesto
-466	4	Cual es el nombre del dios griego de las muertes pacificas?	Tanatos
-467	4	Cual es el nombre del arte japones de doblar papel en formas y figuras decorativas?	papiroflexia
-468	4	Cual es el nombre del autor de la serie de libros 'Percy Jackson'?	Rick Riordan
-469	4	Cual es el nombre del primer ser humano en la mitologia nordica?	Preguntar
-470	4	Cual es el nombre del cuarto libro de la serie La Torre Oscura de Stephen King?	Mago y Cristal
-471	4	Cual es el nombre de la pandilla de la que Ponyboy es miembro en el libro, The Outsiders?	Los Grasientos
-472	4	Cual es el nombre del protagonista de la novela El cazador oculto de J.D. Salinger?	Holden Caulfield
-473	4	Cual es el nombre del perro de tres cabezas en Harry Potter y la Piedra Filosofal?	Esponjoso
-474	4	Cual es el nombre del pueblo en el que estan enterrados Lily y James Potter?	Godric's Hollow
-475	4	Cual es el nombre del hombre salvaje que Gilgamesh befrienda y con el que va a tener aventuras?	Enkidu
-476	4	Cual era la nacionalidad del famoso artista Pablo Picasso?	Espanol
-477	4	Cual era la nacionalidad del famoso artista Van Gogh?	Holandes
-478	4	Cual fue la nacionalidad del pintor surrealista Salvador Dali?	Espanol
-479	4	Que posicion juega Harry Potter en el Quidditch?	Buscador
-480	4	Cual fue la primera entrada escrita para el proyecto de escritura colaborativa de la Fundacion SCP?	SCP-173
-481	4	Cual fue la primera tecnica fotografica exitosa y comercialmente viable?	El Daguerrotipo
-482	4	Cual fue la distincion principal entre los estilos gotico ingles y frances de la arquitectura?	Boveda de abanico
-483	4	Cual era el nombre del submarino del Capitan Nemo en "20,000 leguas de viaje submarino"?	El Nautilus
-484	4	Que punto debil de Aquiles fue explotado por el principe troyano, Paris?	Talon
-485	4	En que ano se termino la Mona Lisa?	1504
-486	4	Cual es el nombre del papa de Harry Potter?	James Potter
-487	4	Que escultor griego diseno la estatua Atenea Partenon dentro del Partenon?	Fidias
-488	4	Que autor ruso escribio la novela epica Guerra y paz?	Leon Tolstoi
-489	4	Que movimiento artistico fue que Pablo Picasso es conocido por cofundar?	Cubismo
-490	4	Que artista es famoso por cortarse la oreja?	Vincent van Gogh
-491	4	El estudio de que artista era conocido como 'The Factory'?	Andy Warhol
-492	4	Que autor coescribio "El Manifiesto Comunista" junto a Karl Marx?	Friedrich Engels
-493	4	Que libro clasico comienza con la linea "Llamame Ismael"?	Moby Dick
-494	4	Que personaje clasico de horror mato a Elizabeth Lavenza?	La Criatura de Frankenstein
-495	4	Que libro famoso tiene el subtitulo 'El Prometeo Moderno'?	Frankenstein
-496	4	Que famoso novelista de espias escribio el cuento infantil "Chitty-Chitty-Bang-Bang"?	Ian Fleming
-497	4	Cual era el condado ingles ficticio que fue el escenario de las novelas de Thomas Hardy?	Sajonia Occidental
-498	4	Cual NO es un libro de la serie de Harry Potter?	El Elfo Domestico
-499	4	Cual de las siguientes figuras mitologicas mesopotamias NO era una deidad?	Enkidu
-500	4	Cual de los siguientes autores no nacio en Inglaterra?	Arthur Conan Doyle
-501	4	Cual de los siguientes NO es un dios en la mitologia nordica?	Jens
-502	4	Cual de los siguientes NO es una obra de Shakespeare?	Juicio de la Templanza
-503	4	Cual de los siguientes no es una obra escrita por Fiodor Dostoievski?	Anna Karenina
-504	4	Cual de los siguientes no es una de las Parcas griegas?	Narciso
-505	4	Cual de los siguientes es el libro mas vendido del mundo?	El Senor de los Anillos
-506	4	Cual de los siguientes fue el autor de "Username Evie"?	Joe Sugg
-507	4	Cual de estos dioses romanos no tiene un equivalente en la mitologia griega?	Jano
-508	4	Cual de estos libros NO fue escrito por el autor checo Karel Capek?	Viaje al Centro de la Tierra
-509	4	Cual de estos NO lee Charlie en Las ventajas de ser un marginado?	Las Uvas de la Ira
-510	4	Cual de estos no es una variacion adicional del color purpura?	Kobicha
-511	4	Cual de estas criaturas mitologicas se dice que es mitad hombre y mitad caballo?	Centauro
-512	4	Cual de estos cuadros no es de Caspar David Friedrich?	El Mar Negro
-513	4	Cual pintura no fue hecha por Vincent Van Gogh?	La Novena Ola
-514	4	Que indicador de compas es comunmente conocido como "Compas de corte"?	2/2
-515	4	Quien diseno el logotipo de Chupa Chups?	Salvador Dali
-516	4	A quien derroto Hipomenes en una carrera a pie?	Atalanta
-517	4	Quien en la mitologia griega lidero a los Argonautas en busca del Vellocino de Oro?	Jason
-518	4	Quien es el dios egipcio de la reproduccion y la lechuga?	Min
-519	4	Quien es el hijo del dios Loki?	Fenrir
-520	4	Quien es el autor de la serie "Malazan Book of the Fallen"?	Steven Erikson
-521	4	Quien es el padre de Icaro, quien volo demasiado cerca del sol?	Dedalo
-522	4	Quien es el dios de la guerra en la mitologia polinesia?	Oro
-523	4	Quien es el protagonista del libro "El guardian entre el centeno" de J.D. Salinger	Holden Caulfield
-524	4	Quien pinto "American Gothic"?	Grant Wood
-525	4	Quien pinto "Cisnes reflejados en elefantes", "Sueno" y "La persistencia de la memoria"?	Salvador Dali
-526	4	Quien pinto "La Noche Estrellada"?	Vincent van Gogh
-527	4	Quien pinto La Noche Estrellada?	Vincent van Gogh
-528	4	Quien pinto la Mona Lisa?	Leonardo da Vinci
-529	4	Quien pinto la Capilla Sixtina?	Miguel Angel
-530	4	Quien pinto el cuadro "Nighthawks"?	Edward Hopper
-531	4	Quien esculpio la estatua de David?	Miguel Angel
-532	4	Quien fue el Rey de los Dioses en la mitologia griega antigua?	Zeus
-533	4	Quien era el dios romano del fuego?	Vulcano
-534	4	Cual fue el unico dios de Grecia que no cambio de nombre en Roma?	Apolo
-535	4	Quien escribio "A Tale of Two Cities"?	Carlos Dickens
-536	4	Quien escribio "Harry Potter"?	J.K. Rowling
-537	4	Quien escribio la serie de novelas de fantasia "A Song of Ice And Fire"?	George R. R. Martin
-538	4	Quien escribio la novela 'Miedo y asco en Las Vegas'?	Hunter S. Thompson
-539	4	Quien escribio la novela de adultos jovenes "The Fault in Our Stars"?	John Green
-540	5	"Windows NT" utiliza un kernel monolitico.	Falso
-541	5	.rs es el dominio de nivel superior para que pais?	Serbia
-542	5	Un valor booleano de "0" representa cual de estas palabras?	Falso
-543	5	Una Mac no es una PC	Falso
-544	5	Una persona puede quemarse por el sol en un dia nublado.	Verdadero
-545	5	La sangre de una babosa es verde.	Verdadero
-546	5	America Online (AOL) comenzo como cual de estos proveedores de servicios en linea?	Enlace Cuantico
-547	5	Aproximadamente que porcentaje de la atmosfera terrestre es Oxigeno?	21%
-548	5	A que temperatura hierve el agua?	212F
-549	5	Botanicamente hablando, cual de estas frutas NO es una baya?	Fresa
-550	5	Completa la siguiente analogia: Audi es a Volkswagen como Infiniti es a ?	Nissan
-551	5	Coulrophobia es el miedo irracional a que?	Payasos
-552	5	Que tanque fue el mas temido por los aliados durante la Segunda Guerra Mundial?	Panzerkampfwagen V Panther
-553	5	Durante las primeras etapas de la Guerra de Vietnam, el M16 tenia un registro de mala confiabilidad.	Verdadero
-554	5	Los elefantes son fisicamente incapaces de saltar.	Verdadero
-555	5	Por que razon reiria una hiena manchada?	Nerviosismo
-556	5	Ganimedes es la luna mas grande de que planeta?	Jupiter
-557	5	Que componente de una computadora generalmente consume mas energia?	Tarjeta de video
-558	5	Cuantos bits hay comunmente en un solo byte?	Ocho bits
-559	5	Cuantos nucleos tiene el Intel i7-6950X?	10
-560	5	Cuantos kilobytes hay en un gigabyte (en decimal)?	un millon
-561	5	Cuantas patas es biologicamente imposible que tenga un ciempies?	cien
-562	5	Cuantas lunas tiene la Tierra?	uno
-563	5	Cuantos planetas hay en el Sistema Solar?	8
-564	5	Cuantos ceros hay en un gugol?	cien
-565	5	En 2016, la UICN reclasifico el estado de los Pandas Gigantes de en peligro a vulnerable.	Verdadero
-566	5	En Quimica, cuantos isomeros tiene el Butanol (C4H9OH)?	Cuatro
-567	5	En topologia, el complemento de un conjunto abierto es un conjunto cerrado.	Verdadero
-568	5	En la escala de Scoville, cual es el quimico mas picante?	Resiniferatoxina
-569	5	En la tabla periodica, el simbolo del potasio es la letra K.	Verdadero
-570	5	Por cual fabricante de automoviles fue propiedad anterior de Jaguar Cars?	Ford
-571	5	Los canguros guardan comida en sus bolsas junto a sus crias.	Falso
-572	5	Las impresoras Laserjet e inkjet son ejemplos de que tipo de impresora?	Impresora sin impacto
-573	5	Al igual que con los neandertales, el Homo sapiens sapiens tambien se cruzo con los denisovanos.	Verdadero
-574	5	Las fibras musculares estan construidas de haces de pequenos organulos largos llamados que?	Miofibrillas
-575	5	En Twitter, cual era el limite original de caracteres para un Tweet?	ciento cuarenta
-576	5	En que dispositivo de hardware de computadora se encuentra el chip BIOS?	Placa madre
-577	5	En que mision se desintegro el transbordador espacial Columbia al reentrar?	STS-107
-578	5	Polaris es la estrella mas brillante en el cielo nocturno del hemisferio norte.	Falso
-579	5	El sonido puede viajar a traves del vacio.	Falso
-580	5	El acero es una aleacion de hierro y carbono.	Verdadero
-581	5	El lenguaje de programacion C fue creado por este cientifico informatico estadounidense.	Dennis Ritchie
-582	5	Que bus adicional agrego la arquitectura Harvard para microcontroladores?	Instruccion
-583	5	La orca se considera un tipo de delfin.	Verdadero
-584	5	El Sol se considera una estrella.	Verdadero
-585	5	El smartphone T-Mobile Sidekick es una version rebautizada del Danger Hiptop.	Verdadero
-586	5	El sistema operativo Windows 7 tiene seis ediciones principales.	Verdadero
-587	5	El acronimo comun de programacion de software "I18N" proviene del termino "Interlocalization".	Falso
-588	5	El numero decimal 31 en hexadecimal seria que?	1F
-589	5	El plato Fugu, esta hecho de que familia de peces?	Pez globo
-590	5	El equidna es un monotrema.	Verdadero
-591	5	El primer CPU de nucleo dual fue el Intel Pentium D.	Falso
-592	5	El primer automovil verdadero jamas fabricado fue el Benz Patent-Motorwagen de 1886.	Verdadero
-593	5	Cuantas camaras tiene el corazon humano?	Cuatro
-594	5	El menisco medial forma que parte de que articulacion en el cuerpo humano?	Rodilla
-595	5	Por que siglas se conoce la empresa tecnologica HP?	Hewlett-Packard
-596	5	Que otro lenguaje de programacion fue creado para reemplazar el lenguaje de programacion 'Swift'?	Objective-C
-597	5	De que esta hecho el cuerno del rinoceronte?	Queratina
-598	5	De que estan hechas las escamas de todas las serpientes y la mayoria de los lagartos?	Queratina
-599	5	Que fabricante de automoviles cedio su patente del cinturon de seguridad en aras de salvar vidas?	Volvo
-600	5	Que organulo celular es conocido como "la central electrica de la celula"?	Mitocondria
-601	5	En que pais se fabrico el Trabant 601?	Alemania Oriental
-602	5	Que significa "hippopotamus" y en que idioma?	Caballo de rio (griego)
-603	5	Que significa GHz?	Gigahercio
-604	5	Que significa GPS?	Sistema de Posicionamiento Global
-605	5	Que elemento de la tabla periodica tiene 92 electrones?	Uranio
-606	5	Que palabra de cinco letras es el lema de la compania IBM Computer?	Pensar
-607	5	Que enfermedad genetica es causada por tener un cromosoma Y adicional (XYY)?	Sindrome de Jacob
-608	5	Que protocolo de internet fue documentado en RFC 1459?	IRC
-609	5	Que se considera ampliamente como el precursor del formato USB?	PS/2
-610	5	En que se mide la radiacion?	Gris
-611	5	Cual es la "central energetica" de la celula animal eucariota?	Mitocondria
-612	5	Cual es el area de un circulo con un diametro de 20 pulgadas si  = 3.1415?	314.15 Pulgadas
-613	5	Cual es la cantidad promedio de chinchillas nacidas en una sola camada?	2-3
-614	5	Cual es la esperanza de vida promedio de un conejo domestico?	8-12 anos
-615	5	Cual es la composicion quimica del agua?	H2O
-616	5	Cual es la derivada de la aceleracion con respecto al tiempo?	Imbecil
-617	5	Cual es el primer exponente de numero primo de Mersenne mayor a 1000?	mil doscientos setenta y nueve
-618	5	Cual es el cuarto digito de ?	uno
-619	5	Cual es el planeta mas caliente del Sistema Solar?	Venus
-620	5	Cual es el planeta mas grande del Sistema Solar?	Jupiter
-621	5	Cual es la formula matematica de la ley de Ohm?	V = I*R
-622	5	Cual es la formula molecular del Ozono?	O3
-623	5	Cual es el nombre del zangano, la abeja macho que nace de un huevo sin fertilizar?	Dron
-624	5	Cual es el nombre dado a la capa 4 del modelo de Interconexion de Sistemas Abiertos (ISO)?	Transporte
-625	5	Cual es el nombre del agujero negro supermasivo en el centro de la Via Lactea?	Sagitario A*
-626	5	Cual es el nombre del tema predeterminado que viene instalado con Windows XP?	Luna
-627	5	Cual es el unico Problema del Premio del Milenio que ha sido resuelto hasta ahora?	Conjetura de Poincare
-628	5	Cual es la central energetica de la celula?	Mitocondria
-629	5	Cual es la sustancia adictiva principal que se encuentra en el tabaco?	Nicotina
-630	5	Cual es el nombre cientifico del chimpance comun?	Pan troglodytes
-631	5	Cual es la velocidad de la luz en el vacio?	299.792.458 m/s
-632	5	Cual es la unidad SI estandar para la distancia?	Metro
-633	5	Que se encuentra en el centro de nuestra galaxia?	Un agujero negro
-634	5	Que fabricante hizo el automovil usado en Regreso al Futuro?	DeLorean
-635	5	Que polimero se utiliza para hacer CDs, gafas de seguridad y escudos antidisturbios?	Policarbonato
-636	5	A que familia cientifica pertenece el Aardwolf?	Hienidos
-637	5	A que subordenamiento cientifico pertenece la familia Hyaenidae?	Feliformia
-638	5	Que tipo de criatura es un Bonobo?	Simio
-639	5	Que tipo de funcion es x2+2x+1?	Cuadratico
-640	5	Que vulnerabilidad ocupo el #1 en el OWASP Top 10 en 2013?	Inyeccion
-641	5	Cual era el nombre del lobo etiope antes de que descubrieran que estaba relacionado con los lobos?	Chacal de Simien
-642	5	Cual es la raiz cuadrada de 49?	siete
-643	5	Cual Audi no utiliza un sistema de traccion total basado en Haldex?	Audi A8
-644	5	Que tecnologia de distribucion variable de valvulas utiliza BMW?	VAIN
-645	5	Cual marca de automoviles NO pertenece a General Motors?	Ford
-646	5	Que fabricante de neumaticos para automoviles es famoso por su linea "P Zero"?	Pirelli
-647	5	A que clase de animales pertenecen los tritones?	Anfibio
-648	5	Cual era el lenguaje de programacion numero 1 en terminos de uso en GitHub en 2015?	JavaScript
-649	5	Que empresa fue establecida el 1 de abril de 1976 por Steve Jobs, Steve Wozniak y Ronald Wayne?	Manzana
-650	5	Que elemento tiene el numero atomico 7?	Nitrogeno
-651	5	Que empresa de Internet comenzo como una libreria en linea llamada 'Cadabra'?	Amazonas
-652	5	Cual es el hueso mas largo del cuerpo humano?	Femur
-653	5	Cual de los siguientes son celulas del sistema inmunologico adaptativo?	Celulas T citotoxicas
-654	5	Cual de los siguientes vasos sanguineos transporta sangre desoxigenada?	Arteria Pulmonar
-655	5	Cual de las siguientes empresas de dispositivos celulares NO esta headquartered en Asia?	Nokia
-656	5	Cual de los siguientes elementos se utiliza tipicamente en el dopaje del semiconductor silicio?	Boro
-657	5	Cual de los siguientes NO es un fabricante de automoviles ruso?	BYD
-658	5	Cual de los siguientes NO es un componente electrico pasivo?	Transistor
-659	5	Cual de los siguientes NO es una serpiente venenosa?	Serpiente reticulada
-660	5	Cual de los siguientes liquidos es el menos viscoso? Asuma que la temperatura es de 25C.	Acetona
-661	5	Cual de estos modelos de automoviles es producido por Lamborghini?	Aventador
-662	5	Cual de estas empresas NO fabrica motocicletas?	Toyota
-663	5	Cual de estos NO es un hueso que se encuentra en el brazo humano?	Tibia
-664	5	Cual de estos es una colonia de polipos y no una medusa?	Fragata Portuguesa
-665	5	Cual es la parte del cuerpo afectada por el glaucoma?	Ojos
-666	5	Que planeta envio imagenes de la superficie la sonda espacial "Viking 1", comenzando en 1976?	Marte
-667	5	Cual es el asistente virtual desarrollado por Amazon?	Alexa
-668	5	Quien es el fundador de Palantir?	Peter Thiel
-669	5	Quien es el autor original del motor de fisica en tiempo real llamado PhysX?	NovodeX
-670	5	Quien patento un motor de vapor que producia movimiento rotatorio continuo?	James Watt
-671	5	Puedes sacar la raiz cuadrada de un numero negativo con un numero imaginario "i".	Verdadero
-672	6	"Stadium of Light" es el estadio de cual equipo de futbol?	Sunderland FC
-673	6	Un estimador de velocidad mide la velocidad de una pelota sobre que superficie?	Green de golf para putts
-674	6	En que puente comienza la regata anual Oxford y Cambridge?	Putney
-675	6	En que carrera se gano el Campeonato Mundial de Pilotos de F1 2018?	Mexico
-676	6	Edson Arantes do Nascimento es el nombre completo de que legendario jugador de futbol?	Pele
-677	6	Etihad Stadium es el estadio de casa de cual equipo?	Manchester City
-678	6	La Formula E es una serie de automovilismo que utiliza automoviles de carreras hibridos electricos.	Falso
-679	6	En que provincia canadiense nacio el jugador de hockey Wayne Gretzky?	Ontario
-680	6	Cuantas veces gano Bjorn Borg el Abierto de Francia?	6
-681	6	Cuantos jugadores hay en un equipo de futbol?	once
-682	6	Cuantas zonas de puntuacion hay en un tablero de dardos convencional?	ochenta y dos
-683	6	Cuantos jugadores de futbol deben estar en el campo al mismo tiempo?	veintidos
-684	6	Cuantas veces gano Martina Navratilova el Campeonato de Individuales de Wimbledon?	Nueve
-685	6	En 2008, Usain Bolt establecio el record mundial en los 100 metros con un cordon desatado.	Verdadero
-686	6	Quien gano el Campeonato Mundial de Constructores de Formula 1 en 2016 por tercera vez consecutiva?	Mercedes-AMG Petronas
-687	6	En el futbol canadiense, cuantos puntos vale anotar un rouge?	uno
-688	6	En la Liga de Rugby, realizar un "40-20" es castigado con un tiro libre para el equipo contrario.	Falso
-689	6	En un juego de snooker, de que color es la bola que vale 3 puntos?	Verde
-690	6	En el beisbol, cuantos fouls resultan en un out?	0
-691	6	En el boliche, cual es el termino usado para obtener tres golpes consecutivos?	Pavo
-692	6	En golf, que nombre se le da a una puntuacion de dos bajo par en un hoyo?	Aguila
-693	6	En la Copa Mundial de la FIFA 2014, cual fue el marcador final del partido Brasil - Alemania?	1-7
-694	6	En que pais se celebraron los Juegos Olimpicos de Invierno de 2014 en la ciudad de Sochi?	Rusia
-695	6	En que deporte compite Fanny Chmelar por Alemania?	Esqui
-696	6	En que deporte se usa un "volante"?	Badminton
-697	6	De que equipo de la NRL forma parte Josh Mansour?	Penrith Panthers
-698	6	Antes de 2018, cual es la unica empresa automovilistica japonesa que gano las 24 Horas de Le Mans?	Mazda
-699	6	Roger Federer es un famoso jugador de futbol.	Falso
-700	6	Shaquille O'Neal solo ha hecho un triple en su carrera.	Verdadero
-701	6	El skateboarding se incluyo en los Juegos Olimpicos de Verano de 2020 en Tokio.	Verdadero
-702	6	El jugador de futbol Cristiano Ronaldo abrio un museo dedicado a si mismo.	Verdadero
-703	6	El tenis fue una vez conocido como Racquetball.	Falso
-704	6	Cual es el nombre del equipo afiliado de la AHL de los Boston Bruins?	Bruins de Providence
-705	6	La temporada de F1 de 1994 se recuerda por que evento tragico?	Muerte de Ayrton Senna (San Marino)
-706	6	De que ciudad estadounidense eran originalmente los Dodgers de Los Angeles?	Brooklyn
-707	6	En que ano el Mazda 787B gano las 24 Horas de Le Mans?	1991
-708	6	La cancha de tenis de los Juegos Olimpicos es una pantalla verde gigante.	Verdadero
-709	6	El primer episodio de WWF Monday Night RAW se emitio el 11 de enero de 1993.	Falso
-710	6	La cancion "Three Lions" de Lightning Seeds fue hecha para que evento de futbol importante en 1996?	Campeonatos Europeos
-711	6	En total hay 20 carreras en la temporada de Formula Uno 2016.	Falso
-712	6	Que pais fue anfitrion de los Juegos Olimpicos de Invierno de 2014?	Rusia
-713	6	Que termino de criquet denota que un bateador sea eliminado con una puntuacion de cero?	Pato
-714	6	Cual es la puntuacion de golf mas baja en la carrera de Tiger Woods?	sesenta y uno
-715	6	Cual es la longitud exacta de una parte recta en la Pista 1 de una Pista Olimpica?	84,39m
-716	6	Cual es el nombre completo del futbolista "Cristiano Ronaldo"?	Cristiano Ronaldo dos Santos Aveiro
-717	6	Cual es el cinturon mas alto que puedes obtener en Taekwondo?	Negro
-718	6	Cual es el tipo de lanzamiento mas comun que lanzan los lanzadores en el beisbol?	Bola rapida
-719	6	Cual es el nombre del estadio de casa del Manchester United?	Old Trafford
-720	6	Cual es el apodo del club de rugby union de la ciudad de Northampton?	Santos
-721	6	Cual es el equipo mas antiguo en las Grandes Ligas de Beisbol?	Atlanta Bravos
-722	6	Cual es "El Deporte de Reyes"?	Carreras de Caballos
-723	6	Que seleccion nacional gano la edicion 2016 del Campeonato Europeo de la UEFA?	Portugal
-724	6	Que seleccion nacional gano la primera UEFA Nations League?	Portugal
-725	6	Que deporte utiliza los terminos love, deuce, match y volley?	Tenis
-726	6	A que equipo vencio Inglaterra en la semifinal para ganar la final de la Copa Mundial de 1966?	Portugal
-727	6	A que equipo vencio Inglaterra para ganar la final de la Copa Mundial de 1966?	Alemania Occidental
-728	6	Que herramienta presta su nombre a la ventaja de la ultima piedra en un end en Curling?	Martillo
-729	6	Cual fue el promedio de bateo de Sir Donald Bradman en partidos de prueba?	99,94
-730	6	Cual fue el resultado final del partido entre Alemania y Brasil de la Copa Mundial de la FIFA 2014?	7 - 1
-731	6	En que ano se fundo el Bari Football Club italiano?	1908
-732	6	En que ano nacio la leyenda del hockey Wayne Gretzky?	1961
-733	6	Cuando fue fundado el FC Schalke 04?	1904
-734	6	Cuando se jugo el primer partido internacional oficial?	1872
-735	6	Donde se celebraron los Juegos de la XXII Olimpiada?	Moscu
-736	6	Que afroamericano es en parte responsable de integrar las Grandes Ligas de Beisbol?	Jackie Robinson
-737	6	Que club de futbol ingles tiene el apodo 'The Foxes'?	Leicester City
-738	6	Que piloto de Formula 1 cambio de equipo a mitad de la temporada 2017?	Carlos Sainz Jr.
-739	6	Que piloto de Formula Uno fue apodado 'El Profesor'?	Alain Prost
-740	6	Cual es la marca alemana de ropa deportiva cuyo logo es la 'Formstripe'?	Puma
-741	6	Que boxeador fue prohibido por morder la oreja de Evander Holyfield en 1997?	Mike Tyson
-742	6	Que fabricante de automoviles gano las 24 Horas de Le Mans 2016?	Porsche
-743	6	Que fabricante de automoviles gano las 24 Horas de Le Mans de 2017?	Porsche
-744	6	De que pais es originario el Kabaddi, un deporte de contacto que implica derribos?	India
-745	6	Que pais fue anfitrion de la Copa Mundial de la FIFA 2018?	Rusia
-746	6	Que pais fue anfitrion de los Juegos Olimpicos de Verano de 2020?	Japon
-747	6	Que pais fue anfitrion de la Copa Mundial de la FIFA 2022?	Qatar
-748	6	Que pais es anfitrion de la Copa Mundial de la FIFA 2022?	Qatar
-749	6	Que pais produjo futbolistas como Cafu, Roberto Carlos y Pele?	Brasil
-750	6	Que pais gano la Copa Mundial de la FIFA 2018 realizada en Rusia?	Francia
-751	6	Que jugador de dardos ha ganado mas titulos de Campeonato Mundial?	Phil Taylor
-752	6	Que piloto ha sido campeon mundial de Formula 1 un record de 7 veces?	Michael Schumacher
-753	6	Cual es el record personal de Kenenisa Bekele en maraton?	2:01:41
-754	6	Que nacion fue anfitriona de la Copa Mundial de la FIFA en 2006?	Alemania
-755	6	Cual de los siguientes torneos de tenis Grand Slam ocurre ULTIMO?	US Open
-756	6	Cual de los siguientes jugadores anoto un hat-trick en su debut con Manchester United?	Wayne Rooney
-757	6	Cual de los siguientes deportes no es parte del triatlon?	Equitacion
-758	6	Cual de estos clubes de futbol ingleses tiene su sede en Liverpool?	Everton
-759	6	Cual de estos numeros de camiseta nunca ha usado Shaquille O'Neal?	treinta y cinco
-760	6	Cual de estos equipos no ha jugado Jaromir Jagr?	New York Islanders
-761	6	Cual de estos eventos de atletismo NO esta incluido en el decatlon olimpico masculino?	Lanzamiento de martillo
-762	6	Que jugador le propino una "patada de kung-fu" a un aficionado del Crystal Palace en enero de 1995?	Eric Cantona
-763	6	De cual isla portuguesa es el futbolista Cristiano Ronaldo?	Madera
-764	6	Que equipo de futbol gano el Campeonato de la Copa America 2015?	Chile
-765	6	Que equipo de futbol gano la Copa America Centenario 2016?	Chile
-766	6	Cual es el deporte que NO se juega tradicionalmente durante el festival Naadam de Mongolia?	Futbol Americano
-767	6	Que equipo gano la Copa Mundial de la FIFA 2014 en Brasil?	Alemania
-768	6	En que ano gano Jenson Button su primer Campeonato Mundial de Pilotos de Formula Uno?	2009
-769	6	Con que equipo gano Steven Gerrard la Liga de Campeones?	Liverpool
-770	6	Quien ha jugado la mayor cantidad de torneos en la seleccion nacional de futbol alemana?	Lothar Matthaus
-771	6	Quien ha jugado la mayoria de los torneos en la seleccion nacional de futbol de Brasil?	Cafu
-772	6	Quien es el jugador con mas apariciones en la historia del Manchester United?	Ryan Giggs
-773	6	Quien es a menudo llamado "el Maestro" en el circuito de tenis masculino?	Roger Federer
-774	6	Quien era el luchador profesional britanico Shirley Crabtree mas conocido como?	Gran Papa
-775	6	Quien fue el maximo goleador del Mundial de la FIFA 2014?	James Rodriguez
-776	6	Quien fue el maximo goleador de la seleccion nacional de futbol de Inglaterra?	Wayne Rooney
-777	6	Quien gano la "Liga de Campeones" en 1999?	Manchester United
-778	6	Quien gano el Gran Premio de San Marino de 1994, la carrera en la que Ayrton Senna fue asesinado?	Michael Schumacher
-779	6	Quien gano la Daytona 500 de 1998?	Dale Earnhardt
-780	6	Quien gano el Campeonato Nacional de la College Football Playoff (CFP) de 2015?	Buckeyes de Ohio State
-781	6	Quien gano el Campeonato Mundial de Formula 1 de 2015?	Lewis Hamilton
-782	6	Quien gano el Campeonato Mundial de Pilotos de Formula 1 de 2016?	Nico Rosberg
-783	6	Quien gano el Campeonato Mundial de Pilotos de Formula Uno de 2017?	Lewis Hamilton
-784	6	Quien gano el Gran Premio de Monaco de 2018?	Daniel Ricciardo
-785	6	Quien gano la UEFA Champions League en 2016?	Real Madrid Club de Futbol
-786	6	Quien gano la Liga de Campeones de la UEFA en 2017?	Real Madrid Club de Futbol
-787	6	Con que companero de dobles tuvo John McEnroe mas exito?	Peter Fleming
-788	7	"Nephelococcygia" es la practica de hacer que?	Encontrar formas en las nubes
-789	7	"Santa Claus" es una variedad de melon.	Verdadero
-790	7	Un pasodoble es un tipo de salsa de pasta italiana.	Falso
-791	7	Albert Einstein tuvo dificultades con las matematicas cuando estaba en la escuela.	Falso
-792	7	Con que estacion esta hermanada la estacion Centraal de Amsterdam?	Estacion de Liverpool Street de Londres
-793	7	Para combatir que se toman generalmente los antibioticos?	Infecciones bacterianas
-794	7	En que estado de Estados Unidos se encuentra el Area 51?	Nevada
-795	7	En que deporte fueron famosos los hermanos Bob y Mike Bryan?	Tenis
-796	7	De cual pais europeo se origino la ensalada de col?	Paises Bajos
-797	7	De Eemhof, Port Zelande y Het Heijderbos son casas de vacaciones propiedad de que empresa?	Center Parcs
-798	7	El te Earl Grey es te negro aromatizado con que?	Aceite de bergamota
-799	7	Ecuador utiliza el Peso Mexicano como su moneda.	Falso
-800	7	Las cadenas de comida rapida Carl's Jr. y Hardee's son propiedad de la misma empresa.	Verdadero
-801	7	El foie gras es un manjar frances tipicamente hecho del higado de un pato o ganso.	Higado
-802	7	Furby fue lanzado en 1998.	Verdadero
-803	7	De que pais europeo es el queso Gouda?	Paises Bajos
-804	7	Haggis se come tradicionalmente en la Noche de Burns.	Verdadero
-805	7	Cuantos colores hay en un arcoiris?	siete
-806	7	Cuantos furlongs hay en una milla?	Ocho
-807	7	Cuantas letras hay en el alfabeto ingles?	veintiseis
-808	7	Cual es la altura del Burj Khalifa?	2.722 pies
-809	7	Si alguien dijera "eres maloliente", que querria decir?	Hueles extremadamente desagradable.
-810	7	Si te atrapan "Goldbricking", que estas haciendo mal?	Holgazaneria
-811	7	Si plantaras las semillas de Quercus robur, que creceria?	Arboles
-812	7	En "Katamari Damacy", controlas un personaje conocido como:	El Principe
-813	7	Cuanto dinero se perdio por estafas nigerianas en 2013?	$12.7 mil millones
-814	7	Cuantos meses comienzan con la letra 'J' en un calendario gregoriano estandar?	Tres
-815	7	En una baraja estandar de cartas, cual es el unico rey sin bigote?	Corazones
-816	7	En el idioma ingles, cual es el nombre del caracter "&"?	Simbolo de ampersand
-817	7	En que ano Canada dejo de producir el centavo?	2012
-818	7	En que pais se celebraron los Juegos Olimpicos de Verano de 1992?	Espana
-819	7	En que cadena de comida rapida puedes pedir un Jamocha Shake?	Arby's
-820	7	Es un perro un mamifero?	Verdadero
-821	7	Kraft "Cheez Whiz" contiene cultivo de queso, pero en realidad no contiene queso	Verdadero
-822	7	Nombrada en honor a la flor de malva, el malva es un tono de que?	Purpura
-823	7	De los siguientes meses, cual tiene la mayor cantidad de dias?	Diciembre
-824	7	En un tablero de dardos, que numero esta directamente opuesto al numero 1?	diecinueve
-825	7	En promedio, los estadounidenses consumen 100 libras de que por segundo?	Chocolate
-826	7	En promedio, al menos 1 persona es asesinada por un conductor ebrio en Estados Unidos cada hora.	Verdadero
-827	7	Solo el 9% de los hogares estadounidenses poseian un televisor en	1950
-828	7	De estos cuatro edificios, cual es el mas alto, con una altura de 1,483 ft (451.9 m)?	Torres Petronas Gemelas, Malasia
-829	7	Pluton es un planeta.	Falso
-830	7	El agua pura conduce efectivamente la electricidad	Falso
-831	7	Red Vines es una marca de que tipo de caramelo?	Regaliz
-832	7	Terry Gilliam fue un animador que trabajo con que grupo comico britanico?	Monty Python
-833	7	Por que producto alimenticio es mas conocida la empresa estadounidense "Campbell's"?	Sopas enlatadas
-834	7	Por que se conoce coloquialmente la moneda canadiense de $1?	Loonie
-835	7	La palabra francesa para viajar es "Travail"	Falso
-836	7	La Carita Feliz fue creada por el artista comercial Harvey Ball.	Verdadero
-837	7	Que tipo de cerveza es la cerveza mexicana "Corona"?	Cerveza Lager Palida
-838	7	El metro de Nueva York es el mas antiguo del mundo.	Falso
-839	7	Los Jack-o-Lanterns originales eran en realidad nabos vaciados.	Verdadero
-840	7	A que se refiere la palabra sueca "Grunka"?	cosa
-841	7	El cartel de drogas dirigido por Pablo Escobar se origino en que ciudad sudamericana?	Medellin
-842	7	La continuacion menos conocida del dicho "La curiosidad mato al gato..." es:	...pero la satisfaccion lo devolvio.
-843	7	El parecido de que presidente aparece en el raro billete de $2 de la moneda estadounidense?	Tomas Jefferson
-844	7	La mitocondria es la central energetica de la celula.	Verdadero
-845	7	El vapor producido por los cigarrillos electronicos es en realidad agua.	Falso
-846	7	La palabra "abulia" significa cual de las siguientes opciones?	La incapacidad para tomar decisiones
-847	7	La palabra "astasia" significa cual de lo siguiente?	La incapacidad para ponerse de pie
-848	7	La palabra "docena" generalmente se refiere a un grupo de cuantos objetos?	Doce
-849	7	Las palabras "bungalow" y "shampoo" originan de los idiomas de que pais?	India
-850	7	Este empresario ghanes es un pionero de las microfinanzas.	Esther Afua Ocloo
-851	7	Este campo a veces se conoce como "La Ciencia Lugubre."	Economia
-852	7	Esta es la ortografia correcta de "Supercalifragilisticexpialidocious".	Verdadero
-853	7	A que familia linguistica pertenece el kazajo?	Turquico
-854	7	Que aerolinea era propietaria del avion que se estrello frente a la costa de Nueva Escocia en 1998?	Swissair
-855	7	Que bebida alcoholica se hace a partir de melaza?	Ron
-856	7	Como llaman los marineros a la parte delantera de un barco?	Arco
-857	7	Como llaman los marineros al lado derecho de un barco?	Estribor
-858	7	Por que significa VR?	Realidad Virtual
-859	7	Sobre que camina un funambulo?	Una Cuerda Tensa
-860	7	Que significa la F en el FBI?	Federal
-861	7	Como se traduce al ingles la frase latina "Veni, vidi, vici"?	Vine, vi, venci
-862	7	Que cadena de comida rapida tiene la mayoria de ubicaciones a nivel mundial?	Metro
-863	7	Que fruta es un ingrediente tradicional de la Selva Negra?	Cerezas
-864	7	Cual es el idioma oficial mas hablado de Cuba?	Espanol
-865	7	Cual es la fobia del miedo a los perros?	Perros
-866	7	Que es H2O?	Agua
-867	7	Que es Tasmania?	Un Estado australiano
-868	7	Que es una Bandera de Proa?	Una bandera
-869	7	Que se exhibe en el museo de Madame Tussauds en Londres?	Esculturas de cera
-870	7	Cual es la palabra portuguesa para "Brasil"?	Brasil
-871	7	Cual es la moneda de India y Pakistan asi como de algunos otros paises asiaticos?	Rupia
-872	7	Cual es la caracteristica definitoria de alguien que se describe como hirsuto?	Peludo
-873	7	Cual es el apellido del famoso Papa John?	Schnatter
-874	7	Cual es el organo mas grande del cuerpo humano?	Piel
-875	7	Cual es el sustantivo mas comunmente usado en la lengua inglesa?	Tiempo
-876	7	Cual es la letra mas frecuentemente utilizada en el alfabeto ingles?	E
-877	7	Cual es el sitio web mas visitado entre estas opciones?	Google
-878	7	Cual es el nombre de Polonia en polaco?	Polonia
-879	7	Cual es el nombre del Ano Nuevo judio?	Rosh Hashana
-880	7	Cual es el nombre de la moneda utilizada en Etiopia?	Birra
-881	7	Cual es el apodo del estado estadounidense de California?	Estado Dorado
-882	7	Cual es la palabra arabe romanizada para "luna"?	Qamar
-883	7	Cual es la palabra japonesa romanizada para "universidad"?	Daigaku
-884	7	Cual es la forma del juguete inventado por el profesor hungaro Erno Rubik?	Cubo
-885	7	Que elemento de maquina se encuentra en el centro de los fidget spinners?	Rodamientos
-886	7	Que nombre representa la letra "M" en el alfabeto fonetico de la OTAN?	Miguel
-887	7	Que nacion produce aproximadamente el 40% de la vainilla del mundo?	Madagascar
-888	7	Que organo del cuerpo produce bilis?	Higado
-889	7	Que era originalmente el Banco de America?	Banco de Italia
-890	7	Cual fue el destino del vuelo desaparecido MH370?	Pekin
-891	7	Cual fue el tercer pais en tener un restaurante McDonald's?	Costa Rica
-892	7	En que ano nacio la Reina Isabel II?	1926
-893	7	Cuando se lanzo el sitio web "Facebook"?	2004
-894	7	Cuando alguien tiene "envidia", se dice que es de que color?	Verde
-895	7	Cuando alguien es cobarde, se dice que tiene el vientre de que color?	Amarillo
-896	7	Cuando se lanzo Pong?	29 de noviembre de 1972
-897	7	Cuando lloras en el espacio, tus lagrimas se adhieren a tu cara.	Verdadero
-898	7	De donde proviene el agua de las botellas de agua Poland Spring?	Maine, Estados Unidos
-899	7	Donde en La Coruna (Espana) esta la sede de "Inditex", el mayor grupo de moda del mundo?	Arteijo
-900	7	Donde esta la estacion de tren "Llanfairpwllgwyngyllgogerychwyrndrobwlllantysiliogogogoch"?	Gales
-901	7	Que presidente estadounidense aparece en un billete de un dolar?	George Washington
-902	7	Cual cerveceria estadounidense lidero el pais en ventas por volumen en 2015?	D. G. Yuengling e Hijo, Inc
-903	7	Que pais tiene la Union Jack en su bandera?	Nueva Zelanda
-904	7	Que pais, sin incluir a Japon, tiene la mayor cantidad de personas de descendencia japonesa?	Brasil
-905	7	Que condimento esencial tambien se conoce como rabano picante japones?	Wasabi
-906	7	Que estrella de cine tiene su estatua en Leicester Square?	Charlie Chaplin
-907	7	Cual es el idioma hablado mas popular en el Hemisferio Sur?	Portugues
-908	7	Que montana tiene el pico mas alto de Africa?	Monte Kilimanjaro, Tanzania
-909	7	Que montana tiene el pico mas alto de Australia?	Monte Kosciuszko, Nueva Gales del Sur
-910	7	Cual es la montana con el pico mas alto de Europa?	Monte Elbrus, Rusia
-911	7	Cual es la montana con el pico mas alto de America del Norte?	Denali, EE.UU.
-912	7	Cual de los siguientes quimicos se encuentra en las semillas de berenjena?	Nicotina
-913	7	Cual de los siguientes es el codigo IATA del Aeropuerto de Manchester?	HOMBRE
-914	7	Cual de los siguientes paises NO fue beligerante en la Primera Guerra Mundial?	Dinamarca
-915	7	Cual de estos cantantes y compositores estadounidenses gano un Premio Nobel de Literatura?	Bob Dylan
-916	7	Cual de estos bancos NO esta autorizado para emitir billetes de moneda en Hong Kong?	OCBC
-917	7	Cual de estas empresas NO fabrica automoviles?	Ducati
-918	7	Cual de estas cadenas de comida rapida NO es principalmente conocida por vender pizza?	Wendy's
-919	7	Cual de estos NO se considera un color que forma el arcoiris?	Rosa
-920	7	Que producto vendia originalmente Nokia, la empresa de telecomunicaciones?	Papel
-921	7	Que eslogan utilizo la empresa de comida rapida McDonald's antes de su eslogan "I'm Lovin' It"?	Nos Encanta Verte Sonreir
-922	7	Cual es el tipo de cubierto mas adecuado para comer sopa?	Cuchara
-923	7	Quien aparece en el billete de cien dolares estadounidenses?	Benjamin Franklin
-924	7	Quien interpreto al General Aladeen en The Dictator?	Sacha Baron Cohen
-925	7	Por que el cielo nocturno es oscuro?	El universo es finito en edad y tamano
-926	7	Xantofobia es el miedo a que color?	Amarillo
+1	1	Groenlandia es casi tan grande como Africa.	Falso
+2	1	Cuantos paises hay dentro del Reino Unido?	Cuatro
+3	1	Cuantos paises bordean Kirguistan?	Cuatro
+4	1	Con cuantos paises comparte Estados Unidos una frontera terrestre?	dos
+5	1	Cuantos estados federales tiene Alemania?	16
+6	1	Cuantos paises independientes hay dentro del continente de America del Sur?	Doce
+7	1	En que pais se encuentra el municipio de Arteijo?	Espana
+8	1	Japon tiene el trafico por el lado izquierdo.	Verdadero
+9	1	Miami es la ciudad mas grande de Florida.	Falso
+10	1	New Haven es la capital del estado de Connecticut en los Estados Unidos.	Falso
+11	1	En que continente se encuentra la cordillera de los Andes?	America del Sur
+12	1	El territorio moderno de Portugal fue una vez parte del Imperio Romano.	Verdadero
+13	1	Rusia comparte una frontera terrestre con Corea del Norte.	Verdadero
+14	1	El Principado de Sealand es una micronacion no reconocida frente a la costa de que pais?	El Reino Unido
+15	1	El desierto de Sonora se encuentra en el este de Africa.	Falso
+16	1	En que pais se encuentran los Acantilados Blancos de Dover?	Reino Unido
+17	1	La sede de la Organizacion Mundial de la Salud se encuentra en que pais europeo?	Suiza
+18	1	La capital de Brasil es Rio de Janeiro.	Falso
+19	1	La capital de Indonesia es Bali.	Falso
+20	1	El montanoso paso de Jiber conecta cual de los dos siguientes paises?	Afganistan y Pakistan
+21	1	Existe una isla llamada "Java".	Verdadero
+22	1	Hay 47 prefecturas en Japon.	Verdadero
+23	1	Tokio es la capital de Japon.	Verdadero
+24	1	Hasta 1939, Laos se llamaba Siam.	Falso
+25	1	En que ciudad se encuentra el Ejercito de Terracota?	Xi'an
+26	1	Que pais no es parte de Escandinavia?	Finlandia
+27	1	Que evento llevo a Liechtenstein a anadir una corona a su bandera?	Los Juegos Olimpicos de 1936
+28	1	Cual es la isla mas grande de Canada?	Isla de Baffin
+29	1	Cual es la 15a letra del alfabeto griego?	Omicron ()
+30	1	Cual es la capital de los Estados Unidos?	Washington, D.C.
+31	1	Cual es la palabra finlandesa para "Finlandia"?	Finlandia
+32	1	Cual es la capital de Bermudas?	Hamilton
+33	1	Cual es la capital de Bangladesh?	Daca
+34	1	Cual es la capital de Brasil?	Brasilia
+35	1	Cual es la capital de Chile?	Santiago
+36	1	Cual es la capital de Chipre?	Nicosia
+37	1	Cual es la capital de India?	Nueva Delhi
+38	1	Cual es la capital de Rumania?	Bucarest
+39	1	Cual es la capital de Escocia?	Edimburgo
+40	1	Cual es la capital de Seychelles?	Victoria
+41	1	Cual es la capital de Surinam?	Paramaribo
+42	1	Cual es la capital del estado estadounidense de Arizona?	Fenix
+43	1	Cual es el pais musulman mas grande del mundo?	Indonesia
+44	1	Cual es el pais mas grande del mundo?	Federacion Rusa
+45	1	Cual es el pais mas grande del mundo?	Rusia
+46	1	Cual es el rio mas largo de Europa?	Volga
+47	1	Cual es el nombre de la peninsula que contiene a Espana y Portugal?	Peninsula Iberica
+48	1	Cual es el idioma oficial en Liechtenstein?	Aleman
+49	1	Cual es el idioma oficial de Costa Rica?	Espanol
+50	1	Cual es el unico estado de los Estados Unidos que no tiene una bandera en forma con 4 bordes?	Ohio
+51	1	Cual es el pais mas pequeno del mundo?	Ciudad del Vaticano
+52	1	Cual es la montana mas alta de Canada?	Monte Logan
+53	1	Que nombre se uso historicamente para la ciudad turca actualmente conocida como Estambul?	Constantinopla
+54	1	Cual era el nombre anterior de la nacion africana de Zimbabue?	Rodesia
+55	1	Donde esta ubicado Fort Marlborough?	Bengkulu
+56	1	Donde esta ubicada la Muralla de Adriano?	Carlisle, Inglaterra
+57	1	Donde esta el rio Volga?	Rusia
+58	1	Donde se encuentra la ciudad antigua de Petra?	Jordania
+59	1	Donde esta ubicada la ciudad de Haarlem?	Paises Bajos
+60	1	Cual es el barrio mas al norte de la Ciudad de Nueva York?	Bronx
+61	1	Que provincia canadiense tiene a Charlottetown como su capital?	Isla del Principe Eduardo
+62	1	En que condado ingles encontraras la Universidad de East Anglia?	Norfolk
+63	1	Que nacion oceaniana es conocida en maori como Aotearoa?	Nueva Zelanda
+64	1	Que pais del Reino Unido presenta un dragon en su bandera?	Gales
+65	1	Que pais reclama la propiedad del estado disputado de Kosovo?	Serbia
+66	1	Que pais tiene la abreviatura "CH"?	Suiza
+67	1	Cual es la mas grande de estas 4 islas?	Borneo
+68	1	Cual es el unico estado estadounidense ubicado completamente en la region de Apalaches?	Virginia Occidental
+69	1	Cual es el pais mas pequeno del mundo?	Ciudad del Vaticano
+70	1	Cual es el rio mas largo del mundo?	Nilo
+71	1	Cual de los siguientes idiomas europeos esta clasificado como una "lengua aislada"?	Vasco
+72	1	Cual de las siguientes islas japonesas es la mas grande?	Honshu
+73	1	Cual de los siguientes paises es una isla?	Chipre
+74	1	Cual de los siguientes es el rio mas largo de Europa?	Volga
+75	1	Cual de estas islas japonesas es la mas grande por area?	Shikoku
+76	1	Cual de estos paises no es miembro de las Naciones Unidas?	Niue
+77	1	Cual de las capitales de estos paises comienza con la letra B?	Libano
+78	1	Cual de estos paises insulares se encuentra ubicado en el Caribe?	Barbados
+79	1	Cual de estos lugares es una ubicacion en Cornualles?	Barcelona
+80	1	Cual de estos paises limita con Polonia?	Lituania
+81	1	Que estrecho de agua conecta el oceano Atlantico con el mar Mediterraneo?	Estrecho de Gibraltar
+82	2	"Cube", "Cube 2: Hipercubo" y "Cube Zero" fueron dirigidas por la misma persona.	Falso
+83	2	"Make You Feel My Love" fue escrito y interpretado originalmente por cual cantautor?	Bob Dylan
+84	2	La primera regla es: no hables de ello", es una referencia a que pelicula?	El club de la lucha
+85	2	'74-'75 es un sencillo de 1993 del album Ring de que banda estadounidense?	Los Connells
+86	2	Segun la tradicion de Star Wars, cual es el planeta natal de Han Solo?	Corellia
+87	2	Despues de India, que pais produce la segunda mayor cantidad de peliculas por ano?	Nigeria
+88	2	Eurobeat es principalmente un genero musical italiano.	Verdadero
+89	2	En "Jurassic World", cual es el nombre del dinosaurio que es un hibrido genetico?	Indominus Rex
+90	2	En "Jurassic World", que empresa compra InGen y crea Jurassic World?	Corporacion Masrani Global
+91	2	En "Rick and Morty", quien disparo a "Sr. Poopybutthole" en el episodio "Total Rickall"?	Beth
+92	2	Que banda lanzo en 2006 su album debut "A Fever You Can't Sweat Out"?	Panic! At the Disco
+93	2	En Two and a Half Men, cual es el nombre del hijo de Alan Harper?	Jake
+94	2	Con que se pago a la mayoria de los extras de Mad Max (1979) para reducir costos?	Cerveza
+95	2	En que ano Clint Eastwood actuo como el Inspector Harry Callahan en la pelicula "Dirty Harry"?	1971
+96	2	En que ano se lanzo el album de Megadeth "Peace Sells... but Who's Buying?"?	1986
+97	2	En que pelicula hizo Johnny Depp su debut en la pantalla grande?	A Nightmare on Elm Street
+98	2	Metallica colaboro con Mr Bean de Rowan Atkinson en un sencillo de alivio comico de 1992.	Falso
+99	2	Michael Jackson escribio la cancion de Los Simpson "Do the Bartman".	Falso
+100	2	Nick Mason es el unico miembro en aparecer en todos los albumes de Pink Floyd.	Verdadero
+101	2	El album de debut de Pink Guy fue "Pink Season".	Falso
+102	2	El nombre real del rapero Snoop Dogg es 'Cordozar Calvin Broadus, Jr.'.	Verdadero
+103	2	De que album es la cancion "Give It Away" de Red Hot Chili Peppers?	Blood Sugar Sex Magik
+104	2	En cual de sus canciones aparece la linea homonima de The Who, "Teenage Wasteland"?	Baba O' Riley
+105	2	El autor detras de la aclamada novela "Leaving Las Vegas" tambien escribio un episodio de Rugrats.	Verdadero
+106	2	El color de las pastillas en Matrix eran Azul y Amarillo.	Falso
+107	2	La pelicula "2001: Una odisea del espacio" se estreno el 31 de diciembre de 2000.	Falso
+108	2	De cual ciudad inglesa es la banda de heavy metal Black Sabbath?	Birmingham
+109	2	La cantante Billie Holiday tambien era conocida como "Lady Day".	Verdadero
+110	2	La cancion "Mystery Train" fue lanzada por el artista "Little Junior's Blue Flames" en 1953.	Verdadero
+111	2	El arma que Clint Eastwood usa en "Dirty Harry" fue una .44 Automag.	Falso
+112	2	Que raza de perro era Marley en la pelicula "Marley & Me" (2008)?	Labrador Retriever
+113	2	Que mostraba la primera pelicula en movimiento?	Un caballo galopando
+114	2	Que significa TIE en referencia al Caza TIE en "Star Wars"?	Motor de Ion Gemelo
+115	2	Cual es el album mas vendido de todos los tiempos entre 1976 y 2018?	Suspenso
+116	2	Cual es el nombre de nacimiento de Michael Caine?	Maurice Micklewhite
+117	2	Cual es la primera cancion del album 808s & Heartbreak de Kanye West?	Dilo que haras
+118	2	Cual es el nombre del personaje de James Dean en la pelicula de 1955 "Rebelde sin causa"?	Jim Stark
+119	2	Cual es el nombre de la primera pelicula de "Star Wars" por orden de lanzamiento?	Una nueva esperanza
+120	2	Cual es el nombre del caballo de carreras al que Tony Soprano se encarina?	Pie-O-Mi
+121	2	Cual es la cancion de apertura en Pure Heroine de Lorde?	Cancha de Tenis
+122	2	Cual era el nombre de pila del personaje de Marilyn Monroe en la pelicula "Con faldas y a lo loco"?	Azucar
+123	2	Cual fue el album mas vendido de 2015?	Adele, 25
+124	2	Cual fue el primer videoclip transmitido en MTV?	El video mato a la estrella de la radio
+125	2	Cual era el nombre del planeta en "Aliens"?	LV-426
+126	2	Cual es el nombre de pila del Dr. Dofenshmirtz?	Heinz
+127	2	Cual es la metrica mas comun para las canciones de rock?	4/4
+128	2	Cuando se transmitio por primera vez la serie de television Rick and Morty en Adult Swim?	2013
+129	2	Que banda de los 80 esta liderada por el cantante/guitarrista Robert Smith?	The Cure
+130	2	Cual villano de Batman es Mark Hamill conocido por haber doblado?	El Payaso
+131	2	Cual album de The Beatles NO presenta a ningun miembro de la banda en su portada?	Los Beatles (Album Blanco)
+132	2	Cual actor audiciono para el papel de Luke Skywalker?	Kurt Russell
+133	2	Que actor de The Young Ones tambien interpreto a Lord Flashheart en un episodio de Blackadder II?	Rik Mayall
+134	2	Que exmiembro de una banda de chicos lanzo el exitoso sencillo en solitario "Angels" en 1997?	Robbie Williams
+135	2	Que miembro de "The Beatles" narro episodios de "Thomas the Tank Engine"?	Ringo Starr
+136	2	Cual de estas peliculas NO conto con la participacion del difunto actor John Candy?	Cazafantasmas
+137	2	Cual de los miembros de la banda Beatles esta descalzo en la portada del album 'Abbey Road'?	Paul McCartney
+138	2	Cual de los siguientes NO es una cancion real de la banda Thousand Foot Krutch?	Furia Sin Limites
+139	2	Cual de estos personajes de BoJack Horseman es un humano?	Todd Chavez
+140	2	Cual de estos clasicos de Disney fue lanzado en 1970?	Los Aristogatos
+141	2	Cual de estas peliculas NO fue lanzada en 1996?	Gladiador
+142	2	Cual de estos NO es el nombre de un album lanzado por el productor de Miami DJ Khaled?	Nunca te Juegues a ti Mismo
+143	2	Cual de estas peliculas NO se considera parte del Universo Cinematografico de Marvel?	Los Cuatro Fantasticos (2015)
+144	2	Cual de estas canciones fue una version de Jimi Hendrix?	Todas estas canciones
+145	2	Cual de estas canciones fue lanzada en 1996?	The Smashing Pumpkins - "1979"
+146	2	Cual de estas peliculas dirigio David Lynch pero no escribio?	La historia recta
+147	2	Cual de estas canciones NO hizo el grupo "Men At Work"?	La Danza de la Seguridad
+148	2	Cual cancion NO es de Tom Jones?	Never Gonna Give You Up
+149	2	Cual es el pueblo donde transcurre la pelicula de Disney Herbie, loco de amor (1968)?	San Francisco
+150	2	Cual fue la primera pelicula de Alfred Hitchcock filmada en color?	Cuerda
+151	2	En que ano se lanzo el primer YouTube Rewind oficial?	2010
+152	2	Quien dirigio la pelicula de 1973 "American Graffiti"?	George Lucas
+153	2	Quien tuvo un exito numero 1 en EE.UU. y Reino Unido en 1962 con el instrumental 'Telstar'?	Los Tornados
+154	2	Quien es el vocalista y lider de la banda de rock "Guns N' Roses"?	Axl Rose
+155	2	Quien interpreto a Thanos en Avengers: Infinity War y Avengers: End Game?	Josh Brolin
+156	2	Quien interpreto a la Camarera en el sketch de Spam de "Monty Python's Flying Circus"?	Terry Jones
+157	2	Quien canto la cancion del tema de apertura de la pelicula de James Bond de 1995 'Goldeneye'?	Tina Turner
+158	2	Quien fue el primer ganador de Big Brother US en ganar con un juego perfecto?	Dan Gheesling
+159	2	Quien era el miembro mas antiguo de The Beatles?	Ringo Starr
+160	2	Quien fue el ganador de "Big Brother" Temporada 10?	Dan Gheesling
+161	3	"Si, America Puede!" fue el eslogan de campana de facto de este politico estadounidense en 2004.	George W. Bush
+162	3	Despues de su derrota en la Batalla de Waterloo, a que isla fue exiliado Napoleon Bonaparte?	Santa Elena
+163	3	Durante las invasiones mongolas de Japon, que detuvo principalmente los barcos mongoles?	Tifones
+164	3	George W. Bush perdio el voto popular en la eleccion presidencial de Estados Unidos de 2004.	Falso
+165	3	De que pais era Hong Kong una parte del territorio antes de que Gran Bretana lo recuperara en 1945?	Japon
+166	3	Como llamaban los vikingos a su colonia de corta duracion en el Canada actual?	Tierra de Vinedos
+167	3	Cuanto tiempo duro la Segunda Guerra Mundial?	6 anos
+168	3	Cuanto tiempo duro el Levantamiento de Varsovia durante la Segunda Guerra Mundial?	63 Dias
+169	3	Cuantos anos tenia Adolf Hitler cuando murio?	cincuenta y seis
+170	3	En que dialogo Socrates se defendio ante la corte de Atenas?	La Apologia
+171	3	En que ano ocurrio el Crash de Videojuegos de America del Norte?	1983
+172	3	En que pais se construyo la Estatua de la Libertad y se exporto a los Estados Unidos de America?	Francia
+173	3	En que ano fue liberado Nelson Mandela de la prision?	1990
+174	3	En que dia invadio Alemania a Polonia?	1 de septiembre de 1939
+175	3	Pianista Frederic Chopin fue compositor de que era musical?	Romantico
+176	3	Rusia aprobo una ley en 2013 que prohibe decirles a los ninos que los homosexuales existen.	Verdadero
+177	3	La Batalla del Somme en la Primera Guerra Mundial tuvo lugar en que pais?	Francia
+178	3	La Guerra Fria termino con la muerte de Jose Stalin.	Falso
+179	3	La Casa Fallingwater, ubicada en Pensilvania, fue disenada por que arquitecto?	Frank Lloyd Wright
+180	3	Que emperador del Imperio Bizantino encargo la construccion de la Hagia Sophia?	Justiniano I
+181	3	La Pequena Entente fue una alianza formada contra que nacion?	Hungria
+182	3	La S en Harry S. Truman significa "Solomon".	Falso
+183	3	El Spitfire L.F. Mk IX tenia que motor?	Merlin 66
+184	3	Las protestas de la Plaza de Tiananmen de 1989 se llevaron a cabo en Hong Kong.	Falso
+185	3	Estados Unidos fue miembro de la Liga de las Naciones.	Falso
+186	3	De que nacionalidad era el creador de la Cifra y Maquina Enigma?	Aleman
+187	3	El hombre que disparo a Alexander Hamilton se llamaba Aaron Burr.	Verdadero
+188	3	Theresa May fue la primera ministra del Reino Unido.	Falso
+189	3	Estos dos paises mantuvieron una mancomunidad del siglo XVI al XVIII.	Polonia y Lituania
+190	3	A que edad murio el Rey Enrique V?	treinta y cinco
+191	3	Que candidato gano la Eleccion Presidencial de los EE.UU. de 2012?	Barack Obama
+192	3	Que dia comenzo la Batalla de Gettysburg?	1 de julio de 1863
+193	3	Que dispensaban las primeras maquinas expendedoras a principios de los anos 1880?	Tarjetas postales
+194	3	Que evento marco el inicio de la Segunda Guerra Mundial?	Invasion de Polonia (1939)
+195	3	A que evento historico hacia referencia la Obertura 1812 de Tchaikovsky?	Las Guerras Napoleonicas
+196	3	Cual es el nombre completo del ex presidente de Estados Unidos Bill Clinton?	William Jefferson Clinton
+197	3	Cual es el evento mas sangriento en la historia de Estados Unidos, en terminos de bajas?	Batalla de Antietam
+198	3	Cual es el nombre del famoso lider apache que murio en 1909 a los 70 anos de edad?	Jeronimo
+199	3	Que numero representa el numeral romano "D"?	quinientos
+200	3	Cual era el nombre real de Gengis Khan?	Temujin
+201	3	Cual era el nombre de Napoleon Bonaparte antes de cambiarlo?	Napoleon Bonaparte
+202	3	Cual fue la ultima colonia que el Reino Unido cedio marcando el fin del Imperio Britanico?	Hong Kong
+203	3	Cual fue el nombre del primer asentamiento ingles permanente en America?	Jamestown
+204	3	Cual fue la moneda oficial alemana hasta 2002?	Marcos
+205	3	Cual era el nombre original de la Ciudad de Nueva York?	Nueva Amsterdam
+206	3	En que ano se instituyeron las Reformas Marianas en la Republica Romana?	107 AEC
+207	3	Cuando Canada se separo de la confederacion para convertirse en su propia nacion?	1 de julio de 1867
+208	3	Cuando comenzo la Batalla del Somme?	1 de julio de 1916
+209	3	Cuando concluyo la Gran Guerra Patriotica en la URSS?	9 de mayo de 1945
+210	3	Donde nacio Napoleon Bonaparte?	Corcega
+211	3	Cual fue la ultima mision Apolo del programa Apolo de la NASA?	Apolo 17
+212	3	Cual nacion NO tuvo una colonia en la America del Norte moderna?	Portugal
+213	3	Que general nazi era conocido como el "Zorro del Desierto"?	Erwin Rommel
+214	3	Cual fue el primer estado estadounidense que permitio a las mujeres votar en 1869?	Wyoming
+215	3	Que as de tanques de la Segunda Guerra Mundial es acreditado por haber destruido mas tanques?	Kurt Knispel
+216	3	Que edificio fue incendiado el 24 de agosto de 1812?	La Casa Blanca
+217	3	Que dia comenzo la Primera Guerra Mundial?	28 de julio
+218	3	Cual dictador mato a mas personas?	Mao Zedong
+219	3	Que juego fue el Juego del Ano en 2018?	Dios de la Guerra
+220	3	Cual de los siguientes paises africanos tuvo mas exito en resistir la colonizacion?	Etiopia
+221	3	Cual de los siguientes presidentes argentinos fue elegido en 2015?	Mauricio Macri
+222	3	Cual de los siguientes NO esta clasificado como una lengua semita?	Sumerio
+223	3	Cual de estos paises se mantuvo neutral durante la Segunda Guerra Mundial?	Suiza
+224	3	Cual de estos fisicos teoricos predijo primero la existencia de la antimateria?	Paul Dirac
+225	3	Cual de estos fue un candidato oficial en las elecciones generales britanicas de 2017?	Lord Buckethead
+226	3	Cual de estos no fue un sitio de desembarco en playas en la Invasion de Normandia?	Plata
+227	3	Quien asesino al presidente James A. Garfield?	Carlos Guiteau
+228	3	Quien corono a Carlomagno como Emperador del Sacro Imperio Romano el dia de Navidad en 800?	Papa Leon III
+229	3	Quien lidero Francia durante el "Reinado del Terror"?	Maximilien Robespierre
+230	3	Quien fue el 45o Presidente de los Estados Unidos?	Donald Trump
+231	3	Quien fue el Presidente de los Estados Unidos durante la firma de la Compra de Gadsden?	Franklin Pierce
+232	3	Quien era el Primer Ministro de Japon cuando Japon declaro la guerra a Estados Unidos?	Hideki Tojo
+233	3	Quien fue el primer hombre en viajar al espacio exterior?	Yuri Gagarin
+234	3	Quien fue el primer presidente de Kenia?	Jomo Kenyatta
+235	3	Quien fue el primer gobernante de Haiti despues de que el pais obtuvo su independencia?	Jean-Jacques Dessalines
+236	3	Quien fue la primera esposa del Rey Enrique VIII?	Catalina de Aragon
+237	3	Quien fue el lider de Suecia en la Gran Guerra del Norte?	Carlos XII
+238	3	Con cual filosofo griego asociarias la frase "Se que no se nada"?	Socrates
+239	4	Que color se produce al mezclar negro y blanco?	Gris
+240	4	Segun la mitologia griega, Atlas era un dios olimpico.	Falso
+241	4	Segun la mitologia nordica, Loki es una madre.	Verdadero
+242	4	El lugar de nacimiento y muerte de Albrecht Durer fueron en...	Nuremberg
+243	4	El Anj es el jeroglifico egipcio para que?	Vida
+244	4	Por que nombre era mejor conocido el autor Eric Blair?	George Orwell
+245	4	Por que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?	El Astuto Evasivo
+246	4	Dracula es destruido por el contacto con la luz solar	Falso
+247	4	Hel era la hija de que figura de la mitologia nordica?	Loki
+248	4	Hera es la diosa de...	Matrimonio
+249	4	En la mitologia africana, Anansi es un embaucador y narrador que toma la forma de cual animal?	Arana
+250	4	En la mitologia griega, quien es el dios del vino?	Dioniso
+251	4	En "El cuento de la criada" de Margaret Atwood, cual se implica que es el nombre real de Offred?	Junio
+252	4	En Romance of the Three Kingdoms, quien no fue miembro del Juramento del Jardin de Duraznos?	Zhao Yun
+253	4	En la mayoria de las tradiciones, quien fue la esposa de Zeus?	Hera
+254	4	En la serie de "Harry Potter", cual es el nombre completo del Director Dumbledore?	Albus Percival Wulfric Brian Dumbledore
+255	4	En la mitologia griega, la Gorgona puede convertir en piedra a quienes la miran.	Verdadero
+256	4	En el universo de Magic: The Gathering, en que continente tiene lugar la expansion Fallen Empires?	Sarpadia
+257	4	En el universo de Magic: The Gathering, en que plano tiene lugar la expansion Homelands?	Ulgrotha
+258	4	Jano fue el dios romano de las puertas y los pasos.	Verdadero
+259	4	Leonardo da Vinci no fue el creador de la Mona Lisa.	Falso
+260	4	El Mona Lisa de Leonardo da Vinci no tiene cejas.	Verdadero
+261	4	El nombre griego de Neptuno fue...	Poseidon
+262	4	De que mitologia es Nidhogg una criatura mitologica?	Nordico
+263	4	De los siguientes, cual novela de Stephen King fue publicada primero?	Cujo
+264	4	Stephen Chbosky escribio el libro "Las ventajas de ser un marginado".	Verdadero
+265	4	Talos, el hombre de bronce gigante mitologico, fue el protector de que isla?	Creta
+266	4	El dios romano "Jupiter" era conocido primero como "Zeus" por los griegos.	Verdadero
+267	4	El libro "El Principito" fue escrito por...	Antoine de Saint-Exupery
+268	4	Con que animal durmio la Reina Pasifae antes de dar a luz al Minotauro en la mitologia griega?	Toro
+269	4	Que estructura inmensa se menciona en la mitologia nordica como Yggdrasil?	Arbol
+270	4	Cual es el segundo nombre de Ron Weasley?	Bilio
+271	4	Cual es el cuarto libro del Antiguo Testamento?	Numeros
+272	4	Cual es el nombre del dios griego de las muertes pacificas?	Tanatos
+273	4	Cual es el nombre del arte japones de doblar papel en formas y figuras decorativas?	papiroflexia
+274	4	Cual es el nombre del perro de tres cabezas en Harry Potter y la Piedra Filosofal?	Esponjoso
+275	4	Cual es el nombre del pueblo en el que estan enterrados Lily y James Potter?	Godric's Hollow
+276	4	Cual fue la nacionalidad del pintor surrealista Salvador Dali?	Espanol
+277	4	Que posicion juega Harry Potter en el Quidditch?	Buscador
+278	4	Cual fue la primera entrada escrita para el proyecto de escritura colaborativa de la Fundacion SCP?	SCP-173
+279	4	Cual fue la primera tecnica fotografica exitosa y comercialmente viable?	El Daguerrotipo
+280	4	Cual fue la distincion principal entre los estilos gotico ingles y frances de la arquitectura?	Boveda de abanico
+281	4	Que punto debil de Aquiles fue explotado por el principe troyano, Paris?	Talon
+282	4	En que ano se termino la Mona Lisa?	1504
+283	4	Cual es el nombre del papa de Harry Potter?	James Potter
+284	4	Que escultor griego diseno la estatua Atenea Partenon dentro del Partenon?	Fidias
+285	4	Que movimiento artistico fue que Pablo Picasso es conocido por cofundar?	Cubismo
+286	4	Que artista es famoso por cortarse la oreja?	Vincent van Gogh
+287	4	Que libro clasico comienza con la linea "Llamame Ismael"?	Moby Dick
+288	4	Que personaje clasico de horror mato a Elizabeth Lavenza?	La Criatura de Frankenstein
+289	4	Que libro famoso tiene el subtitulo 'El Prometeo Moderno'?	Frankenstein
+290	4	Que famoso novelista de espias escribio el cuento infantil "Chitty-Chitty-Bang-Bang"?	Ian Fleming
+291	4	Cual era el condado ingles ficticio que fue el escenario de las novelas de Thomas Hardy?	Sajonia Occidental
+292	4	Cual de las siguientes figuras mitologicas mesopotamias NO era una deidad?	Enkidu
+293	4	Cual de los siguientes NO es un dios en la mitologia nordica?	Jens
+294	4	Cual de los siguientes NO es una obra de Shakespeare?	Juicio de la Templanza
+295	4	Cual de los siguientes no es una obra escrita por Fiodor Dostoievski?	Anna Karenina
+296	4	Cual de los siguientes no es una de las Parcas griegas?	Narciso
+297	4	Cual de los siguientes fue el autor de "Username Evie"?	Joe Sugg
+298	4	Cual de estos NO lee Charlie en Las ventajas de ser un marginado?	Las Uvas de la Ira
+299	4	Cual de estos no es una variacion adicional del color purpura?	Kobicha
+300	4	Cual de estas criaturas mitologicas se dice que es mitad hombre y mitad caballo?	Centauro
+301	4	Cual de estos cuadros no es de Caspar David Friedrich?	El Mar Negro
+302	4	Cual pintura no fue hecha por Vincent Van Gogh?	La Novena Ola
+303	4	Que indicador de compas es comunmente conocido como "Compas de corte"?	2/2
+304	4	Quien diseno el logotipo de Chupa Chups?	Salvador Dali
+305	4	Quien es el dios egipcio de la reproduccion y la lechuga?	Min
+306	4	Quien es el hijo del dios Loki?	Fenrir
+307	4	Quien es el padre de Icaro, quien volo demasiado cerca del sol?	Dedalo
+308	4	Quien es el protagonista del libro "El guardian entre el centeno" de J.D. Salinger	Holden Caulfield
+309	4	Quien pinto "American Gothic"?	Grant Wood
+310	4	Quien pinto "Cisnes reflejados en elefantes", "Sueno" y "La persistencia de la memoria"?	Salvador Dali
+311	4	Quien pinto La Noche Estrellada?	Vincent van Gogh
+312	4	Quien pinto la Mona Lisa?	Leonardo da Vinci
+313	4	Quien pinto la Capilla Sixtina?	Miguel Angel
+314	4	Quien fue el Rey de los Dioses en la mitologia griega antigua?	Zeus
+315	4	Quien era el dios romano del fuego?	Vulcano
+316	4	Quien escribio "A Tale of Two Cities"?	Carlos Dickens
+317	4	Quien escribio "Harry Potter"?	J.K. Rowling
+318	4	Quien escribio la novela 'Miedo y asco en Las Vegas'?	Hunter S. Thompson
+319	5	"Windows NT" utiliza un kernel monolitico.	Falso
+320	5	Una Mac no es una PC	Falso
+321	5	Una persona puede quemarse por el sol en un dia nublado.	Verdadero
+322	5	La sangre de una babosa es verde.	Verdadero
+323	5	Botanicamente hablando, cual de estas frutas NO es una baya?	Fresa
+324	5	Completa la siguiente analogia: Audi es a Volkswagen como Infiniti es a ?	Nissan
+325	5	Que tanque fue el mas temido por los aliados durante la Segunda Guerra Mundial?	Panzerkampfwagen V Panther
+326	5	Durante las primeras etapas de la Guerra de Vietnam, el M16 tenia un registro de mala confiabilidad.	Verdadero
+327	5	Los elefantes son fisicamente incapaces de saltar.	Verdadero
+328	5	Ganimedes es la luna mas grande de que planeta?	Jupiter
+329	5	Que componente de una computadora generalmente consume mas energia?	Tarjeta de video
+330	5	Cuantas patas es biologicamente imposible que tenga un ciempies?	cien
+331	5	Cuantos ceros hay en un gugol?	cien
+332	5	En topologia, el complemento de un conjunto abierto es un conjunto cerrado.	Verdadero
+333	5	En la escala de Scoville, cual es el quimico mas picante?	Resiniferatoxina
+334	5	En la tabla periodica, el simbolo del potasio es la letra K.	Verdadero
+335	5	Por cual fabricante de automoviles fue propiedad anterior de Jaguar Cars?	Ford
+336	5	Los canguros guardan comida en sus bolsas junto a sus crias.	Falso
+337	5	Las impresoras Laserjet e inkjet son ejemplos de que tipo de impresora?	Impresora sin impacto
+338	5	En Twitter, cual era el limite original de caracteres para un Tweet?	ciento cuarenta
+339	5	En que dispositivo de hardware de computadora se encuentra el chip BIOS?	Placa madre
+340	5	En que mision se desintegro el transbordador espacial Columbia al reentrar?	STS-107
+341	5	El acero es una aleacion de hierro y carbono.	Verdadero
+342	5	El lenguaje de programacion C fue creado por este cientifico informatico estadounidense.	Dennis Ritchie
+343	5	Que bus adicional agrego la arquitectura Harvard para microcontroladores?	Instruccion
+344	5	El Sol se considera una estrella.	Verdadero
+345	5	El smartphone T-Mobile Sidekick es una version rebautizada del Danger Hiptop.	Verdadero
+346	5	El sistema operativo Windows 7 tiene seis ediciones principales.	Verdadero
+347	5	El acronimo comun de programacion de software "I18N" proviene del termino "Interlocalization".	Falso
+348	5	El numero decimal 31 en hexadecimal seria que?	1F
+349	5	El plato Fugu, esta hecho de que familia de peces?	Pez globo
+350	5	El equidna es un monotrema.	Verdadero
+351	5	El primer CPU de nucleo dual fue el Intel Pentium D.	Falso
+352	5	Cuantas camaras tiene el corazon humano?	Cuatro
+353	5	Por que siglas se conoce la empresa tecnologica HP?	Hewlett-Packard
+354	5	Que fabricante de automoviles cedio su patente del cinturon de seguridad en aras de salvar vidas?	Volvo
+355	5	Que organulo celular es conocido como "la central electrica de la celula"?	Mitocondria
+356	5	En que pais se fabrico el Trabant 601?	Alemania Oriental
+357	5	Que significa "hippopotamus" y en que idioma?	Caballo de rio (griego)
+358	5	Que palabra de cinco letras es el lema de la compania IBM Computer?	Pensar
+359	5	Que protocolo de internet fue documentado en RFC 1459?	IRC
+360	5	En que se mide la radiacion?	Gris
+361	5	Cual es la "central energetica" de la celula animal eucariota?	Mitocondria
+362	5	Cual es el area de un circulo con un diametro de 20 pulgadas si  = 3.1415?	314.15 Pulgadas
+363	5	Cual es la esperanza de vida promedio de un conejo domestico?	8-12 anos
+364	5	Cual es la derivada de la aceleracion con respecto al tiempo?	Imbecil
+365	5	Cual es el primer exponente de numero primo de Mersenne mayor a 1000?	mil doscientos setenta y nueve
+366	5	Cual es el cuarto digito de ?	uno
+367	5	Cual es el planeta mas caliente del Sistema Solar?	Venus
+368	5	Cual es la formula matematica de la ley de Ohm?	V = I*R
+369	5	Cual es el nombre dado a la capa 4 del modelo de Interconexion de Sistemas Abiertos (ISO)?	Transporte
+370	5	Cual es el nombre del tema predeterminado que viene instalado con Windows XP?	Luna
+371	5	Cual es el unico Problema del Premio del Milenio que ha sido resuelto hasta ahora?	Conjetura de Poincare
+372	5	Cual es la central energetica de la celula?	Mitocondria
+373	5	Cual es la velocidad de la luz en el vacio?	299.792.458 m/s
+374	5	A que subordenamiento cientifico pertenece la familia Hyaenidae?	Feliformia
+375	5	Que tipo de criatura es un Bonobo?	Simio
+376	5	Que tipo de funcion es x2+2x+1?	Cuadratico
+377	5	Cual era el nombre del lobo etiope antes de que descubrieran que estaba relacionado con los lobos?	Chacal de Simien
+378	5	Cual es la raiz cuadrada de 49?	siete
+379	5	Que tecnologia de distribucion variable de valvulas utiliza BMW?	VAIN
+380	5	Que fabricante de neumaticos para automoviles es famoso por su linea "P Zero"?	Pirelli
+381	5	A que clase de animales pertenecen los tritones?	Anfibio
+382	5	Que empresa fue establecida el 1 de abril de 1976 por Steve Jobs, Steve Wozniak y Ronald Wayne?	Manzana
+383	5	Que empresa de Internet comenzo como una libreria en linea llamada 'Cadabra'?	Amazonas
+384	5	Cual es el hueso mas largo del cuerpo humano?	Femur
+385	5	Cual de las siguientes empresas de dispositivos celulares NO esta headquartered en Asia?	Nokia
+386	5	Cual de los siguientes NO es un fabricante de automoviles ruso?	BYD
+387	5	Cual de los siguientes NO es un componente electrico pasivo?	Transistor
+388	5	Cual de los siguientes liquidos es el menos viscoso? Asuma que la temperatura es de 25C.	Acetona
+389	5	Cual de estas empresas NO fabrica motocicletas?	Toyota
+390	5	Cual de estos NO es un hueso que se encuentra en el brazo humano?	Tibia
+391	5	Que planeta envio imagenes de la superficie la sonda espacial "Viking 1", comenzando en 1976?	Marte
+392	5	Quien es el autor original del motor de fisica en tiempo real llamado PhysX?	NovodeX
+393	5	Quien patento un motor de vapor que producia movimiento rotatorio continuo?	James Watt
+394	6	"Stadium of Light" es el estadio de cual equipo de futbol?	Sunderland FC
+395	6	En que puente comienza la regata anual Oxford y Cambridge?	Putney
+396	6	Edson Arantes do Nascimento es el nombre completo de que legendario jugador de futbol?	Pele
+397	6	Etihad Stadium es el estadio de casa de cual equipo?	Manchester City
+398	6	En que provincia canadiense nacio el jugador de hockey Wayne Gretzky?	Ontario
+399	6	Cuantas veces gano Bjorn Borg el Abierto de Francia?	6
+400	6	En el futbol canadiense, cuantos puntos vale anotar un rouge?	uno
+401	6	En la Liga de Rugby, realizar un "40-20" es castigado con un tiro libre para el equipo contrario.	Falso
+402	6	En un juego de snooker, de que color es la bola que vale 3 puntos?	Verde
+403	6	En el boliche, cual es el termino usado para obtener tres golpes consecutivos?	Pavo
+404	6	En golf, que nombre se le da a una puntuacion de dos bajo par en un hoyo?	Aguila
+405	6	En que pais se celebraron los Juegos Olimpicos de Invierno de 2014 en la ciudad de Sochi?	Rusia
+406	6	En que deporte se usa un "volante"?	Badminton
+407	6	Antes de 2018, cual es la unica empresa automovilistica japonesa que gano las 24 Horas de Le Mans?	Mazda
+408	6	Roger Federer es un famoso jugador de futbol.	Falso
+409	6	Shaquille O'Neal solo ha hecho un triple en su carrera.	Verdadero
+410	6	El jugador de futbol Cristiano Ronaldo abrio un museo dedicado a si mismo.	Verdadero
+411	6	Cual es el nombre del equipo afiliado de la AHL de los Boston Bruins?	Bruins de Providence
+412	6	La temporada de F1 de 1994 se recuerda por que evento tragico?	Muerte de Ayrton Senna (San Marino)
+413	6	De que ciudad estadounidense eran originalmente los Dodgers de Los Angeles?	Brooklyn
+414	6	En que ano el Mazda 787B gano las 24 Horas de Le Mans?	1991
+415	6	La cancha de tenis de los Juegos Olimpicos es una pantalla verde gigante.	Verdadero
+416	6	La cancion "Three Lions" de Lightning Seeds fue hecha para que evento de futbol importante en 1996?	Campeonatos Europeos
+417	6	En total hay 20 carreras en la temporada de Formula Uno 2016.	Falso
+418	6	Que pais fue anfitrion de los Juegos Olimpicos de Invierno de 2014?	Rusia
+419	6	Cual es la puntuacion de golf mas baja en la carrera de Tiger Woods?	sesenta y uno
+420	6	Cual es el nombre completo del futbolista "Cristiano Ronaldo"?	Cristiano Ronaldo dos Santos Aveiro
+421	6	Cual es el tipo de lanzamiento mas comun que lanzan los lanzadores en el beisbol?	Bola rapida
+422	6	Cual es el nombre del estadio de casa del Manchester United?	Old Trafford
+423	6	Cual es "El Deporte de Reyes"?	Carreras de Caballos
+424	6	Que seleccion nacional gano la primera UEFA Nations League?	Portugal
+425	6	Que deporte utiliza los terminos love, deuce, match y volley?	Tenis
+426	6	A que equipo vencio Inglaterra en la semifinal para ganar la final de la Copa Mundial de 1966?	Portugal
+427	6	A que equipo vencio Inglaterra para ganar la final de la Copa Mundial de 1966?	Alemania Occidental
+428	6	Que herramienta presta su nombre a la ventaja de la ultima piedra en un end en Curling?	Martillo
+429	6	Cual fue el promedio de bateo de Sir Donald Bradman en partidos de prueba?	99,94
+430	6	En que ano se fundo el Bari Football Club italiano?	1908
+431	6	Cuando se jugo el primer partido internacional oficial?	1872
+432	6	Que afroamericano es en parte responsable de integrar las Grandes Ligas de Beisbol?	Jackie Robinson
+433	6	Que club de futbol ingles tiene el apodo 'The Foxes'?	Leicester City
+434	6	Que piloto de Formula 1 cambio de equipo a mitad de la temporada 2017?	Carlos Sainz Jr.
+435	6	Que piloto de Formula Uno fue apodado 'El Profesor'?	Alain Prost
+436	6	Que boxeador fue prohibido por morder la oreja de Evander Holyfield en 1997?	Mike Tyson
+437	6	Que fabricante de automoviles gano las 24 Horas de Le Mans 2016?	Porsche
+438	6	Que pais fue anfitrion de la Copa Mundial de la FIFA 2018?	Rusia
+439	6	Que pais fue anfitrion de los Juegos Olimpicos de Verano de 2020?	Japon
+440	6	Que pais fue anfitrion de la Copa Mundial de la FIFA 2022?	Qatar
+441	6	Que pais produjo futbolistas como Cafu, Roberto Carlos y Pele?	Brasil
+442	6	Que pais gano la Copa Mundial de la FIFA 2018 realizada en Rusia?	Francia
+443	6	Que jugador de dardos ha ganado mas titulos de Campeonato Mundial?	Phil Taylor
+444	6	Que piloto ha sido campeon mundial de Formula 1 un record de 7 veces?	Michael Schumacher
+445	6	Cual es el record personal de Kenenisa Bekele en maraton?	2:01:41
+446	6	Que nacion fue anfitriona de la Copa Mundial de la FIFA en 2006?	Alemania
+447	6	Cual de los siguientes torneos de tenis Grand Slam ocurre ULTIMO?	US Open
+448	6	Cual de los siguientes jugadores anoto un hat-trick en su debut con Manchester United?	Wayne Rooney
+449	6	Cual de los siguientes deportes no es parte del triatlon?	Equitacion
+450	6	Cual de estos clubes de futbol ingleses tiene su sede en Liverpool?	Everton
+451	6	Cual de estos numeros de camiseta nunca ha usado Shaquille O'Neal?	treinta y cinco
+452	6	Cual de estos equipos no ha jugado Jaromir Jagr?	New York Islanders
+453	6	Cual de estos eventos de atletismo NO esta incluido en el decatlon olimpico masculino?	Lanzamiento de martillo
+454	6	Que jugador le propino una "patada de kung-fu" a un aficionado del Crystal Palace en enero de 1995?	Eric Cantona
+455	6	De cual isla portuguesa es el futbolista Cristiano Ronaldo?	Madera
+456	6	Que equipo de futbol gano el Campeonato de la Copa America 2015?	Chile
+457	6	Que equipo gano la Copa Mundial de la FIFA 2014 en Brasil?	Alemania
+458	6	En que ano gano Jenson Button su primer Campeonato Mundial de Pilotos de Formula Uno?	2009
+459	6	Con que equipo gano Steven Gerrard la Liga de Campeones?	Liverpool
+460	6	Quien ha jugado la mayoria de los torneos en la seleccion nacional de futbol de Brasil?	Cafu
+461	6	Quien fue el maximo goleador del Mundial de la FIFA 2014?	James Rodriguez
+462	6	Quien fue el maximo goleador de la seleccion nacional de futbol de Inglaterra?	Wayne Rooney
+463	6	Quien gano la "Liga de Campeones" en 1999?	Manchester United
+464	6	Quien gano el Gran Premio de San Marino de 1994, la carrera en la que Ayrton Senna fue asesinado?	Michael Schumacher
+465	6	Quien gano la Daytona 500 de 1998?	Dale Earnhardt
+466	6	Quien gano el Campeonato Mundial de Pilotos de Formula 1 de 2016?	Nico Rosberg
+467	6	Quien gano el Campeonato Mundial de Pilotos de Formula Uno de 2017?	Lewis Hamilton
+468	6	Quien gano el Gran Premio de Monaco de 2018?	Daniel Ricciardo
+469	6	Quien gano la UEFA Champions League en 2016?	Real Madrid Club de Futbol
+470	6	Quien gano la Liga de Campeones de la UEFA en 2017?	Real Madrid Club de Futbol
+471	7	"Nephelococcygia" es la practica de hacer que?	Encontrar formas en las nubes
+472	7	"Santa Claus" es una variedad de melon.	Verdadero
+473	7	Un pasodoble es un tipo de salsa de pasta italiana.	Falso
+474	7	Albert Einstein tuvo dificultades con las matematicas cuando estaba en la escuela.	Falso
+475	7	En que deporte fueron famosos los hermanos Bob y Mike Bryan?	Tenis
+476	7	De cual pais europeo se origino la ensalada de col?	Paises Bajos
+477	7	De Eemhof, Port Zelande y Het Heijderbos son casas de vacaciones propiedad de que empresa?	Center Parcs
+478	7	Ecuador utiliza el Peso Mexicano como su moneda.	Falso
+479	7	Las cadenas de comida rapida Carl's Jr. y Hardee's son propiedad de la misma empresa.	Verdadero
+480	7	El foie gras es un manjar frances tipicamente hecho del higado de un pato o ganso.	Higado
+481	7	De que pais europeo es el queso Gouda?	Paises Bajos
+482	7	Haggis se come tradicionalmente en la Noche de Burns.	Verdadero
+483	7	Cuantos colores hay en un arcoiris?	siete
+484	7	Cuantos furlongs hay en una milla?	Ocho
+485	7	Cuantas letras hay en el alfabeto ingles?	veintiseis
+486	7	Cual es la altura del Burj Khalifa?	2.722 pies
+487	7	Si alguien dijera "eres maloliente", que querria decir?	Hueles extremadamente desagradable.
+488	7	Si te atrapan "Goldbricking", que estas haciendo mal?	Holgazaneria
+489	7	Si plantaras las semillas de Quercus robur, que creceria?	Arboles
+490	7	Cuanto dinero se perdio por estafas nigerianas en 2013?	$12.7 mil millones
+491	7	Cuantos meses comienzan con la letra 'J' en un calendario gregoriano estandar?	Tres
+492	7	En el idioma ingles, cual es el nombre del caracter "&"?	Simbolo de ampersand
+493	7	En que ano Canada dejo de producir el centavo?	2012
+494	7	Es un perro un mamifero?	Verdadero
+495	7	Kraft "Cheez Whiz" contiene cultivo de queso, pero en realidad no contiene queso	Verdadero
+496	7	Nombrada en honor a la flor de malva, el malva es un tono de que?	Purpura
+497	7	Solo el 9% de los hogares estadounidenses poseian un televisor en	1950
+498	7	De estos cuatro edificios, cual es el mas alto, con una altura de 1,483 ft (451.9 m)?	Torres Petronas Gemelas, Malasia
+499	7	Pluton es un planeta.	Falso
+500	7	Red Vines es una marca de que tipo de caramelo?	Regaliz
+501	7	Terry Gilliam fue un animador que trabajo con que grupo comico britanico?	Monty Python
+502	7	La palabra francesa para viajar es "Travail"	Falso
+503	7	La Carita Feliz fue creada por el artista comercial Harvey Ball.	Verdadero
+504	7	Que tipo de cerveza es la cerveza mexicana "Corona"?	Cerveza Lager Palida
+505	7	El metro de Nueva York es el mas antiguo del mundo.	Falso
+506	7	Los Jack-o-Lanterns originales eran en realidad nabos vaciados.	Verdadero
+507	7	La mitocondria es la central energetica de la celula.	Verdadero
+508	7	La palabra "abulia" significa cual de las siguientes opciones?	La incapacidad para tomar decisiones
+509	7	La palabra "astasia" significa cual de lo siguiente?	La incapacidad para ponerse de pie
+510	7	La palabra "docena" generalmente se refiere a un grupo de cuantos objetos?	Doce
+511	7	Las palabras "bungalow" y "shampoo" originan de los idiomas de que pais?	India
+512	7	Este campo a veces se conoce como "La Ciencia Lugubre."	Economia
+513	7	Esta es la ortografia correcta de "Supercalifragilisticexpialidocious".	Verdadero
+514	7	A que familia linguistica pertenece el kazajo?	Turquico
+515	7	Que bebida alcoholica se hace a partir de melaza?	Ron
+516	7	Como llaman los marineros a la parte delantera de un barco?	Arco
+517	7	Como llaman los marineros al lado derecho de un barco?	Estribor
+518	7	Que cadena de comida rapida tiene la mayoria de ubicaciones a nivel mundial?	Metro
+519	7	Cual es la fobia del miedo a los perros?	Perros
+520	7	Que es H2O?	Agua
+521	7	Que es Tasmania?	Un Estado australiano
+522	7	Que se exhibe en el museo de Madame Tussauds en Londres?	Esculturas de cera
+523	7	Cual es la palabra portuguesa para "Brasil"?	Brasil
+524	7	Cual es el apellido del famoso Papa John?	Schnatter
+525	7	Cual es el organo mas grande del cuerpo humano?	Piel
+526	7	Cual es la letra mas frecuentemente utilizada en el alfabeto ingles?	E
+527	7	Cual es el nombre del Ano Nuevo judio?	Rosh Hashana
+528	7	Cual es el apodo del estado estadounidense de California?	Estado Dorado
+529	7	Cual es la palabra japonesa romanizada para "universidad"?	Daigaku
+530	7	Cual es la forma del juguete inventado por el profesor hungaro Erno Rubik?	Cubo
+531	7	Que elemento de maquina se encuentra en el centro de los fidget spinners?	Rodamientos
+532	7	Que nacion produce aproximadamente el 40% de la vainilla del mundo?	Madagascar
+533	7	Cuando alguien tiene "envidia", se dice que es de que color?	Verde
+534	7	Cuando alguien es cobarde, se dice que tiene el vientre de que color?	Amarillo
+535	7	Cuando lloras en el espacio, tus lagrimas se adhieren a tu cara.	Verdadero
+536	7	Donde en La Coruna (Espana) esta la sede de "Inditex", el mayor grupo de moda del mundo?	Arteijo
+537	7	Cual cerveceria estadounidense lidero el pais en ventas por volumen en 2015?	D. G. Yuengling e Hijo, Inc
+538	7	Que pais tiene la Union Jack en su bandera?	Nueva Zelanda
+539	7	Cual es el idioma hablado mas popular en el Hemisferio Sur?	Portugues
+540	7	Que montana tiene el pico mas alto de Australia?	Monte Kosciuszko, Nueva Gales del Sur
+541	7	Cual de los siguientes es el codigo IATA del Aeropuerto de Manchester?	HOMBRE
+542	7	Cual de los siguientes paises NO fue beligerante en la Primera Guerra Mundial?	Dinamarca
+543	7	Cual de estos cantantes y compositores estadounidenses gano un Premio Nobel de Literatura?	Bob Dylan
+544	7	Cual de estos bancos NO esta autorizado para emitir billetes de moneda en Hong Kong?	OCBC
+545	7	Cual de estas empresas NO fabrica automoviles?	Ducati
+546	7	Cual de estos NO se considera un color que forma el arcoiris?	Rosa
+547	7	Que eslogan utilizo la empresa de comida rapida McDonald's antes de su eslogan "I'm Lovin' It"?	Nos Encanta Verte Sonreir
+548	7	Cual es el tipo de cubierto mas adecuado para comer sopa?	Cuchara
+549	7	Quien interpreto al General Aladeen en The Dictator?	Sacha Baron Cohen
+550	7	Xantofobia es el miedo a que color?	Amarillo
