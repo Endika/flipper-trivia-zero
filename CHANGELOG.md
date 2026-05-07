@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.1.8](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.7...v0.1.8) (2026-05-07)
+
+
+### Features
+
+* add off-Flipper Python data pipeline (tools/) ([d1e39a9](https://github.com/Endika/flipper-trivia-zero/commit/d1e39a98d4110278ae5f7a1ea80649fb754ffb26))
+* **icon:** add Trivia Zero icon ([1651818](https://github.com/Endika/flipper-trivia-zero/commit/1651818050d07dc123d0a805aa609d0abeee49a9))
+* implement Trivia Zero FAP (domain, infrastructure, ui, app) ([c9adce0](https://github.com/Endika/flipper-trivia-zero/commit/c9adce019196bbffd81c695b416e4d396580388f))
+* **pack:** curate questions ([da9ce0a](https://github.com/Endika/flipper-trivia-zero/commit/da9ce0abfecb40dd8abfb298573838c7cd797cb3))
+* **pack:** curate questions ([f645a51](https://github.com/Endika/flipper-trivia-zero/commit/f645a51cddf9d98288bca895b3df56c23f80cce5))
+* **pack:** embed question pack in FAP binary ([e0618e3](https://github.com/Endika/flipper-trivia-zero/commit/e0618e3e8fc53272f02f35cae18101fad723115e))
+* **pack:** embed question pack in FAP binary; no SD copy needed ([7c1a5c8](https://github.com/Endika/flipper-trivia-zero/commit/7c1a5c8c20b66748dc15299935a9b7e90e416126))
+* **pack:** update pack_writer ([3eb3c0c](https://github.com/Endika/flipper-trivia-zero/commit/3eb3c0c75a781f01b654559e15130b466f2f7a44))
+* ship initial bilingual trivia pack ([0c3e15e](https://github.com/Endika/flipper-trivia-zero/commit/0c3e15ece3d64a4ba6f538d1187496306f3af7c3))
+
+
+### Bug Fixes
+
+* **build:** resolve build problems ([53e77f8](https://github.com/Endika/flipper-trivia-zero/commit/53e77f8fbc492b0e56c123994debeb402b081deb))
+* **pack:** update pack_writer ([77d9e9d](https://github.com/Endika/flipper-trivia-zero/commit/77d9e9d978485e166b98e2083615fd68fe9b84dc))
+* **tests:** make version smoke test version-agnostic ([7dc8921](https://github.com/Endika/flipper-trivia-zero/commit/7dc89215d0f7643aea36d16303350f7f40daf00f))
+
 ## [0.1.7](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.6...v0.1.7) (2026-05-07)
 
 
