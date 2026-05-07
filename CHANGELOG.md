@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.8...v0.1.9) (2026-05-07)
+
+
+### Features
+
+* Initial commit ([30b1dcd](https://github.com/Endika/flipper-trivia-zero/commit/30b1dcd740ce9a8dfdc58bbc257a51f955ce887b))
+
 ## [0.1.8](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.7...v0.1.8) (2026-05-07)
 
 
