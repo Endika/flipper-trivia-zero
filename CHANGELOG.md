@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.9...v0.1.10) (2026-05-07)
+
+
+### Bug Fixes
+
+* **pack:** curate questions ([c76d799](https://github.com/Endika/flipper-trivia-zero/commit/c76d799cd096753166f35658fb1cf709d0cd218e))
+
 ## [0.1.9](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.8...v0.1.9) (2026-05-07)
 
 
