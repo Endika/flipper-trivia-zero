@@ -1,9 +1,10 @@
 from __future__ import annotations
 
+from collections import Counter
 from pathlib import Path
 
-from trivia_pack.models import Lang, RawQuestion
-from trivia_pack.pipeline import run_pipeline
+from trivia_pack.models import Lang, MappedQuestion, RawQuestion
+from trivia_pack.pipeline import _balance_by_bucket, run_pipeline
 from trivia_pack.translate import StubTranslator
 
 
@@ -76,3 +77,55 @@ def test_pipeline_respects_limit(tmp_path: Path) -> None:
         limit=10,
     )
     assert len((out_dir / "trivia_en.tsv").read_text(encoding="utf-8").splitlines()) == 10
+
+
+def _mq(bucket: int, idx: int) -> MappedQuestion:
+    return MappedQuestion(
+        source_lang=Lang.EN,
+        bucket_id=bucket,
+        question=f"q{bucket}-{idx}",
+        answer=f"a{bucket}-{idx}",
+    )
+
+
+def test_balance_spillover_is_round_robin_across_buckets() -> None:
+    # When several buckets have leftover questions after the per-bucket quota,
+    # the spillover must be distributed round-robin so no single bucket
+    # absorbs all the remainder. Regression: prior impl drained buckets in
+    # bucket_id order, which made bucket 2 (Entertainment) own the entire
+    # spillover whenever it had more questions than the others.
+    mapped: list[MappedQuestion] = []
+    mapped += [_mq(1, i) for i in range(10)]
+    mapped += [_mq(2, i) for i in range(1000)]
+    mapped += [_mq(3, i) for i in range(100)]
+    mapped += [_mq(4, i) for i in range(5)]
+
+    selected = _balance_by_bucket(mapped, target_total=50)
+    counts = Counter(q.bucket_id for q in selected)
+
+    assert sum(counts.values()) == 50
+    quota = 50 // 7  # = 7
+    # Buckets with surplus must each receive *some* spillover, not just bucket 2.
+    assert counts[1] > quota
+    assert counts[3] > quota
+    # And no single bucket should hoard the spillover.
+    assert counts[2] < 30
+
+
+def test_balance_does_not_oversample_small_buckets() -> None:
+    # If a bucket has fewer questions than the quota, take what's available
+    # and fill the rest from larger buckets — without inventing duplicates.
+    mapped: list[MappedQuestion] = []
+    mapped += [_mq(1, i) for i in range(2)]
+    mapped += [_mq(2, i) for i in range(100)]
+
+    selected = _balance_by_bucket(mapped, target_total=20)
+    counts = Counter(q.bucket_id for q in selected)
+
+    assert sum(counts.values()) == 20
+    assert counts[1] == 2  # only 2 available, can't exceed
+    assert counts[2] == 18
+
+    # No duplicates introduced by the balancing logic.
+    questions = [q.question for q in selected]
+    assert len(questions) == len(set(questions))

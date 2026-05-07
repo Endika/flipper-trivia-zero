@@ -2,16 +2,21 @@
 
 from __future__ import annotations
 
+from collections import defaultdict, deque
 from collections.abc import Iterable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Protocol
 
 from trivia_pack.blacklist import Blacklist
-from trivia_pack.category_map import map_opentdb_to_bucket
+from trivia_pack.category_map import is_skipped, map_opentdb_to_bucket
 from trivia_pack.models import BilingualQuestion, Lang, MappedQuestion, RawQuestion
 from trivia_pack.pack_writer import write_embedded_pack, write_pack
 from trivia_pack.translate import Translator
+
+_MAX_QUESTION_LEN = 200
+_MAX_ANSWER_LEN = 50
+_BUCKET_COUNT = 7
 
 
 class _OpenTdbSource(Protocol):
@@ -35,6 +40,10 @@ def _filter_and_map(
 ) -> list[MappedQuestion]:
     out: list[MappedQuestion] = []
     for q in raw:
+        if len(q.question) > _MAX_QUESTION_LEN or len(q.answer) > _MAX_ANSWER_LEN:
+            continue
+        if is_skipped(q.opentdb_category):
+            continue
         if blacklist.is_blacklisted(q.question, q.answer):
             continue
         try:
@@ -53,6 +62,89 @@ def _filter_and_map(
             ),
         )
     return out
+
+
+def _take_quota(
+    queues: dict[int, deque[MappedQuestion]],
+    bucket_ids: list[int],
+    quota: int,
+    target_total: int,
+    selected: list[MappedQuestion],
+) -> None:
+    for bucket_id in bucket_ids:
+        q = queues[bucket_id]
+        for _ in range(quota):
+            if not q or len(selected) >= target_total:
+                break
+            selected.append(q.popleft())
+
+
+def _round_robin_spillover(
+    queues: dict[int, deque[MappedQuestion]],
+    bucket_ids: list[int],
+    target_total: int,
+    selected: list[MappedQuestion],
+) -> None:
+    while len(selected) < target_total:
+        progress = False
+        for bucket_id in bucket_ids:
+            if len(selected) >= target_total:
+                break
+            q = queues[bucket_id]
+            if q:
+                selected.append(q.popleft())
+                progress = True
+        if not progress:
+            break
+
+
+def _print_balance_report(
+    mapped_count: int,
+    selected: list[MappedQuestion],
+    target_total: int,
+    quota: int,
+) -> None:
+    print(
+        f"balance: {mapped_count} mapped → {len(selected)} after "
+        f"per-bucket quota + round-robin spillover "
+        f"(target={target_total}, quota/bucket={quota})",
+        flush=True,
+    )
+    by_bucket: dict[int, int] = defaultdict(int)
+    for q in selected:
+        by_bucket[q.bucket_id] += 1
+    for bucket_id in sorted(by_bucket.keys()):
+        print(f"balance:   bucket {bucket_id}: {by_bucket[bucket_id]}", flush=True)
+
+
+def _balance_by_bucket(
+    mapped: list[MappedQuestion],
+    target_total: int,
+) -> list[MappedQuestion]:
+    """Sample across the 7 buckets so the final pack feels like classic Trivial
+    Pursuit (balanced across categories) rather than dominated by whichever
+    bucket OpenTDB happens to have most of.
+
+    Two-phase strategy:
+      1. Per-bucket quota (target/7): take up to that many from each bucket.
+      2. Round-robin spillover: cycle through the buckets that still have
+         questions, taking one at a time, until target_total is reached or
+         everything is exhausted.
+
+    Within each bucket the original order from OpenTDB is preserved.
+    """
+    queues: dict[int, deque[MappedQuestion]] = defaultdict(deque)
+    for q in mapped:
+        queues[q.bucket_id].append(q)
+
+    quota = max(1, target_total // _BUCKET_COUNT)
+    bucket_ids = sorted(queues.keys())
+    selected: list[MappedQuestion] = []
+
+    _take_quota(queues, bucket_ids, quota, target_total, selected)
+    _round_robin_spillover(queues, bucket_ids, target_total, selected)
+    _print_balance_report(len(mapped), selected, target_total, quota)
+    return selected
 
 
 _FLUSH_EVERY = 20
@@ -138,6 +230,8 @@ def run_pipeline(
     blacklist = Blacklist.from_file(blacklist_path)
     raw_en = list(opentdb.iter_all(Lang.EN))
     mapped = _filter_and_map(raw_en, blacklist)
+    if limit is not None:
+        mapped = _balance_by_bucket(mapped, target_total=limit)
     bilingual = _build_bilingual(mapped, translator, limit=limit)
     bilingual.sort(key=lambda q: (q.bucket_id, q.question_en))
     write_pack(bilingual, out_dir=out_dir)
