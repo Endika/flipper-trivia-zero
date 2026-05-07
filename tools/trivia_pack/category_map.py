@@ -3,6 +3,12 @@
 Source of truth: docs/superpowers/specs/2026-04-28-trivia-zero-design.md §4.4.
 The four ⚠️ rows in the spec are resolved here; if user review changes any of
 those, update both this table AND the spec.
+
+Some OpenTDB subcategories are skipped entirely (see SKIPPED_CATEGORIES) because
+their content (Video Games, Anime, Comics, Cartoons, Board Games, Musicals,
+Celebrities) is too niche or too anglo-centric for a "classic Trivial Pursuit"
+feel. They are known categories — the difference vs. an unknown category is
+that skipping is a deliberate exclusion, not a data-loss incident.
 """
 
 from __future__ import annotations
@@ -32,17 +38,10 @@ CATEGORY_MAP: dict[str, BucketId] = {
     # Arts & Literature
     "Entertainment: Books": BucketId.ARTE_Y_LITERATURA,
     "Art": BucketId.ARTE_Y_LITERATURA,
-    # Entertainment (films/music/games/celebs/etc.)
+    # Entertainment (only the broad-audience subcategories — see SKIPPED below)
     "Entertainment: Film": BucketId.ENTRETENIMIENTO,
     "Entertainment: Music": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Musicals & Theatres": BucketId.ENTRETENIMIENTO,
     "Entertainment: Television": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Video Games": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Board Games": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Comics": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Japanese Anime & Manga": BucketId.ENTRETENIMIENTO,
-    "Entertainment: Cartoon & Animations": BucketId.ENTRETENIMIENTO,
-    "Celebrities": BucketId.ENTRETENIMIENTO,
     # Science & Nature
     "Science & Nature": BucketId.CIENCIA_Y_NATURALEZA,
     "Science: Computers": BucketId.CIENCIA_Y_NATURALEZA,
@@ -55,11 +54,28 @@ CATEGORY_MAP: dict[str, BucketId] = {
 }
 
 
+SKIPPED_CATEGORIES: frozenset[str] = frozenset(
+    {
+        "Entertainment: Video Games",
+        "Entertainment: Japanese Anime & Manga",
+        "Entertainment: Comics",
+        "Entertainment: Cartoon & Animations",
+        "Entertainment: Board Games",
+        "Entertainment: Musicals & Theatres",
+        "Celebrities",
+    }
+)
+
+
+def is_skipped(opentdb_category: str) -> bool:
+    return opentdb_category in SKIPPED_CATEGORIES
+
+
 def map_opentdb_to_bucket(opentdb_category: str) -> BucketId:
     """Returns the 7-bucket id for an OpenTDB category string.
 
     Raises KeyError if the category is not in the table — the pipeline should
-    surface unknown categories as a hard failure rather than silently dropping
-    them (we want OpenTDB additions to be a visible event, not data loss).
+    surface unknown (or skipped) categories before calling this; reaching here
+    with a non-mapped category is a programming error worth a hard failure.
     """
     return CATEGORY_MAP[opentdb_category]
