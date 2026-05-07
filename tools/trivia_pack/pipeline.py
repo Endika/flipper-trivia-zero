@@ -14,8 +14,8 @@ from trivia_pack.models import BilingualQuestion, Lang, MappedQuestion, RawQuest
 from trivia_pack.pack_writer import write_embedded_pack, write_pack
 from trivia_pack.translate import Translator
 
-_MAX_QUESTION_LEN = 200
-_MAX_ANSWER_LEN = 50
+_MAX_QUESTION_LEN = 110
+_MAX_ANSWER_LEN = 40
 _BUCKET_COUNT = 7
 
 
