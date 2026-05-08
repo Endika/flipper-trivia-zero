@@ -3,936 +3,583 @@
 
 #include "include/data/embedded_pack.h"
 
-const uint8_t trivia_es_idx[2974] = {
-    0x54, 0x52, 0x56, 0x49, 0x01, 0x00, 0xE5, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x50, 0x00,
-    0x00, 0x00, 0x6D, 0x00, 0x00, 0x00, 0xB1, 0x00, 0x00, 0x00, 0x30, 0x01, 0x00, 0x00, 0x6C, 0x01,
-    0x00, 0x00, 0xD7, 0x01, 0x00, 0x00, 0x0D, 0x02, 0x00, 0x00, 0x43, 0x02, 0x00, 0x00, 0x71, 0x02,
-    0x00, 0x00, 0xAF, 0x02, 0x00, 0x00, 0xFB, 0x02, 0x00, 0x00, 0x2D, 0x03, 0x00, 0x00, 0x83, 0x03,
-    0x00, 0x00, 0xAA, 0x03, 0x00, 0x00, 0xD5, 0x03, 0x00, 0x00, 0x0D, 0x04, 0x00, 0x00, 0x4B, 0x04,
-    0x00, 0x00, 0x88, 0x04, 0x00, 0x00, 0xBD, 0x04, 0x00, 0x00, 0xFC, 0x04, 0x00, 0x00, 0x50, 0x05,
-    0x00, 0x00, 0xA0, 0x05, 0x00, 0x00, 0xF7, 0x05, 0x00, 0x00, 0x41, 0x06, 0x00, 0x00, 0x85, 0x06,
-    0x00, 0x00, 0xCC, 0x06, 0x00, 0x00, 0x39, 0x07, 0x00, 0x00, 0x9D, 0x07, 0x00, 0x00, 0xE1, 0x07,
-    0x00, 0x00, 0x2E, 0x08, 0x00, 0x00, 0x8A, 0x08, 0x00, 0x00, 0xBD, 0x08, 0x00, 0x00, 0xE9, 0x08,
-    0x00, 0x00, 0x3E, 0x09, 0x00, 0x00, 0x97, 0x09, 0x00, 0x00, 0xF8, 0x09, 0x00, 0x00, 0x23, 0x0A,
-    0x00, 0x00, 0x52, 0x0A, 0x00, 0x00, 0x7E, 0x0A, 0x00, 0x00, 0xAB, 0x0A, 0x00, 0x00, 0xD8, 0x0A,
-    0x00, 0x00, 0x0A, 0x0B, 0x00, 0x00, 0x84, 0x0B, 0x00, 0x00, 0xD5, 0x0B, 0x00, 0x00, 0x15, 0x0C,
-    0x00, 0x00, 0x4A, 0x0C, 0x00, 0x00, 0xAF, 0x0C, 0x00, 0x00, 0xE9, 0x0C, 0x00, 0x00, 0x00, 0x0D,
-    0x00, 0x00, 0x3A, 0x0D, 0x00, 0x00, 0x7A, 0x0D, 0x00, 0x00, 0xB9, 0x0D, 0x00, 0x00, 0xE7, 0x0D,
-    0x00, 0x00, 0x17, 0x0E, 0x00, 0x00, 0x46, 0x0E, 0x00, 0x00, 0x72, 0x0E, 0x00, 0x00, 0xA0, 0x0E,
-    0x00, 0x00, 0xCC, 0x0E, 0x00, 0x00, 0xF7, 0x0E, 0x00, 0x00, 0x22, 0x0F, 0x00, 0x00, 0x53, 0x0F,
-    0x00, 0x00, 0x81, 0x0F, 0x00, 0x00, 0xAC, 0x0F, 0x00, 0x00, 0xD2, 0x0F, 0x00, 0x00, 0xFF, 0x0F,
-    0x00, 0x00, 0x2D, 0x10, 0x00, 0x00, 0x5D, 0x10, 0x00, 0x00, 0x8F, 0x10, 0x00, 0x00, 0xBE, 0x10,
-    0x00, 0x00, 0x02, 0x11, 0x00, 0x00, 0x40, 0x11, 0x00, 0x00, 0x7B, 0x11, 0x00, 0x00, 0xAC, 0x11,
-    0x00, 0x00, 0xDB, 0x11, 0x00, 0x00, 0x46, 0x12, 0x00, 0x00, 0xA1, 0x12, 0x00, 0x00, 0xD9, 0x12,
-    0x00, 0x00, 0x0F, 0x13, 0x00, 0x00, 0x77, 0x13, 0x00, 0x00, 0xDC, 0x13, 0x00, 0x00, 0x1C, 0x14,
-    0x00, 0x00, 0x54, 0x14, 0x00, 0x00, 0xC2, 0x14, 0x00, 0x00, 0x0E, 0x15, 0x00, 0x00, 0x41, 0x15,
-    0x00, 0x00, 0x74, 0x15, 0x00, 0x00, 0xB8, 0x15, 0x00, 0x00, 0xDC, 0x15, 0x00, 0x00, 0x19, 0x16,
-    0x00, 0x00, 0x54, 0x16, 0x00, 0x00, 0x9A, 0x16, 0x00, 0x00, 0xF9, 0x16, 0x00, 0x00, 0x47, 0x17,
-    0x00, 0x00, 0x9B, 0x17, 0x00, 0x00, 0xE7, 0x17, 0x00, 0x00, 0x2D, 0x18, 0x00, 0x00, 0x5A, 0x18,
-    0x00, 0x00, 0xA4, 0x18, 0x00, 0x00, 0xD1, 0x18, 0x00, 0x00, 0x00, 0x19, 0x00, 0x00, 0x2F, 0x19,
-    0x00, 0x00, 0x8D, 0x19, 0x00, 0x00, 0xCC, 0x19, 0x00, 0x00, 0x1E, 0x1A, 0x00, 0x00, 0x5A, 0x1A,
-    0x00, 0x00, 0xA2, 0x1A, 0x00, 0x00, 0x14, 0x1B, 0x00, 0x00, 0x55, 0x1B, 0x00, 0x00, 0x84, 0x1B,
-    0x00, 0x00, 0xCC, 0x1B, 0x00, 0x00, 0x32, 0x1C, 0x00, 0x00, 0x8F, 0x1C, 0x00, 0x00, 0xF4, 0x1C,
-    0x00, 0x00, 0x59, 0x1D, 0x00, 0x00, 0xB7, 0x1D, 0x00, 0x00, 0x0D, 0x1E, 0x00, 0x00, 0x6E, 0x1E,
-    0x00, 0x00, 0xC6, 0x1E, 0x00, 0x00, 0x51, 0x1F, 0x00, 0x00, 0xC7, 0x1F, 0x00, 0x00, 0x0E, 0x20,
-    0x00, 0x00, 0x74, 0x20, 0x00, 0x00, 0xDA, 0x20, 0x00, 0x00, 0x3E, 0x21, 0x00, 0x00, 0x9E, 0x21,
-    0x00, 0x00, 0xE5, 0x21, 0x00, 0x00, 0x32, 0x22, 0x00, 0x00, 0x92, 0x22, 0x00, 0x00, 0xEE, 0x22,
-    0x00, 0x00, 0x59, 0x23, 0x00, 0x00, 0xC3, 0x23, 0x00, 0x00, 0x09, 0x24, 0x00, 0x00, 0x59, 0x24,
-    0x00, 0x00, 0xB1, 0x24, 0x00, 0x00, 0x12, 0x25, 0x00, 0x00, 0x58, 0x25, 0x00, 0x00, 0xBA, 0x25,
-    0x00, 0x00, 0x20, 0x26, 0x00, 0x00, 0x71, 0x26, 0x00, 0x00, 0xD0, 0x26, 0x00, 0x00, 0x35, 0x27,
-    0x00, 0x00, 0x72, 0x27, 0x00, 0x00, 0xCA, 0x27, 0x00, 0x00, 0x23, 0x28, 0x00, 0x00, 0x83, 0x28,
-    0x00, 0x00, 0xEB, 0x28, 0x00, 0x00, 0x5E, 0x29, 0x00, 0x00, 0xA4, 0x29, 0x00, 0x00, 0xF4, 0x29,
-    0x00, 0x00, 0x52, 0x2A, 0x00, 0x00, 0xB2, 0x2A, 0x00, 0x00, 0x04, 0x2B, 0x00, 0x00, 0x55, 0x2B,
-    0x00, 0x00, 0xC2, 0x2B, 0x00, 0x00, 0x13, 0x2C, 0x00, 0x00, 0x7D, 0x2C, 0x00, 0x00, 0xD6, 0x2C,
-    0x00, 0x00, 0x31, 0x2D, 0x00, 0x00, 0x7C, 0x2D, 0x00, 0x00, 0xD2, 0x2D, 0x00, 0x00, 0x1B, 0x2E,
-    0x00, 0x00, 0x60, 0x2E, 0x00, 0x00, 0x91, 0x2E, 0x00, 0x00, 0xE5, 0x2E, 0x00, 0x00, 0x31, 0x2F,
-    0x00, 0x00, 0x8C, 0x2F, 0x00, 0x00, 0xF6, 0x2F, 0x00, 0x00, 0x81, 0x30, 0x00, 0x00, 0xED, 0x30,
-    0x00, 0x00, 0x4A, 0x31, 0x00, 0x00, 0xA4, 0x31, 0x00, 0x00, 0xF7, 0x31, 0x00, 0x00, 0x46, 0x32,
-    0x00, 0x00, 0x9C, 0x32, 0x00, 0x00, 0x09, 0x33, 0x00, 0x00, 0x7A, 0x33, 0x00, 0x00, 0xB6, 0x33,
-    0x00, 0x00, 0xED, 0x33, 0x00, 0x00, 0x4C, 0x34, 0x00, 0x00, 0x85, 0x34, 0x00, 0x00, 0xC1, 0x34,
-    0x00, 0x00, 0x04, 0x35, 0x00, 0x00, 0x69, 0x35, 0x00, 0x00, 0xC4, 0x35, 0x00, 0x00, 0x16, 0x36,
-    0x00, 0x00, 0x7C, 0x36, 0x00, 0x00, 0xEF, 0x36, 0x00, 0x00, 0x51, 0x37, 0x00, 0x00, 0x9A, 0x37,
-    0x00, 0x00, 0x0D, 0x38, 0x00, 0x00, 0x7E, 0x38, 0x00, 0x00, 0xE1, 0x38, 0x00, 0x00, 0x49, 0x39,
-    0x00, 0x00, 0xBD, 0x39, 0x00, 0x00, 0x19, 0x3A, 0x00, 0x00, 0x81, 0x3A, 0x00, 0x00, 0xF3, 0x3A,
-    0x00, 0x00, 0x69, 0x3B, 0x00, 0x00, 0xA8, 0x3B, 0x00, 0x00, 0x12, 0x3C, 0x00, 0x00, 0x62, 0x3C,
-    0x00, 0x00, 0xA3, 0x3C, 0x00, 0x00, 0xED, 0x3C, 0x00, 0x00, 0x5C, 0x3D, 0x00, 0x00, 0xBC, 0x3D,
-    0x00, 0x00, 0x0E, 0x3E, 0x00, 0x00, 0x6A, 0x3E, 0x00, 0x00, 0xD3, 0x3E, 0x00, 0x00, 0x36, 0x3F,
-    0x00, 0x00, 0xA6, 0x3F, 0x00, 0x00, 0x08, 0x40, 0x00, 0x00, 0x4B, 0x40, 0x00, 0x00, 0x93, 0x40,
-    0x00, 0x00, 0xE3, 0x40, 0x00, 0x00, 0x27, 0x41, 0x00, 0x00, 0x9D, 0x41, 0x00, 0x00, 0xEC, 0x41,
-    0x00, 0x00, 0x2E, 0x42, 0x00, 0x00, 0x9D, 0x42, 0x00, 0x00, 0x04, 0x43, 0x00, 0x00, 0x6D, 0x43,
-    0x00, 0x00, 0xDD, 0x43, 0x00, 0x00, 0x44, 0x44, 0x00, 0x00, 0x7F, 0x44, 0x00, 0x00, 0xE0, 0x44,
-    0x00, 0x00, 0x23, 0x45, 0x00, 0x00, 0x68, 0x45, 0x00, 0x00, 0xCA, 0x45, 0x00, 0x00, 0x19, 0x46,
-    0x00, 0x00, 0x65, 0x46, 0x00, 0x00, 0xD4, 0x46, 0x00, 0x00, 0x3B, 0x47, 0x00, 0x00, 0x7C, 0x47,
-    0x00, 0x00, 0xC1, 0x47, 0x00, 0x00, 0x0D, 0x48, 0x00, 0x00, 0x79, 0x48, 0x00, 0x00, 0xBF, 0x48,
-    0x00, 0x00, 0x17, 0x49, 0x00, 0x00, 0x58, 0x49, 0x00, 0x00, 0xC0, 0x49, 0x00, 0x00, 0xF5, 0x49,
-    0x00, 0x00, 0x58, 0x4A, 0x00, 0x00, 0xA4, 0x4A, 0x00, 0x00, 0xDD, 0x4A, 0x00, 0x00, 0x15, 0x4B,
-    0x00, 0x00, 0x71, 0x4B, 0x00, 0x00, 0xB4, 0x4B, 0x00, 0x00, 0x02, 0x4C, 0x00, 0x00, 0x70, 0x4C,
-    0x00, 0x00, 0xE3, 0x4C, 0x00, 0x00, 0x35, 0x4D, 0x00, 0x00, 0x90, 0x4D, 0x00, 0x00, 0xD1, 0x4D,
-    0x00, 0x00, 0x30, 0x4E, 0x00, 0x00, 0x93, 0x4E, 0x00, 0x00, 0xED, 0x4E, 0x00, 0x00, 0x26, 0x4F,
-    0x00, 0x00, 0x9C, 0x4F, 0x00, 0x00, 0xF2, 0x4F, 0x00, 0x00, 0x35, 0x50, 0x00, 0x00, 0x9F, 0x50,
-    0x00, 0x00, 0xF9, 0x50, 0x00, 0x00, 0x61, 0x51, 0x00, 0x00, 0xCE, 0x51, 0x00, 0x00, 0x41, 0x52,
-    0x00, 0x00, 0x78, 0x52, 0x00, 0x00, 0xDA, 0x52, 0x00, 0x00, 0x18, 0x53, 0x00, 0x00, 0x4E, 0x53,
-    0x00, 0x00, 0xA4, 0x53, 0x00, 0x00, 0x0D, 0x54, 0x00, 0x00, 0x82, 0x54, 0x00, 0x00, 0xED, 0x54,
-    0x00, 0x00, 0x46, 0x55, 0x00, 0x00, 0xC0, 0x55, 0x00, 0x00, 0xFC, 0x55, 0x00, 0x00, 0x4A, 0x56,
-    0x00, 0x00, 0xA1, 0x56, 0x00, 0x00, 0x1F, 0x57, 0x00, 0x00, 0x8A, 0x57, 0x00, 0x00, 0xCC, 0x57,
-    0x00, 0x00, 0x0A, 0x58, 0x00, 0x00, 0x4E, 0x58, 0x00, 0x00, 0x8C, 0x58, 0x00, 0x00, 0xCC, 0x58,
-    0x00, 0x00, 0x31, 0x59, 0x00, 0x00, 0x7F, 0x59, 0x00, 0x00, 0xDD, 0x59, 0x00, 0x00, 0x3D, 0x5A,
-    0x00, 0x00, 0x6B, 0x5A, 0x00, 0x00, 0xB9, 0x5A, 0x00, 0x00, 0x17, 0x5B, 0x00, 0x00, 0x67, 0x5B,
-    0x00, 0x00, 0xB6, 0x5B, 0x00, 0x00, 0x16, 0x5C, 0x00, 0x00, 0x73, 0x5C, 0x00, 0x00, 0xCD, 0x5C,
-    0x00, 0x00, 0x2E, 0x5D, 0x00, 0x00, 0x9F, 0x5D, 0x00, 0x00, 0xE9, 0x5D, 0x00, 0x00, 0x42, 0x5E,
-    0x00, 0x00, 0x8A, 0x5E, 0x00, 0x00, 0xC7, 0x5E, 0x00, 0x00, 0xFB, 0x5E, 0x00, 0x00, 0x3B, 0x5F,
-    0x00, 0x00, 0x8C, 0x5F, 0x00, 0x00, 0xD0, 0x5F, 0x00, 0x00, 0x40, 0x60, 0x00, 0x00, 0x83, 0x60,
-    0x00, 0x00, 0xD6, 0x60, 0x00, 0x00, 0x1C, 0x61, 0x00, 0x00, 0x8A, 0x61, 0x00, 0x00, 0xF3, 0x61,
-    0x00, 0x00, 0x48, 0x62, 0x00, 0x00, 0x95, 0x62, 0x00, 0x00, 0xD2, 0x62, 0x00, 0x00, 0x48, 0x63,
-    0x00, 0x00, 0x93, 0x63, 0x00, 0x00, 0xDE, 0x63, 0x00, 0x00, 0x2F, 0x64, 0x00, 0x00, 0x6A, 0x64,
-    0x00, 0x00, 0xCB, 0x64, 0x00, 0x00, 0x0E, 0x65, 0x00, 0x00, 0x59, 0x65, 0x00, 0x00, 0x98, 0x65,
-    0x00, 0x00, 0xE7, 0x65, 0x00, 0x00, 0x1D, 0x66, 0x00, 0x00, 0x79, 0x66, 0x00, 0x00, 0xC4, 0x66,
-    0x00, 0x00, 0x34, 0x67, 0x00, 0x00, 0x76, 0x67, 0x00, 0x00, 0xB8, 0x67, 0x00, 0x00, 0xE0, 0x67,
-    0x00, 0x00, 0x10, 0x68, 0x00, 0x00, 0x7B, 0x68, 0x00, 0x00, 0xB5, 0x68, 0x00, 0x00, 0xF9, 0x68,
-    0x00, 0x00, 0x3A, 0x69, 0x00, 0x00, 0xA7, 0x69, 0x00, 0x00, 0xF7, 0x69, 0x00, 0x00, 0x63, 0x6A,
-    0x00, 0x00, 0xAD, 0x6A, 0x00, 0x00, 0x2E, 0x6B, 0x00, 0x00, 0x8F, 0x6B, 0x00, 0x00, 0xF2, 0x6B,
-    0x00, 0x00, 0x64, 0x6C, 0x00, 0x00, 0xCC, 0x6C, 0x00, 0x00, 0x25, 0x6D, 0x00, 0x00, 0x69, 0x6D,
-    0x00, 0x00, 0xAA, 0x6D, 0x00, 0x00, 0xEC, 0x6D, 0x00, 0x00, 0x1E, 0x6E, 0x00, 0x00, 0x61, 0x6E,
-    0x00, 0x00, 0xCB, 0x6E, 0x00, 0x00, 0x20, 0x6F, 0x00, 0x00, 0x56, 0x6F, 0x00, 0x00, 0xAC, 0x6F,
-    0x00, 0x00, 0x05, 0x70, 0x00, 0x00, 0x64, 0x70, 0x00, 0x00, 0xBF, 0x70, 0x00, 0x00, 0x24, 0x71,
-    0x00, 0x00, 0x6F, 0x71, 0x00, 0x00, 0xB5, 0x71, 0x00, 0x00, 0x28, 0x72, 0x00, 0x00, 0x65, 0x72,
-    0x00, 0x00, 0xBD, 0x72, 0x00, 0x00, 0x27, 0x73, 0x00, 0x00, 0xA0, 0x73, 0x00, 0x00, 0xF7, 0x73,
-    0x00, 0x00, 0x2D, 0x74, 0x00, 0x00, 0x83, 0x74, 0x00, 0x00, 0xC1, 0x74, 0x00, 0x00, 0x2E, 0x75,
-    0x00, 0x00, 0x75, 0x75, 0x00, 0x00, 0xB6, 0x75, 0x00, 0x00, 0x00, 0x76, 0x00, 0x00, 0x67, 0x76,
-    0x00, 0x00, 0xBD, 0x76, 0x00, 0x00, 0x22, 0x77, 0x00, 0x00, 0x85, 0x77, 0x00, 0x00, 0xE8, 0x77,
-    0x00, 0x00, 0x2D, 0x78, 0x00, 0x00, 0x7A, 0x78, 0x00, 0x00, 0xBA, 0x78, 0x00, 0x00, 0x2C, 0x79,
-    0x00, 0x00, 0x8B, 0x79, 0x00, 0x00, 0x02, 0x7A, 0x00, 0x00, 0x57, 0x7A, 0x00, 0x00, 0x86, 0x7A,
-    0x00, 0x00, 0xC5, 0x7A, 0x00, 0x00, 0x1D, 0x7B, 0x00, 0x00, 0x66, 0x7B, 0x00, 0x00, 0xBD, 0x7B,
-    0x00, 0x00, 0x01, 0x7C, 0x00, 0x00, 0x4E, 0x7C, 0x00, 0x00, 0xA7, 0x7C, 0x00, 0x00, 0xF1, 0x7C,
-    0x00, 0x00, 0x4D, 0x7D, 0x00, 0x00, 0x9B, 0x7D, 0x00, 0x00, 0x03, 0x7E, 0x00, 0x00, 0x75, 0x7E,
-    0x00, 0x00, 0xBE, 0x7E, 0x00, 0x00, 0x02, 0x7F, 0x00, 0x00, 0x53, 0x7F, 0x00, 0x00, 0x90, 0x7F,
-    0x00, 0x00, 0xCF, 0x7F, 0x00, 0x00, 0x13, 0x80, 0x00, 0x00, 0x40, 0x80, 0x00, 0x00, 0x91, 0x80,
-    0x00, 0x00, 0xDE, 0x80, 0x00, 0x00, 0x21, 0x81, 0x00, 0x00, 0x8B, 0x81, 0x00, 0x00, 0xBB, 0x81,
-    0x00, 0x00, 0x28, 0x82, 0x00, 0x00, 0x60, 0x82, 0x00, 0x00, 0x92, 0x82, 0x00, 0x00, 0xC5, 0x82,
-    0x00, 0x00, 0xFD, 0x82, 0x00, 0x00, 0x34, 0x83, 0x00, 0x00, 0x7E, 0x83, 0x00, 0x00, 0xB0, 0x83,
-    0x00, 0x00, 0xEC, 0x83, 0x00, 0x00, 0x1E, 0x84, 0x00, 0x00, 0x81, 0x84, 0x00, 0x00, 0xD0, 0x84,
-    0x00, 0x00, 0x27, 0x85, 0x00, 0x00, 0x5E, 0x85, 0x00, 0x00, 0x7F, 0x85, 0x00, 0x00, 0xC8, 0x85,
-    0x00, 0x00, 0xFA, 0x85, 0x00, 0x00, 0x49, 0x86, 0x00, 0x00, 0xA0, 0x86, 0x00, 0x00, 0xD9, 0x86,
-    0x00, 0x00, 0x4A, 0x87, 0x00, 0x00, 0xBF, 0x87, 0x00, 0x00, 0x02, 0x88, 0x00, 0x00, 0x3D, 0x88,
-    0x00, 0x00, 0x7B, 0x88, 0x00, 0x00, 0xD6, 0x88, 0x00, 0x00, 0x13, 0x89, 0x00, 0x00, 0x45, 0x89,
-    0x00, 0x00, 0x88, 0x89, 0x00, 0x00, 0xD4, 0x89, 0x00, 0x00, 0xFD, 0x89, 0x00, 0x00, 0x2F, 0x8A,
-    0x00, 0x00, 0x59, 0x8A, 0x00, 0x00, 0xC3, 0x8A, 0x00, 0x00, 0x08, 0x8B, 0x00, 0x00, 0x64, 0x8B,
-    0x00, 0x00, 0xB5, 0x8B, 0x00, 0x00, 0x02, 0x8C, 0x00, 0x00, 0x57, 0x8C, 0x00, 0x00, 0xA0, 0x8C,
-    0x00, 0x00, 0x04, 0x8D, 0x00, 0x00, 0x75, 0x8D, 0x00, 0x00, 0xE4, 0x8D, 0x00, 0x00, 0x3F, 0x8E,
-    0x00, 0x00, 0x9A, 0x8E, 0x00, 0x00, 0xF4, 0x8E, 0x00, 0x00, 0x32, 0x8F, 0x00, 0x00, 0xA0, 0x8F,
-    0x00, 0x00, 0xFC, 0x8F, 0x00, 0x00, 0x34, 0x90, 0x00, 0x00, 0x66, 0x90, 0x00, 0x00, 0xC4, 0x90,
-    0x00, 0x00, 0x15, 0x91, 0x00, 0x00, 0x80, 0x91, 0x00, 0x00, 0xB8, 0x91, 0x00, 0x00, 0xFB, 0x91,
-    0x00, 0x00, 0x27, 0x92, 0x00, 0x00, 0x68, 0x92, 0x00, 0x00, 0x9E, 0x92, 0x00, 0x00, 0xE8, 0x92,
-    0x00, 0x00, 0x5C, 0x93, 0x00, 0x00, 0x99, 0x93, 0x00, 0x00, 0x07, 0x94, 0x00, 0x00, 0x64, 0x94,
-    0x00, 0x00, 0xA3, 0x94, 0x00, 0x00, 0xEF, 0x94, 0x00, 0x00, 0x2A, 0x95, 0x00, 0x00, 0x6F, 0x95,
-    0x00, 0x00, 0xC0, 0x95, 0x00, 0x00, 0x25, 0x96, 0x00, 0x00, 0x66, 0x96, 0x00, 0x00, 0x8E, 0x96,
-    0x00, 0x00, 0xDF, 0x96, 0x00, 0x00, 0x40, 0x97, 0x00, 0x00, 0x92, 0x97, 0x00, 0x00, 0xE0, 0x97,
-    0x00, 0x00, 0x2C, 0x98, 0x00, 0x00, 0x97, 0x98, 0x00, 0x00, 0xBF, 0x98, 0x00, 0x00, 0xFE, 0x98,
-    0x00, 0x00, 0x3C, 0x99, 0x00, 0x00, 0x6D, 0x99, 0x00, 0x00, 0xCB, 0x99, 0x00, 0x00, 0x37, 0x9A,
-    0x00, 0x00, 0x99, 0x9A, 0x00, 0x00, 0xF2, 0x9A, 0x00, 0x00, 0x61, 0x9B, 0x00, 0x00, 0x9F, 0x9B,
-    0x00, 0x00, 0xF5, 0x9B, 0x00, 0x00, 0x3D, 0x9C, 0x00, 0x00, 0x7F, 0x9C, 0x00, 0x00, 0xBC, 0x9C,
-    0x00, 0x00, 0x05, 0x9D, 0x00, 0x00, 0x51, 0x9D, 0x00, 0x00, 0xBA, 0x9D, 0x00, 0x00, 0xF9, 0x9D,
-    0x00, 0x00, 0x4B, 0x9E, 0x00, 0x00, 0x7A, 0x9E, 0x00, 0x00, 0xAB, 0x9E, 0x00, 0x00, 0xF6, 0x9E,
-    0x00, 0x00, 0x70, 0x9F, 0x00, 0x00, 0x9C, 0x9F, 0x00, 0x00, 0xEE, 0x9F, 0x00, 0x00, 0x3A, 0xA0,
-    0x00, 0x00, 0x7E, 0xA0, 0x00, 0x00, 0xDB, 0xA0, 0x00, 0x00, 0x1A, 0xA1, 0x00, 0x00, 0x7F, 0xA1,
-    0x00, 0x00, 0xED, 0xA1, 0x00, 0x00, 0x25, 0xA2, 0x00, 0x00, 0x82, 0xA2, 0x00, 0x00, 0xBC, 0xA2,
-    0x00, 0x00, 0x26, 0xA3, 0x00, 0x00, 0x5A, 0xA3, 0x00, 0x00, 0xB5, 0xA3, 0x00, 0x00, 0x12, 0xA4,
-    0x00, 0x00, 0x61, 0xA4, 0x00, 0x00, 0xD0, 0xA4, 0x00, 0x00, 0x18, 0xA5, 0x00, 0x00, 0x69, 0xA5,
-    0x00, 0x00, 0xCB, 0xA5, 0x00, 0x00, 0x16, 0xA6, 0x00, 0x00, 0x6A, 0xA6, 0x00, 0x00, 0xA7, 0xA6,
-    0x00, 0x00, 0xE0, 0xA6, 0x00, 0x00, 0x3A, 0xA7, 0x00, 0x00, 0x8F, 0xA7, 0x00, 0x00, 0xEE, 0xA7,
-    0x00, 0x00, 0x6E, 0xA8, 0x00, 0x00, 0xB6, 0xA8, 0x00, 0x00, 0x24, 0xA9, 0x00, 0x00, 0x73, 0xA9,
-    0x00, 0x00, 0xAC, 0xA9, 0x00, 0x00, 0x06, 0xAA, 0x00, 0x00, 0x5D, 0xAA, 0x00, 0x00, 0xC5, 0xAA,
-    0x00, 0x00, 0x2B, 0xAB, 0x00, 0x00, 0x5F, 0xAB, 0x00, 0x00, 0xA8, 0xAB, 0x00, 0x00, 0x17, 0xAC,
-    0x00, 0x00, 0x51, 0xAC, 0x00, 0x00, 0x99, 0xAC, 0x00, 0x00, 0xF4, 0xAC, 0x00, 0x00, 0x30, 0xAD,
-    0x00, 0x00, 0x91, 0xAD, 0x00, 0x00, 0xFA, 0xAD, 0x00, 0x00, 0x55, 0xAE, 0x00, 0x00, 0x97, 0xAE,
-    0x00, 0x00, 0xF1, 0xAE, 0x00, 0x00, 0x4A, 0xAF, 0x00, 0x00, 0xC9, 0xAF, 0x00, 0x00, 0x13, 0xB0,
-    0x00, 0x00, 0x63, 0xB0, 0x00, 0x00, 0xC6, 0xB0, 0x00, 0x00, 0x1F, 0xB1, 0x00, 0x00, 0x88, 0xB1,
-    0x00, 0x00, 0xD2, 0xB1, 0x00, 0x00, 0x36, 0xB2, 0x00, 0x00, 0x86, 0xB2, 0x00, 0x00, 0xD9, 0xB2,
-    0x00, 0x00, 0x2D, 0xB3, 0x00, 0x00, 0x67, 0xB3, 0x00, 0x00, 0xC5, 0xB3, 0x00, 0x00, 0x10, 0xB4,
-    0x00, 0x00, 0x5A, 0xB4, 0x00, 0x00, 0xC8, 0xB4, 0x00, 0x00, 0x31, 0xB5, 0x00, 0x00, 0x98, 0xB5,
-    0x00, 0x00, 0xEF, 0xB5, 0x00, 0x00, 0x5F, 0xB6, 0x00, 0x00, 0x9E, 0xB6, 0x00, 0x00, 0xDF, 0xB6,
-    0x00, 0x00, 0x0F, 0xB7, 0x00, 0x00, 0x52, 0xB7, 0x00, 0x00, 0x93, 0xB7, 0x00, 0x00, 0xFD, 0xB7,
-    0x00, 0x00, 0x48, 0xB8, 0x00, 0x00, 0xA6, 0xB8, 0x00, 0x00, 0xED, 0xB8, 0x00, 0x00, 0x41, 0xB9,
-    0x00, 0x00, 0x9F, 0xB9, 0x00, 0x00, 0xEE, 0xB9, 0x00, 0x00, 0x40, 0xBA, 0x00, 0x00, 0x9F, 0xBA,
-    0x00, 0x00, 0xE6, 0xBA, 0x00, 0x00, 0x34, 0xBB, 0x00, 0x00, 0x7B, 0xBB, 0x00, 0x00, 0xC1, 0xBB,
-    0x00, 0x00, 0x0D, 0xBC, 0x00, 0x00, 0x5D, 0xBC, 0x00, 0x00, 0xB2, 0xBC, 0x00, 0x00, 0x11, 0xBD,
-    0x00, 0x00, 0x59, 0xBD, 0x00, 0x00, 0xA9, 0xBD, 0x00, 0x00, 0x20, 0xBE, 0x00, 0x00, 0x69, 0xBE,
-    0x00, 0x00, 0xB6, 0xBE, 0x00, 0x00, 0xFD, 0xBE, 0x00, 0x00, 0x70, 0xBF, 0x00, 0x00, 0xBA, 0xBF,
-    0x00, 0x00, 0x1B, 0xC0, 0x00, 0x00, 0x64, 0xC0, 0x00, 0x00, 0xD3, 0xC0, 0x00, 0x00, 0x36, 0xC1,
-    0x00, 0x00, 0x95, 0xC1, 0x00, 0x00, 0xF3, 0xC1, 0x00, 0x00, 0x53, 0xC2, 0x00, 0x00, 0xA3, 0xC2,
-    0x00, 0x00, 0x05, 0xC3, 0x00, 0x00, 0x48, 0xC3, 0x00, 0x00, 0xC3, 0xC3, 0x00, 0x00, 0xFB, 0xC3,
-    0x00, 0x00, 0x68, 0xC4, 0x00, 0x00, 0xB4, 0xC4, 0x00, 0x00, 0x09, 0xC5, 0x00, 0x00, 0x62, 0xC5,
-    0x00, 0x00, 0xA6, 0xC5, 0x00, 0x00, 0xF4, 0xC5, 0x00, 0x00, 0x49, 0xC6, 0x00, 0x00, 0x96, 0xC6,
-    0x00, 0x00, 0xE9, 0xC6, 0x00, 0x00, 0x21, 0xC7, 0x00, 0x00, 0x61, 0xC7, 0x00, 0x00, 0xC0, 0xC7,
-    0x00, 0x00, 0x31, 0xC8, 0x00, 0x00, 0x89, 0xC8, 0x00, 0x00, 0xCF, 0xC8, 0x00, 0x00, 0x18, 0xC9,
-    0x00, 0x00, 0x5F, 0xC9, 0x00, 0x00, 0xCD, 0xC9, 0x00, 0x00, 0x0A, 0xCA, 0x00, 0x00, 0x70, 0xCA,
-    0x00, 0x00, 0xD0, 0xCA, 0x00, 0x00, 0x0A, 0xCB, 0x00, 0x00, 0x50, 0xCB, 0x00, 0x00, 0x80, 0xCB,
-    0x00, 0x00, 0xAE, 0xCB, 0x00, 0x00, 0xE9, 0xCB, 0x00, 0x00, 0x1E, 0xCC, 0x00, 0x00, 0x80, 0xCC,
-    0x00, 0x00, 0xC9, 0xCC, 0x00, 0x00, 0x11, 0xCD, 0x00, 0x00, 0x62, 0xCD, 0x00, 0x00, 0xBC, 0xCD,
-    0x00, 0x00, 0x0F, 0xCE, 0x00, 0x00, 0x63, 0xCE, 0x00, 0x00, 0x9D, 0xCE, 0x00, 0x00, 0xEC, 0xCE,
-    0x00, 0x00, 0x37, 0xCF, 0x00, 0x00, 0x60, 0xCF, 0x00, 0x00, 0xC1, 0xCF, 0x00, 0x00, 0x11, 0xD0,
-    0x00, 0x00, 0x6D, 0xD0, 0x00, 0x00, 0xBA, 0xD0, 0x00, 0x00, 0xDC, 0xD0, 0x00, 0x00, 0x1B, 0xD1,
-    0x00, 0x00, 0x59, 0xD1, 0x00, 0x00, 0xB6, 0xD1, 0x00, 0x00, 0x21, 0xD2, 0x00, 0x00, 0x5A, 0xD2,
-    0x00, 0x00, 0xAB, 0xD2, 0x00, 0x00, 0xFB, 0xD2, 0x00, 0x00, 0x3B, 0xD3, 0x00, 0x00, 0x8B, 0xD3,
-    0x00, 0x00, 0xC2, 0xD3, 0x00, 0x00, 0x27, 0xD4, 0x00, 0x00, 0x9F, 0xD4, 0x00, 0x00, 0xE5, 0xD4,
-    0x00, 0x00, 0x3A, 0xD5, 0x00, 0x00, 0x90, 0xD5, 0x00, 0x00, 0xE5, 0xD5, 0x00, 0x00, 0x38, 0xD6,
-    0x00, 0x00, 0x7F, 0xD6, 0x00, 0x00, 0xD7, 0xD6, 0x00, 0x00, 0x15, 0xD7, 0x00, 0x00, 0x88, 0xD7,
-    0x00, 0x00, 0xC4, 0xD7, 0x00, 0x00, 0x0B, 0xD8, 0x00, 0x00, 0x51, 0xD8, 0x00, 0x00, 0x87, 0xD8,
-    0x00, 0x00, 0xB3, 0xD8, 0x00, 0x00, 0x07, 0xD9, 0x00, 0x00, 0x60, 0xD9, 0x00, 0x00, 0xA9, 0xD9,
-    0x00, 0x00, 0xE6, 0xD9, 0x00, 0x00, 0x1C, 0xDA, 0x00, 0x00, 0x33, 0xDA, 0x00, 0x00, 0x60, 0xDA,
-    0x00, 0x00, 0x8E, 0xDA, 0x00, 0x00, 0xE0, 0xDA, 0x00, 0x00, 0x1A, 0xDB, 0x00, 0x00, 0x78, 0xDB,
-    0x00, 0x00, 0xD4, 0xDB, 0x00, 0x00, 0x0E, 0xDC, 0x00, 0x00, 0x49, 0xDC, 0x00, 0x00, 0x96, 0xDC,
-    0x00, 0x00, 0xD0, 0xDC, 0x00, 0x00, 0x11, 0xDD, 0x00, 0x00, 0x5F, 0xDD, 0x00, 0x00, 0x9C, 0xDD,
-    0x00, 0x00, 0xE5, 0xDD, 0x00, 0x00, 0x3B, 0xDE, 0x00, 0x00, 0x97, 0xDE, 0x00, 0x00, 0xEC, 0xDE,
-    0x00, 0x00, 0x1E, 0xDF, 0x00, 0x00, 0x5F, 0xDF, 0x00, 0x00, 0x9D, 0xDF, 0x00, 0x00, 0xEA, 0xDF,
-    0x00, 0x00, 0x1E, 0xE0, 0x00, 0x00, 0x67, 0xE0, 0x00, 0x00, 0xBC, 0xE0, 0x00, 0x00, 0xF0, 0xE0,
-    0x00, 0x00, 0x41, 0xE1, 0x00, 0x00, 0xA8, 0xE1, 0x00, 0x00, 0x17, 0xE2, 0x00, 0x00, 0x57, 0xE2,
-    0x00, 0x00, 0xC1, 0xE2, 0x00, 0x00, 0x0D, 0xE3, 0x00, 0x00, 0x5D, 0xE3, 0x00, 0x00, 0xBA, 0xE3,
-    0x00, 0x00, 0x07, 0xE4, 0x00, 0x00, 0x5E, 0xE4, 0x00, 0x00, 0xDE, 0xE4, 0x00, 0x00, 0x26, 0xE5,
-    0x00, 0x00, 0x7B, 0xE5, 0x00, 0x00, 0xC8, 0xE5, 0x00, 0x00, 0x1A, 0xE6, 0x00, 0x00,
+const uint8_t trivia_es_idx[1842] = {
+    0x54, 0x52, 0x56, 0x49, 0x01, 0x00, 0xCA, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x50, 0x00,
+    0x00, 0x00, 0x86, 0x00, 0x00, 0x00, 0xBC, 0x00, 0x00, 0x00, 0xEA, 0x00, 0x00, 0x00, 0x35, 0x01,
+    0x00, 0x00, 0x66, 0x01, 0x00, 0x00, 0xBB, 0x01, 0x00, 0x00, 0xF7, 0x01, 0x00, 0x00, 0x2B, 0x02,
+    0x00, 0x00, 0x7E, 0x02, 0x00, 0x00, 0xCE, 0x02, 0x00, 0x00, 0x25, 0x03, 0x00, 0x00, 0x6F, 0x03,
+    0x00, 0x00, 0xDC, 0x03, 0x00, 0x00, 0x20, 0x04, 0x00, 0x00, 0x6D, 0x04, 0x00, 0x00, 0xC9, 0x04,
+    0x00, 0x00, 0xFC, 0x04, 0x00, 0x00, 0x28, 0x05, 0x00, 0x00, 0x89, 0x05, 0x00, 0x00, 0xB8, 0x05,
+    0x00, 0x00, 0xE4, 0x05, 0x00, 0x00, 0x11, 0x06, 0x00, 0x00, 0x3E, 0x06, 0x00, 0x00, 0x7E, 0x06,
+    0x00, 0x00, 0xB3, 0x06, 0x00, 0x00, 0x18, 0x07, 0x00, 0x00, 0x52, 0x07, 0x00, 0x00, 0x8C, 0x07,
+    0x00, 0x00, 0xCC, 0x07, 0x00, 0x00, 0x0B, 0x08, 0x00, 0x00, 0x39, 0x08, 0x00, 0x00, 0x65, 0x08,
+    0x00, 0x00, 0x91, 0x08, 0x00, 0x00, 0xBC, 0x08, 0x00, 0x00, 0xE7, 0x08, 0x00, 0x00, 0x15, 0x09,
+    0x00, 0x00, 0x42, 0x09, 0x00, 0x00, 0x70, 0x09, 0x00, 0x00, 0xA0, 0x09, 0x00, 0x00, 0xCF, 0x09,
+    0x00, 0x00, 0x13, 0x0A, 0x00, 0x00, 0x51, 0x0A, 0x00, 0x00, 0x8C, 0x0A, 0x00, 0x00, 0xBD, 0x0A,
+    0x00, 0x00, 0xEC, 0x0A, 0x00, 0x00, 0x47, 0x0B, 0x00, 0x00, 0x7F, 0x0B, 0x00, 0x00, 0xB5, 0x0B,
+    0x00, 0x00, 0x1D, 0x0C, 0x00, 0x00, 0x5D, 0x0C, 0x00, 0x00, 0x95, 0x0C, 0x00, 0x00, 0xE1, 0x0C,
+    0x00, 0x00, 0x14, 0x0D, 0x00, 0x00, 0x58, 0x0D, 0x00, 0x00, 0x7C, 0x0D, 0x00, 0x00, 0xB9, 0x0D,
+    0x00, 0x00, 0xF4, 0x0D, 0x00, 0x00, 0x3A, 0x0E, 0x00, 0x00, 0x99, 0x0E, 0x00, 0x00, 0xE7, 0x0E,
+    0x00, 0x00, 0x33, 0x0F, 0x00, 0x00, 0x79, 0x0F, 0x00, 0x00, 0xC3, 0x0F, 0x00, 0x00, 0xF2, 0x0F,
+    0x00, 0x00, 0x63, 0x10, 0x00, 0x00, 0xA3, 0x10, 0x00, 0x00, 0x08, 0x11, 0x00, 0x00, 0x64, 0x11,
+    0x00, 0x00, 0xC8, 0x11, 0x00, 0x00, 0x2C, 0x12, 0x00, 0x00, 0x89, 0x12, 0x00, 0x00, 0xDE, 0x12,
+    0x00, 0x00, 0x24, 0x13, 0x00, 0x00, 0x89, 0x13, 0x00, 0x00, 0xEE, 0x13, 0x00, 0x00, 0x51, 0x14,
+    0x00, 0x00, 0xB0, 0x14, 0x00, 0x00, 0xFC, 0x14, 0x00, 0x00, 0x65, 0x15, 0x00, 0x00, 0xBC, 0x15,
+    0x00, 0x00, 0x1C, 0x16, 0x00, 0x00, 0x81, 0x16, 0x00, 0x00, 0xD1, 0x16, 0x00, 0x00, 0x2F, 0x17,
+    0x00, 0x00, 0x6B, 0x17, 0x00, 0x00, 0xC2, 0x17, 0x00, 0x00, 0x21, 0x18, 0x00, 0x00, 0x88, 0x18,
+    0x00, 0x00, 0xFA, 0x18, 0x00, 0x00, 0x3F, 0x19, 0x00, 0x00, 0x9C, 0x19, 0x00, 0x00, 0xED, 0x19,
+    0x00, 0x00, 0x3D, 0x1A, 0x00, 0x00, 0xA9, 0x1A, 0x00, 0x00, 0xF9, 0x1A, 0x00, 0x00, 0x53, 0x1B,
+    0x00, 0x00, 0x9D, 0x1B, 0x00, 0x00, 0xF2, 0x1B, 0x00, 0x00, 0x45, 0x1C, 0x00, 0x00, 0x91, 0x1C,
+    0x00, 0x00, 0xEC, 0x1C, 0x00, 0x00, 0x56, 0x1D, 0x00, 0x00, 0xC2, 0x1D, 0x00, 0x00, 0x1C, 0x1E,
+    0x00, 0x00, 0x6B, 0x1E, 0x00, 0x00, 0xDC, 0x1E, 0x00, 0x00, 0x13, 0x1F, 0x00, 0x00, 0x72, 0x1F,
+    0x00, 0x00, 0xAB, 0x1F, 0x00, 0x00, 0xE7, 0x1F, 0x00, 0x00, 0x2A, 0x20, 0x00, 0x00, 0x8F, 0x20,
+    0x00, 0x00, 0xEA, 0x20, 0x00, 0x00, 0x3C, 0x21, 0x00, 0x00, 0xAF, 0x21, 0x00, 0x00, 0xF8, 0x21,
+    0x00, 0x00, 0x6B, 0x22, 0x00, 0x00, 0xDF, 0x22, 0x00, 0x00, 0x47, 0x23, 0x00, 0x00, 0xB9, 0x23,
+    0x00, 0x00, 0xF8, 0x23, 0x00, 0x00, 0x62, 0x24, 0x00, 0x00, 0xB2, 0x24, 0x00, 0x00, 0xF3, 0x24,
+    0x00, 0x00, 0x3D, 0x25, 0x00, 0x00, 0xAC, 0x25, 0x00, 0x00, 0xFE, 0x25, 0x00, 0x00, 0x5A, 0x26,
+    0x00, 0x00, 0xC3, 0x26, 0x00, 0x00, 0x33, 0x27, 0x00, 0x00, 0x95, 0x27, 0x00, 0x00, 0xD8, 0x27,
+    0x00, 0x00, 0x20, 0x28, 0x00, 0x00, 0x96, 0x28, 0x00, 0x00, 0x05, 0x29, 0x00, 0x00, 0x6C, 0x29,
+    0x00, 0x00, 0xD5, 0x29, 0x00, 0x00, 0x45, 0x2A, 0x00, 0x00, 0xAC, 0x2A, 0x00, 0x00, 0xE7, 0x2A,
+    0x00, 0x00, 0x48, 0x2B, 0x00, 0x00, 0x8D, 0x2B, 0x00, 0x00, 0xD9, 0x2B, 0x00, 0x00, 0x48, 0x2C,
+    0x00, 0x00, 0x8D, 0x2C, 0x00, 0x00, 0xD9, 0x2C, 0x00, 0x00, 0x45, 0x2D, 0x00, 0x00, 0x9D, 0x2D,
+    0x00, 0x00, 0xDE, 0x2D, 0x00, 0x00, 0x46, 0x2E, 0x00, 0x00, 0xA9, 0x2E, 0x00, 0x00, 0xE1, 0x2E,
+    0x00, 0x00, 0x3D, 0x2F, 0x00, 0x00, 0x80, 0x2F, 0x00, 0x00, 0xCE, 0x2F, 0x00, 0x00, 0x20, 0x30,
+    0x00, 0x00, 0x61, 0x30, 0x00, 0x00, 0xC0, 0x30, 0x00, 0x00, 0xF9, 0x30, 0x00, 0x00, 0x4F, 0x31,
+    0x00, 0x00, 0x92, 0x31, 0x00, 0x00, 0xFC, 0x31, 0x00, 0x00, 0x56, 0x32, 0x00, 0x00, 0xBE, 0x32,
+    0x00, 0x00, 0x2B, 0x33, 0x00, 0x00, 0x9E, 0x33, 0x00, 0x00, 0x00, 0x34, 0x00, 0x00, 0x3E, 0x34,
+    0x00, 0x00, 0x74, 0x34, 0x00, 0x00, 0xCA, 0x34, 0x00, 0x00, 0x35, 0x35, 0x00, 0x00, 0x8E, 0x35,
+    0x00, 0x00, 0xCA, 0x35, 0x00, 0x00, 0x18, 0x36, 0x00, 0x00, 0x6F, 0x36, 0x00, 0x00, 0xDA, 0x36,
+    0x00, 0x00, 0x18, 0x37, 0x00, 0x00, 0x66, 0x37, 0x00, 0x00, 0x94, 0x37, 0x00, 0x00, 0xE2, 0x37,
+    0x00, 0x00, 0x32, 0x38, 0x00, 0x00, 0x93, 0x38, 0x00, 0x00, 0x04, 0x39, 0x00, 0x00, 0x4E, 0x39,
+    0x00, 0x00, 0x8B, 0x39, 0x00, 0x00, 0xBF, 0x39, 0x00, 0x00, 0xFF, 0x39, 0x00, 0x00, 0x43, 0x3A,
+    0x00, 0x00, 0xB3, 0x3A, 0x00, 0x00, 0x06, 0x3B, 0x00, 0x00, 0x4C, 0x3B, 0x00, 0x00, 0xBA, 0x3B,
+    0x00, 0x00, 0x23, 0x3C, 0x00, 0x00, 0x70, 0x3C, 0x00, 0x00, 0xAD, 0x3C, 0x00, 0x00, 0x23, 0x3D,
+    0x00, 0x00, 0x6E, 0x3D, 0x00, 0x00, 0xBF, 0x3D, 0x00, 0x00, 0x02, 0x3E, 0x00, 0x00, 0x51, 0x3E,
+    0x00, 0x00, 0x87, 0x3E, 0x00, 0x00, 0xD2, 0x3E, 0x00, 0x00, 0x42, 0x3F, 0x00, 0x00, 0x84, 0x3F,
+    0x00, 0x00, 0xC6, 0x3F, 0x00, 0x00, 0xEE, 0x3F, 0x00, 0x00, 0x59, 0x40, 0x00, 0x00, 0x9A, 0x40,
+    0x00, 0x00, 0x07, 0x41, 0x00, 0x00, 0x73, 0x41, 0x00, 0x00, 0xBD, 0x41, 0x00, 0x00, 0x3E, 0x42,
+    0x00, 0x00, 0x9F, 0x42, 0x00, 0x00, 0x11, 0x43, 0x00, 0x00, 0x79, 0x43, 0x00, 0x00, 0xBD, 0x43,
+    0x00, 0x00, 0xFE, 0x43, 0x00, 0x00, 0x40, 0x44, 0x00, 0x00, 0x72, 0x44, 0x00, 0x00, 0xB5, 0x44,
+    0x00, 0x00, 0x0B, 0x45, 0x00, 0x00, 0x64, 0x45, 0x00, 0x00, 0xBF, 0x45, 0x00, 0x00, 0x0A, 0x46,
+    0x00, 0x00, 0x74, 0x46, 0x00, 0x00, 0xCB, 0x46, 0x00, 0x00, 0x01, 0x47, 0x00, 0x00, 0x3F, 0x47,
+    0x00, 0x00, 0xA6, 0x47, 0x00, 0x00, 0x09, 0x48, 0x00, 0x00, 0x6C, 0x48, 0x00, 0x00, 0xB9, 0x48,
+    0x00, 0x00, 0xF9, 0x48, 0x00, 0x00, 0x6B, 0x49, 0x00, 0x00, 0xCA, 0x49, 0x00, 0x00, 0x41, 0x4A,
+    0x00, 0x00, 0x96, 0x4A, 0x00, 0x00, 0xC5, 0x4A, 0x00, 0x00, 0x04, 0x4B, 0x00, 0x00, 0x5C, 0x4B,
+    0x00, 0x00, 0xB3, 0x4B, 0x00, 0x00, 0xF7, 0x4B, 0x00, 0x00, 0x41, 0x4C, 0x00, 0x00, 0x9D, 0x4C,
+    0x00, 0x00, 0xEB, 0x4C, 0x00, 0x00, 0x53, 0x4D, 0x00, 0x00, 0xC5, 0x4D, 0x00, 0x00, 0x09, 0x4E,
+    0x00, 0x00, 0x5A, 0x4E, 0x00, 0x00, 0x97, 0x4E, 0x00, 0x00, 0xDB, 0x4E, 0x00, 0x00, 0x08, 0x4F,
+    0x00, 0x00, 0x55, 0x4F, 0x00, 0x00, 0xBF, 0x4F, 0x00, 0x00, 0xEF, 0x4F, 0x00, 0x00, 0x5C, 0x50,
+    0x00, 0x00, 0x94, 0x50, 0x00, 0x00, 0xC6, 0x50, 0x00, 0x00, 0xF9, 0x50, 0x00, 0x00, 0x43, 0x51,
+    0x00, 0x00, 0x75, 0x51, 0x00, 0x00, 0xA7, 0x51, 0x00, 0x00, 0xF6, 0x51, 0x00, 0x00, 0x2D, 0x52,
+    0x00, 0x00, 0x4E, 0x52, 0x00, 0x00, 0x97, 0x52, 0x00, 0x00, 0xC9, 0x52, 0x00, 0x00, 0x20, 0x53,
+    0x00, 0x00, 0x63, 0x53, 0x00, 0x00, 0xA1, 0x53, 0x00, 0x00, 0xFC, 0x53, 0x00, 0x00, 0x48, 0x54,
+    0x00, 0x00, 0x72, 0x54, 0x00, 0x00, 0xCE, 0x54, 0x00, 0x00, 0x1F, 0x55, 0x00, 0x00, 0x6C, 0x55,
+    0x00, 0x00, 0xC1, 0x55, 0x00, 0x00, 0x0A, 0x56, 0x00, 0x00, 0x6E, 0x56, 0x00, 0x00, 0xC9, 0x56,
+    0x00, 0x00, 0x24, 0x57, 0x00, 0x00, 0x7E, 0x57, 0x00, 0x00, 0xBC, 0x57, 0x00, 0x00, 0x2A, 0x58,
+    0x00, 0x00, 0x86, 0x58, 0x00, 0x00, 0xB8, 0x58, 0x00, 0x00, 0x16, 0x59, 0x00, 0x00, 0x67, 0x59,
+    0x00, 0x00, 0xD2, 0x59, 0x00, 0x00, 0x0A, 0x5A, 0x00, 0x00, 0x4D, 0x5A, 0x00, 0x00, 0x79, 0x5A,
+    0x00, 0x00, 0xBA, 0x5A, 0x00, 0x00, 0xF0, 0x5A, 0x00, 0x00, 0x5E, 0x5B, 0x00, 0x00, 0xBB, 0x5B,
+    0x00, 0x00, 0xFA, 0x5B, 0x00, 0x00, 0x46, 0x5C, 0x00, 0x00, 0x97, 0x5C, 0x00, 0x00, 0xD8, 0x5C,
+    0x00, 0x00, 0x00, 0x5D, 0x00, 0x00, 0x51, 0x5D, 0x00, 0x00, 0xB2, 0x5D, 0x00, 0x00, 0x00, 0x5E,
+    0x00, 0x00, 0x4C, 0x5E, 0x00, 0x00, 0xB7, 0x5E, 0x00, 0x00, 0xDF, 0x5E, 0x00, 0x00, 0x1E, 0x5F,
+    0x00, 0x00, 0x5C, 0x5F, 0x00, 0x00, 0xC8, 0x5F, 0x00, 0x00, 0x21, 0x60, 0x00, 0x00, 0x90, 0x60,
+    0x00, 0x00, 0xCE, 0x60, 0x00, 0x00, 0x10, 0x61, 0x00, 0x00, 0x62, 0x61, 0x00, 0x00, 0x91, 0x61,
+    0x00, 0x00, 0x0B, 0x62, 0x00, 0x00, 0x37, 0x62, 0x00, 0x00, 0x83, 0x62, 0x00, 0x00, 0xE0, 0x62,
+    0x00, 0x00, 0x1F, 0x63, 0x00, 0x00, 0x7C, 0x63, 0x00, 0x00, 0xB6, 0x63, 0x00, 0x00, 0x20, 0x64,
+    0x00, 0x00, 0x7B, 0x64, 0x00, 0x00, 0xD8, 0x64, 0x00, 0x00, 0x27, 0x65, 0x00, 0x00, 0x6F, 0x65,
+    0x00, 0x00, 0xD1, 0x65, 0x00, 0x00, 0x1C, 0x66, 0x00, 0x00, 0x70, 0x66, 0x00, 0x00, 0xAD, 0x66,
+    0x00, 0x00, 0xF5, 0x66, 0x00, 0x00, 0x63, 0x67, 0x00, 0x00, 0xB2, 0x67, 0x00, 0x00, 0x0C, 0x68,
+    0x00, 0x00, 0x63, 0x68, 0x00, 0x00, 0xC9, 0x68, 0x00, 0x00, 0xFD, 0x68, 0x00, 0x00, 0x6C, 0x69,
+    0x00, 0x00, 0xA6, 0x69, 0x00, 0x00, 0xEE, 0x69, 0x00, 0x00, 0x49, 0x6A, 0x00, 0x00, 0xAA, 0x6A,
+    0x00, 0x00, 0x13, 0x6B, 0x00, 0x00, 0x6E, 0x6B, 0x00, 0x00, 0xB0, 0x6B, 0x00, 0x00, 0x0A, 0x6C,
+    0x00, 0x00, 0x89, 0x6C, 0x00, 0x00, 0xD3, 0x6C, 0x00, 0x00, 0x23, 0x6D, 0x00, 0x00, 0x7C, 0x6D,
+    0x00, 0x00, 0xE5, 0x6D, 0x00, 0x00, 0x49, 0x6E, 0x00, 0x00, 0x99, 0x6E, 0x00, 0x00, 0xD3, 0x6E,
+    0x00, 0x00, 0x1E, 0x6F, 0x00, 0x00, 0x8C, 0x6F, 0x00, 0x00, 0xF5, 0x6F, 0x00, 0x00, 0x4C, 0x70,
+    0x00, 0x00, 0x8B, 0x70, 0x00, 0x00, 0xCE, 0x70, 0x00, 0x00, 0x38, 0x71, 0x00, 0x00, 0x83, 0x71,
+    0x00, 0x00, 0xE1, 0x71, 0x00, 0x00, 0x28, 0x72, 0x00, 0x00, 0x86, 0x72, 0x00, 0x00, 0xD5, 0x72,
+    0x00, 0x00, 0x1C, 0x73, 0x00, 0x00, 0x6A, 0x73, 0x00, 0x00, 0xBA, 0x73, 0x00, 0x00, 0x0F, 0x74,
+    0x00, 0x00, 0x6E, 0x74, 0x00, 0x00, 0xB6, 0x74, 0x00, 0x00, 0x06, 0x75, 0x00, 0x00, 0x7D, 0x75,
+    0x00, 0x00, 0xC6, 0x75, 0x00, 0x00, 0x13, 0x76, 0x00, 0x00, 0x5D, 0x76, 0x00, 0x00, 0xBE, 0x76,
+    0x00, 0x00, 0x07, 0x77, 0x00, 0x00, 0x6A, 0x77, 0x00, 0x00, 0xBA, 0x77, 0x00, 0x00, 0x1C, 0x78,
+    0x00, 0x00, 0x97, 0x78, 0x00, 0x00, 0xCF, 0x78, 0x00, 0x00, 0x24, 0x79, 0x00, 0x00, 0x7D, 0x79,
+    0x00, 0x00, 0xC1, 0x79, 0x00, 0x00, 0x0F, 0x7A, 0x00, 0x00, 0x64, 0x7A, 0x00, 0x00, 0xB7, 0x7A,
+    0x00, 0x00, 0xEF, 0x7A, 0x00, 0x00, 0x2F, 0x7B, 0x00, 0x00, 0x8E, 0x7B, 0x00, 0x00, 0xD7, 0x7B,
+    0x00, 0x00, 0x1E, 0x7C, 0x00, 0x00, 0x8C, 0x7C, 0x00, 0x00, 0xC9, 0x7C, 0x00, 0x00, 0x2F, 0x7D,
+    0x00, 0x00, 0x8F, 0x7D, 0x00, 0x00, 0xD5, 0x7D, 0x00, 0x00, 0x05, 0x7E, 0x00, 0x00, 0x40, 0x7E,
+    0x00, 0x00, 0x75, 0x7E, 0x00, 0x00, 0xD7, 0x7E, 0x00, 0x00, 0x20, 0x7F, 0x00, 0x00, 0x68, 0x7F,
+    0x00, 0x00, 0xB9, 0x7F, 0x00, 0x00, 0x13, 0x80, 0x00, 0x00, 0x67, 0x80, 0x00, 0x00, 0xA1, 0x80,
+    0x00, 0x00, 0x02, 0x81, 0x00, 0x00, 0x52, 0x81, 0x00, 0x00, 0x9F, 0x81, 0x00, 0x00, 0xC1, 0x81,
+    0x00, 0x00, 0xFF, 0x81, 0x00, 0x00, 0x5C, 0x82, 0x00, 0x00, 0x95, 0x82, 0x00, 0x00, 0xE6, 0x82,
+    0x00, 0x00, 0x36, 0x83, 0x00, 0x00, 0x76, 0x83, 0x00, 0x00, 0xC6, 0x83, 0x00, 0x00, 0x0C, 0x84,
+    0x00, 0x00, 0x62, 0x84, 0x00, 0x00, 0xB7, 0x84, 0x00, 0x00, 0xFE, 0x84, 0x00, 0x00, 0x3C, 0x85,
+    0x00, 0x00, 0x78, 0x85, 0x00, 0x00, 0xBF, 0x85, 0x00, 0x00, 0x05, 0x86, 0x00, 0x00, 0x5E, 0x86,
+    0x00, 0x00, 0x94, 0x86, 0x00, 0x00, 0xAB, 0x86, 0x00, 0x00, 0xD8, 0x86, 0x00, 0x00, 0x2A, 0x87,
+    0x00, 0x00, 0x64, 0x87, 0x00, 0x00, 0x9E, 0x87, 0x00, 0x00, 0xD9, 0x87, 0x00, 0x00, 0x26, 0x88,
+    0x00, 0x00, 0x60, 0x88, 0x00, 0x00, 0xAE, 0x88, 0x00, 0x00, 0xF7, 0x88, 0x00, 0x00, 0x4D, 0x89,
+    0x00, 0x00, 0xA9, 0x89, 0x00, 0x00, 0xFE, 0x89, 0x00, 0x00, 0x47, 0x8A, 0x00, 0x00, 0x9C, 0x8A,
+    0x00, 0x00, 0xED, 0x8A, 0x00, 0x00, 0x54, 0x8B, 0x00, 0x00, 0x94, 0x8B, 0x00, 0x00, 0xE0, 0x8B,
+    0x00, 0x00, 0x3D, 0x8C, 0x00, 0x00, 0xBD, 0x8C, 0x00, 0x00, 0x05, 0x8D, 0x00, 0x00, 0x52, 0x8D,
+    0x00, 0x00,
 };
-const size_t trivia_es_idx_len = 2974u;
+const size_t trivia_es_idx_len = 1842u;
 
 const char trivia_es_tsv[] =
     "0\t1\tQue ciudad de Texas tiene el apodo de \"La Rosa Amarilla de Texas\"?\tAmarillo\n"
-    "1\t1\tAfrica es un pais.\tFalso\n"
-    "2\t1\tAlaska es el estado mas grande de los Estados Unidos.\tVerdadero\n"
-    "3\t1\tDonde se encuentra el Paso de Colchester, tambien conocido como \"Puente del Hombre Conejero\"?\tCondado de Fairfax, Virginia\n"
-    "4\t1\tColombia recibe su nombre de Cristobal Colon.\tVerdadero\n"
-    "5\t1\tFrankenmuth, una ciudad estadounidense apodada \"Pequena Baviera\", se encuentra en que estado?\tMichigan\n"
-    "6\t1\tGroenlandia es casi tan grande como Africa.\tFalso\n"
-    "7\t1\tCuantos paises hay dentro del Reino Unido?\tCuatro\n"
-    "8\t1\tCuantos paises bordean Kirguistan?\tCuatro\n"
-    "9\t1\tCuantos paises comparten frontera terrestre con Espana?\t5\n"
-    "10\t1\tCon cuantos paises comparte Estados Unidos una frontera terrestre?\tdos\n"
-    "11\t1\tCuantos estados federales tiene Alemania?\t16\n"
-    "12\t1\tCuantos paises independientes hay dentro del continente de America del Sur?\tDoce\n"
-    "13\t1\tCuantas islas tiene Kuwait?\tnueve\n"
-    "14\t1\tCuantos rios hay en Arabia Saudita?\t0\n"
-    "15\t1\tEn Washington, D.C. que significa la \"C\"?\tColumbia\n"
-    "16\t1\tEn que pais se encuentra el municipio de Arteijo?\tEspana\n"
-    "17\t1\tJapon tiene el trafico por el lado izquierdo.\tVerdadero\n"
-    "18\t1\tMiami es la ciudad mas grande de Florida.\tFalso\n"
-    "19\t1\tEn que provincia canadiense se encuentra Montreal?\tQuebec\n"
-    "20\t1\tNew Haven es la capital del estado de Connecticut en los Estados Unidos.\tFalso\n"
-    "21\t1\tEn que continente se encuentra la cordillera de los Andes?\tAmerica del Sur\n"
-    "22\t1\tEl territorio moderno de Portugal fue una vez parte del Imperio Romano.\tVerdadero\n"
-    "23\t1\tRusia comparte una frontera terrestre con Corea del Norte.\tVerdadero\n"
-    "24\t1\tSantorini es una isla que pertenece a que pais europeo?\tGrecia\n"
-    "25\t1\tSan Luis es la capital del estado estadounidense de Misuri.\tFalso\n"
-    "26\t1\tEl Principado de Sealand es una micronacion no reconocida frente a la costa de que pais?\tEl Reino Unido\n"
-    "27\t1\tLas montanas de los Pirineos estan ubicadas en la frontera de que dos paises?\tFrancia y Espana\n"
-    "28\t1\tEl desierto de Sonora se encuentra en el este de Africa.\tFalso\n"
-    "29\t1\tEn que pais se encuentran los Acantilados Blancos de Dover?\tReino Unido\n"
-    "30\t1\tLa sede de la Organizacion Mundial de la Salud se encuentra en que pais europeo?\tSuiza\n"
-    "31\t1\tLa capital de Brasil es Rio de Janeiro.\tFalso\n"
-    "32\t1\tLa capital de Indonesia es Bali.\tFalso\n"
-    "33\t1\tLa capital del estado estadounidense de Ohio es la ciudad de Chillicothe.\tFalso\n"
-    "34\t1\tEn que pais de Africa Occidental se encuentra la ciudad historica de Tombuctu?\tMali\n"
-    "35\t1\tEl montanoso paso de Jiber conecta cual de los dos siguientes paises?\tAfganistan y Pakistan\n"
-    "36\t1\tNo hay desiertos en Europa.\tVerdadero\n"
-    "37\t1\tExiste una isla llamada \"Java\".\tVerdadero\n"
-    "38\t1\tHay 47 prefecturas en Japon.\tVerdadero\n"
-    "39\t1\tTokio es la capital de Japon.\tVerdadero\n"
-    "40\t1\tHasta 1939, Laos se llamaba Siam.\tFalso\n"
-    "41\t1\tLa Ciudad del Vaticano es un pais.\tVerdadero\n"
-    "42\t1\tQue atraccion turistica norteamericana es servida por la compania de tours \"Maid of the Mist\"?\tCataratas del Niagara\n"
-    "43\t1\tQue ciudad es conocida como la Capital de las Rosas del Mundo?\tTyler, Texas\n"
-    "44\t1\tEn que ciudad se encuentra el Ejercito de Terracota?\tXi'an\n"
-    "45\t1\tQue pais no es parte de Escandinavia?\tFinlandia\n"
-    "46\t1\tQue evento llevo a Liechtenstein a anadir una corona a su bandera?\tLos Juegos Olimpicos de 1936\n"
-    "47\t1\tCual es la isla mas grande de Canada?\tIsla de Baffin\n"
-    "48\t1\tQue es Laos?\tPais\n"
-    "49\t1\tCual es la 15a letra del alfabeto griego?\tOmicron ()\n"
-    "50\t1\tCual es la capital de los Estados Unidos?\tWashington, D.C.\n"
-    "51\t1\tCual es la palabra finlandesa para \"Finlandia\"?\tFinlandia\n"
-    "52\t1\tCual es la capital de Bermudas?\tHamilton\n"
-    "53\t1\tCual es la capital de Eslovenia?\tLiubliana\n"
-    "54\t1\tCual es la capital de Australia?\tCanberra\n"
-    "55\t1\tCual es la capital de Bangladesh?\tDaca\n"
-    "56\t1\tCual es la capital de Bielorrusia?\tMinsk\n"
-    "57\t1\tCual es la capital de Brasil?\tBrasilia\n"
-    "58\t1\tCual es la capital de Chile?\tSantiago\n"
-    "59\t1\tCual es la capital de Chipre?\tNicosia\n"
-    "60\t1\tCual es la capital de Dinamarca?\tCopenhague\n"
-    "61\t1\tCual es la capital de India?\tNueva Delhi\n"
-    "62\t1\tCual es la capital de Lituania?\tVilna\n"
-    "63\t1\tCual es la capital de Peru?\tLima\n"
-    "64\t1\tCual es la capital de Rumania?\tBucarest\n"
-    "65\t1\tCual es la capital de Escocia?\tEdimburgo\n"
-    "66\t1\tCual es la capital de Seychelles?\tVictoria\n"
-    "67\t1\tCual es la capital de Eslovaquia?\tBratislava\n"
-    "68\t1\tCual es la capital de Surinam?\tParamaribo\n"
-    "69\t1\tCual es la capital del estado estadounidense de Arizona?\tFenix\n"
-    "70\t1\tCual es el pais musulman mas grande del mundo?\tIndonesia\n"
-    "71\t1\tCual es el pais mas grande del mundo?\tFederacion Rusa\n"
-    "72\t1\tCual es el pais mas grande del mundo?\tRusia\n"
-    "73\t1\tCual es el rio mas largo de Europa?\tVolga\n"
-    "74\t1\tCual es el nombre de la region rocosa que abarca la mayor parte del este de Canada?\tEscudo Canadiense\n"
-    "75\t1\tCual es el nombre de la peninsula que contiene a Espana y Portugal?\tPeninsula Iberica\n"
-    "76\t1\tCual es el idioma oficial en Liechtenstein?\tAleman\n"
-    "77\t1\tCual es el idioma oficial de Costa Rica?\tEspanol\n"
-    "78\t1\tCual es el unico estado de los Estados Unidos que no tiene una bandera en forma con 4 bordes?\tOhio\n"
-    "79\t1\tComo se llama la region que une Pakistan, India y China con un liderazgo desconocido?\tCachemira\n"
-    "80\t1\tCual es el pais mas pequeno del mundo?\tCiudad del Vaticano\n"
-    "81\t1\tCual es la montana mas alta de Canada?\tMonte Logan\n"
-    "82\t1\tQue nombre se uso historicamente para la ciudad turca actualmente conocida como Estambul?\tConstantinopla\n"
-    "83\t1\tCual era el nombre anterior de la nacion africana de Zimbabue?\tRodesia\n"
-    "84\t1\tDonde se encuentran las Lineas de Nazca?\tPeru\n"
-    "85\t1\tDonde esta ubicado Fort Marlborough?\tBengkulu\n"
-    "86\t1\tDonde esta ubicada la Muralla de Adriano?\tCarlisle, Inglaterra\n"
-    "87\t1\tDonde esta el rio Volga?\tRusia\n"
-    "88\t1\tDonde se encuentra la ciudad antigua de Petra?\tJordania\n"
-    "89\t1\tDonde esta ubicada la ciudad de Haarlem?\tPaises Bajos\n"
-    "90\t1\tCual es el barrio mas al norte de la Ciudad de Nueva York?\tBronx\n"
-    "91\t1\tQue provincia canadiense tiene a Charlottetown como su capital?\tIsla del Principe Eduardo\n"
-    "92\t1\tEn que condado ingles encontraras la Universidad de East Anglia?\tNorfolk\n"
-    "93\t1\tQue ciudad europea tiene el mayor kilometraje de canales del mundo?\tBirmingham\n"
-    "94\t1\tQue nacion oceaniana es conocida en maori como Aotearoa?\tNueva Zelanda\n"
-    "95\t1\tQue pais del Reino Unido presenta un dragon en su bandera?\tGales\n"
-    "96\t1\tCual es la capital de Michigan?\tLansing\n"
-    "97\t1\tQue pais reclama la propiedad del estado disputado de Kosovo?\tSerbia\n"
-    "98\t1\tQue pais no limita con Austria?\tFrancia\n"
-    "99\t1\tQue pais tiene la abreviatura \"CH\"?\tSuiza\n"
-    "100\t1\tQue pais tiene tres capitales?\tSudafrica\n"
-    "101\t1\tQue pais dentro del Reino Unido NO aparece en su bandera, la Bandera de la Union?\tGales\n"
-    "102\t1\tEn que pais se encuentra el rio Taedong?\tCorea del Norte\n"
-    "103\t1\tCual es el pais con la poblacion japonesa mas grande fuera de Japon?\tBrasil\n"
-    "104\t1\tCual es la ciudad mas grande de Marruecos?\tCasablanca\n"
-    "105\t1\tCual es el lago de agua dulce mas grande del mundo?\tLago Superior\n"
-    "106\t1\tCual es el unico estado estadounidense ubicado completamente en la region de Apalaches?\tVirginia Occidental\n"
-    "107\t1\tCual es el pais mas pequeno del mundo?\tCiudad del Vaticano\n"
-    "108\t1\tCual es el rio mas largo del mundo?\tNilo\n"
-    "109\t1\tCual es el estado mas pequeno de los Estados Unidos?\tRhode Island\n"
-    "110\t1\tQue estrecho de agua conecta el oceano Atlantico con el mar Mediterraneo?\tEstrecho de Gibraltar\n"
-    "111\t2\t\"Cube\", \"Cube 2: Hipercubo\" y \"Cube Zero\" fueron dirigidas por la misma persona.\tFalso\n"
-    "112\t2\t\"Make You Feel My Love\" fue escrito y interpretado originalmente por cual cantautor?\tBob Dylan\n"
-    "113\t2\tLa primera regla es: no hables de ello\", es una referencia a que pelicula?\tEl club de la lucha\n"
-    "114\t2\t'74-'75 es un sencillo de 1993 del album Ring de que banda estadounidense?\tLos Connells\n"
-    "115\t2\tSegun la tradicion de Star Wars, cual es el planeta natal de Han Solo?\tCorellia\n"
-    "116\t2\tDespues de India, que pais produce la segunda mayor cantidad de peliculas por ano?\tNigeria\n"
-    "117\t2\tEl sello discografico EDM Monstercat firma pistas en lugar de artistas.\tVerdadero\n"
-    "118\t2\tEd Koch, el alcalde de Nueva York en 1984, se interpreto a si mismo en que pelicula de los Muppets?\tLos Muppets conquistan Manhattan\n"
-    "119\t2\tBajo que nombre han colaborado y lanzado temas los artistas electronicos Boys Noize y Skrillex?\tSangre de Perro\n"
-    "120\t2\tEurobeat es principalmente un genero musical italiano.\tVerdadero\n"
-    "121\t2\tEn \"Jurassic World\", cual es el nombre del dinosaurio que es un hibrido genetico?\tIndominus Rex\n"
-    "122\t2\tEn \"Jurassic World\", que empresa compra InGen y crea Jurassic World?\tCorporacion Masrani Global\n"
-    "123\t2\tEn \"Rick and Morty\", quien disparo a \"Sr. Poopybutthole\" en el episodio \"Total Rickall\"?\tBeth\n"
-    "124\t2\tQue banda lanzo en 2006 su album debut \"A Fever You Can't Sweat Out\"?\tPanic! At the Disco\n"
-    "125\t2\tEn Buscando a Nemo, cual era el nombre de la mama de Nemo?\tCoral\n"
-    "126\t2\tEn Two and a Half Men, cual es el nombre del hijo de Alan Harper?\tJake\n"
-    "127\t2\tCon que se pago a la mayoria de los extras de Mad Max (1979) para reducir costos?\tCerveza\n"
-    "128\t2\tEn la pelicula de 1976 'Taxi Driver', cuantas armas compro Travis al vendedor?\tCuatro\n"
-    "129\t2\tEn El Senor de los Anillos: Las Dos Torres, adonde lleva la partida de orcos a los hobbits?\tIsengard\n"
-    "130\t2\tEn que ano Clint Eastwood actuo como el Inspector Harry Callahan en la pelicula \"Dirty Harry\"?\t1971\n"
-    "131\t2\tEn que ano se estreno la primera pelicula de Transformers?\t1986\n"
-    "132\t2\tEn que estado de America nacio y se crio el Principe del Rap?\tPensilvania\n"
-    "133\t2\tEn que ano se lanzo el album de Megadeth \"Peace Sells... but Who's Buying?\"?\t1986\n"
-    "134\t2\tEn que pelicula hizo Johnny Depp su debut en la pantalla grande?\tA Nightmare on Elm Street\n"
-    "135\t2\tEn que ciudad italiana se encuentra la opera La Fenice?\tVenecia\n"
-    "136\t2\tComo su personaje en \"Parks and Recreation\", Aziz Ansari nacio en South Carolina.\tVerdadero\n"
-    "137\t2\tMetallica colaboro con Mr Bean de Rowan Atkinson en un sencillo de alivio comico de 1992.\tFalso\n"
-    "138\t2\tMichael Jackson escribio la cancion de Los Simpson \"Do the Bartman\".\tFalso\n"
-    "139\t2\tNick Mason es el unico miembro en aparecer en todos los albumes de Pink Floyd.\tVerdadero\n"
-    "140\t2\tEn el episodio \"Total Rickall\" de la serie \"Rick and Morty\", quien era un parasito?\tLapicestre\n"
-    "141\t2\tEl album de debut de Pink Guy fue \"Pink Season\".\tFalso\n"
-    "142\t2\tEl nombre real del rapero Snoop Dogg es 'Cordozar Calvin Broadus, Jr.'.\tVerdadero\n"
-    "143\t2\tLa cancion de Queen \"A Kind Of Magic\" aparece en cual pelicula de 1986?\tHighlander\n"
-    "144\t2\tDe que album es la cancion \"Give It Away\" de Red Hot Chili Peppers?\tBlood Sugar Sex Magik\n"
-    "145\t2\tEn cual de sus canciones aparece la linea homonima de The Who, \"Teenage Wasteland\"?\tBaba O' Riley\n"
-    "146\t2\tEl autor detras de la aclamada novela \"Leaving Las Vegas\" tambien escribio un episodio de Rugrats.\tVerdadero\n"
-    "147\t2\tEl color de las pastillas en Matrix eran Azul y Amarillo.\tFalso\n"
-    "148\t2\tLa pelicula ficticia 'Rochelle, Rochelle' aparece en que sitcom?\tSeinfeld\n"
-    "149\t2\tLa pelicula \"2001: Una odisea del espacio\" se estreno el 31 de diciembre de 2000.\tFalso\n"
-    "150\t2\tLa pelicula Mad Max: Fury Road presenta el Dies Irae del requiem de que compositor?\tVerdi\n"
-    "151\t2\tDe cual ciudad inglesa es la banda de heavy metal Black Sabbath?\tBirmingham\n"
-    "152\t2\tLa cantante Billie Holiday tambien era conocida como \"Lady Day\".\tVerdadero\n"
-    "153\t2\tLa cancion \"Mystery Train\" fue lanzada por el artista \"Little Junior's Blue Flames\" en 1953.\tVerdadero\n"
-    "154\t2\tEl arma que Clint Eastwood usa en \"Dirty Harry\" fue una .44 Automag.\tFalso\n"
-    "155\t2\tQue programa de television trata sobre un abuelo que arrastra a su nieto en aventuras?\tRick y Morty\n"
-    "156\t2\tEn que album se encuentra la cancion 'New Slang' de The Shins?\tOh, Mundo Invertido\n"
-    "157\t2\tQue raza de perro era Marley en la pelicula \"Marley & Me\" (2008)?\tLabrador Retriever\n"
-    "158\t2\tQue mostraba la primera pelicula en movimiento?\tUn caballo galopando\n"
-    "159\t2\tQue significa TIE en referencia al Caza TIE en \"Star Wars\"?\tMotor de Ion Gemelo\n"
-    "160\t2\tQue genero de musica tocaba la banda Type O Negative?\tMetal Gotico\n"
-    "161\t2\tComo se llama la guitarra de Brian May?\tGuitarra Roja Especial\n"
-    "162\t2\tCual no es un instrumento de viento?\tViola\n"
-    "163\t2\tCual es el album mas vendido de todos los tiempos entre 1976 y 2018?\tSuspenso\n"
-    "164\t2\tCual es el nombre de nacimiento de Michael Caine?\tMaurice Micklewhite\n"
-    "165\t2\tCual es la primera cancion del album 808s & Heartbreak de Kanye West?\tDilo que haras\n"
-    "166\t2\tCual es el nombre del personaje de James Dean en la pelicula de 1955 \"Rebelde sin causa\"?\tJim Stark\n"
-    "167\t2\tCual es el nombre del sistema de Inteligencia Artificial en la pelicula \"WarGames\" de 1983?\tPlan de Respuesta de Operacion de Guerra\n"
-    "168\t2\tCual es el nombre de la primera pelicula de \"Star Wars\" por orden de lanzamiento?\tUna nueva esperanza\n"
-    "169\t2\tCual es el nombre de los antagonistas principales en Battlestar Galactica?\tLos Cylones\n"
-    "170\t2\tCual es el nombre del caballo de carreras al que Tony Soprano se encarina?\tPie-O-Mi\n"
-    "171\t2\tCual es la pelicula de Disney mas antigua?\tBlancanieves y los Siete Enanitos\n"
-    "172\t2\tCual es la cancion de apertura en Pure Heroine de Lorde?\tCancha de Tenis\n"
-    "173\t2\tCual es la especie del \"Depredador\" en la pelicula \"Depredador\" de 1987?\tYautja\n"
-    "174\t2\tQue cancion del album Black Face LP de ScHoolboy Q conto con la participacion de Kanye West?\tEsa Parte\n"
-    "175\t2\tCual era el nombre de pila del personaje de Marilyn Monroe en la pelicula \"Con faldas y a lo loco\"?\tAzucar\n"
-    "176\t2\tComo se llamaba el quinto album de Taylor Swift?\t1989\n"
-    "177\t2\tCual fue el album mas vendido de 2015?\tAdele, 25\n"
-    "178\t2\tCual fue el primer videoclip transmitido en MTV?\tEl video mato a la estrella de la radio\n"
-    "179\t2\tCual era el nombre del planeta en \"Aliens\"?\tLV-426\n"
-    "180\t2\tCual es el nombre de pila del Dr. Dofenshmirtz?\tHeinz\n"
-    "181\t2\tCual es la metrica mas comun para las canciones de rock?\t4/4\n"
-    "182\t2\tCuando se transmitio por primera vez la serie de television Rick and Morty en Adult Swim?\t2013\n"
-    "183\t2\tQue banda de los 80 esta liderada por el cantante/guitarrista Robert Smith?\tThe Cure\n"
-    "184\t2\tCual villano de Batman es Mark Hamill conocido por haber doblado?\tEl Payaso\n"
-    "185\t2\tCual Beatle lidero el camino cruzando el paso de cebra en la portada del album Abbey Road?\tJuan\n"
-    "186\t2\tCual album de The Beatles NO presenta a ningun miembro de la banda en su portada?\tLos Beatles (Album Blanco)\n"
-    "187\t2\tDe cual album de Daft Punk es la cancion \"Harder, Better, Faster, Stronger\"?\tDescubrimiento\n"
-    "188\t2\tCual actor audiciono para el papel de Luke Skywalker?\tKurt Russell\n"
-    "189\t2\tQue actor de The Young Ones tambien interpreto a Lord Flashheart en un episodio de Blackadder II?\tRik Mayall\n"
-    "190\t2\tQue actriz interpreto a la Dra. Grace Augustine en la pelicula \"Avatar\" de James Cameron?\tSigourney Weaver\n"
-    "191\t2\tCual fue la primera pelicula animada en presentar a una celebridad como actor de voz?\tAladin\n"
-    "192\t2\tQue famoso rapero aparece en el sencillo \"Febreze\" de 2015 de Jack U (Skrillex y Diplo)?\t2 Chainz\n"
-    "193\t2\tQue exmiembro de una banda de chicos lanzo el exitoso sencillo en solitario \"Angels\" en 1997?\tRobbie Williams\n"
-    "194\t2\tQue miembro de \"The Beatles\" narro episodios de \"Thomas the Tank Engine\"?\tRingo Starr\n"
-    "195\t2\tCual de estas peliculas NO conto con la participacion del difunto actor John Candy?\tCazafantasmas\n"
-    "196\t2\tCual de los miembros de la banda Beatles esta descalzo en la portada del album 'Abbey Road'?\tPaul McCartney\n"
-    "197\t2\tQue cantante fue presentada en la cancion \"Where Are U Now\" de Jack U (Skrillex & Diplo) de 2015?\tJustin Bieber\n"
-    "198\t2\tCual cancion NO es de Tom Jones?\tNever Gonna Give You Up\n"
-    "199\t2\tCual es el pueblo donde transcurre la pelicula de Disney Herbie, loco de amor (1968)?\tSan Francisco\n"
-    "200\t2\tCual fue la primera pelicula de Alfred Hitchcock filmada en color?\tCuerda\n"
-    "201\t2\tEn que ano se lanzo el primer YouTube Rewind oficial?\t2010\n"
-    "202\t2\tQuien dirigio la pelicula de 1973 \"American Graffiti\"?\tGeorge Lucas\n"
-    "203\t2\tQuien tuvo un exito numero 1 en EE.UU. y Reino Unido en 1962 con el instrumental 'Telstar'?\tLos Tornados\n"
-    "204\t2\tQuien es el director de la pelicula de 1991 \"El silencio de los corderos\"?\tJonathan Demme\n"
-    "205\t2\tQuien es el vocalista y lider de la banda de rock \"Guns N' Roses\"?\tAxl Rose\n"
-    "206\t2\tQuien interpreto a Thanos en Avengers: Infinity War y Avengers: End Game?\tJosh Brolin\n"
-    "207\t2\tQuien interpreto a la Camarera en el sketch de Spam de \"Monty Python's Flying Circus\"?\tTerry Jones\n"
-    "208\t2\tQuien interpreto a Han Solo en la serie de peliculas principales de Star Wars?\tHarrison Ford\n"
-    "209\t2\tQuien canto la cancion del tema de apertura de la pelicula de James Bond de 1995 'Goldeneye'?\tTina Turner\n"
-    "210\t2\tQuien fue el primer ganador de Big Brother US en ganar con un juego perfecto?\tDan Gheesling\n"
-    "211\t2\tQuien era el miembro mas antiguo de The Beatles?\tRingo Starr\n"
-    "212\t2\tQuien fue el ganador de \"Big Brother\" Temporada 10?\tDan Gheesling\n"
-    "213\t2\tQuien escribio la composicion musical \"Rhapsody in Blue\"?\tGeorge Gershwin\n"
-    "214\t2\tQuien escribio la cancion \"You Know You Like It\"?\tAlunaGeorge\n"
-    "215\t3\t\"Si, America Puede!\" fue el eslogan de campana de facto de este politico estadounidense en 2004.\tGeorge W. Bush\n"
-    "216\t3\tAdolf Hitler fue aceptado en la Academia de Bellas Artes de Viena.\tFalso\n"
-    "217\t3\tAdolf Hitler fue juzgado en los juicios de Nuremberg.\tFalso\n"
-    "218\t3\tDespues de su derrota en la Batalla de Waterloo, a que isla fue exiliado Napoleon Bonaparte?\tSanta Elena\n"
-    "219\t3\tDurante las invasiones mongolas de Japon, que detuvo principalmente los barcos mongoles?\tTifones\n"
-    "220\t3\tGeorge W. Bush perdio el voto popular en la eleccion presidencial de Estados Unidos de 2004.\tFalso\n"
-    "221\t3\tDe que pais era Hong Kong una parte del territorio antes de que Gran Bretana lo recuperara en 1945?\tJapon\n"
-    "222\t3\tComo llamaban los vikingos a su colonia de corta duracion en el Canada actual?\tTierra de Vinedos\n"
-    "223\t3\tCuanto tiempo duro la Segunda Guerra Mundial?\t6 anos\n"
-    "224\t3\tCuanto tiempo duro el Levantamiento de Varsovia durante la Segunda Guerra Mundial?\t63 Dias\n"
-    "225\t3\tCuantas sonatas escribio Ludwig van Beethoven?\ttreinta y dos\n"
-    "226\t3\tCuantos anos tenia Adolf Hitler cuando murio?\tcincuenta y seis\n"
-    "227\t3\tEn la Segunda Guerra Mundial, los Hawker Typhoon sirvieron en el teatro del Pacifico.\tFalso\n"
-    "228\t3\tEn que dialogo Socrates se defendio ante la corte de Atenas?\tLa Apologia\n"
-    "229\t3\tEn que ano ocurrio el Crash de Videojuegos de America del Norte?\t1983\n"
-    "230\t3\tEn que pais se construyo la Estatua de la Libertad y se exporto a los Estados Unidos de America?\tFrancia\n"
-    "231\t3\tEn que guerra ocurrieron los bombardeos atomicos de Hiroshima y Nagasaki?\tSegunda Guerra Mundial\n"
-    "232\t3\tEn que ano fue liberado Nelson Mandela de la prision?\t1990\n"
-    "233\t3\tEn que dia invadio Alemania a Polonia?\t1 de septiembre de 1939\n"
-    "234\t3\tPianista Frederic Chopin fue compositor de que era musical?\tRomantico\n"
-    "235\t3\tRusia aprobo una ley en 2013 que prohibe decirles a los ninos que los homosexuales existen.\tVerdadero\n"
-    "236\t3\tTaiwan se llama oficialmente \"la Republica de China\".\tVerdadero\n"
-    "237\t3\tLa Batalla del Somme en la Primera Guerra Mundial tuvo lugar en que pais?\tFrancia\n"
-    "238\t3\tLa Guerra Fria termino con la muerte de Jose Stalin.\tFalso\n"
-    "239\t3\tLa Casa Fallingwater, ubicada en Pensilvania, fue disenada por que arquitecto?\tFrank Lloyd Wright\n"
-    "240\t3\tLa Cuarta Cruzada duro de 1095-1099 d.C.\tFalso\n"
-    "241\t3\tQue emperador del Imperio Bizantino encargo la construccion de la Hagia Sophia?\tJustiniano I\n"
-    "242\t3\tLa Pequena Entente fue una alianza formada contra que nacion?\tHungria\n"
-    "243\t3\tLa S en Harry S. Truman significa \"Solomon\".\tFalso\n"
-    "244\t3\tEl Spitfire L.F. Mk IX tenia que motor?\tMerlin 66\n"
-    "245\t3\tLas protestas de la Plaza de Tiananmen de 1989 se llevaron a cabo en Hong Kong.\tFalso\n"
-    "246\t3\tEstados Unidos fue miembro de la Liga de las Naciones.\tFalso\n"
-    "247\t3\tDe que nacionalidad era el creador de la Cifra y Maquina Enigma?\tAleman\n"
-    "248\t3\tPara que proposito se construyo originalmente la corona del edificio Empire State?\tMuelle de Dirigibles\n"
-    "249\t3\tLa mayoria de las personas que vivieron bajo el Imperio Bizantino se llamaban a si mismas romanos.\tVerdadero\n"
-    "250\t3\tEl hombre que disparo a Alexander Hamilton se llamaba Aaron Burr.\tVerdadero\n"
-    "251\t3\tLa ametralladora rotatoria fue disenada en 1960 por que fabricante?\tGeneral Electric\n"
-    "252\t3\tTheresa May fue la primera ministra del Reino Unido.\tFalso\n"
-    "253\t3\tEstos dos paises mantuvieron una mancomunidad del siglo XVI al XVIII.\tPolonia y Lituania\n"
-    "254\t3\tA que partido politico pertenecia Abraham Lincoln cuando fue elegido presidente?\tRepublicano\n"
-    "255\t3\tLos vikingos fueron los primeros europeos en descubrir America del Norte.\tVerdadero\n"
-    "256\t3\tA que edad murio el Rey Enrique V?\ttreinta y cinco\n"
-    "257\t3\tCual fue la batalla mas larga de la Primera Guerra Mundial, durando aproximadamente 303 dias?\tBatalla de Verdun\n"
-    "258\t3\tQue candidato gano la Eleccion Presidencial de los EE.UU. de 2012?\tBarack Obama\n"
-    "259\t3\tQue dia comenzo la Batalla de Gettysburg?\t1 de julio de 1863\n"
-    "260\t3\tQue dispensaban las primeras maquinas expendedoras a principios de los anos 1880?\tTarjetas postales\n"
-    "261\t3\tQue evento marco el inicio de la Segunda Guerra Mundial?\tInvasion de Polonia (1939)\n"
-    "262\t3\tA que evento historico hacia referencia la Obertura 1812 de Tchaikovsky?\tLas Guerras Napoleonicas\n"
-    "263\t3\tCual es el nombre completo del ex presidente de Estados Unidos Bill Clinton?\tWilliam Jefferson Clinton\n"
-    "264\t3\tCual es el evento mas sangriento en la historia de Estados Unidos, en terminos de bajas?\tBatalla de Antietam\n"
-    "265\t3\tCual es el nombre historico de Sri Lanka?\tCeilan\n"
-    "266\t3\tCual es el nombre del famoso lider apache que murio en 1909 a los 70 anos de edad?\tJeronimo\n"
-    "267\t3\tQue numero representa el numeral romano \"D\"?\tquinientos\n"
-    "268\t3\tCual era el nombre real de Gengis Khan?\tTemujin\n"
-    "269\t3\tCual era el nombre de Napoleon Bonaparte antes de cambiarlo?\tNapoleon Bonaparte\n"
-    "270\t3\tQue fue encontrado en 1946 por dos jovenes pastores cerca de una cueva?\tManuscritos del Mar Muerto\n"
-    "271\t3\tCual fue el nombre en clave de la invasion aliada del sur de Francia el 15 de agosto de 1944?\tOperacion Dragon\n"
-    "272\t3\tCual fue la ultima colonia que el Reino Unido cedio marcando el fin del Imperio Britanico?\tHong Kong\n"
-    "273\t3\tCual fue el nombre del primer asentamiento ingles permanente en America?\tJamestown\n"
-    "274\t3\tCual era el nombre de la invasion planeada de Japon hacia el final de la Segunda Guerra Mundial?\tOperacion Downfall\n"
-    "275\t3\tCual fue la moneda oficial alemana hasta 2002?\tMarcos\n"
-    "276\t3\tCual era el nombre original de la Ciudad de Nueva York?\tNueva Amsterdam\n"
-    "277\t3\tEn que ano se instituyeron las Reformas Marianas en la Republica Romana?\t107 AEC\n"
-    "278\t3\tCuando Cristobal Colon navego hacia America, cual fue la primera region en la que llego?\tEl Archipielago de las Bahamas\n"
-    "279\t3\tCuando Canada se separo de la confederacion para convertirse en su propia nacion?\t1 de julio de 1867\n"
-    "280\t3\tCuando recibio Jamaica su independencia de Inglaterra?\t1962\n"
-    "281\t3\tCuando finalizo la construccion del Canal de Suez?\t1869\n"
-    "282\t3\tCuando termino la Batalla de las Ardenas?\t25 de enero de 1945\n"
-    "283\t3\tCuando comenzo la Batalla del Somme?\t1 de julio de 1916\n"
-    "284\t3\tCuando fue el ano 100 de independencia de Finlandia?\t2017\n"
-    "285\t3\tCuando fue levantado el \"Sitio de Leningrado\" durante la Segunda Guerra Mundial?\tEnero de 1944\n"
-    "286\t3\tCuando concluyo la Gran Guerra Patriotica en la URSS?\t9 de mayo de 1945\n"
-    "287\t3\tCuando se adopto por primera vez el calendario gregoriano?\tmil quinientos ochenta y dos\n"
-    "288\t3\tDonde y cuando se fabrico la primera caja de carton para uso industrial?\tInglaterra, 1817\n"
-    "289\t3\tDonde nacio Napoleon Bonaparte?\tCorcega\n"
-    "290\t3\tCual fue la ultima mision Apolo del programa Apolo de la NASA?\tApolo 17\n"
-    "291\t3\tQue primer ministro australiano desaparecio en 1967 y nunca fue encontrado?\tHarold Holt\n"
-    "292\t3\tCual nacion NO tuvo una colonia en la America del Norte moderna?\tPortugal\n"
-    "293\t3\tQue general nazi era conocido como el \"Zorro del Desierto\"?\tErwin Rommel\n"
-    "294\t3\tQue pais sudamericano lucho contra Gran Bretana por las Islas Malvinas en 1982?\tArgentina\n"
-    "295\t3\tQue presidente de EE.UU. fue famosamente \"atacado\" por un conejo nadador?\tJimmy Carter\n"
-    "296\t3\tCual presidente de EE.UU. se dice que tenia la barba mas larga?\tRutherford B. Hayes\n"
-    "297\t3\tCual fue el primer estado estadounidense que permitio a las mujeres votar en 1869?\tWyoming\n"
-    "298\t3\tQue as de tanques de la Segunda Guerra Mundial es acreditado por haber destruido mas tanques?\tKurt Knispel\n"
-    "299\t3\tQue edificio fue incendiado el 24 de agosto de 1812?\tLa Casa Blanca\n"
-    "300\t3\tQue pais regalo la Estatua de la Libertad a los Estados Unidos de America?\tFrancia\n"
-    "301\t3\tQue pais tuvo una \"Revolucion Naranja\" entre 2004 y 2005?\tUcrania\n"
-    "302\t3\tQue dia comenzo la Primera Guerra Mundial?\t28 de julio\n"
-    "303\t3\tCual dictador mato a mas personas?\tMao Zedong\n"
-    "304\t3\tQue juego fue el Juego del Ano en 2018?\tDios de la Guerra\n"
-    "305\t3\tQue presidente elimino la deuda nacional de Estados Unidos?\tAndrew Jackson\n"
-    "306\t3\tQuien asesino al presidente James A. Garfield?\tCarlos Guiteau\n"
-    "307\t3\tQuien corono a Carlomagno como Emperador del Sacro Imperio Romano el dia de Navidad en 800?\tPapa Leon III\n"
-    "308\t3\tQuien es el creador del refresco Dr. Pepper?\tCarlos Alderton\n"
-    "309\t3\tQuien lidero Francia durante el \"Reinado del Terror\"?\tMaximilien Robespierre\n"
-    "310\t3\tQuien fue el 45o Presidente de los Estados Unidos?\tDonald Trump\n"
-    "311\t3\tQuien fue el Presidente de los Estados Unidos durante la firma de la Compra de Gadsden?\tFranklin Pierce\n"
-    "312\t3\tQuien era el Primer Ministro de Japon cuando Japon declaro la guerra a Estados Unidos?\tHideki Tojo\n"
-    "313\t3\tQuien fue el primer Canciller de una Alemania unida en 1871?\tOtto von Bismarck\n"
-    "314\t3\tQuien fue el primer hombre en viajar al espacio exterior?\tYuri Gagarin\n"
-    "315\t3\tQuien fue el primer presidente de Kenia?\tJomo Kenyatta\n"
-    "316\t3\tQuien fue el primer gobernante de Haiti despues de que el pais obtuvo su independencia?\tJean-Jacques Dessalines\n"
-    "317\t3\tQuien fue la primera esposa del Rey Enrique VIII?\tCatalina de Aragon\n"
-    "318\t3\tQuien fue el lider de Suecia en la Gran Guerra del Norte?\tCarlos XII\n"
-    "319\t3\tCon cual filosofo griego asociarias la frase \"Se que no se nada\"?\tSocrates\n"
-    "320\t4\tQue color se produce al mezclar negro y blanco?\tGris\n"
-    "321\t4\tSegun la novela de Bram Stoker, en que pueblo costero britanico desembarco Dracula?\tWhitby\n"
-    "322\t4\tSegun la mitologia griega, Atlas era un dios olimpico.\tFalso\n"
-    "323\t4\tSegun la mitologia griega, Zeus puede controlar los rayos.\tVerdadero\n"
-    "324\t4\tSegun la mitologia nordica, Loki es una madre.\tVerdadero\n"
-    "325\t4\tEl lugar de nacimiento y muerte de Albrecht Durer fueron en...\tNuremberg\n"
-    "326\t4\tEl Anj es el jeroglifico egipcio para que?\tVida\n"
-    "327\t4\tLos escultores antiguos griegos y romanos a menudo coloreaban sus estatuas.\tVerdadero\n"
-    "328\t4\tPor que nombre era mejor conocido el autor Eric Blair?\tGeorge Orwell\n"
-    "329\t4\tPor que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?\tEl Astuto Evasivo\n"
-    "330\t4\tDracula es destruido por el contacto con la luz solar\tFalso\n"
-    "331\t4\tHel era la hija de que figura de la mitologia nordica?\tLoki\n"
-    "332\t4\tHera es la diosa de...\tMatrimonio\n"
-    "333\t4\tCuantos libros de Harry Potter hay?\tsiete\n"
-    "334\t4\tEn la mitologia africana, Anansi es un embaucador y narrador que toma la forma de cual animal?\tArana\n"
-    "335\t4\tEn la mitologia griega, quien mato a Aquiles?\tParis\n"
-    "336\t4\tEn la mitologia griega, Hera es la diosa de la cosecha.\tFalso\n"
-    "337\t4\tEn la mitologia griega, quien es el dios del vino?\tDioniso\n"
-    "338\t4\tEn \"El cuento de la criada\" de Margaret Atwood, cual se implica que es el nombre real de Offred?\tJunio\n"
-    "339\t4\tEn la mitologia nordica, Thor una vez se vistio como una mujer.\tVerdadero\n"
-    "340\t4\tEn Romance of the Three Kingdoms, quien no fue miembro del Juramento del Jardin de Duraznos?\tZhao Yun\n"
-    "341\t4\tEn la mayoria de las tradiciones, quien fue la esposa de Zeus?\tHera\n"
-    "342\t4\tEn la serie de \"Harry Potter\", cual es el nombre completo del Director Dumbledore?\tAlbus Percival Wulfric Brian Dumbledore\n"
-    "343\t4\tEn la mitologia griega, la Gorgona puede convertir en piedra a quienes la miran.\tVerdadero\n"
-    "344\t4\tEn el universo de Harry Potter, con quien termina casandose Draco Malfoy?\tAstoria Greengrass\n"
-    "345\t4\tEn el universo de Magic: The Gathering, en que continente tiene lugar la expansion Fallen Empires?\tSarpadia\n"
-    "346\t4\tEn el universo de Magic: The Gathering, en que plano tiene lugar la expansion Homelands?\tUlgrotha\n"
-    "347\t4\tDe donde es originalmente el Oso Paddington en la serie de libros infantiles?\tPeru\n"
-    "348\t4\tJano fue el dios romano de las puertas y los pasos.\tVerdadero\n"
-    "349\t4\tLeonardo da Vinci no fue el creador de la Mona Lisa.\tFalso\n"
-    "350\t4\tEl Mona Lisa de Leonardo da Vinci no tiene cejas.\tVerdadero\n"
-    "351\t4\tEl nombre griego de Neptuno fue...\tPoseidon\n"
-    "352\t4\tDe que mitologia es Nidhogg una criatura mitologica?\tNordico\n"
-    "353\t4\tOriginalmente, el personaje Charlie de Charlie y la fabrica de chocolate iba a ser negro.\tVerdadero\n"
-    "354\t4\tPintor Piet Mondrian (1872 - 1944) fue parte de que movimiento?\tNeoplasticismo\n"
-    "355\t4\tA que pais se mudo Paul Gauguin en 1895?\tTahiti\n"
-    "356\t4\tStephen Chbosky escribio el libro \"Las ventajas de ser un marginado\".\tVerdadero\n"
-    "357\t4\tTalos, el hombre de bronce gigante mitologico, fue el protector de que isla?\tCreta\n"
-    "358\t4\tEl dios japones Izanagi logro traer a su esposa Izanami de regreso del Inframundo.\tFalso\n"
-    "359\t4\tEl dios romano \"Jupiter\" era conocido primero como \"Zeus\" por los griegos.\tVerdadero\n"
-    "360\t4\tEl nombre oficial de la Estatua de la Libertad es \"La Libertad Iluminando al Mundo\".\tVerdadero\n"
-    "361\t4\tEl libro \"El Principito\" fue escrito por...\tAntoine de Saint-Exupery\n"
-    "362\t4\tQuien escribio la novela \"De ratones y hombres\"?\tJohn Steinbeck\n"
-    "363\t4\tEl cuadro \"La Noche Estrellada\" de Vincent van Gogh fue parte de que movimiento artistico?\tPostimpresionismo\n"
-    "364\t4\tVincent van Gogh se corto una de sus orejas.\tVerdadero\n"
-    "365\t4\tQue escultor frances diseno la Estatua de la Libertad?\tFrederic Auguste Bartholdi\n"
-    "366\t4\tCon que animal durmio la Reina Pasifae antes de dar a luz al Minotauro en la mitologia griega?\tToro\n"
-    "367\t4\tQue serie de libros publicada por Jim Butcher sigue a un mago en Chicago en la actualidad?\tLos Archivos de Dresden\n"
-    "368\t4\tQue estructura inmensa se menciona en la mitologia nordica como Yggdrasil?\tArbol\n"
-    "369\t4\tCual es el segundo nombre de Ron Weasley?\tBilio\n"
-    "370\t4\tCual es un elemento fundamental del estilo arquitectonico gotico?\tarco apuntado\n"
-    "371\t4\tCual es el cuarto libro del Antiguo Testamento?\tNumeros\n"
-    "372\t4\tCual es la marca y modelo de los vehiculos de tour en \"Jurassic Park\" (1990)?\tToyota Land Cruiser 1989\n"
-    "373\t4\tCual es el nombre del hermano de Sherlock Holmes?\tMycroft Holmes\n"
-    "374\t4\tCual es el nombre del dios griego de los herreros?\tHefesto\n"
-    "375\t4\tCual es el nombre del dios griego de las muertes pacificas?\tTanatos\n"
-    "376\t4\tCual es el nombre del arte japones de doblar papel en formas y figuras decorativas?\tpapiroflexia\n"
-    "377\t4\tCual es el nombre del autor de la serie de libros 'Percy Jackson'?\tRick Riordan\n"
-    "378\t4\tCual es el nombre del cuarto libro de la serie La Torre Oscura de Stephen King?\tMago y Cristal\n"
-    "379\t4\tCual es el nombre del perro de tres cabezas en Harry Potter y la Piedra Filosofal?\tEsponjoso\n"
-    "380\t4\tCual es el nombre del pueblo en el que estan enterrados Lily y James Potter?\tGodric's Hollow\n"
-    "381\t4\tCual era la nacionalidad del famoso artista Van Gogh?\tHolandes\n"
-    "382\t4\tCual fue la nacionalidad del pintor surrealista Salvador Dali?\tEspanol\n"
-    "383\t4\tQue posicion juega Harry Potter en el Quidditch?\tBuscador\n"
-    "384\t4\tCual fue la primera entrada escrita para el proyecto de escritura colaborativa de la Fundacion SCP?\tSCP-173\n"
-    "385\t4\tCual fue la primera tecnica fotografica exitosa y comercialmente viable?\tEl Daguerrotipo\n"
-    "386\t4\tCual fue la distincion principal entre los estilos gotico ingles y frances de la arquitectura?\tBoveda de abanico\n"
-    "387\t4\tQue punto debil de Aquiles fue explotado por el principe troyano, Paris?\tTalon\n"
-    "388\t4\tEn que ano se termino la Mona Lisa?\t1504\n"
-    "389\t4\tCual es el nombre del papa de Harry Potter?\tJames Potter\n"
-    "390\t4\tQue escultor griego diseno la estatua Atenea Partenon dentro del Partenon?\tFidias\n"
-    "391\t4\tQue autor ruso escribio la novela epica Guerra y paz?\tLeon Tolstoi\n"
-    "392\t4\tQue movimiento artistico fue que Pablo Picasso es conocido por cofundar?\tCubismo\n"
-    "393\t4\tQue artista es famoso por cortarse la oreja?\tVincent van Gogh\n"
-    "394\t4\tEl estudio de que artista era conocido como 'The Factory'?\tAndy Warhol\n"
-    "395\t4\tQue autor coescribio \"El Manifiesto Comunista\" junto a Karl Marx?\tFriedrich Engels\n"
-    "396\t4\tQue libro clasico comienza con la linea \"Llamame Ismael\"?\tMoby Dick\n"
-    "397\t4\tQue personaje clasico de horror mato a Elizabeth Lavenza?\tLa Criatura de Frankenstein\n"
-    "398\t4\tQue libro famoso tiene el subtitulo 'El Prometeo Moderno'?\tFrankenstein\n"
-    "399\t4\tQue famoso novelista de espias escribio el cuento infantil \"Chitty-Chitty-Bang-Bang\"?\tIan Fleming\n"
-    "400\t4\tCual era el condado ingles ficticio que fue el escenario de las novelas de Thomas Hardy?\tSajonia Occidental\n"
-    "401\t4\tCual NO es un libro de la serie de Harry Potter?\tEl Elfo Domestico\n"
-    "402\t4\tCual pintura no fue hecha por Vincent Van Gogh?\tLa Novena Ola\n"
-    "403\t4\tQue indicador de compas es comunmente conocido como \"Compas de corte\"?\t2/2\n"
-    "404\t4\tQuien diseno el logotipo de Chupa Chups?\tSalvador Dali\n"
-    "405\t4\tA quien derroto Hipomenes en una carrera a pie?\tAtalanta\n"
-    "406\t4\tQuien es el dios egipcio de la reproduccion y la lechuga?\tMin\n"
-    "407\t4\tQuien es el hijo del dios Loki?\tFenrir\n"
-    "408\t4\tQuien es el autor de la serie \"Malazan Book of the Fallen\"?\tSteven Erikson\n"
-    "409\t4\tQuien es el padre de Icaro, quien volo demasiado cerca del sol?\tDedalo\n"
-    "410\t4\tQuien es el dios de la guerra en la mitologia polinesia?\tOro\n"
-    "411\t4\tQuien es el protagonista del libro \"El guardian entre el centeno\" de J.D. Salinger\tHolden Caulfield\n"
-    "412\t4\tQuien pinto \"American Gothic\"?\tGrant Wood\n"
-    "413\t4\tQuien pinto \"Cisnes reflejados en elefantes\", \"Sueno\" y \"La persistencia de la memoria\"?\tSalvador Dali\n"
-    "414\t4\tQuien pinto La Noche Estrellada?\tVincent van Gogh\n"
-    "415\t4\tQuien pinto la Mona Lisa?\tLeonardo da Vinci\n"
-    "416\t4\tQuien pinto la Capilla Sixtina?\tMiguel Angel\n"
-    "417\t4\tQuien pinto el cuadro \"Nighthawks\"?\tEdward Hopper\n"
-    "418\t4\tQuien esculpio la estatua de David?\tMiguel Angel\n"
-    "419\t4\tQuien fue el Rey de los Dioses en la mitologia griega antigua?\tZeus\n"
-    "420\t4\tQuien era el dios romano del fuego?\tVulcano\n"
-    "421\t4\tQuien escribio \"A Tale of Two Cities\"?\tCarlos Dickens\n"
-    "422\t4\tQuien escribio \"Harry Potter\"?\tJ.K. Rowling\n"
-    "423\t4\tQuien escribio la serie de novelas de fantasia \"A Song of Ice And Fire\"?\tGeorge R. R. Martin\n"
-    "424\t4\tQuien escribio la novela 'Miedo y asco en Las Vegas'?\tHunter S. Thompson\n"
-    "425\t4\tQuien escribio la novela de adultos jovenes \"The Fault in Our Stars\"?\tJohn Green\n"
-    "426\t5\t\"Windows NT\" utiliza un kernel monolitico.\tFalso\n"
-    "427\t5\tUna Mac no es una PC\tFalso\n"
-    "428\t5\tUna persona puede quemarse por el sol en un dia nublado.\tVerdadero\n"
-    "429\t5\tLa sangre de una babosa es verde.\tVerdadero\n"
-    "430\t5\tAproximadamente que porcentaje de la atmosfera terrestre es Oxigeno?\t21%\n"
-    "431\t5\tCompleta la siguiente analogia: Audi es a Volkswagen como Infiniti es a ?\tNissan\n"
-    "432\t5\tCoulrophobia es el miedo irracional a que?\tPayasos\n"
-    "433\t5\tQue tanque fue el mas temido por los aliados durante la Segunda Guerra Mundial?\tPanzerkampfwagen V Panther\n"
-    "434\t5\tDurante las primeras etapas de la Guerra de Vietnam, el M16 tenia un registro de mala confiabilidad.\tVerdadero\n"
-    "435\t5\tLos elefantes son fisicamente incapaces de saltar.\tVerdadero\n"
-    "436\t5\tPor que razon reiria una hiena manchada?\tNerviosismo\n"
-    "437\t5\tGanimedes es la luna mas grande de que planeta?\tJupiter\n"
-    "438\t5\tQue componente de una computadora generalmente consume mas energia?\tTarjeta de video\n"
-    "439\t5\tCuantos bits hay comunmente en un solo byte?\tOcho bits\n"
-    "440\t5\tCuantos nucleos tiene el Intel i7-6950X?\t10\n"
-    "441\t5\tCuantos kilobytes hay en un gigabyte (en decimal)?\tun millon\n"
-    "442\t5\tCuantas patas es biologicamente imposible que tenga un ciempies?\tcien\n"
-    "443\t5\tCuantas lunas tiene la Tierra?\tuno\n"
-    "444\t5\tCuantos planetas hay en el Sistema Solar?\t8\n"
-    "445\t5\tCuantos ceros hay en un gugol?\tcien\n"
-    "446\t5\tEn 2016, la UICN reclasifico el estado de los Pandas Gigantes de en peligro a vulnerable.\tVerdadero\n"
-    "447\t5\tEn Quimica, cuantos isomeros tiene el Butanol (C4H9OH)?\tCuatro\n"
-    "448\t5\tEn topologia, el complemento de un conjunto abierto es un conjunto cerrado.\tVerdadero\n"
-    "449\t5\tEn la escala de Scoville, cual es el quimico mas picante?\tResiniferatoxina\n"
-    "450\t5\tEn la tabla periodica, el simbolo del potasio es la letra K.\tVerdadero\n"
-    "451\t5\tPor cual fabricante de automoviles fue propiedad anterior de Jaguar Cars?\tFord\n"
-    "452\t5\tLos canguros guardan comida en sus bolsas junto a sus crias.\tFalso\n"
-    "453\t5\tLas impresoras Laserjet e inkjet son ejemplos de que tipo de impresora?\tImpresora sin impacto\n"
-    "454\t5\tAl igual que con los neandertales, el Homo sapiens sapiens tambien se cruzo con los denisovanos.\tVerdadero\n"
-    "455\t5\tLas fibras musculares estan construidas de haces de pequenos organulos largos llamados que?\tMiofibrillas\n"
-    "456\t5\tEn Twitter, cual era el limite original de caracteres para un Tweet?\tciento cuarenta\n"
-    "457\t5\tEn que dispositivo de hardware de computadora se encuentra el chip BIOS?\tPlaca madre\n"
-    "458\t5\tEn que mision se desintegro el transbordador espacial Columbia al reentrar?\tSTS-107\n"
-    "459\t5\tEl acero es una aleacion de hierro y carbono.\tVerdadero\n"
-    "460\t5\tEl lenguaje de programacion C fue creado por este cientifico informatico estadounidense.\tDennis Ritchie\n"
-    "461\t5\tQue bus adicional agrego la arquitectura Harvard para microcontroladores?\tInstruccion\n"
-    "462\t5\tLa orca se considera un tipo de delfin.\tVerdadero\n"
-    "463\t5\tEl Sol se considera una estrella.\tVerdadero\n"
-    "464\t5\tEl smartphone T-Mobile Sidekick es una version rebautizada del Danger Hiptop.\tVerdadero\n"
-    "465\t5\tEl sistema operativo Windows 7 tiene seis ediciones principales.\tVerdadero\n"
-    "466\t5\tEl acronimo comun de programacion de software \"I18N\" proviene del termino \"Interlocalization\".\tFalso\n"
-    "467\t5\tEl numero decimal 31 en hexadecimal seria que?\t1F\n"
-    "468\t5\tEl plato Fugu, esta hecho de que familia de peces?\tPez globo\n"
-    "469\t5\tEl equidna es un monotrema.\tVerdadero\n"
-    "470\t5\tEl primer CPU de nucleo dual fue el Intel Pentium D.\tFalso\n"
-    "471\t5\tCuantas camaras tiene el corazon humano?\tCuatro\n"
-    "472\t5\tPor que siglas se conoce la empresa tecnologica HP?\tHewlett-Packard\n"
-    "473\t5\tQue otro lenguaje de programacion fue creado para reemplazar el lenguaje de programacion 'Swift'?\tObjective-C\n"
-    "474\t5\tDe que esta hecho el cuerno del rinoceronte?\tQueratina\n"
-    "475\t5\tQue fabricante de automoviles cedio su patente del cinturon de seguridad en aras de salvar vidas?\tVolvo\n"
-    "476\t5\tQue organulo celular es conocido como \"la central electrica de la celula\"?\tMitocondria\n"
-    "477\t5\tEn que pais se fabrico el Trabant 601?\tAlemania Oriental\n"
-    "478\t5\tQue significa \"hippopotamus\" y en que idioma?\tCaballo de rio (griego)\n"
-    "479\t5\tQue significa GPS?\tSistema de Posicionamiento Global\n"
-    "480\t5\tQue elemento de la tabla periodica tiene 92 electrones?\tUranio\n"
-    "481\t5\tQue palabra de cinco letras es el lema de la compania IBM Computer?\tPensar\n"
-    "482\t5\tQue enfermedad genetica es causada por tener un cromosoma Y adicional (XYY)?\tSindrome de Jacob\n"
-    "483\t5\tQue protocolo de internet fue documentado en RFC 1459?\tIRC\n"
-    "484\t5\tEn que se mide la radiacion?\tGris\n"
-    "485\t5\tCual es la \"central energetica\" de la celula animal eucariota?\tMitocondria\n"
-    "486\t5\tCual es el area de un circulo con un diametro de 20 pulgadas si  = 3.1415?\t314.15 Pulgadas\n"
-    "487\t5\tCual es la cantidad promedio de chinchillas nacidas en una sola camada?\t2-3\n"
-    "488\t5\tCual es la esperanza de vida promedio de un conejo domestico?\t8-12 anos\n"
-    "489\t5\tCual es la derivada de la aceleracion con respecto al tiempo?\tImbecil\n"
-    "490\t5\tCual es el primer exponente de numero primo de Mersenne mayor a 1000?\tmil doscientos setenta y nueve\n"
-    "491\t5\tCual es el cuarto digito de ?\tuno\n"
-    "492\t5\tCual es el planeta mas caliente del Sistema Solar?\tVenus\n"
-    "493\t5\tCual es la formula matematica de la ley de Ohm?\tV = I*R\n"
-    "494\t5\tCual es la formula molecular del Ozono?\tO3\n"
-    "495\t5\tCual es el nombre del zangano, la abeja macho que nace de un huevo sin fertilizar?\tDron\n"
-    "496\t5\tCual es el nombre dado a la capa 4 del modelo de Interconexion de Sistemas Abiertos (ISO)?\tTransporte\n"
-    "497\t5\tCual es el nombre del agujero negro supermasivo en el centro de la Via Lactea?\tSagitario A*\n"
-    "498\t5\tCual es el nombre del tema predeterminado que viene instalado con Windows XP?\tLuna\n"
-    "499\t5\tCual es el unico Problema del Premio del Milenio que ha sido resuelto hasta ahora?\tConjetura de Poincare\n"
-    "500\t5\tCual es la central energetica de la celula?\tMitocondria\n"
-    "501\t5\tCual es la sustancia adictiva principal que se encuentra en el tabaco?\tNicotina\n"
-    "502\t5\tCual es el nombre cientifico del chimpance comun?\tPan troglodytes\n"
-    "503\t5\tCual es la velocidad de la luz en el vacio?\t299.792.458 m/s\n"
-    "504\t5\tCual es la unidad SI estandar para la distancia?\tMetro\n"
-    "505\t5\tQue se encuentra en el centro de nuestra galaxia?\tUn agujero negro\n"
-    "506\t5\tQue fabricante hizo el automovil usado en Regreso al Futuro?\tDeLorean\n"
-    "507\t5\tQue polimero se utiliza para hacer CDs, gafas de seguridad y escudos antidisturbios?\tPolicarbonato\n"
-    "508\t5\tA que familia cientifica pertenece el Aardwolf?\tHienidos\n"
-    "509\t5\tA que subordenamiento cientifico pertenece la familia Hyaenidae?\tFeliformia\n"
-    "510\t5\tQue tipo de criatura es un Bonobo?\tSimio\n"
-    "511\t5\tQue tipo de funcion es x2+2x+1?\tCuadratico\n"
-    "512\t5\tQue vulnerabilidad ocupo el #1 en el OWASP Top 10 en 2013?\tInyeccion\n"
-    "513\t5\tCual era el nombre del lobo etiope antes de que descubrieran que estaba relacionado con los lobos?\tChacal de Simien\n"
-    "514\t5\tCual es la raiz cuadrada de 49?\tsiete\n"
-    "515\t5\tCual Audi no utiliza un sistema de traccion total basado en Haldex?\tAudi A8\n"
-    "516\t5\tQue tecnologia de distribucion variable de valvulas utiliza BMW?\tVAIN\n"
-    "517\t5\tCual marca de automoviles NO pertenece a General Motors?\tFord\n"
-    "518\t5\tQue fabricante de neumaticos para automoviles es famoso por su linea \"P Zero\"?\tPirelli\n"
-    "519\t5\tA que clase de animales pertenecen los tritones?\tAnfibio\n"
-    "520\t5\tCual era el lenguaje de programacion numero 1 en terminos de uso en GitHub en 2015?\tJavaScript\n"
-    "521\t5\tQue empresa fue establecida el 1 de abril de 1976 por Steve Jobs, Steve Wozniak y Ronald Wayne?\tManzana\n"
-    "522\t5\tQue elemento tiene el numero atomico 7?\tNitrogeno\n"
-    "523\t5\tQue empresa de Internet comenzo como una libreria en linea llamada 'Cadabra'?\tAmazonas\n"
-    "524\t5\tCual es el hueso mas largo del cuerpo humano?\tFemur\n"
-    "525\t5\tQue planeta envio imagenes de la superficie la sonda espacial \"Viking 1\", comenzando en 1976?\tMarte\n"
-    "526\t5\tQuien es el fundador de Palantir?\tPeter Thiel\n"
-    "527\t5\tQuien es el autor original del motor de fisica en tiempo real llamado PhysX?\tNovodeX\n"
-    "528\t5\tQuien patento un motor de vapor que producia movimiento rotatorio continuo?\tJames Watt\n"
-    "529\t6\t\"Stadium of Light\" es el estadio de cual equipo de futbol?\tSunderland FC\n"
-    "530\t6\tUn estimador de velocidad mide la velocidad de una pelota sobre que superficie?\tGreen de golf para putts\n"
-    "531\t6\tEn que puente comienza la regata anual Oxford y Cambridge?\tPutney\n"
-    "532\t6\tEn que carrera se gano el Campeonato Mundial de Pilotos de F1 2018?\tMexico\n"
-    "533\t6\tEdson Arantes do Nascimento es el nombre completo de que legendario jugador de futbol?\tPele\n"
-    "534\t6\tEtihad Stadium es el estadio de casa de cual equipo?\tManchester City\n"
-    "535\t6\tEn que provincia canadiense nacio el jugador de hockey Wayne Gretzky?\tOntario\n"
-    "536\t6\tCuantas veces gano Bjorn Borg el Abierto de Francia?\t6\n"
-    "537\t6\tCuantos jugadores hay en un equipo de futbol?\tonce\n"
-    "538\t6\tCuantas zonas de puntuacion hay en un tablero de dardos convencional?\tochenta y dos\n"
-    "539\t6\tCuantos jugadores de futbol deben estar en el campo al mismo tiempo?\tveintidos\n"
-    "540\t6\tCuantas veces gano Martina Navratilova el Campeonato de Individuales de Wimbledon?\tNueve\n"
-    "541\t6\tQuien gano el Campeonato Mundial de Constructores de Formula 1 en 2016 por tercera vez consecutiva?\tMercedes-AMG Petronas\n"
-    "542\t6\tEn el futbol canadiense, cuantos puntos vale anotar un rouge?\tuno\n"
-    "543\t6\tEn la Liga de Rugby, realizar un \"40-20\" es castigado con un tiro libre para el equipo contrario.\tFalso\n"
-    "544\t6\tEn un juego de snooker, de que color es la bola que vale 3 puntos?\tVerde\n"
-    "545\t6\tEn el beisbol, cuantos fouls resultan en un out?\t0\n"
-    "546\t6\tEn el boliche, cual es el termino usado para obtener tres golpes consecutivos?\tPavo\n"
-    "547\t6\tEn golf, que nombre se le da a una puntuacion de dos bajo par en un hoyo?\tAguila\n"
-    "548\t6\tEn la Copa Mundial de la FIFA 2014, cual fue el marcador final del partido Brasil - Alemania?\t1-7\n"
-    "549\t6\tEn que pais se celebraron los Juegos Olimpicos de Invierno de 2014 en la ciudad de Sochi?\tRusia\n"
-    "550\t6\tEn que deporte se usa un \"volante\"?\tBadminton\n"
-    "551\t6\tDe que equipo de la NRL forma parte Josh Mansour?\tPenrith Panthers\n"
-    "552\t6\tAntes de 2018, cual es la unica empresa automovilistica japonesa que gano las 24 Horas de Le Mans?\tMazda\n"
-    "553\t6\tRoger Federer es un famoso jugador de futbol.\tFalso\n"
-    "554\t6\tShaquille O'Neal solo ha hecho un triple en su carrera.\tVerdadero\n"
-    "555\t6\tEl jugador de futbol Cristiano Ronaldo abrio un museo dedicado a si mismo.\tVerdadero\n"
-    "556\t6\tEl tenis fue una vez conocido como Racquetball.\tFalso\n"
-    "557\t6\tCual es el nombre del equipo afiliado de la AHL de los Boston Bruins?\tBruins de Providence\n"
-    "558\t6\tLa temporada de F1 de 1994 se recuerda por que evento tragico?\tMuerte de Ayrton Senna (San Marino)\n"
-    "559\t6\tDe que ciudad estadounidense eran originalmente los Dodgers de Los Angeles?\tBrooklyn\n"
-    "560\t6\tEn que ano el Mazda 787B gano las 24 Horas de Le Mans?\t1991\n"
-    "561\t6\tLa cancha de tenis de los Juegos Olimpicos es una pantalla verde gigante.\tVerdadero\n"
-    "562\t6\tEl primer episodio de WWF Monday Night RAW se emitio el 11 de enero de 1993.\tFalso\n"
-    "563\t6\tLa cancion \"Three Lions\" de Lightning Seeds fue hecha para que evento de futbol importante en 1996?\tCampeonatos Europeos\n"
-    "564\t6\tEn total hay 20 carreras en la temporada de Formula Uno 2016.\tFalso\n"
-    "565\t6\tQue pais fue anfitrion de los Juegos Olimpicos de Invierno de 2014?\tRusia\n"
-    "566\t6\tQue termino de criquet denota que un bateador sea eliminado con una puntuacion de cero?\tPato\n"
-    "567\t6\tCual es la puntuacion de golf mas baja en la carrera de Tiger Woods?\tsesenta y uno\n"
-    "568\t6\tCual es el nombre completo del futbolista \"Cristiano Ronaldo\"?\tCristiano Ronaldo dos Santos Aveiro\n"
-    "569\t6\tCual es el cinturon mas alto que puedes obtener en Taekwondo?\tNegro\n"
-    "570\t6\tCual es el tipo de lanzamiento mas comun que lanzan los lanzadores en el beisbol?\tBola rapida\n"
-    "571\t6\tCual es el nombre del estadio de casa del Manchester United?\tOld Trafford\n"
-    "572\t6\tCual es el apodo del club de rugby union de la ciudad de Northampton?\tSantos\n"
-    "573\t6\tCual es el equipo mas antiguo en las Grandes Ligas de Beisbol?\tAtlanta Bravos\n"
-    "574\t6\tCual es \"El Deporte de Reyes\"?\tCarreras de Caballos\n"
-    "575\t6\tQue seleccion nacional gano la edicion 2016 del Campeonato Europeo de la UEFA?\tPortugal\n"
-    "576\t6\tQue seleccion nacional gano la primera UEFA Nations League?\tPortugal\n"
-    "577\t6\tQue deporte utiliza los terminos love, deuce, match y volley?\tTenis\n"
-    "578\t6\tA que equipo vencio Inglaterra en la semifinal para ganar la final de la Copa Mundial de 1966?\tPortugal\n"
-    "579\t6\tA que equipo vencio Inglaterra para ganar la final de la Copa Mundial de 1966?\tAlemania Occidental\n"
-    "580\t6\tQue herramienta presta su nombre a la ventaja de la ultima piedra en un end en Curling?\tMartillo\n"
-    "581\t6\tCual fue el promedio de bateo de Sir Donald Bradman en partidos de prueba?\t99,94\n"
-    "582\t6\tCual fue el resultado final del partido entre Alemania y Brasil de la Copa Mundial de la FIFA 2014?\t7 - 1\n"
-    "583\t6\tEn que ano se fundo el Bari Football Club italiano?\t1908\n"
-    "584\t6\tEn que ano nacio la leyenda del hockey Wayne Gretzky?\t1961\n"
-    "585\t6\tCuando fue fundado el FC Schalke 04?\t1904\n"
-    "586\t6\tCuando se jugo el primer partido internacional oficial?\t1872\n"
-    "587\t6\tDonde se celebraron los Juegos de la XXII Olimpiada?\tMoscu\n"
-    "588\t6\tQue afroamericano es en parte responsable de integrar las Grandes Ligas de Beisbol?\tJackie Robinson\n"
-    "589\t6\tQue club de futbol ingles tiene el apodo 'The Foxes'?\tLeicester City\n"
-    "590\t6\tQue piloto de Formula 1 cambio de equipo a mitad de la temporada 2017?\tCarlos Sainz Jr.\n"
-    "591\t6\tQue piloto de Formula Uno fue apodado 'El Profesor'?\tAlain Prost\n"
-    "592\t6\tCual es la marca alemana de ropa deportiva cuyo logo es la 'Formstripe'?\tPuma\n"
-    "593\t6\tQue boxeador fue prohibido por morder la oreja de Evander Holyfield en 1997?\tMike Tyson\n"
-    "594\t6\tQue fabricante de automoviles gano las 24 Horas de Le Mans 2016?\tPorsche\n"
-    "595\t6\tQue fabricante de automoviles gano las 24 Horas de Le Mans de 2017?\tPorsche\n"
-    "596\t6\tDe que pais es originario el Kabaddi, un deporte de contacto que implica derribos?\tIndia\n"
-    "597\t6\tQue pais fue anfitrion de la Copa Mundial de la FIFA 2018?\tRusia\n"
-    "598\t6\tQue pais fue anfitrion de los Juegos Olimpicos de Verano de 2020?\tJapon\n"
-    "599\t6\tQue pais fue anfitrion de la Copa Mundial de la FIFA 2022?\tQatar\n"
-    "600\t6\tQue pais es anfitrion de la Copa Mundial de la FIFA 2022?\tQatar\n"
-    "601\t6\tQue pais produjo futbolistas como Cafu, Roberto Carlos y Pele?\tBrasil\n"
-    "602\t6\tQue pais gano la Copa Mundial de la FIFA 2018 realizada en Rusia?\tFrancia\n"
-    "603\t6\tQue jugador de dardos ha ganado mas titulos de Campeonato Mundial?\tPhil Taylor\n"
-    "604\t6\tQue piloto ha sido campeon mundial de Formula 1 un record de 7 veces?\tMichael Schumacher\n"
-    "605\t6\tCual es el record personal de Kenenisa Bekele en maraton?\t2:01:41\n"
-    "606\t6\tQue nacion fue anfitriona de la Copa Mundial de la FIFA en 2006?\tAlemania\n"
-    "607\t6\tQue jugador le propino una \"patada de kung-fu\" a un aficionado del Crystal Palace en enero de 1995?\tEric Cantona\n"
-    "608\t6\tDe cual isla portuguesa es el futbolista Cristiano Ronaldo?\tMadera\n"
-    "609\t6\tQue equipo de futbol gano el Campeonato de la Copa America 2015?\tChile\n"
-    "610\t6\tQue equipo de futbol gano la Copa America Centenario 2016?\tChile\n"
-    "611\t6\tCual es el deporte que NO se juega tradicionalmente durante el festival Naadam de Mongolia?\tFutbol Americano\n"
-    "612\t6\tQue equipo gano la Copa Mundial de la FIFA 2014 en Brasil?\tAlemania\n"
-    "613\t6\tEn que ano gano Jenson Button su primer Campeonato Mundial de Pilotos de Formula Uno?\t2009\n"
-    "614\t6\tCon que equipo gano Steven Gerrard la Liga de Campeones?\tLiverpool\n"
-    "615\t6\tQuien ha jugado la mayor cantidad de torneos en la seleccion nacional de futbol alemana?\tLothar Matthaus\n"
-    "616\t6\tQuien ha jugado la mayoria de los torneos en la seleccion nacional de futbol de Brasil?\tCafu\n"
-    "617\t6\tQuien es el jugador con mas apariciones en la historia del Manchester United?\tRyan Giggs\n"
-    "618\t6\tQuien es a menudo llamado \"el Maestro\" en el circuito de tenis masculino?\tRoger Federer\n"
-    "619\t6\tQuien era el luchador profesional britanico Shirley Crabtree mas conocido como?\tGran Papa\n"
-    "620\t6\tQuien fue el maximo goleador del Mundial de la FIFA 2014?\tJames Rodriguez\n"
-    "621\t6\tQuien fue el maximo goleador de la seleccion nacional de futbol de Inglaterra?\tWayne Rooney\n"
-    "622\t6\tQuien gano la \"Liga de Campeones\" en 1999?\tManchester United\n"
-    "623\t6\tQuien gano el Gran Premio de San Marino de 1994, la carrera en la que Ayrton Senna fue asesinado?\tMichael Schumacher\n"
-    "624\t6\tQuien gano la Daytona 500 de 1998?\tDale Earnhardt\n"
-    "625\t6\tQuien gano el Campeonato Nacional de la College Football Playoff (CFP) de 2015?\tBuckeyes de Ohio State\n"
-    "626\t6\tQuien gano el Campeonato Mundial de Formula 1 de 2015?\tLewis Hamilton\n"
-    "627\t6\tQuien gano el Campeonato Mundial de Pilotos de Formula 1 de 2016?\tNico Rosberg\n"
-    "628\t6\tQuien gano el Campeonato Mundial de Pilotos de Formula Uno de 2017?\tLewis Hamilton\n"
-    "629\t6\tQuien gano el Gran Premio de Monaco de 2018?\tDaniel Ricciardo\n"
-    "630\t6\tQuien gano la UEFA Champions League en 2016?\tReal Madrid Club de Futbol\n"
-    "631\t6\tQuien gano la Liga de Campeones de la UEFA en 2017?\tReal Madrid Club de Futbol\n"
-    "632\t6\tCon que companero de dobles tuvo John McEnroe mas exito?\tPeter Fleming\n"
-    "633\t7\t\"Nephelococcygia\" es la practica de hacer que?\tEncontrar formas en las nubes\n"
-    "634\t7\t\"Santa Claus\" es una variedad de melon.\tVerdadero\n"
-    "635\t7\tUn pasodoble es un tipo de salsa de pasta italiana.\tFalso\n"
-    "636\t7\tAlbert Einstein tuvo dificultades con las matematicas cuando estaba en la escuela.\tFalso\n"
-    "637\t7\tCon que estacion esta hermanada la estacion Centraal de Amsterdam?\tEstacion de Liverpool Street de Londres\n"
-    "638\t7\tPara combatir que se toman generalmente los antibioticos?\tInfecciones bacterianas\n"
-    "639\t7\tEn que estado de Estados Unidos se encuentra el Area 51?\tNevada\n"
-    "640\t7\tEn que deporte fueron famosos los hermanos Bob y Mike Bryan?\tTenis\n"
-    "641\t7\tDe cual pais europeo se origino la ensalada de col?\tPaises Bajos\n"
-    "642\t7\tDe Eemhof, Port Zelande y Het Heijderbos son casas de vacaciones propiedad de que empresa?\tCenter Parcs\n"
-    "643\t7\tEcuador utiliza el Peso Mexicano como su moneda.\tFalso\n"
-    "644\t7\tLas cadenas de comida rapida Carl's Jr. y Hardee's son propiedad de la misma empresa.\tVerdadero\n"
-    "645\t7\tEl foie gras es un manjar frances tipicamente hecho del higado de un pato o ganso.\tHigado\n"
-    "646\t7\tDe que pais europeo es el queso Gouda?\tPaises Bajos\n"
-    "647\t7\tHaggis se come tradicionalmente en la Noche de Burns.\tVerdadero\n"
-    "648\t7\tCuantos colores hay en un arcoiris?\tsiete\n"
-    "649\t7\tCuantos furlongs hay en una milla?\tOcho\n"
-    "650\t7\tCuantas letras hay en el alfabeto ingles?\tveintiseis\n"
-    "651\t7\tCual es la altura del Burj Khalifa?\t2.722 pies\n"
-    "652\t7\tSi alguien dijera \"eres maloliente\", que querria decir?\tHueles extremadamente desagradable.\n"
-    "653\t7\tSi te atrapan \"Goldbricking\", que estas haciendo mal?\tHolgazaneria\n"
-    "654\t7\tSi plantaras las semillas de Quercus robur, que creceria?\tArboles\n"
-    "655\t7\tCuanto dinero se perdio por estafas nigerianas en 2013?\t$12.7 mil millones\n"
-    "656\t7\tCuantos meses comienzan con la letra 'J' en un calendario gregoriano estandar?\tTres\n"
-    "657\t7\tEn una baraja estandar de cartas, cual es el unico rey sin bigote?\tCorazones\n"
-    "658\t7\tEn el idioma ingles, cual es el nombre del caracter \"&\"?\tSimbolo de ampersand\n"
-    "659\t7\tEn que ano Canada dejo de producir el centavo?\t2012\n"
-    "660\t7\tEn que pais se celebraron los Juegos Olimpicos de Verano de 1992?\tEspana\n"
-    "661\t7\tEn que cadena de comida rapida puedes pedir un Jamocha Shake?\tArby's\n"
-    "662\t7\tEs un perro un mamifero?\tVerdadero\n"
-    "663\t7\tKraft \"Cheez Whiz\" contiene cultivo de queso, pero en realidad no contiene queso\tVerdadero\n"
-    "664\t7\tNombrada en honor a la flor de malva, el malva es un tono de que?\tPurpura\n"
-    "665\t7\tEn un tablero de dardos, que numero esta directamente opuesto al numero 1?\tdiecinueve\n"
-    "666\t7\tSolo el 9% de los hogares estadounidenses poseian un televisor en\t1950\n"
-    "667\t7\tPluton es un planeta.\tFalso\n"
-    "668\t7\tEl agua pura conduce efectivamente la electricidad\tFalso\n"
-    "669\t7\tRed Vines es una marca de que tipo de caramelo?\tRegaliz\n"
-    "670\t7\tTerry Gilliam fue un animador que trabajo con que grupo comico britanico?\tMonty Python\n"
-    "671\t7\tPor que producto alimenticio es mas conocida la empresa estadounidense \"Campbell's\"?\tSopas enlatadas\n"
-    "672\t7\tLa palabra francesa para viajar es \"Travail\"\tFalso\n"
-    "673\t7\tLa Carita Feliz fue creada por el artista comercial Harvey Ball.\tVerdadero\n"
-    "674\t7\tQue tipo de cerveza es la cerveza mexicana \"Corona\"?\tCerveza Lager Palida\n"
-    "675\t7\tEl metro de Nueva York es el mas antiguo del mundo.\tFalso\n"
-    "676\t7\tLos Jack-o-Lanterns originales eran en realidad nabos vaciados.\tVerdadero\n"
-    "677\t7\tA que se refiere la palabra sueca \"Grunka\"?\tcosa\n"
-    "678\t7\tEl cartel de drogas dirigido por Pablo Escobar se origino en que ciudad sudamericana?\tMedellin\n"
-    "679\t7\tLa continuacion menos conocida del dicho \"La curiosidad mato al gato...\" es:\t...pero la satisfaccion lo devolvio.\n"
-    "680\t7\tLa mitocondria es la central energetica de la celula.\tVerdadero\n"
-    "681\t7\tEl vapor producido por los cigarrillos electronicos es en realidad agua.\tFalso\n"
-    "682\t7\tLa palabra \"docena\" generalmente se refiere a un grupo de cuantos objetos?\tDoce\n"
-    "683\t7\tLas palabras \"bungalow\" y \"shampoo\" originan de los idiomas de que pais?\tIndia\n"
-    "684\t7\tEste empresario ghanes es un pionero de las microfinanzas.\tEsther Afua Ocloo\n"
-    "685\t7\tEste campo a veces se conoce como \"La Ciencia Lugubre.\"\tEconomia\n"
-    "686\t7\tEsta es la ortografia correcta de \"Supercalifragilisticexpialidocious\".\tVerdadero\n"
-    "687\t7\tA que familia linguistica pertenece el kazajo?\tTurquico\n"
-    "688\t7\tQue aerolinea era propietaria del avion que se estrello frente a la costa de Nueva Escocia en 1998?\tSwissair\n"
-    "689\t7\tQue bebida alcoholica se hace a partir de melaza?\tRon\n"
-    "690\t7\tComo llaman los marineros a la parte delantera de un barco?\tArco\n"
-    "691\t7\tComo llaman los marineros al lado derecho de un barco?\tEstribor\n"
-    "692\t7\tSobre que camina un funambulo?\tUna Cuerda Tensa\n"
-    "693\t7\tQue significa la F en el FBI?\tFederal\n"
-    "694\t7\tComo se traduce al ingles la frase latina \"Veni, vidi, vici\"?\tVine, vi, venci\n"
-    "695\t7\tQue cadena de comida rapida tiene la mayoria de ubicaciones a nivel mundial?\tMetro\n"
-    "696\t7\tQue fruta es un ingrediente tradicional de la Selva Negra?\tCerezas\n"
-    "697\t7\tCual es el idioma oficial mas hablado de Cuba?\tEspanol\n"
-    "698\t7\tCual es la fobia del miedo a los perros?\tPerros\n"
-    "699\t7\tQue es H2O?\tAgua\n"
-    "700\t7\tQue es Tasmania?\tUn Estado australiano\n"
-    "701\t7\tQue es una Bandera de Proa?\tUna bandera\n"
-    "702\t7\tQue se exhibe en el museo de Madame Tussauds en Londres?\tEsculturas de cera\n"
-    "703\t7\tCual es la palabra portuguesa para \"Brasil\"?\tBrasil\n"
-    "704\t7\tCual es la moneda de India y Pakistan asi como de algunos otros paises asiaticos?\tRupia\n"
-    "705\t7\tCual es la caracteristica definitoria de alguien que se describe como hirsuto?\tPeludo\n"
-    "706\t7\tCual es el apellido del famoso Papa John?\tSchnatter\n"
-    "707\t7\tCual es el organo mas grande del cuerpo humano?\tPiel\n"
-    "708\t7\tCual es la letra mas frecuentemente utilizada en el alfabeto ingles?\tE\n"
-    "709\t7\tCual es el nombre del Ano Nuevo judio?\tRosh Hashana\n"
-    "710\t7\tCual es el nombre de la moneda utilizada en Etiopia?\tBirra\n"
-    "711\t7\tCual es el apodo del estado estadounidense de California?\tEstado Dorado\n"
-    "712\t7\tCual es la palabra arabe romanizada para \"luna\"?\tQamar\n"
-    "713\t7\tCual es la palabra japonesa romanizada para \"universidad\"?\tDaigaku\n"
-    "714\t7\tCual es la forma del juguete inventado por el profesor hungaro Erno Rubik?\tCubo\n"
-    "715\t7\tQue elemento de maquina se encuentra en el centro de los fidget spinners?\tRodamientos\n"
-    "716\t7\tQue nacion produce aproximadamente el 40% de la vainilla del mundo?\tMadagascar\n"
-    "717\t7\tQue organo del cuerpo produce bilis?\tHigado\n"
-    "718\t7\tQue era originalmente el Banco de America?\tBanco de Italia\n"
-    "719\t7\tCual fue el destino del vuelo desaparecido MH370?\tPekin\n"
-    "720\t7\tCual fue el tercer pais en tener un restaurante McDonald's?\tCosta Rica\n"
-    "721\t7\tCuando se lanzo el sitio web \"Facebook\"?\t2004\n"
-    "722\t7\tCuando alguien tiene \"envidia\", se dice que es de que color?\tVerde\n"
-    "723\t7\tCuando alguien es cobarde, se dice que tiene el vientre de que color?\tAmarillo\n"
-    "724\t7\tCuando se lanzo Pong?\t29 de noviembre de 1972\n"
-    "725\t7\tCuando lloras en el espacio, tus lagrimas se adhieren a tu cara.\tVerdadero\n"
-    "726\t7\tDonde en La Coruna (Espana) esta la sede de \"Inditex\", el mayor grupo de moda del mundo?\tArteijo\n"
-    "727\t7\tCual cerveceria estadounidense lidero el pais en ventas por volumen en 2015?\tD. G. Yuengling e Hijo, Inc\n"
-    "728\t7\tQue pais tiene la Union Jack en su bandera?\tNueva Zelanda\n"
-    "729\t7\tQue pais, sin incluir a Japon, tiene la mayor cantidad de personas de descendencia japonesa?\tBrasil\n"
-    "730\t7\tCual es el idioma hablado mas popular en el Hemisferio Sur?\tPortugues\n"
-    "731\t7\tQue montana tiene el pico mas alto de Africa?\tMonte Kilimanjaro, Tanzania\n"
-    "732\t7\tQue montana tiene el pico mas alto de Australia?\tMonte Kosciuszko, Nueva Gales del Sur\n"
-    "733\t7\tCual es la montana con el pico mas alto de Europa?\tMonte Elbrus, Rusia\n"
-    "734\t7\tQue producto vendia originalmente Nokia, la empresa de telecomunicaciones?\tPapel\n"
-    "735\t7\tQue eslogan utilizo la empresa de comida rapida McDonald's antes de su eslogan \"I'm Lovin' It\"?\tNos Encanta Verte Sonreir\n"
-    "736\t7\tCual es el tipo de cubierto mas adecuado para comer sopa?\tCuchara\n"
-    "737\t7\tQuien aparece en el billete de cien dolares estadounidenses?\tBenjamin Franklin\n"
-    "738\t7\tQuien interpreto al General Aladeen en The Dictator?\tSacha Baron Cohen\n"
-    "739\t7\tPor que el cielo nocturno es oscuro?\tEl universo es finito en edad y tamano\n"
-    "740\t7\tXantofobia es el miedo a que color?\tAmarillo\n";
+    "1\t1\tGroenlandia es casi tan grande como Africa.\tFalso\n"
+    "2\t1\tCuantos paises hay dentro del Reino Unido?\tCuatro\n"
+    "3\t1\tCuantos paises bordean Kirguistan?\tCuatro\n"
+    "4\t1\tCon cuantos paises comparte Estados Unidos una frontera terrestre?\tdos\n"
+    "5\t1\tCuantos estados federales tiene Alemania?\t16\n"
+    "6\t1\tCuantos paises independientes hay dentro del continente de America del Sur?\tDoce\n"
+    "7\t1\tJapon tiene el trafico por el lado izquierdo.\tVerdadero\n"
+    "8\t1\tMiami es la ciudad mas grande de Florida.\tFalso\n"
+    "9\t1\tNew Haven es la capital del estado de Connecticut en los Estados Unidos.\tFalso\n"
+    "10\t1\tEn que continente se encuentra la cordillera de los Andes?\tAmerica del Sur\n"
+    "11\t1\tEl territorio moderno de Portugal fue una vez parte del Imperio Romano.\tVerdadero\n"
+    "12\t1\tRusia comparte una frontera terrestre con Corea del Norte.\tVerdadero\n"
+    "13\t1\tEl Principado de Sealand es una micronacion no reconocida frente a la costa de que pais?\tEl Reino Unido\n"
+    "14\t1\tEl desierto de Sonora se encuentra en el este de Africa.\tFalso\n"
+    "15\t1\tEn que pais se encuentran los Acantilados Blancos de Dover?\tReino Unido\n"
+    "16\t1\tLa sede de la Organizacion Mundial de la Salud se encuentra en que pais europeo?\tSuiza\n"
+    "17\t1\tLa capital de Brasil es Rio de Janeiro.\tFalso\n"
+    "18\t1\tLa capital de Indonesia es Bali.\tFalso\n"
+    "19\t1\tEl montanoso paso de Jiber conecta cual de los dos siguientes paises?\tAfganistan y Pakistan\n"
+    "20\t1\tExiste una isla llamada \"Java\".\tVerdadero\n"
+    "21\t1\tHay 47 prefecturas en Japon.\tVerdadero\n"
+    "22\t1\tTokio es la capital de Japon.\tVerdadero\n"
+    "23\t1\tHasta 1939, Laos se llamaba Siam.\tFalso\n"
+    "24\t1\tEn que ciudad se encuentra el Ejercito de Terracota?\tXi'an\n"
+    "25\t1\tQue pais no es parte de Escandinavia?\tFinlandia\n"
+    "26\t1\tQue evento llevo a Liechtenstein a anadir una corona a su bandera?\tLos Juegos Olimpicos de 1936\n"
+    "27\t1\tCual es la isla mas grande de Canada?\tIsla de Baffin\n"
+    "28\t1\tCual es la 15a letra del alfabeto griego?\tOmicron ()\n"
+    "29\t1\tCual es la capital de los Estados Unidos?\tWashington, D.C.\n"
+    "30\t1\tCual es la palabra finlandesa para \"Finlandia\"?\tFinlandia\n"
+    "31\t1\tCual es la capital de Bermudas?\tHamilton\n"
+    "32\t1\tCual es la capital de Bangladesh?\tDaca\n"
+    "33\t1\tCual es la capital de Brasil?\tBrasilia\n"
+    "34\t1\tCual es la capital de Chile?\tSantiago\n"
+    "35\t1\tCual es la capital de Chipre?\tNicosia\n"
+    "36\t1\tCual es la capital de India?\tNueva Delhi\n"
+    "37\t1\tCual es la capital de Rumania?\tBucarest\n"
+    "38\t1\tCual es la capital de Escocia?\tEdimburgo\n"
+    "39\t1\tCual es la capital de Seychelles?\tVictoria\n"
+    "40\t1\tCual es la capital de Surinam?\tParamaribo\n"
+    "41\t1\tCual es la capital del estado estadounidense de Arizona?\tFenix\n"
+    "42\t1\tCual es el pais musulman mas grande del mundo?\tIndonesia\n"
+    "43\t1\tCual es el pais mas grande del mundo?\tFederacion Rusa\n"
+    "44\t1\tCual es el pais mas grande del mundo?\tRusia\n"
+    "45\t1\tCual es el rio mas largo de Europa?\tVolga\n"
+    "46\t1\tCual es el nombre de la peninsula que contiene a Espana y Portugal?\tPeninsula Iberica\n"
+    "47\t1\tCual es el idioma oficial en Liechtenstein?\tAleman\n"
+    "48\t1\tCual es el idioma oficial de Costa Rica?\tEspanol\n"
+    "49\t1\tCual es el unico estado de los Estados Unidos que no tiene una bandera en forma con 4 bordes?\tOhio\n"
+    "50\t1\tCual es el pais mas pequeno del mundo?\tCiudad del Vaticano\n"
+    "51\t1\tCual es la montana mas alta de Canada?\tMonte Logan\n"
+    "52\t1\tCual era el nombre anterior de la nacion africana de Zimbabue?\tRodesia\n"
+    "53\t1\tDonde esta ubicado Fort Marlborough?\tBengkulu\n"
+    "54\t1\tDonde esta ubicada la Muralla de Adriano?\tCarlisle, Inglaterra\n"
+    "55\t1\tDonde esta el rio Volga?\tRusia\n"
+    "56\t1\tDonde se encuentra la ciudad antigua de Petra?\tJordania\n"
+    "57\t1\tDonde esta ubicada la ciudad de Haarlem?\tPaises Bajos\n"
+    "58\t1\tCual es el barrio mas al norte de la Ciudad de Nueva York?\tBronx\n"
+    "59\t1\tQue provincia canadiense tiene a Charlottetown como su capital?\tIsla del Principe Eduardo\n"
+    "60\t1\tEn que condado ingles encontraras la Universidad de East Anglia?\tNorfolk\n"
+    "61\t1\tQue nacion oceaniana es conocida en maori como Aotearoa?\tNueva Zelanda\n"
+    "62\t1\tQue pais del Reino Unido presenta un dragon en su bandera?\tGales\n"
+    "63\t1\tQue pais reclama la propiedad del estado disputado de Kosovo?\tSerbia\n"
+    "64\t1\tQue pais tiene la abreviatura \"CH\"?\tSuiza\n"
+    "65\t1\tCual es el unico estado estadounidense ubicado completamente en la region de Apalaches?\tVirginia Occidental\n"
+    "66\t1\tCual es el pais mas pequeno del mundo?\tCiudad del Vaticano\n"
+    "67\t1\tQue estrecho de agua conecta el oceano Atlantico con el mar Mediterraneo?\tEstrecho de Gibraltar\n"
+    "68\t2\t\"Cube\", \"Cube 2: Hipercubo\" y \"Cube Zero\" fueron dirigidas por la misma persona.\tFalso\n"
+    "69\t2\t\"Make You Feel My Love\" fue escrito y interpretado originalmente por cual cantautor?\tBob Dylan\n"
+    "70\t2\tLa primera regla es: no hables de ello\", es una referencia a que pelicula?\tEl club de la lucha\n"
+    "71\t2\t'74-'75 es un sencillo de 1993 del album Ring de que banda estadounidense?\tLos Connells\n"
+    "72\t2\tSegun la tradicion de Star Wars, cual es el planeta natal de Han Solo?\tCorellia\n"
+    "73\t2\tEurobeat es principalmente un genero musical italiano.\tVerdadero\n"
+    "74\t2\tEn \"Jurassic World\", cual es el nombre del dinosaurio que es un hibrido genetico?\tIndominus Rex\n"
+    "75\t2\tEn \"Jurassic World\", que empresa compra InGen y crea Jurassic World?\tCorporacion Masrani Global\n"
+    "76\t2\tEn \"Rick and Morty\", quien disparo a \"Sr. Poopybutthole\" en el episodio \"Total Rickall\"?\tBeth\n"
+    "77\t2\tQue banda lanzo en 2006 su album debut \"A Fever You Can't Sweat Out\"?\tPanic! At the Disco\n"
+    "78\t2\tEn Two and a Half Men, cual es el nombre del hijo de Alan Harper?\tJake\n"
+    "79\t2\tEn que ano Clint Eastwood actuo como el Inspector Harry Callahan en la pelicula \"Dirty Harry\"?\t1971\n"
+    "80\t2\tEn que ano se lanzo el album de Megadeth \"Peace Sells... but Who's Buying?\"?\t1986\n"
+    "81\t2\tEn que pelicula hizo Johnny Depp su debut en la pantalla grande?\tA Nightmare on Elm Street\n"
+    "82\t2\tMetallica colaboro con Mr Bean de Rowan Atkinson en un sencillo de alivio comico de 1992.\tFalso\n"
+    "83\t2\tMichael Jackson escribio la cancion de Los Simpson \"Do the Bartman\".\tFalso\n"
+    "84\t2\tNick Mason es el unico miembro en aparecer en todos los albumes de Pink Floyd.\tVerdadero\n"
+    "85\t2\tEl album de debut de Pink Guy fue \"Pink Season\".\tFalso\n"
+    "86\t2\tEl nombre real del rapero Snoop Dogg es 'Cordozar Calvin Broadus, Jr.'.\tVerdadero\n"
+    "87\t2\tDe que album es la cancion \"Give It Away\" de Red Hot Chili Peppers?\tBlood Sugar Sex Magik\n"
+    "88\t2\tEn cual de sus canciones aparece la linea homonima de The Who, \"Teenage Wasteland\"?\tBaba O' Riley\n"
+    "89\t2\tEl autor detras de la aclamada novela \"Leaving Las Vegas\" tambien escribio un episodio de Rugrats.\tVerdadero\n"
+    "90\t2\tEl color de las pastillas en Matrix eran Azul y Amarillo.\tFalso\n"
+    "91\t2\tLa pelicula \"2001: Una odisea del espacio\" se estreno el 31 de diciembre de 2000.\tFalso\n"
+    "92\t2\tDe cual ciudad inglesa es la banda de heavy metal Black Sabbath?\tBirmingham\n"
+    "93\t2\tLa cantante Billie Holiday tambien era conocida como \"Lady Day\".\tVerdadero\n"
+    "94\t2\tLa cancion \"Mystery Train\" fue lanzada por el artista \"Little Junior's Blue Flames\" en 1953.\tVerdadero\n"
+    "95\t2\tEl arma que Clint Eastwood usa en \"Dirty Harry\" fue una .44 Automag.\tFalso\n"
+    "96\t2\tQue raza de perro era Marley en la pelicula \"Marley & Me\" (2008)?\tLabrador Retriever\n"
+    "97\t2\tQue mostraba la primera pelicula en movimiento?\tUn caballo galopando\n"
+    "98\t2\tQue significa TIE en referencia al Caza TIE en \"Star Wars\"?\tMotor de Ion Gemelo\n"
+    "99\t2\tCual es el album mas vendido de todos los tiempos entre 1976 y 2018?\tSuspenso\n"
+    "100\t2\tCual es el nombre de nacimiento de Michael Caine?\tMaurice Micklewhite\n"
+    "101\t2\tCual es la primera cancion del album 808s & Heartbreak de Kanye West?\tDilo que haras\n"
+    "102\t2\tCual es el nombre del personaje de James Dean en la pelicula de 1955 \"Rebelde sin causa\"?\tJim Stark\n"
+    "103\t2\tCual es el nombre de la primera pelicula de \"Star Wars\" por orden de lanzamiento?\tUna nueva esperanza\n"
+    "104\t2\tCual es el nombre del caballo de carreras al que Tony Soprano se encarina?\tPie-O-Mi\n"
+    "105\t2\tCual es la cancion de apertura en Pure Heroine de Lorde?\tCancha de Tenis\n"
+    "106\t2\tCual era el nombre de pila del personaje de Marilyn Monroe en la pelicula \"Con faldas y a lo loco\"?\tAzucar\n"
+    "107\t2\tCual fue el album mas vendido de 2015?\tAdele, 25\n"
+    "108\t2\tCual fue el primer videoclip transmitido en MTV?\tEl video mato a la estrella de la radio\n"
+    "109\t2\tCual era el nombre del planeta en \"Aliens\"?\tLV-426\n"
+    "110\t2\tCual es el nombre de pila del Dr. Dofenshmirtz?\tHeinz\n"
+    "111\t2\tCual es la metrica mas comun para las canciones de rock?\t4/4\n"
+    "112\t2\tCuando se transmitio por primera vez la serie de television Rick and Morty en Adult Swim?\t2013\n"
+    "113\t2\tQue banda de los 80 esta liderada por el cantante/guitarrista Robert Smith?\tThe Cure\n"
+    "114\t2\tCual villano de Batman es Mark Hamill conocido por haber doblado?\tEl Payaso\n"
+    "115\t2\tCual album de The Beatles NO presenta a ningun miembro de la banda en su portada?\tLos Beatles (Album Blanco)\n"
+    "116\t2\tCual actor audiciono para el papel de Luke Skywalker?\tKurt Russell\n"
+    "117\t2\tQue actor de The Young Ones tambien interpreto a Lord Flashheart en un episodio de Blackadder II?\tRik Mayall\n"
+    "118\t2\tQue exmiembro de una banda de chicos lanzo el exitoso sencillo en solitario \"Angels\" en 1997?\tRobbie Williams\n"
+    "119\t2\tCual de estas peliculas NO conto con la participacion del difunto actor John Candy?\tCazafantasmas\n"
+    "120\t2\tCual de los miembros de la banda Beatles esta descalzo en la portada del album 'Abbey Road'?\tPaul McCartney\n"
+    "121\t2\tCual cancion NO es de Tom Jones?\tNever Gonna Give You Up\n"
+    "122\t2\tCual es el pueblo donde transcurre la pelicula de Disney Herbie, loco de amor (1968)?\tSan Francisco\n"
+    "123\t2\tCual fue la primera pelicula de Alfred Hitchcock filmada en color?\tCuerda\n"
+    "124\t2\tEn que ano se lanzo el primer YouTube Rewind oficial?\t2010\n"
+    "125\t2\tQuien dirigio la pelicula de 1973 \"American Graffiti\"?\tGeorge Lucas\n"
+    "126\t2\tQuien tuvo un exito numero 1 en EE.UU. y Reino Unido en 1962 con el instrumental 'Telstar'?\tLos Tornados\n"
+    "127\t2\tQuien es el vocalista y lider de la banda de rock \"Guns N' Roses\"?\tAxl Rose\n"
+    "128\t2\tQuien interpreto a Thanos en Avengers: Infinity War y Avengers: End Game?\tJosh Brolin\n"
+    "129\t2\tQuien interpreto a la Camarera en el sketch de Spam de \"Monty Python's Flying Circus\"?\tTerry Jones\n"
+    "130\t2\tQuien canto la cancion del tema de apertura de la pelicula de James Bond de 1995 'Goldeneye'?\tTina Turner\n"
+    "131\t2\tQuien fue el primer ganador de Big Brother US en ganar con un juego perfecto?\tDan Gheesling\n"
+    "132\t2\tQuien era el miembro mas antiguo de The Beatles?\tRingo Starr\n"
+    "133\t2\tQuien fue el ganador de \"Big Brother\" Temporada 10?\tDan Gheesling\n"
+    "134\t3\t\"Si, America Puede!\" fue el eslogan de campana de facto de este politico estadounidense en 2004.\tGeorge W. Bush\n"
+    "135\t3\tDespues de su derrota en la Batalla de Waterloo, a que isla fue exiliado Napoleon Bonaparte?\tSanta Elena\n"
+    "136\t3\tDurante las invasiones mongolas de Japon, que detuvo principalmente los barcos mongoles?\tTifones\n"
+    "137\t3\tGeorge W. Bush perdio el voto popular en la eleccion presidencial de Estados Unidos de 2004.\tFalso\n"
+    "138\t3\tDe que pais era Hong Kong una parte del territorio antes de que Gran Bretana lo recuperara en 1945?\tJapon\n"
+    "139\t3\tComo llamaban los vikingos a su colonia de corta duracion en el Canada actual?\tTierra de Vinedos\n"
+    "140\t3\tCuanto tiempo duro la Segunda Guerra Mundial?\t6 anos\n"
+    "141\t3\tCuanto tiempo duro el Levantamiento de Varsovia durante la Segunda Guerra Mundial?\t63 Dias\n"
+    "142\t3\tCuantos anos tenia Adolf Hitler cuando murio?\tcincuenta y seis\n"
+    "143\t3\tEn que ano ocurrio el Crash de Videojuegos de America del Norte?\t1983\n"
+    "144\t3\tEn que pais se construyo la Estatua de la Libertad y se exporto a los Estados Unidos de America?\tFrancia\n"
+    "145\t3\tEn que dia invadio Alemania a Polonia?\t1 de septiembre de 1939\n"
+    "146\t3\tPianista Frederic Chopin fue compositor de que era musical?\tRomantico\n"
+    "147\t3\tRusia aprobo una ley en 2013 que prohibe decirles a los ninos que los homosexuales existen.\tVerdadero\n"
+    "148\t3\tLa Batalla del Somme en la Primera Guerra Mundial tuvo lugar en que pais?\tFrancia\n"
+    "149\t3\tLa Guerra Fria termino con la muerte de Jose Stalin.\tFalso\n"
+    "150\t3\tLa Casa Fallingwater, ubicada en Pensilvania, fue disenada por que arquitecto?\tFrank Lloyd Wright\n"
+    "151\t3\tQue emperador del Imperio Bizantino encargo la construccion de la Hagia Sophia?\tJustiniano I\n"
+    "152\t3\tEl Spitfire L.F. Mk IX tenia que motor?\tMerlin 66\n"
+    "153\t3\tLas protestas de la Plaza de Tiananmen de 1989 se llevaron a cabo en Hong Kong.\tFalso\n"
+    "154\t3\tEstados Unidos fue miembro de la Liga de las Naciones.\tFalso\n"
+    "155\t3\tDe que nacionalidad era el creador de la Cifra y Maquina Enigma?\tAleman\n"
+    "156\t3\tEl hombre que disparo a Alexander Hamilton se llamaba Aaron Burr.\tVerdadero\n"
+    "157\t3\tTheresa May fue la primera ministra del Reino Unido.\tFalso\n"
+    "158\t3\tEstos dos paises mantuvieron una mancomunidad del siglo XVI al XVIII.\tPolonia y Lituania\n"
+    "159\t3\tA que edad murio el Rey Enrique V?\ttreinta y cinco\n"
+    "160\t3\tQue candidato gano la Eleccion Presidencial de los EE.UU. de 2012?\tBarack Obama\n"
+    "161\t3\tQue dia comenzo la Batalla de Gettysburg?\t1 de julio de 1863\n"
+    "162\t3\tQue dispensaban las primeras maquinas expendedoras a principios de los anos 1880?\tTarjetas postales\n"
+    "163\t3\tQue evento marco el inicio de la Segunda Guerra Mundial?\tInvasion de Polonia (1939)\n"
+    "164\t3\tA que evento historico hacia referencia la Obertura 1812 de Tchaikovsky?\tLas Guerras Napoleonicas\n"
+    "165\t3\tCual es el nombre completo del ex presidente de Estados Unidos Bill Clinton?\tWilliam Jefferson Clinton\n"
+    "166\t3\tCual es el evento mas sangriento en la historia de Estados Unidos, en terminos de bajas?\tBatalla de Antietam\n"
+    "167\t3\tCual es el nombre del famoso lider apache que murio en 1909 a los 70 anos de edad?\tJeronimo\n"
+    "168\t3\tQue numero representa el numeral romano \"D\"?\tquinientos\n"
+    "169\t3\tCual era el nombre real de Gengis Khan?\tTemujin\n"
+    "170\t3\tCual era el nombre de Napoleon Bonaparte antes de cambiarlo?\tNapoleon Bonaparte\n"
+    "171\t3\tCual fue la ultima colonia que el Reino Unido cedio marcando el fin del Imperio Britanico?\tHong Kong\n"
+    "172\t3\tCual fue el nombre del primer asentamiento ingles permanente en America?\tJamestown\n"
+    "173\t3\tCual fue la moneda oficial alemana hasta 2002?\tMarcos\n"
+    "174\t3\tCual era el nombre original de la Ciudad de Nueva York?\tNueva Amsterdam\n"
+    "175\t3\tEn que ano se instituyeron las Reformas Marianas en la Republica Romana?\t107 AEC\n"
+    "176\t3\tCuando Canada se separo de la confederacion para convertirse en su propia nacion?\t1 de julio de 1867\n"
+    "177\t3\tCuando comenzo la Batalla del Somme?\t1 de julio de 1916\n"
+    "178\t3\tCuando concluyo la Gran Guerra Patriotica en la URSS?\t9 de mayo de 1945\n"
+    "179\t3\tDonde nacio Napoleon Bonaparte?\tCorcega\n"
+    "180\t3\tCual fue la ultima mision Apolo del programa Apolo de la NASA?\tApolo 17\n"
+    "181\t3\tCual nacion NO tuvo una colonia en la America del Norte moderna?\tPortugal\n"
+    "182\t3\tCual fue el primer estado estadounidense que permitio a las mujeres votar en 1869?\tWyoming\n"
+    "183\t3\tQue as de tanques de la Segunda Guerra Mundial es acreditado por haber destruido mas tanques?\tKurt Knispel\n"
+    "184\t3\tQue edificio fue incendiado el 24 de agosto de 1812?\tLa Casa Blanca\n"
+    "185\t3\tQue dia comenzo la Primera Guerra Mundial?\t28 de julio\n"
+    "186\t3\tCual dictador mato a mas personas?\tMao Zedong\n"
+    "187\t3\tQue juego fue el Juego del Ano en 2018?\tDios de la Guerra\n"
+    "188\t3\tQuien asesino al presidente James A. Garfield?\tCarlos Guiteau\n"
+    "189\t3\tQuien corono a Carlomagno como Emperador del Sacro Imperio Romano el dia de Navidad en 800?\tPapa Leon III\n"
+    "190\t3\tQuien lidero Francia durante el \"Reinado del Terror\"?\tMaximilien Robespierre\n"
+    "191\t3\tQuien fue el 45o Presidente de los Estados Unidos?\tDonald Trump\n"
+    "192\t3\tQuien fue el Presidente de los Estados Unidos durante la firma de la Compra de Gadsden?\tFranklin Pierce\n"
+    "193\t3\tQuien era el Primer Ministro de Japon cuando Japon declaro la guerra a Estados Unidos?\tHideki Tojo\n"
+    "194\t3\tQuien fue el primer hombre en viajar al espacio exterior?\tYuri Gagarin\n"
+    "195\t3\tQuien fue el primer presidente de Kenia?\tJomo Kenyatta\n"
+    "196\t3\tQuien fue el primer gobernante de Haiti despues de que el pais obtuvo su independencia?\tJean-Jacques Dessalines\n"
+    "197\t3\tQuien fue el lider de Suecia en la Gran Guerra del Norte?\tCarlos XII\n"
+    "198\t3\tCon cual filosofo griego asociarias la frase \"Se que no se nada\"?\tSocrates\n"
+    "199\t4\tSegun la mitologia griega, Atlas era un dios olimpico.\tFalso\n"
+    "200\t4\tEl lugar de nacimiento y muerte de Albrecht Durer fueron en...\tNuremberg\n"
+    "201\t4\tEl Anj es el jeroglifico egipcio para que?\tVida\n"
+    "202\t4\tPor que nombre era mejor conocido el autor Eric Blair?\tGeorge Orwell\n"
+    "203\t4\tPor que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?\tEl Astuto Evasivo\n"
+    "204\t4\tDracula es destruido por el contacto con la luz solar\tFalso\n"
+    "205\t4\tHel era la hija de que figura de la mitologia nordica?\tLoki\n"
+    "206\t4\tHera es la diosa de...\tMatrimonio\n"
+    "207\t4\tEn la mitologia africana, Anansi es un embaucador y narrador que toma la forma de cual animal?\tArana\n"
+    "208\t4\tEn la mitologia griega, quien es el dios del vino?\tDioniso\n"
+    "209\t4\tEn \"El cuento de la criada\" de Margaret Atwood, cual se implica que es el nombre real de Offred?\tJunio\n"
+    "210\t4\tEn Romance of the Three Kingdoms, quien no fue miembro del Juramento del Jardin de Duraznos?\tZhao Yun\n"
+    "211\t4\tEn la mayoria de las tradiciones, quien fue la esposa de Zeus?\tHera\n"
+    "212\t4\tEn la serie de \"Harry Potter\", cual es el nombre completo del Director Dumbledore?\tAlbus Percival Wulfric Brian Dumbledore\n"
+    "213\t4\tEn la mitologia griega, la Gorgona puede convertir en piedra a quienes la miran.\tVerdadero\n"
+    "214\t4\tEn el universo de Magic: The Gathering, en que continente tiene lugar la expansion Fallen Empires?\tSarpadia\n"
+    "215\t4\tEn el universo de Magic: The Gathering, en que plano tiene lugar la expansion Homelands?\tUlgrotha\n"
+    "216\t4\tJano fue el dios romano de las puertas y los pasos.\tVerdadero\n"
+    "217\t4\tLeonardo da Vinci no fue el creador de la Mona Lisa.\tFalso\n"
+    "218\t4\tEl Mona Lisa de Leonardo da Vinci no tiene cejas.\tVerdadero\n"
+    "219\t4\tEl nombre griego de Neptuno fue...\tPoseidon\n"
+    "220\t4\tDe que mitologia es Nidhogg una criatura mitologica?\tNordico\n"
+    "221\t4\tStephen Chbosky escribio el libro \"Las ventajas de ser un marginado\".\tVerdadero\n"
+    "222\t4\tTalos, el hombre de bronce gigante mitologico, fue el protector de que isla?\tCreta\n"
+    "223\t4\tEl dios romano \"Jupiter\" era conocido primero como \"Zeus\" por los griegos.\tVerdadero\n"
+    "224\t4\tEl libro \"El Principito\" fue escrito por...\tAntoine de Saint-Exupery\n"
+    "225\t4\tCon que animal durmio la Reina Pasifae antes de dar a luz al Minotauro en la mitologia griega?\tToro\n"
+    "226\t4\tQue estructura inmensa se menciona en la mitologia nordica como Yggdrasil?\tArbol\n"
+    "227\t4\tCual es el segundo nombre de Ron Weasley?\tBilio\n"
+    "228\t4\tCual es el cuarto libro del Antiguo Testamento?\tNumeros\n"
+    "229\t4\tCual es el nombre del arte japones de doblar papel en formas y figuras decorativas?\tpapiroflexia\n"
+    "230\t4\tCual es el nombre del perro de tres cabezas en Harry Potter y la Piedra Filosofal?\tEsponjoso\n"
+    "231\t4\tCual es el nombre del pueblo en el que estan enterrados Lily y James Potter?\tGodric's Hollow\n"
+    "232\t4\tCual fue la nacionalidad del pintor surrealista Salvador Dali?\tEspanol\n"
+    "233\t4\tQue posicion juega Harry Potter en el Quidditch?\tBuscador\n"
+    "234\t4\tCual fue la primera entrada escrita para el proyecto de escritura colaborativa de la Fundacion SCP?\tSCP-173\n"
+    "235\t4\tCual fue la primera tecnica fotografica exitosa y comercialmente viable?\tEl Daguerrotipo\n"
+    "236\t4\tCual fue la distincion principal entre los estilos gotico ingles y frances de la arquitectura?\tBoveda de abanico\n"
+    "237\t4\tQue punto debil de Aquiles fue explotado por el principe troyano, Paris?\tTalon\n"
+    "238\t4\tEn que ano se termino la Mona Lisa?\t1504\n"
+    "239\t4\tCual es el nombre del papa de Harry Potter?\tJames Potter\n"
+    "240\t4\tQue escultor griego diseno la estatua Atenea Partenon dentro del Partenon?\tFidias\n"
+    "241\t4\tQue movimiento artistico fue que Pablo Picasso es conocido por cofundar?\tCubismo\n"
+    "242\t4\tQue artista es famoso por cortarse la oreja?\tVincent van Gogh\n"
+    "243\t4\tQue libro clasico comienza con la linea \"Llamame Ismael\"?\tMoby Dick\n"
+    "244\t4\tQue personaje clasico de horror mato a Elizabeth Lavenza?\tLa Criatura de Frankenstein\n"
+    "245\t4\tQue libro famoso tiene el subtitulo 'El Prometeo Moderno'?\tFrankenstein\n"
+    "246\t4\tQue famoso novelista de espias escribio el cuento infantil \"Chitty-Chitty-Bang-Bang\"?\tIan Fleming\n"
+    "247\t4\tCual era el condado ingles ficticio que fue el escenario de las novelas de Thomas Hardy?\tSajonia Occidental\n"
+    "248\t4\tCual pintura no fue hecha por Vincent Van Gogh?\tLa Novena Ola\n"
+    "249\t4\tQue indicador de compas es comunmente conocido como \"Compas de corte\"?\t2/2\n"
+    "250\t4\tQuien diseno el logotipo de Chupa Chups?\tSalvador Dali\n"
+    "251\t4\tQuien es el dios egipcio de la reproduccion y la lechuga?\tMin\n"
+    "252\t4\tQuien es el hijo del dios Loki?\tFenrir\n"
+    "253\t4\tQuien es el padre de Icaro, quien volo demasiado cerca del sol?\tDedalo\n"
+    "254\t4\tQuien es el protagonista del libro \"El guardian entre el centeno\" de J.D. Salinger\tHolden Caulfield\n"
+    "255\t4\tQuien pinto \"American Gothic\"?\tGrant Wood\n"
+    "256\t4\tQuien pinto \"Cisnes reflejados en elefantes\", \"Sueno\" y \"La persistencia de la memoria\"?\tSalvador Dali\n"
+    "257\t4\tQuien pinto La Noche Estrellada?\tVincent van Gogh\n"
+    "258\t4\tQuien pinto la Mona Lisa?\tLeonardo da Vinci\n"
+    "259\t4\tQuien pinto la Capilla Sixtina?\tMiguel Angel\n"
+    "260\t4\tQuien fue el Rey de los Dioses en la mitologia griega antigua?\tZeus\n"
+    "261\t4\tQuien era el dios romano del fuego?\tVulcano\n"
+    "262\t4\tQuien escribio \"Harry Potter\"?\tJ.K. Rowling\n"
+    "263\t4\tQuien escribio la novela 'Miedo y asco en Las Vegas'?\tHunter S. Thompson\n"
+    "264\t5\t\"Windows NT\" utiliza un kernel monolitico.\tFalso\n"
+    "265\t5\tUna Mac no es una PC\tFalso\n"
+    "266\t5\tUna persona puede quemarse por el sol en un dia nublado.\tVerdadero\n"
+    "267\t5\tLa sangre de una babosa es verde.\tVerdadero\n"
+    "268\t5\tCompleta la siguiente analogia: Audi es a Volkswagen como Infiniti es a ?\tNissan\n"
+    "269\t5\tLos elefantes son fisicamente incapaces de saltar.\tVerdadero\n"
+    "270\t5\tGanimedes es la luna mas grande de que planeta?\tJupiter\n"
+    "271\t5\tQue componente de una computadora generalmente consume mas energia?\tTarjeta de video\n"
+    "272\t5\tCuantas patas es biologicamente imposible que tenga un ciempies?\tcien\n"
+    "273\t5\tCuantos ceros hay en un gugol?\tcien\n"
+    "274\t5\tEn topologia, el complemento de un conjunto abierto es un conjunto cerrado.\tVerdadero\n"
+    "275\t5\tEn la escala de Scoville, cual es el quimico mas picante?\tResiniferatoxina\n"
+    "276\t5\tEn la tabla periodica, el simbolo del potasio es la letra K.\tVerdadero\n"
+    "277\t5\tPor cual fabricante de automoviles fue propiedad anterior de Jaguar Cars?\tFord\n"
+    "278\t5\tLos canguros guardan comida en sus bolsas junto a sus crias.\tFalso\n"
+    "279\t5\tLas impresoras Laserjet e inkjet son ejemplos de que tipo de impresora?\tImpresora sin impacto\n"
+    "280\t5\tEn Twitter, cual era el limite original de caracteres para un Tweet?\tciento cuarenta\n"
+    "281\t5\tEn que dispositivo de hardware de computadora se encuentra el chip BIOS?\tPlaca madre\n"
+    "282\t5\tEn que mision se desintegro el transbordador espacial Columbia al reentrar?\tSTS-107\n"
+    "283\t5\tEl acero es una aleacion de hierro y carbono.\tVerdadero\n"
+    "284\t5\tEl lenguaje de programacion C fue creado por este cientifico informatico estadounidense.\tDennis Ritchie\n"
+    "285\t5\tQue bus adicional agrego la arquitectura Harvard para microcontroladores?\tInstruccion\n"
+    "286\t5\tEl Sol se considera una estrella.\tVerdadero\n"
+    "287\t5\tEl smartphone T-Mobile Sidekick es una version rebautizada del Danger Hiptop.\tVerdadero\n"
+    "288\t5\tEl sistema operativo Windows 7 tiene seis ediciones principales.\tVerdadero\n"
+    "289\t5\tEl acronimo comun de programacion de software \"I18N\" proviene del termino \"Interlocalization\".\tFalso\n"
+    "290\t5\tEl numero decimal 31 en hexadecimal seria que?\t1F\n"
+    "291\t5\tEl plato Fugu, esta hecho de que familia de peces?\tPez globo\n"
+    "292\t5\tEl equidna es un monotrema.\tVerdadero\n"
+    "293\t5\tEl primer CPU de nucleo dual fue el Intel Pentium D.\tFalso\n"
+    "294\t5\tCuantas camaras tiene el corazon humano?\tCuatro\n"
+    "295\t5\tQue fabricante de automoviles cedio su patente del cinturon de seguridad en aras de salvar vidas?\tVolvo\n"
+    "296\t5\tQue organulo celular es conocido como \"la central electrica de la celula\"?\tMitocondria\n"
+    "297\t5\tEn que pais se fabrico el Trabant 601?\tAlemania Oriental\n"
+    "298\t5\tQue significa \"hippopotamus\" y en que idioma?\tCaballo de rio (griego)\n"
+    "299\t5\tQue palabra de cinco letras es el lema de la compania IBM Computer?\tPensar\n"
+    "300\t5\tQue protocolo de internet fue documentado en RFC 1459?\tIRC\n"
+    "301\t5\tEn que se mide la radiacion?\tGris\n"
+    "302\t5\tCual es la \"central energetica\" de la celula animal eucariota?\tMitocondria\n"
+    "303\t5\tCual es el area de un circulo con un diametro de 20 pulgadas si  = 3.1415?\t314.15 Pulgadas\n"
+    "304\t5\tCual es la esperanza de vida promedio de un conejo domestico?\t8-12 anos\n"
+    "305\t5\tCual es la derivada de la aceleracion con respecto al tiempo?\tImbecil\n"
+    "306\t5\tCual es el primer exponente de numero primo de Mersenne mayor a 1000?\tmil doscientos setenta y nueve\n"
+    "307\t5\tCual es el cuarto digito de ?\tuno\n"
+    "308\t5\tCual es el planeta mas caliente del Sistema Solar?\tVenus\n"
+    "309\t5\tCual es la formula matematica de la ley de Ohm?\tV = I*R\n"
+    "310\t5\tCual es el nombre dado a la capa 4 del modelo de Interconexion de Sistemas Abiertos (ISO)?\tTransporte\n"
+    "311\t5\tCual es el nombre del tema predeterminado que viene instalado con Windows XP?\tLuna\n"
+    "312\t5\tCual es el unico Problema del Premio del Milenio que ha sido resuelto hasta ahora?\tConjetura de Poincare\n"
+    "313\t5\tCual es la central energetica de la celula?\tMitocondria\n"
+    "314\t5\tCual es la velocidad de la luz en el vacio?\t299.792.458 m/s\n"
+    "315\t5\tA que subordenamiento cientifico pertenece la familia Hyaenidae?\tFeliformia\n"
+    "316\t5\tQue tipo de criatura es un Bonobo?\tSimio\n"
+    "317\t5\tCual era el nombre del lobo etiope antes de que descubrieran que estaba relacionado con los lobos?\tChacal de Simien\n"
+    "318\t5\tCual es la raiz cuadrada de 49?\tsiete\n"
+    "319\t5\tQue tecnologia de distribucion variable de valvulas utiliza BMW?\tVAIN\n"
+    "320\t5\tQue fabricante de neumaticos para automoviles es famoso por su linea \"P Zero\"?\tPirelli\n"
+    "321\t5\tA que clase de animales pertenecen los tritones?\tAnfibio\n"
+    "322\t5\tQue empresa de Internet comenzo como una libreria en linea llamada 'Cadabra'?\tAmazonas\n"
+    "323\t5\tCual es el hueso mas largo del cuerpo humano?\tFemur\n"
+    "324\t5\tQue planeta envio imagenes de la superficie la sonda espacial \"Viking 1\", comenzando en 1976?\tMarte\n"
+    "325\t5\tQuien es el autor original del motor de fisica en tiempo real llamado PhysX?\tNovodeX\n"
+    "326\t5\tQuien patento un motor de vapor que producia movimiento rotatorio continuo?\tJames Watt\n"
+    "327\t6\t\"Stadium of Light\" es el estadio de cual equipo de futbol?\tSunderland FC\n"
+    "328\t6\tEn que puente comienza la regata anual Oxford y Cambridge?\tPutney\n"
+    "329\t6\tEdson Arantes do Nascimento es el nombre completo de que legendario jugador de futbol?\tPele\n"
+    "330\t6\tEtihad Stadium es el estadio de casa de cual equipo?\tManchester City\n"
+    "331\t6\tEn que provincia canadiense nacio el jugador de hockey Wayne Gretzky?\tOntario\n"
+    "332\t6\tCuantas veces gano Bjorn Borg el Abierto de Francia?\t6\n"
+    "333\t6\tEn el futbol canadiense, cuantos puntos vale anotar un rouge?\tuno\n"
+    "334\t6\tEn la Liga de Rugby, realizar un \"40-20\" es castigado con un tiro libre para el equipo contrario.\tFalso\n"
+    "335\t6\tEn un juego de snooker, de que color es la bola que vale 3 puntos?\tVerde\n"
+    "336\t6\tEn el boliche, cual es el termino usado para obtener tres golpes consecutivos?\tPavo\n"
+    "337\t6\tEn golf, que nombre se le da a una puntuacion de dos bajo par en un hoyo?\tAguila\n"
+    "338\t6\tEn que pais se celebraron los Juegos Olimpicos de Invierno de 2014 en la ciudad de Sochi?\tRusia\n"
+    "339\t6\tEn que deporte se usa un \"volante\"?\tBadminton\n"
+    "340\t6\tAntes de 2018, cual es la unica empresa automovilistica japonesa que gano las 24 Horas de Le Mans?\tMazda\n"
+    "341\t6\tRoger Federer es un famoso jugador de futbol.\tFalso\n"
+    "342\t6\tShaquille O'Neal solo ha hecho un triple en su carrera.\tVerdadero\n"
+    "343\t6\tEl jugador de futbol Cristiano Ronaldo abrio un museo dedicado a si mismo.\tVerdadero\n"
+    "344\t6\tCual es el nombre del equipo afiliado de la AHL de los Boston Bruins?\tBruins de Providence\n"
+    "345\t6\tLa temporada de F1 de 1994 se recuerda por que evento tragico?\tMuerte de Ayrton Senna (San Marino)\n"
+    "346\t6\tDe que ciudad estadounidense eran originalmente los Dodgers de Los Angeles?\tBrooklyn\n"
+    "347\t6\tEn que ano el Mazda 787B gano las 24 Horas de Le Mans?\t1991\n"
+    "348\t6\tLa cancha de tenis de los Juegos Olimpicos es una pantalla verde gigante.\tVerdadero\n"
+    "349\t6\tLa cancion \"Three Lions\" de Lightning Seeds fue hecha para que evento de futbol importante en 1996?\tCampeonatos Europeos\n"
+    "350\t6\tEn total hay 20 carreras en la temporada de Formula Uno 2016.\tFalso\n"
+    "351\t6\tQue pais fue anfitrion de los Juegos Olimpicos de Invierno de 2014?\tRusia\n"
+    "352\t6\tCual es la puntuacion de golf mas baja en la carrera de Tiger Woods?\tsesenta y uno\n"
+    "353\t6\tCual es el nombre completo del futbolista \"Cristiano Ronaldo\"?\tCristiano Ronaldo dos Santos Aveiro\n"
+    "354\t6\tCual es el tipo de lanzamiento mas comun que lanzan los lanzadores en el beisbol?\tBola rapida\n"
+    "355\t6\tCual es el nombre del estadio de casa del Manchester United?\tOld Trafford\n"
+    "356\t6\tCual es \"El Deporte de Reyes\"?\tCarreras de Caballos\n"
+    "357\t6\tQue seleccion nacional gano la primera UEFA Nations League?\tPortugal\n"
+    "358\t6\tA que equipo vencio Inglaterra en la semifinal para ganar la final de la Copa Mundial de 1966?\tPortugal\n"
+    "359\t6\tA que equipo vencio Inglaterra para ganar la final de la Copa Mundial de 1966?\tAlemania Occidental\n"
+    "360\t6\tCual fue el promedio de bateo de Sir Donald Bradman en partidos de prueba?\t99,94\n"
+    "361\t6\tEn que ano se fundo el Bari Football Club italiano?\t1908\n"
+    "362\t6\tCuando se jugo el primer partido internacional oficial?\t1872\n"
+    "363\t6\tQue afroamericano es en parte responsable de integrar las Grandes Ligas de Beisbol?\tJackie Robinson\n"
+    "364\t6\tQue club de futbol ingles tiene el apodo 'The Foxes'?\tLeicester City\n"
+    "365\t6\tQue piloto de Formula 1 cambio de equipo a mitad de la temporada 2017?\tCarlos Sainz Jr.\n"
+    "366\t6\tQue piloto de Formula Uno fue apodado 'El Profesor'?\tAlain Prost\n"
+    "367\t6\tQue boxeador fue prohibido por morder la oreja de Evander Holyfield en 1997?\tMike Tyson\n"
+    "368\t6\tQue fabricante de automoviles gano las 24 Horas de Le Mans 2016?\tPorsche\n"
+    "369\t6\tQue pais fue anfitrion de la Copa Mundial de la FIFA 2018?\tRusia\n"
+    "370\t6\tQue pais fue anfitrion de los Juegos Olimpicos de Verano de 2020?\tJapon\n"
+    "371\t6\tQue pais gano la Copa Mundial de la FIFA 2018 realizada en Rusia?\tFrancia\n"
+    "372\t6\tQue jugador de dardos ha ganado mas titulos de Campeonato Mundial?\tPhil Taylor\n"
+    "373\t6\tQue piloto ha sido campeon mundial de Formula 1 un record de 7 veces?\tMichael Schumacher\n"
+    "374\t6\tCual es el record personal de Kenenisa Bekele en maraton?\t2:01:41\n"
+    "375\t6\tQue nacion fue anfitriona de la Copa Mundial de la FIFA en 2006?\tAlemania\n"
+    "376\t6\tQue jugador le propino una \"patada de kung-fu\" a un aficionado del Crystal Palace en enero de 1995?\tEric Cantona\n"
+    "377\t6\tDe cual isla portuguesa es el futbolista Cristiano Ronaldo?\tMadera\n"
+    "378\t6\tQue equipo de futbol gano el Campeonato de la Copa America 2015?\tChile\n"
+    "379\t6\tQue equipo gano la Copa Mundial de la FIFA 2014 en Brasil?\tAlemania\n"
+    "380\t6\tEn que ano gano Jenson Button su primer Campeonato Mundial de Pilotos de Formula Uno?\t2009\n"
+    "381\t6\tCon que equipo gano Steven Gerrard la Liga de Campeones?\tLiverpool\n"
+    "382\t6\tQuien ha jugado la mayoria de los torneos en la seleccion nacional de futbol de Brasil?\tCafu\n"
+    "383\t6\tQuien fue el maximo goleador del Mundial de la FIFA 2014?\tJames Rodriguez\n"
+    "384\t6\tQuien fue el maximo goleador de la seleccion nacional de futbol de Inglaterra?\tWayne Rooney\n"
+    "385\t6\tQuien gano el Gran Premio de San Marino de 1994, la carrera en la que Ayrton Senna fue asesinado?\tMichael Schumacher\n"
+    "386\t6\tQuien gano la Daytona 500 de 1998?\tDale Earnhardt\n"
+    "387\t6\tQuien gano el Campeonato Mundial de Pilotos de Formula 1 de 2016?\tNico Rosberg\n"
+    "388\t6\tQuien gano el Campeonato Mundial de Pilotos de Formula Uno de 2017?\tLewis Hamilton\n"
+    "389\t6\tQuien gano el Gran Premio de Monaco de 2018?\tDaniel Ricciardo\n"
+    "390\t6\tQuien gano la UEFA Champions League en 2016?\tReal Madrid Club de Futbol\n"
+    "391\t6\tQuien gano la Liga de Campeones de la UEFA en 2017?\tReal Madrid Club de Futbol\n"
+    "392\t7\t\"Nephelococcygia\" es la practica de hacer que?\tEncontrar formas en las nubes\n"
+    "393\t7\t\"Santa Claus\" es una variedad de melon.\tVerdadero\n"
+    "394\t7\tUn pasodoble es un tipo de salsa de pasta italiana.\tFalso\n"
+    "395\t7\tAlbert Einstein tuvo dificultades con las matematicas cuando estaba en la escuela.\tFalso\n"
+    "396\t7\tEn que deporte fueron famosos los hermanos Bob y Mike Bryan?\tTenis\n"
+    "397\t7\tDe cual pais europeo se origino la ensalada de col?\tPaises Bajos\n"
+    "398\t7\tDe Eemhof, Port Zelande y Het Heijderbos son casas de vacaciones propiedad de que empresa?\tCenter Parcs\n"
+    "399\t7\tEcuador utiliza el Peso Mexicano como su moneda.\tFalso\n"
+    "400\t7\tLas cadenas de comida rapida Carl's Jr. y Hardee's son propiedad de la misma empresa.\tVerdadero\n"
+    "401\t7\tEl foie gras es un manjar frances tipicamente hecho del higado de un pato o ganso.\tHigado\n"
+    "402\t7\tHaggis se come tradicionalmente en la Noche de Burns.\tVerdadero\n"
+    "403\t7\tCuantos colores hay en un arcoiris?\tsiete\n"
+    "404\t7\tCuantas letras hay en el alfabeto ingles?\tveintiseis\n"
+    "405\t7\tCual es la altura del Burj Khalifa?\t2.722 pies\n"
+    "406\t7\tSi alguien dijera \"eres maloliente\", que querria decir?\tHueles extremadamente desagradable.\n"
+    "407\t7\tSi te atrapan \"Goldbricking\", que estas haciendo mal?\tHolgazaneria\n"
+    "408\t7\tSi plantaras las semillas de Quercus robur, que creceria?\tArboles\n"
+    "409\t7\tCuanto dinero se perdio por estafas nigerianas en 2013?\t$12.7 mil millones\n"
+    "410\t7\tCuantos meses comienzan con la letra 'J' en un calendario gregoriano estandar?\tTres\n"
+    "411\t7\tEn el idioma ingles, cual es el nombre del caracter \"&\"?\tSimbolo de ampersand\n"
+    "412\t7\tEn que ano Canada dejo de producir el centavo?\t2012\n"
+    "413\t7\tKraft \"Cheez Whiz\" contiene cultivo de queso, pero en realidad no contiene queso\tVerdadero\n"
+    "414\t7\tNombrada en honor a la flor de malva, el malva es un tono de que?\tPurpura\n"
+    "415\t7\tSolo el 9% de los hogares estadounidenses poseian un televisor en\t1950\n"
+    "416\t7\tPluton es un planeta.\tFalso\n"
+    "417\t7\tRed Vines es una marca de que tipo de caramelo?\tRegaliz\n"
+    "418\t7\tTerry Gilliam fue un animador que trabajo con que grupo comico britanico?\tMonty Python\n"
+    "419\t7\tLa palabra francesa para viajar es \"Travail\"\tFalso\n"
+    "420\t7\tLa Carita Feliz fue creada por el artista comercial Harvey Ball.\tVerdadero\n"
+    "421\t7\tQue tipo de cerveza es la cerveza mexicana \"Corona\"?\tCerveza Lager Palida\n"
+    "422\t7\tEl metro de Nueva York es el mas antiguo del mundo.\tFalso\n"
+    "423\t7\tLos Jack-o-Lanterns originales eran en realidad nabos vaciados.\tVerdadero\n"
+    "424\t7\tLa mitocondria es la central energetica de la celula.\tVerdadero\n"
+    "425\t7\tLa palabra \"docena\" generalmente se refiere a un grupo de cuantos objetos?\tDoce\n"
+    "426\t7\tLas palabras \"bungalow\" y \"shampoo\" originan de los idiomas de que pais?\tIndia\n"
+    "427\t7\tEste campo a veces se conoce como \"La Ciencia Lugubre.\"\tEconomia\n"
+    "428\t7\tA que familia linguistica pertenece el kazajo?\tTurquico\n"
+    "429\t7\tQue bebida alcoholica se hace a partir de melaza?\tRon\n"
+    "430\t7\tComo llaman los marineros a la parte delantera de un barco?\tArco\n"
+    "431\t7\tComo llaman los marineros al lado derecho de un barco?\tEstribor\n"
+    "432\t7\tQue cadena de comida rapida tiene la mayoria de ubicaciones a nivel mundial?\tMetro\n"
+    "433\t7\tCual es la fobia del miedo a los perros?\tPerros\n"
+    "434\t7\tQue es H2O?\tAgua\n"
+    "435\t7\tQue es Tasmania?\tUn Estado australiano\n"
+    "436\t7\tQue se exhibe en el museo de Madame Tussauds en Londres?\tEsculturas de cera\n"
+    "437\t7\tCual es la palabra portuguesa para \"Brasil\"?\tBrasil\n"
+    "438\t7\tCual es el apellido del famoso Papa John?\tSchnatter\n"
+    "439\t7\tCual es el organo mas grande del cuerpo humano?\tPiel\n"
+    "440\t7\tCual es la letra mas frecuentemente utilizada en el alfabeto ingles?\tE\n"
+    "441\t7\tCual es el nombre del Ano Nuevo judio?\tRosh Hashana\n"
+    "442\t7\tCual es el apodo del estado estadounidense de California?\tEstado Dorado\n"
+    "443\t7\tCual es la palabra japonesa romanizada para \"universidad\"?\tDaigaku\n"
+    "444\t7\tCual es la forma del juguete inventado por el profesor hungaro Erno Rubik?\tCubo\n"
+    "445\t7\tQue elemento de maquina se encuentra en el centro de los fidget spinners?\tRodamientos\n"
+    "446\t7\tQue nacion produce aproximadamente el 40% de la vainilla del mundo?\tMadagascar\n"
+    "447\t7\tCuando alguien tiene \"envidia\", se dice que es de que color?\tVerde\n"
+    "448\t7\tCuando alguien es cobarde, se dice que tiene el vientre de que color?\tAmarillo\n"
+    "449\t7\tCuando lloras en el espacio, tus lagrimas se adhieren a tu cara.\tVerdadero\n"
+    "450\t7\tDonde en La Coruna (Espana) esta la sede de \"Inditex\", el mayor grupo de moda del mundo?\tArteijo\n"
+    "451\t7\tQue pais tiene la Union Jack en su bandera?\tNueva Zelanda\n"
+    "452\t7\tCual es el idioma hablado mas popular en el Hemisferio Sur?\tPortugues\n"
+    "453\t7\tQue montana tiene el pico mas alto de Australia?\tMonte Kosciuszko, Nueva Gales del Sur\n"
+    "454\t7\tQue eslogan utilizo la empresa de comida rapida McDonald's antes de su eslogan \"I'm Lovin' It\"?\tNos Encanta Verte Sonreir\n"
+    "455\t7\tCual es el tipo de cubierto mas adecuado para comer sopa?\tCuchara\n"
+    "456\t7\tQuien interpreto al General Aladeen en The Dictator?\tSacha Baron Cohen\n"
+    "457\t7\tXantofobia es el miedo a que color?\tAmarillo\n";
 const size_t trivia_es_tsv_len = sizeof(trivia_es_tsv) - 1u;
