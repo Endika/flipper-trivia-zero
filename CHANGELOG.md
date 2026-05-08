@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.10...v0.1.11) (2026-05-08)
+
+
+### Features
+
+* **pack:** drop questions with multiple-choice phrasing ([e5843b2](https://github.com/Endika/flipper-trivia-zero/commit/e5843b2463e8a064f0de05321d2eb8aa203a4360))
+
 ## [0.1.10](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.9...v0.1.10) (2026-05-07)
 
 
