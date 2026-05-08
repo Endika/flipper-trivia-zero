@@ -79,6 +79,54 @@ def test_pipeline_respects_limit(tmp_path: Path) -> None:
     assert len((out_dir / "trivia_en.tsv").read_text(encoding="utf-8").splitlines()) == 10
 
 
+def test_pipeline_drops_multiple_choice_phrasing(tmp_path: Path) -> None:
+    # OpenTDB items whose phrasing assumes the original 4-option list
+    # ("Which of the following...", "All of the above") must be dropped:
+    # without the choices they're unanswerable. Regression: 60 such items
+    # leaked into the shipped pack before this filter existed.
+    blacklist_path = tmp_path / "bl.txt"
+    blacklist_path.write_text("", encoding="utf-8")
+
+    fake = _FakeOpenTdb(
+        by_lang={
+            Lang.EN: [
+                RawQuestion(Lang.EN, "Geography", "Capital of Spain?", "Madrid"),
+                RawQuestion(
+                    Lang.EN,
+                    "Geography",
+                    "Which of the following countries is an island?",
+                    "Cyprus",
+                ),
+                RawQuestion(
+                    Lang.EN,
+                    "Geography",
+                    "Which of these countries borders Poland?",
+                    "Lithuania",
+                ),
+                RawQuestion(
+                    Lang.EN,
+                    "Entertainment: Music",
+                    "Which song did Hendrix cover?",
+                    "All of the above",
+                ),
+            ],
+        }
+    )
+    translator = StubTranslator(cache_path=tmp_path / "cache" / "translations.json")
+    out_dir = tmp_path / "out"
+
+    run_pipeline(
+        opentdb=fake,
+        translator=translator,
+        blacklist_path=blacklist_path,
+        out_dir=out_dir,
+    )
+
+    en_lines = (out_dir / "trivia_en.tsv").read_text(encoding="utf-8").splitlines()
+    assert len(en_lines) == 1
+    assert "Capital of Spain?" in en_lines[0]
+
+
 def test_pipeline_drops_questions_whose_translation_overflows(tmp_path: Path) -> None:
     # The pre-translation filter only sees the EN side. The StubTranslator
     # prefixes "[es] " (5 chars), so an EN question that fits at the boundary

@@ -10,6 +10,7 @@ from typing import Protocol
 
 from trivia_pack.blacklist import Blacklist
 from trivia_pack.category_map import is_skipped, map_opentdb_to_bucket
+from trivia_pack.mc_phrasing import is_multiple_choice_phrasing
 from trivia_pack.models import BilingualQuestion, Lang, MappedQuestion, RawQuestion
 from trivia_pack.pack_writer import write_embedded_pack, write_pack
 from trivia_pack.translate import Translator
@@ -43,6 +44,8 @@ def _filter_and_map(
         if len(q.question) > _MAX_QUESTION_LEN or len(q.answer) > _MAX_ANSWER_LEN:
             continue
         if is_skipped(q.opentdb_category):
+            continue
+        if is_multiple_choice_phrasing(q.question, q.answer):
             continue
         if blacklist.is_blacklisted(q.question, q.answer):
             continue
