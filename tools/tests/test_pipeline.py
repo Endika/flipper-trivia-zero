@@ -136,11 +136,11 @@ def test_pipeline_drops_questions_whose_translation_overflows(tmp_path: Path) ->
     blacklist_path.write_text("", encoding="utf-8")
 
     short_q = "Capital of Spain?"  # well under the limit, must survive
-    # 96 EN chars: passes pre-filter (<=100), but with "[es] " becomes 101 → drop.
-    long_q = "Q" + "a" * 95
-    assert len(long_q) == 96
-    assert len(long_q) <= 100  # pre-filter passes
-    assert len(f"[es] {long_q}") > 100  # post-filter must reject
+    # 91 EN chars: passes pre-filter (<=95), but with "[es] " becomes 96 → drop.
+    long_q = "Q" + "a" * 90
+    assert len(long_q) == 91
+    assert len(long_q) <= 95  # pre-filter passes
+    assert len(f"[es] {long_q}") > 95  # post-filter must reject
 
     fake = _FakeOpenTdb(
         by_lang={

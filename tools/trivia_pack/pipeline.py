@@ -15,7 +15,7 @@ from trivia_pack.models import BilingualQuestion, Lang, MappedQuestion, RawQuest
 from trivia_pack.pack_writer import write_embedded_pack, write_pack
 from trivia_pack.translate import Translator
 
-_MAX_QUESTION_LEN = 100
+_MAX_QUESTION_LEN = 95
 _MAX_ANSWER_LEN = 40
 _BUCKET_COUNT = 7
 
@@ -197,6 +197,15 @@ def _build_bilingual(
             or len(question_en) > _MAX_QUESTION_LEN
             or len(answer_es) > _MAX_ANSWER_LEN
             or len(answer_en) > _MAX_ANSWER_LEN
+        ):
+            post_filtered += 1
+            continue
+
+        # Post-translation MC-phrasing guard: translations occasionally
+        # introduce "cual de los siguientes..." phrasing on the ES side
+        # that wasn't present in the EN source.
+        if is_multiple_choice_phrasing(question_es, answer_es) or is_multiple_choice_phrasing(
+            question_en, answer_en
         ):
             post_filtered += 1
             continue
