@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.11...v0.1.12) (2026-05-09)
+
+
+### Features
+
+* **pack:** curate multiple questions ([141de20](https://github.com/Endika/flipper-trivia-zero/commit/141de20890e89aa2df378e9a76caeaf6ceb94cbe))
+* **pack:** curate questions ([00f97be](https://github.com/Endika/flipper-trivia-zero/commit/00f97bebd8e02afe9204f0b35558e6b6d0c4d9e3))
+
 ## [0.1.11](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.10...v0.1.11) (2026-05-08)
 
 
