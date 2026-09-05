@@ -7,7 +7,7 @@ FLIPPER_FIRMWARE_PATH ?= /home/endika/flipperzero-firmware
 PWD = $(shell pwd)
 
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c11 -I.
+CFLAGS = -Wall -Wextra -Werror -std=c11 -I.
 
 .PHONY: all help test test_version test_category test_anti_repeat test_history_buffer test_question_pool test_strings test_settings_storage test_pack_reader test_pack_integration test_question_view_layout prepare fap clean clean_firmware format linter pack py-install py-test py-lint py-format py-typecheck
 
@@ -38,7 +38,7 @@ format:
 	clang-format -i $(FORMAT_FILES)
 
 linter:
-	cppcheck --enable=all --inline-suppr -I. \
+	cppcheck --enable=all --inline-suppr --error-exitcode=1 -I. \
 		--suppress=missingIncludeSystem \
 		--suppress=unusedFunction:main.c \
 		--suppress=unusedFunction:src/platform/random_port.c \
