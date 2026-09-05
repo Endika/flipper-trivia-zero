@@ -50,5 +50,17 @@ int main(void) {
     assert(pack_idx_offset_at(idx_blob, sizeof(idx_blob), 3u, 2u, &off) && off == 160u);
     assert(pack_idx_offset_at(idx_blob, sizeof(idx_blob), 3u, 3u, &off) == false);
 
+    /* Embedded-pack runtime, against the host stub (a valid, empty pack). */
+    assert(pack_open(LangEs) == true);
+    assert(pack_count() == 0u);
+    assert(pack_get_by_id(0u, &q) == false);
+    pack_close();
+    assert(pack_count() == 0u);
+    assert(pack_get_by_id(0u, &q) == false);
+
+    assert(pack_open(LangEn) == true);
+    assert(pack_count() == 0u);
+    pack_close();
+
     return 0;
 }

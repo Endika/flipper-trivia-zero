@@ -38,11 +38,10 @@ format:
 	clang-format -i $(FORMAT_FILES)
 
 linter:
-	cppcheck --enable=all --inline-suppr --error-exitcode=1 -I. \
+	cppcheck --enable=all --check-level=exhaustive --inline-suppr --error-exitcode=1 -I. \
 		--suppress=missingIncludeSystem \
 		--suppress=unusedFunction:main.c \
 		--suppress=unusedFunction:src/platform/random_port.c \
-		--suppress=unusedFunction:src/infrastructure/pack_reader.c \
 		src/app/trivia_zero_app.c src/domain/category.c src/domain/anti_repeat.c src/domain/history_buffer.c src/domain/question_pool.c src/i18n/strings.c src/infrastructure/settings_storage.c src/infrastructure/pack_reader.c src/platform/random_port.c src/ui/question_view.c main.c \
 		tests/test_version.c tests/test_category.c tests/test_anti_repeat.c tests/test_history_buffer.c tests/test_question_pool.c tests/test_strings.c tests/test_settings_storage.c tests/test_pack_reader.c tests/test_pack_integration.c tests/test_question_view_layout.c tests/embedded_pack_stub.c
 
