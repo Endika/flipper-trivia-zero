@@ -1,7 +1,7 @@
-# Host unit tests (make test)
+# Host unit tests (make test) — the Makefile builds ten of these binaries at the root
 *.o
 tests/*.o
-test_version
+/test_*
 
 # ufbt / GitHub Actions release build
 dist/

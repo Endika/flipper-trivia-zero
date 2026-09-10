@@ -6,9 +6,7 @@ Off-Flipper Python tooling that builds the question packs the FAP consumes.
 
 ```
 cd tools
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements-dev.txt
+uv sync --all-groups
 ```
 
 ## Build the pack

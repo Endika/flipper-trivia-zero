@@ -20,7 +20,7 @@ help:
 	@echo "  make fap            - Clean firmware build + compile .fap"
 	@echo "  make format         - clang-format"
 	@echo "  make linter         - cppcheck"
-	@echo "  make py-install     - pip install Python pipeline deps (in tools/.venv)"
+	@echo "  make py-install     - uv sync the Python pipeline deps (in tools/.venv)"
 	@echo "  make py-test        - pytest the Python pipeline"
 	@echo "  make py-lint        - ruff check the Python pipeline"
 	@echo "  make py-format      - ruff format the Python pipeline"
@@ -166,29 +166,22 @@ fap: pack prepare clean_firmware clean
 clean:
 	rm -f *.o tests/*.o test_version test_category test_anti_repeat test_history_buffer test_question_pool test_strings test_settings_storage test_pack_reader test_pack_integration test_question_view_layout
 
-PY_VENV = tools/.venv
-PY = $(PY_VENV)/bin/python
-PIP = $(PY_VENV)/bin/pip
+UV = cd tools && uv run
 
-$(PY_VENV)/bin/activate: tools/requirements-dev.txt
-	python3 -m venv $(PY_VENV)
-	$(PIP) install --upgrade pip
-	$(PIP) install -r tools/requirements-dev.txt
-	@touch $(PY_VENV)/bin/activate
-
-py-install: $(PY_VENV)/bin/activate
+py-install:
+	cd tools && uv sync --all-groups
 
 py-test: py-install
-	cd tools && ../$(PY) -m pytest
+	$(UV) pytest
 
 py-lint: py-install
-	cd tools && ../$(PY) -m ruff check .
+	$(UV) ruff check .
 
 py-format: py-install
-	cd tools && ../$(PY) -m ruff format .
+	$(UV) ruff format .
 
 py-typecheck: py-install
-	cd tools && ../$(PY) -m mypy --strict trivia_pack
+	$(UV) mypy --strict trivia_pack
 
 pack: py-install
-	cd tools && ../$(PY) build_pack.py
+	$(UV) python build_pack.py
