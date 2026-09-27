@@ -332,7 +332,7 @@ const char trivia_es_tsv[] =
     "205\t4\tEl lugar de nacimiento y muerte de Albrecht Durer fueron en...\tNuremberg\n"
     "206\t4\tEl Anj es el jeroglifico egipcio para que?\tVida\n"
     "207\t4\tPor que nombre era mejor conocido el autor Eric Blair?\tGeorge Orwell\n"
-    "208\t4\tPor que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?\tEl Astuto Evasivo\n"
+    "208\t4\tPor que apodo se conoce a Jack Dawkins en la novela de Charles Dickens, 'Oliver Twist'?\tThe Artful Dodger\n"
     "209\t4\tDracula es destruido por el contacto con la luz solar\tFalso\n"
     "210\t4\tHel era la hija de que figura de la mitologia nordica?\tLoki\n"
     "211\t4\tHera es la diosa de...\tMatrimonio\n"
