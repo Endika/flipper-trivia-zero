@@ -29,7 +29,7 @@ help:
 	@echo "  make py-lint        - ruff check the Python pipeline"
 	@echo "  make py-format      - ruff format the Python pipeline"
 	@echo "  make py-typecheck   - mypy --strict the Python pipeline"
-	@echo "  make pack           - build data/trivia_{es,en}.{tsv,idx}"
+	@echo "  make pack           - rerun the pipeline (only TZ_TRANSLATOR=anthropic rewrites the committed pack)"
 	@echo "  make clean          - Remove local objects"
 	@echo "  make clean_firmware - rm firmware build dir"
 
@@ -162,7 +162,7 @@ clean_firmware:
 		rm -rf $(FLIPPER_FIRMWARE_PATH)/build; \
 	fi
 
-fap: pack prepare clean_firmware clean
+fap: prepare clean_firmware clean
 	@if [ -d "$(FLIPPER_FIRMWARE_PATH)" ]; then \
 		cd $(FLIPPER_FIRMWARE_PATH) && ./fbt fap_$(FAP_APPID); \
 	fi
