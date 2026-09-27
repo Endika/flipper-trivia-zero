@@ -185,6 +185,22 @@ def test_only_ascii_bytes_emitted(tmp_path: Path) -> None:
     assert all(b < 0x80 for b in raw), f"non-ASCII bytes found: {raw!r}"
 
 
+def test_pi_and_omicron_survive_as_ascii(tmp_path: Path) -> None:
+    omicron = "Omicron (\u03bf)"
+    qs = [BilingualQuestion(5, "Cuarto digito de π?", omicron, "Fourth digit of π?", omicron)]
+    write_pack(qs, out_dir=tmp_path)
+    en = (tmp_path / "trivia_en.tsv").read_text(encoding="utf-8")
+
+    assert "Fourth digit of pi?" in en
+    assert "Omicron (o)" in en
+
+
+def test_a_character_with_no_ascii_form_stops_the_build(tmp_path: Path) -> None:
+    qs = [BilingualQuestion(5, "Cuanto vale Ω?", "1", "What is Ω?", "1")]
+    with pytest.raises(ValueError, match="U\\+03A9"):
+        write_pack(qs, out_dir=tmp_path)
+
+
 def test_write_embedded_pack_validates_bucket_id(tmp_path: Path) -> None:
     with pytest.raises(ValueError):
         write_embedded_pack(
