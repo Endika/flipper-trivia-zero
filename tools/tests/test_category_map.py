@@ -86,7 +86,7 @@ def test_skipped_categories_raise_on_map() -> None:
 
 
 def test_full_table_covers_all_24_opentdb_categories() -> None:
-    # Spec §4.4: 24 OpenTDB categories must each be either mapped or skipped.
+    # All 24 OpenTDB categories must each be either mapped or skipped.
     expected = {
         "General Knowledge",
         "Entertainment: Books",
