@@ -40,6 +40,8 @@ _NON_DECOMPOSABLE_REPLACEMENTS = {
     "»": '"',
     "¿": "",
     "¡": "",
+    "π": "pi",
+    "\u03bf": "o",  # Greek omicron, not a Latin o
 }
 
 
@@ -54,8 +56,17 @@ def _to_ascii(s: str) -> str:
     """
     for src, dst in _NON_DECOMPOSABLE_REPLACEMENTS.items():
         s = s.replace(src, dst)
-    decomposed = unicodedata.normalize("NFKD", s)
-    return decomposed.encode("ascii", errors="ignore").decode("ascii")
+    kept = []
+    for ch in unicodedata.normalize("NFKD", s):
+        if ch.isascii():
+            kept.append(ch)
+        elif not unicodedata.combining(ch):
+            # Dropping it silently shipped "What is the fourth digit of ?" once π went missing.
+            raise ValueError(
+                f"no ASCII form for {ch!r} (U+{ord(ch):04X}) in {s!r};"
+                " add it to _NON_DECOMPOSABLE_REPLACEMENTS"
+            )
+    return "".join(kept)
 
 
 def _sanitize(field: str) -> str:
