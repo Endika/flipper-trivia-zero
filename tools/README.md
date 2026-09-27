@@ -23,12 +23,16 @@ This pulls Open Trivia DB (cached locally), applies the blacklist, maps categori
 - `data/trivia_en.tsv` + `data/trivia_en.idx`
 - `src/data/embedded_pack_es.c` + `src/data/embedded_pack_en.c` (the pack compiled into the FAP)
 
+Only `TZ_TRANSLATOR=anthropic` writes those committed files. The stub writes the same outputs to `data/_cache/stub_pack/` instead. `make fap` never runs the pipeline; it builds the committed pack.
+
 ## Translation backends
 
 | `TZ_TRANSLATOR` | Behavior |
 |-----------------|----------|
-| unset / `stub` (default) | Deterministic stub — prefixes `[es]`/`[en]` markers. Useful for development; output is valid but not human-grade. |
-| `anthropic` | Real translation via Anthropic Haiku. Requires `ANTHROPIC_API_KEY` env var. Cached on disk to `data/_cache/translations.json` so reruns are free. |
+| unset / `stub` (default) | Deterministic stub — prefixes `[es]`/`[en]` markers. Useful for development; output is valid but not human-grade. Cached to `data/_cache/translations_stub.json`. |
+| `anthropic` | Real translation via Anthropic Haiku. Requires `ANTHROPIC_API_KEY` env var. Cached on disk to `data/_cache/translations_anthropic.json` so reruns are free. |
+
+Any other value is an error.
 
 ## Test
 

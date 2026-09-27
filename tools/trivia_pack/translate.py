@@ -6,8 +6,8 @@ concrete backends are shipped:
   StubTranslator     — deterministic, network-free, default.
   AnthropicTranslator — real Claude Haiku translations behind an env var.
 
-Both share the same on-disk JSON cache so switching between them mid-build
-preserves any work already done.
+Each backend keeps its own on-disk JSON cache, so stub placeholders can
+never be served as real translations.
 """
 
 from __future__ import annotations
@@ -128,9 +128,20 @@ class AnthropicTranslator(_CachedTranslator):
         return "".join(parts).strip().replace("\t", " ").replace("\n", " ")
 
 
-def translator_from_env(cache_path: Path) -> Translator:
-    """Picks the backend based on TZ_TRANSLATOR (defaults to stub)."""
+_BACKENDS: dict[str, type[_CachedTranslator]] = {
+    "stub": StubTranslator,
+    "anthropic": AnthropicTranslator,
+}
+
+
+def backend_from_env() -> str:
+    """Reads TZ_TRANSLATOR (defaults to stub) and rejects unknown values."""
     backend = os.environ.get("TZ_TRANSLATOR", "stub").lower()
-    if backend == "anthropic":
-        return AnthropicTranslator(cache_path=cache_path)
-    return StubTranslator(cache_path=cache_path)
+    if backend not in _BACKENDS:
+        valid = ", ".join(sorted(_BACKENDS))
+        raise ValueError(f"unknown TZ_TRANSLATOR {backend!r}; expected one of: {valid}")
+    return backend
+
+
+def translator_for(backend: str, cache_dir: Path) -> Translator:
+    return _BACKENDS[backend](cache_path=cache_dir / f"translations_{backend}.json")
