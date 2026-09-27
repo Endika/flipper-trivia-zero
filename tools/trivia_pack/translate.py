@@ -7,13 +7,16 @@ concrete backends are shipped:
   AnthropicTranslator — real Claude Haiku translations behind an env var.
 
 Each backend keeps its own on-disk JSON cache, so stub placeholders can
-never be served as real translations.
+never be served as real translations. Hand-reviewed fixes live in a
+committed overrides file (same key format as the caches) that wins over
+both the cache and the backend.
 """
 
 from __future__ import annotations
 
 import json
 import os
+from collections.abc import Mapping
 from pathlib import Path
 from typing import Protocol
 
@@ -37,9 +40,17 @@ class Translator(Protocol):
     def flush(self) -> None: ...
 
 
+def load_overrides(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+    data: dict[str, str] = json.loads(path.read_text(encoding="utf-8"))
+    return data
+
+
 class _CachedTranslator:
-    def __init__(self, cache_path: Path) -> None:
+    def __init__(self, cache_path: Path, overrides: Mapping[str, str] | None = None) -> None:
         self._cache_path = cache_path
+        self._overrides = overrides or {}
         self._cache: dict[str, str] = {}
         if cache_path.exists():
             self._cache = json.loads(cache_path.read_text(encoding="utf-8"))
@@ -51,6 +62,9 @@ class _CachedTranslator:
             return ""
         if source == target:
             return text
+        override = self._overrides.get(_key(text.strip(), source, target))
+        if override is not None:
+            return override
         k = _key(text, source, target)
         cached = self._cache.get(k)
         if cached is not None:
@@ -92,8 +106,8 @@ class AnthropicTranslator(_CachedTranslator):
         "whitespace. Output must not contain tab or newline characters."
     )
 
-    def __init__(self, cache_path: Path) -> None:
-        super().__init__(cache_path=cache_path)
+    def __init__(self, cache_path: Path, overrides: Mapping[str, str] | None = None) -> None:
+        super().__init__(cache_path=cache_path, overrides=overrides)
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             raise RuntimeError("ANTHROPIC_API_KEY is required for AnthropicTranslator.")
@@ -143,5 +157,10 @@ def backend_from_env() -> str:
     return backend
 
 
-def translator_for(backend: str, cache_dir: Path) -> Translator:
-    return _BACKENDS[backend](cache_path=cache_dir / f"translations_{backend}.json")
+def translator_for(
+    backend: str, cache_dir: Path, overrides: Mapping[str, str] | None = None
+) -> Translator:
+    return _BACKENDS[backend](
+        cache_path=cache_dir / f"translations_{backend}.json",
+        overrides=overrides,
+    )
