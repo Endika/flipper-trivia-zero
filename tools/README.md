@@ -21,12 +21,13 @@ This pulls Open Trivia DB (cached locally), applies the blacklist, maps categori
 
 - `data/trivia_es.tsv` + `data/trivia_es.idx`
 - `data/trivia_en.tsv` + `data/trivia_en.idx`
+- `src/data/embedded_pack_es.c` + `src/data/embedded_pack_en.c` (the pack compiled into the FAP)
 
 ## Translation backends
 
 | `TZ_TRANSLATOR` | Behavior |
 |-----------------|----------|
-| unset / `stub` (default) | Deterministic stub — appends `[es]`/`[en]` markers. Useful for development; output is valid but not human-grade. |
+| unset / `stub` (default) | Deterministic stub — prefixes `[es]`/`[en]` markers. Useful for development; output is valid but not human-grade. |
 | `anthropic` | Real translation via Anthropic Haiku. Requires `ANTHROPIC_API_KEY` env var. Cached on disk to `data/_cache/translations.json` so reruns are free. |
 
 ## Test

@@ -1,9 +1,5 @@
 """OpenTDB (24 native categories) → 7-bucket Trivia Zero taxonomy.
 
-Source of truth: docs/superpowers/specs/2026-04-28-trivia-zero-design.md §4.4.
-The four ⚠️ rows in the spec are resolved here; if user review changes any of
-those, update both this table AND the spec.
-
 Some OpenTDB subcategories are skipped entirely (see SKIPPED_CATEGORIES) because
 their content (Video Games, Anime, Comics, Cartoons, Board Games, Musicals,
 Celebrities) is too niche or too anglo-centric for a "classic Trivial Pursuit"
@@ -31,7 +27,7 @@ CATEGORY_MAP: dict[str, BucketId] = {
     "General Knowledge": BucketId.CULTURA_GENERAL,
     # Geography
     "Geography": BucketId.GEOGRAFIA,
-    # History / Politics / Mythology (Mythology lives here per spec §4.4)
+    # History / Politics (Mythology goes to Arts & Literature)
     "History": BucketId.HISTORIA,
     "Politics": BucketId.HISTORIA,
     "Mythology": BucketId.ARTE_Y_LITERATURA,

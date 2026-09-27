@@ -83,9 +83,6 @@ class AnthropicTranslator(_CachedTranslator):
     """Real translations via Claude Haiku.
 
     Activated when `TZ_TRANSLATOR=anthropic`. Requires `ANTHROPIC_API_KEY`.
-
-    Uses prompt caching on the system prompt so the second-and-onward calls
-    within the 5-minute TTL pay roughly 10% of the input-token cost.
     """
 
     _MODEL = "claude-haiku-4-5-20251001"
@@ -105,8 +102,8 @@ class AnthropicTranslator(_CachedTranslator):
     def _translate_uncached(self, text: str, *, source: Lang, target: Lang) -> str:
         target_name = "Spanish" if target == Lang.ES else "English"
         source_name = "Spanish" if source == Lang.ES else "English"
-        # Prompt caching on the system prompt: subsequent calls within the
-        # 5-minute TTL pay ~10% of input tokens for the cached portion.
+        # The system prompt is far below the minimum cacheable length, so this
+        # cache_control marker doesn't cache anything.
         system_block: dict[str, object] = {
             "type": "text",
             "text": self._SYSTEM_PROMPT,
