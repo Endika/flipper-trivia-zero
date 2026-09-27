@@ -35,7 +35,7 @@ jobs:
           python-version: "3.11"
           working-directory: tools
       - name: Install Python deps
-        run: cd tools && uv sync --all-groups --frozen
+        run: cd tools && uv sync --all-groups --locked
       - name: Ruff check
         run: cd tools && uv run ruff check .
       - name: Ruff format check
