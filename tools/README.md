@@ -34,6 +34,8 @@ Only `TZ_TRANSLATOR=anthropic` writes those committed files. The stub writes the
 
 Any other value is an error.
 
+`data/translation_overrides.json` holds hand-reviewed fixes keyed like the caches (`"en->es|<source text>"`). They win over the cache and the backend, so a fix survives any rerun.
+
 ## Test
 
 ```

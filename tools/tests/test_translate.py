@@ -77,3 +77,14 @@ def test_stub_cache_is_never_served_by_anthropic(
     )
     real = translator_for("anthropic", cache_dir=tmp_path)
     assert real.translate("Hello", source=Lang.EN, target=Lang.ES) == "Hola"
+
+
+def test_override_wins_over_cache_and_backend(cache_path: Path) -> None:
+    cached = StubTranslator(cache_path=cache_path)
+    cached.translate("Jerk", source=Lang.EN, target=Lang.ES)
+    cached.flush()
+
+    t = StubTranslator(cache_path=cache_path, overrides={"en->es|Jerk": "Sobreaceleracion"})
+    assert t.translate("Jerk", source=Lang.EN, target=Lang.ES) == "Sobreaceleracion"
+    assert t.translate("Jerk ", source=Lang.EN, target=Lang.ES) == "Sobreaceleracion"
+    assert t.translate("Jerk", source=Lang.ES, target=Lang.EN) == "[en] Jerk"

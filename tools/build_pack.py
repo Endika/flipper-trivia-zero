@@ -22,12 +22,13 @@ from pathlib import Path
 
 from trivia_pack.opentdb import OpenTdbClient
 from trivia_pack.pipeline import run_pipeline
-from trivia_pack.translate import backend_from_env, translator_for
+from trivia_pack.translate import backend_from_env, load_overrides, translator_for
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _DATA_DIR = _REPO_ROOT / "data"
 _CACHE_DIR = _DATA_DIR / "_cache"
 _BLACKLIST = _DATA_DIR / "blacklist.txt"
+_OVERRIDES = _DATA_DIR / "translation_overrides.json"
 _C_OUT_DIR = _REPO_ROOT / "src" / "data"
 _STUB_OUT_DIR = _CACHE_DIR / "stub_pack"
 _DEFAULT_LIMIT = 1000
@@ -56,7 +57,11 @@ def main() -> int:
     out_dir, c_out_dir = output_dirs(backend)
 
     opentdb = OpenTdbClient(cache_dir=_CACHE_DIR / "opentdb")
-    translator = translator_for(backend, cache_dir=_CACHE_DIR)
+    translator = translator_for(
+        backend,
+        cache_dir=_CACHE_DIR,
+        overrides=load_overrides(_OVERRIDES),
+    )
 
     run_pipeline(
         opentdb=opentdb,
