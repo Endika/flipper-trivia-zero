@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.13...v0.1.14) (2026-09-28)
+
+
+### Bug Fixes
+
+* keep The Artful Dodger untranslated in the Spanish pack ([cfd3f88](https://github.com/Endika/flipper-trivia-zero/commit/cfd3f8873695d7b539f0d318ada2065bf2b67567))
+
 ## [0.1.13](https://github.com/Endika/flipper-trivia-zero/compare/v0.1.12...v0.1.13) (2026-09-27)
 
 
